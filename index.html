@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+.dropbtn {
+  background-color: #465b5360;
+  color: white;
+  padding: 10px;
+  font-size: 10px;
+  border: none;
+}
+
+.simple_text {
+  position: relative;
+  display: inline-block;
+  color: white;
+  padding: 5px;
+  font-size: 8px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 8px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #aac3ab0c;}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+</style>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="//unpkg.com/force-graph"></script>
+  <script src="https://www.unpkg.com/force-graph"></script>
+  <script type="text/javascript" src="movement.js"></script>
+  <script type="text/javascript" src="synthesis.js"></script>
+  <script type="text/javascript" src="helpers.js"></script>
+
+  
+</head>
+
+<body style="background-color:#101020; overflow: hidden;">
+  <!-- <button class="dropbtn">Load Data</button>  -->
+    <div class="dropdown">
+      <button class="dropbtn">Force Type</button>
+      <div class="dropdown-content">
+        <a href="#">Attraction</a>
+        <a href="#">Repulsion</a>
+      </div>
+    </div> 
+    <div class="dropdown">
+      <button class="dropbtn">Exploration Mode</button>
+      <div class="dropdown-content">
+        <a href="#">WASD navigation</a>
+        <a href="#">Mouse hover</a>
+        <a href="#">Find path</a>
+      </div>
+    </div> 
+    <div class="dropdown">
+      <button class="dropbtn">Audio Type</button>
+      <div class="dropdown-content">
+        <a href="#">Harmonic Synthesis</a>
+        <a href="#">Temporal divergence</a>
+        <a href="#">Temporal convergence</a>
+      </div>
+    </div>
+    <p class="simple_text">Interact between elements</p>
+    <div class="dropdown">
+      <button class="dropbtn">Action 1</button>
+      <div class="dropdown-content">
+        <a href="#">Harmonic Synthesis</a>
+        <a href="#">Temporal divergence</a>
+        <a href="#">Temporal convergence</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Parameter Mapping</button>
+      <div class="dropdown-content">
+        <a href="#">Harmonic Synthesis</a>
+        <a href="#">Temporal divergence</a>
+        <a href="#">Temporal convergence</a>
+      </div>
+    </div>
+    <p class="simple_text">Tweak cosmetic things</p>
+    <label class="switch">
+      <input type="checkbox" id="mitch">
+      <div class="slider"></div>
+    </label>
+    <p class="simple_text" id="content" >miao</p>
+
+  <script type="module" src="create-node.js"></script>
+  <script type="module" src="forcing_graphs.js"></script>
+  <div id="graph"></div>
+</body>
+</html>
