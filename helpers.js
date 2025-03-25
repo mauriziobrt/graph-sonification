@@ -1,6 +1,6 @@
 function fetchExternalData() {
     return Promise.all([
-        fetch("correct_output.json")
+        fetch("./data/correct_output.json")
     ])
         .then(
             results => Promise.all(

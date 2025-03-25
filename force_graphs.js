@@ -41,9 +41,9 @@ fetchExternalData().then(
             const audioContext = new AudioCtx({ latencyHint: 0.00001 });
             audioContext.suspend();
             // Create Faust node for each Synth
-            const { faustNode: additiveNode, dspMeta: { name } } = await createFaustNode(audioContext, "./dsp-meta.json", "./dsp-module.wasm","additive", FAUST_DSP_VOICES);
-            const { faustNode: dropNode, dspMeta: { bubblename } } = await createFaustNode(audioContext, "./drop-meta.json","./drop-module.wasm",  "drop", FAUST_DSP_VOICES);
-            const { faustNode: additivePlusNode, dspMeta: { additivename } } = await createFaustNode(audioContext, "./additiveplus-dsp-meta.json", "./additiveplus-dsp-module.wasm","additiveplus", FAUST_DSP_VOICES);
+            const { faustNode: additiveNode, dspMeta: { name } } = await createFaustNode(audioContext, "./audio/dsp-meta.json", "./audio/dsp-module.wasm","additive", FAUST_DSP_VOICES);
+            const { faustNode: dropNode, dspMeta: { bubblename } } = await createFaustNode(audioContext, "./audio/drop-meta.json","./audio/drop-module.wasm",  "drop", FAUST_DSP_VOICES);
+            const { faustNode: additivePlusNode, dspMeta: { additivename } } = await createFaustNode(audioContext, "./audio/additiveplus-dsp-meta.json", "./audio/additiveplus-dsp-module.wasm","additiveplus", FAUST_DSP_VOICES);
             
             if (!additiveNode) throw new Error("Faust DSP not compiled");
             // Connect the Faust node to the audio output

@@ -2,11 +2,11 @@
 
 /**
  * @typedef {{ dspModule: WebAssembly.Module; dspMeta: FaustDspMeta; effectModule?: WebAssembly.Module; effectMeta?: FaustDspMeta; mixerModule?: WebAssembly.Module }} FaustDspDistribution
- * @typedef {import("./faustwasm").FaustDspMeta} FaustDspMeta
- * @typedef {import("./faustwasm").FaustMonoAudioWorkletNode} FaustMonoAudioWorkletNode
- * @typedef {import("./faustwasm").FaustPolyAudioWorkletNode} FaustPolyAudioWorkletNode
- * @typedef {import("./faustwasm").FaustMonoScriptProcessorNode} FaustMonoScriptProcessorNode
- * @typedef {import("./faustwasm").FaustPolyScriptProcessorNode} FaustPolyScriptProcessorNode
+ * @typedef {import("./faustwasm/index.js").FaustDspMeta} FaustDspMeta
+ * @typedef {import("./faustwasm/index.js").FaustMonoAudioWorkletNode} FaustMonoAudioWorkletNode
+ * @typedef {import("./faustwasm/index.js").FaustPolyAudioWorkletNode} FaustPolyAudioWorkletNode
+ * @typedef {import("./faustwasm/index.js").FaustMonoScriptProcessorNode} FaustMonoScriptProcessorNode
+ * @typedef {import("./faustwasm/index.js").FaustPolyScriptProcessorNode} FaustPolyScriptProcessorNode
  * @typedef {FaustMonoAudioWorkletNode | FaustPolyAudioWorkletNode | FaustMonoScriptProcessorNode | FaustPolyScriptProcessorNode} FaustNode
  */
 
@@ -108,33 +108,33 @@ async function connectToAudioInput(audioContext, id, faustNode, inputStreamNode)
     return inputStreamNode;
 };
 
-/**
- * @param {FaustAudioWorkletNode} faustNode 
- */
-async function createFaustUI(divFaustUI, faustNode) {
-    const { FaustUI } = await import("./faust-ui/index.js");
-    const $container = document.createElement("div");
-    $container.style.margin = "0";
-    $container.style.position = "absolute";
-    $container.style.overflow = "auto";
-    $container.style.display = "flex";
-    $container.style.flexDirection = "column";
-    $container.style.width = "100%";
-    $container.style.height = "100%";
-    divFaustUI.appendChild($container);
-    const faustUI = new FaustUI({
-        ui: faustNode.getUI(),
-        root: $container,
-        listenWindowMessage: false,
-        listenWindowResize: true,
-    });
-    faustUI.paramChangeByUI = (path, value) => faustNode.setParamValue(path, value);
-    faustNode.setOutputParamHandler((path, value) => faustUI.paramChangeByDSP(path, value));
-    $container.style.minWidth = `${faustUI.minWidth}px`;
-    $container.style.minHeight = `${faustUI.minHeight}px`;
-    faustUI.resize();
-};
+// /**
+//  * @param {FaustAudioWorkletNode} faustNode 
+//  */
+// async function createFaustUI(divFaustUI, faustNode) {
+//     const { FaustUI } = await import("./faust-ui/index.js");
+//     const $container = document.createElement("div");
+//     $container.style.margin = "0";
+//     $container.style.position = "absolute";
+//     $container.style.overflow = "auto";
+//     $container.style.display = "flex";
+//     $container.style.flexDirection = "column";
+//     $container.style.width = "100%";
+//     $container.style.height = "100%";
+//     divFaustUI.appendChild($container);
+//     const faustUI = new FaustUI({
+//         ui: faustNode.getUI(),
+//         root: $container,
+//         listenWindowMessage: false,
+//         listenWindowResize: true,
+//     });
+//     faustUI.paramChangeByUI = (path, value) => faustNode.setParamValue(path, value);
+//     faustNode.setOutputParamHandler((path, value) => faustUI.paramChangeByDSP(path, value));
+//     $container.style.minWidth = `${faustUI.minWidth}px`;
+//     $container.style.minHeight = `${faustUI.minHeight}px`;
+//     faustUI.resize();
+// };
 
 // Export the functions
-export { createFaustNode, createFaustUI, connectToAudioInput };
+export { createFaustNode,connectToAudioInput };  //createFaustUI, 
 
