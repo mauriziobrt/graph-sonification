@@ -136,4 +136,4 @@ dist
 .pnp.*
 
 # Mac stuff
-.DS_CODE
+.DS_STORE
