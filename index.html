@@ -5,16 +5,40 @@
   background-color: #465b5360;
   color: white;
   padding: 10px;
-  font-size: 10px;
+  font-size: 14px;
   border: none;
 }
+
+.bottomleft {
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+  font-size: 18px;
+  text-align: right;
+  color: rgba(255, 255, 255, 0.675);
+  z-index: 1;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.bottomright {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  font-size: 18px;
+  text-align: right;
+  color: rgba(255, 255, 255, 0.675);
+  z-index: 1;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
 
 .simple_text {
   position: relative;
   display: inline-block;
   color: white;
   padding: 5px;
-  font-size: 8px;
+  font-size: 14px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -31,7 +55,7 @@
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 8px;
+  font-size: 14px;
 }
 
 .dropdown-content a {
@@ -50,8 +74,8 @@
 .switch {
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 34px;
+  width: 30px;
+  height: 10px;
 }
 
 .switch input {display:none;}
@@ -71,8 +95,8 @@
 .slider:before {
   position: absolute;
   content: "";
-  height: 26px;
-  width: 26px;
+  height: 10px;
+  width: 20px;
   left: 4px;
   bottom: 4px;
   background-color: white;
@@ -81,17 +105,17 @@
 }
 
 input:checked + .slider {
-  background-color: #2196F3;
+  background-color: #0c2f4b;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
+  box-shadow: 0 0 1px #0e4673;
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
+  -webkit-transform: translateY(7px);
+  -ms-transform: translateY(7px);
+  transform: translateY(7px);
 }
 
 </style>
@@ -110,14 +134,14 @@ input:checked + .slider:before {
 
 <body style="background-color:#101020; overflow: hidden;">
   <!-- <button class="dropbtn">Load Data</button>  -->
-    <div class="dropdown">
+    <!-- <div class="dropdown">
       <button class="dropbtn">Force Type</button>
       <div class="dropdown-content">
         <a href="#">Attraction</a>
         <a href="#">Repulsion</a>
       </div>
-    </div> 
-    <div class="dropdown">
+    </div>  -->
+    <!-- <div class="dropdown">
       <button class="dropbtn">Exploration Mode</button>
       <div class="dropdown-content">
         <a href="#">WASD navigation</a>
@@ -149,15 +173,27 @@ input:checked + .slider:before {
         <a href="#">Temporal divergence</a>
         <a href="#">Temporal convergence</a>
       </div>
-    </div>
-    <p class="simple_text">Tweak cosmetic things</p>
+    </div> -->
+    <p class="simple_text">Toggle Hover Sound</p>
     <label class="switch">
       <input type="checkbox" id="mitch">
       <div class="slider"></div>
     </label>
-    <p class="simple_text" id="content" >miao</p>
+    <p class="simple_text">Selected node: </p>
+    <p class="simple_text" id="content" style="text-align: center;" >...</p>
+    
+    <div class="bottomright">
+      <p class="simple_text" id="miaomiao"></p>
+    </div>
+    <div class="bottomleft">
+      wasd = navigation from selected node <br>
+      spacebar+nodeclick = play neighbours <br>
+      shift+2 node clicks = find nearest path and play <br>
+      background click = reset play<br>
+      if hover on -> play onhover
+    </div> 
 
-  <script type="module" src="create-node.js"></script>
+  <script type="module" src="./audio/create-node.js"></script>
   <script type="module" src="force_graphs.js"></script>
   <div id="graph"></div>
 </body>

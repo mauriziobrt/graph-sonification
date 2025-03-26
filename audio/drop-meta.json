@@ -2,7 +2,7 @@
     "name": "bubble",
     "filename": "bubble.dsp",
     "version": "2.78.3",
-    "compile_options": "-lang wasm-i -ct 1 -es 1 -mcd 16 -mdd 1024 -mdy 33 -single -ftz 2",
+    "compile_options": "-lang wasm-e -ct 1 -es 1 -mcd 16 -mdd 1024 -mdy 33 -single -ftz 2",
     "library_list": [
         "/usr/share/faust/stdfaust.lib",
         "/usr/share/faust/demos.lib",
@@ -22,7 +22,7 @@
         "."
     ],
     "size": 848400,
-    "code": "wDNBASQPHw==",
+    "code": "6B1BASQPHw==",
     "inputs": 0,
     "outputs": 2,
     "meta": [
@@ -33,7 +33,7 @@
             "basics.lib/version": "1.21.0"
         },
         {
-            "compile_options": "-lang wasm-i -ct 1 -es 1 -mcd 16 -mdd 1024 -mdy 33 -single -ftz 2"
+            "compile_options": "-lang wasm-e -ct 1 -es 1 -mcd 16 -mdd 1024 -mdy 33 -single -ftz 2"
         },
         {
             "copyright": "(c) 2017: Yann Orlarey, GRAME"
@@ -100,6 +100,9 @@
         },
         {
             "name": "bubble"
+        },
+        {
+            "options": "[midi:on][nvoices:16]"
         },
         {
             "oscillators.lib/name": "Faust Oscillator Library"

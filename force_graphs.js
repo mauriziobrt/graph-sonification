@@ -18,11 +18,11 @@ fetchExternalData().then(
 
     checkbox.addEventListener('change', function () {
         if (checkbox.checked) {
-        hoverOn = true;
-        console.log('Checked');
+            hoverOn = true;
+            console.log('Checked');
         } else {
-        hoverOn = false;
-        console.log('Not checked');
+            hoverOn = false;
+            console.log('Not checked');
         }
     });
 
@@ -35,23 +35,26 @@ fetchExternalData().then(
             //=================================================================================
             //Audio init
             //=================================================================================
-            const { createFaustNode } = await import("./create-node.js");
+            const { createFaustNode } = await import("./audio/create-node.js");
             // Create audio context
             const AudioCtx = window.AudioContext || window.webkitAudioContext;
             const audioContext = new AudioCtx({ latencyHint: 0.00001 });
             audioContext.suspend();
             // Create Faust node for each Synth
-            const { faustNode: additiveNode, dspMeta: { name } } = await createFaustNode(audioContext, "./audio/dsp-meta.json", "./audio/dsp-module.wasm","additive", FAUST_DSP_VOICES);
+            const { faustNode: additiveNode, dspMeta: { name } } = await createFaustNode(audioContext, "./audio/additive-dsp-meta.json", "./audio/additive-dsp-module.wasm","additive", FAUST_DSP_VOICES);
             const { faustNode: dropNode, dspMeta: { bubblename } } = await createFaustNode(audioContext, "./audio/drop-meta.json","./audio/drop-module.wasm",  "drop", FAUST_DSP_VOICES);
             const { faustNode: additivePlusNode, dspMeta: { additivename } } = await createFaustNode(audioContext, "./audio/additiveplus-dsp-meta.json", "./audio/additiveplus-dsp-module.wasm","additiveplus", FAUST_DSP_VOICES);
-            
+            const { faustNode: samplerNode, dspMeta: { samplername } } = await createFaustNode(audioContext, "./audio/dsp-meta.json", "./audio/dsp-module.wasm","sampler", FAUST_DSP_VOICES);
+
             if (!additiveNode) throw new Error("Faust DSP not compiled");
             // Connect the Faust node to the audio output
             dropNode.connect(audioContext.destination);
             additiveNode.connect(audioContext.destination);
             additivePlusNode.connect(audioContext.destination);
+            samplerNode.connect(audioContext.destination);
+            
             if (additiveNode.getNumInputs() > 0) {
-                const { connectToAudioInput } = await import("./create-node.js");
+                const { connectToAudioInput } = await import("./audio/create-node.js");
                 await connectToAudioInput(audioContext, null, additiveNode, null);
             }
             //=================================================================================
@@ -111,8 +114,8 @@ fetchExternalData().then(
                     
                     // console.log(node.neighbors.length)
                     // console.log(1250 - (degree[node.id] * 43.4/4))
-                    console.log(220 + (degree[node.id] * 4));
-                    playFaust(220 + (degree[node.id] * 4), 2, "bubbles", dropNode, audioContext);
+                    // console.log(220 + (degree[node.id] * 4));
+                        playFaust(degree[node.id] + 60, 2, "sampler", samplerNode, audioContext);
                     }
                 // hoverNode = node || null;
                 });
@@ -129,6 +132,7 @@ fetchExternalData().then(
             // UPDATE LATER, it should also work if there's already a selectednode
             function setupNodeSelection(graph) {
                 graph.onNodeClick((node, event) => {
+                    document.getElementById("content").innerText = node["description"];
                   if (shiftKeyPressed) {
                     shiftSelection(node, graph, degree, additivePlusNode, audioContext);
                     clearActiveAnimations();
@@ -212,14 +216,16 @@ fetchExternalData().then(
             // Track shift key state
             document.addEventListener('keydown', (event) => {
                 if (event.key === 'Shift') {
-                shiftKeyPressed = true;
-                console.log("shiftKeyPressed");
+                    shiftKeyPressed = true;
+                    console.log("shiftKeyPressed");
+                    document.getElementById("miaomiao").innerText = "shift";
                 }
             });
             
             document.addEventListener('keyup', (event) => {
                 if (event.key === 'Shift') {
                     shiftKeyPressed = false;
+                    document.getElementById("miaomiao").innerText = "";
                     console.log("shiftKeyNotPressed");
                 // Only clear selection when shift key is released if no animation is running
                 if (!animationInProgress) {
@@ -232,14 +238,16 @@ fetchExternalData().then(
             // Track space bar state
             document.addEventListener('keydown', (event) => {
                 if (event.key === ' ') {
-                spaceKeyPressed = true;
-                console.log("spaceKeyPressed");
+                    spaceKeyPressed = true;
+                    document.getElementById("miaomiao").innerText = "space";
+                    console.log("spaceKeyPressed");
                 }
             });
             
             document.addEventListener('keyup', (event) => {
                 if (event.key === ' ') {
                     spaceKeyPressed = false;
+                    document.getElementById("miaomiao").innerText = "";
                     console.log("spaceKeyNotPressed");
                 }
             });

@@ -2,11 +2,11 @@
 
 /**
  * @typedef {{ dspModule: WebAssembly.Module; dspMeta: FaustDspMeta; effectModule?: WebAssembly.Module; effectMeta?: FaustDspMeta; mixerModule?: WebAssembly.Module }} FaustDspDistribution
- * @typedef {import("./faustwasm/index.js").FaustDspMeta} FaustDspMeta
- * @typedef {import("./faustwasm/index.js").FaustMonoAudioWorkletNode} FaustMonoAudioWorkletNode
- * @typedef {import("./faustwasm/index.js").FaustPolyAudioWorkletNode} FaustPolyAudioWorkletNode
- * @typedef {import("./faustwasm/index.js").FaustMonoScriptProcessorNode} FaustMonoScriptProcessorNode
- * @typedef {import("./faustwasm/index.js").FaustPolyScriptProcessorNode} FaustPolyScriptProcessorNode
+ * @typedef {import("../faustwasm/index.js").FaustDspMeta} FaustDspMeta
+ * @typedef {import("../faustwasm/index.js").FaustMonoAudioWorkletNode} FaustMonoAudioWorkletNode
+ * @typedef {import("../faustwasm/index.js").FaustPolyAudioWorkletNode} FaustPolyAudioWorkletNode
+ * @typedef {import("../faustwasm/index.js").FaustMonoScriptProcessorNode} FaustMonoScriptProcessorNode
+ * @typedef {import("../faustwasm/index.js").FaustPolyScriptProcessorNode} FaustPolyScriptProcessorNode
  * @typedef {FaustMonoAudioWorkletNode | FaustPolyAudioWorkletNode | FaustMonoScriptProcessorNode | FaustPolyScriptProcessorNode} FaustNode
  */
 
@@ -24,7 +24,7 @@ const createFaustNode = async (audioContext, metapath, modulepath, dspName = "te
     const FAUST_DSP_HAS_EFFECT = false;
 
     // Import necessary Faust modules and data
-    const { FaustMonoDspGenerator, FaustPolyDspGenerator } = await import("./faustwasm/index.js");
+    const { FaustMonoDspGenerator, FaustPolyDspGenerator } = await import("../faustwasm/index.js");
 
     // Load DSP metadata from JSON
     /** @type {FaustDspMeta} */
@@ -44,11 +44,11 @@ const createFaustNode = async (audioContext, metapath, modulepath, dspName = "te
     if (voices > 0) {
 
         // Try to load optional mixer and effect modules
-        faustDsp.mixerModule = await WebAssembly.compileStreaming(await fetch("./mixer-module.wasm"));
+        faustDsp.mixerModule = await WebAssembly.compileStreaming(await fetch("./audio/mixer-module.wasm"));
 
         if (FAUST_DSP_HAS_EFFECT) {
             faustDsp.effectMeta = await (await fetch("./effect-meta.json")).json();
-            faustDsp.effectModule = await WebAssembly.compileStreaming(await fetch("./effect-module.wasm"));
+            faustDsp.effectModule = await WebAssembly.compileStreaming(await fetch("./audio/effect-module.wasm"));
         }
 
         // Create a polyphonic Faust audio node

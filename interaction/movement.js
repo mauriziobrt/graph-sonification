@@ -526,7 +526,7 @@ function highlightNeighborsGradually(node, graph, degree, data, audioNode, audio
         const timeoutId = setTimeout(() => {
             neighbor.highlighted = true; // Highlight the node
             graph.nodeColor(n => n.highlighted ? 'red' : 'gray'); // Update color dynamically
-            console.log(2000 - (degree[neighbor.id] * 30));
+            // console.log(2000 - (degree[neighbor.id] * 30));
             playFaust(2000 - (degree[neighbor.id] * 30), 1, "bubbles", audioNode, audioContext);
         }, (index + 1) * (degree[neighbor.id]) * 10); // 1 second delay per node
         

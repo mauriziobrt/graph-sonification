@@ -1,4 +1,4 @@
-const FAUST_DSP_VOICES = 0;
+const FAUST_DSP_VOICES = 16;
 //=================================================================================
 //Synthesis Engine
 //=================================================================================
@@ -10,14 +10,17 @@ function playFaust(freq, nr_neighbours, engine, node, audioContext) {
         audioContext.resume();
     }
     switch(engine) {
-        case 'additive':
-        playAdditive(freq, nr_neighbours,node)
-        break;
-        case 'additiveplus':
-            playAdditivePlus(freq,nr_neighbours,node)
-        break;
+        // case 'additive':
+        // playAdditive(freq, nr_neighbours,node)
+        // break;
+        // case 'additiveplus':
+        //     playAdditivePlus(freq,nr_neighbours,node)
+        // break;
         case 'bubbles':
         playBubbles(freq,node)
+        break;
+        case 'sampler':
+            playSampler(freq,node)
         break;
     }
 }
@@ -43,11 +46,21 @@ function playAdditivePlus(freq, nr_neighbours, node) {
 //Bubble Sounds
 //=================================================================================
 function playBubbles(freq, node) {
+    node.keyOn(0, 100, 100);
     node.setParamValue("/bubble/drop", 1);
-    node.setParamValue("/bubble/bubble/freq", freq)
+    // node.setParamValue("/bubble/bubble/freq", freq)
     setTimeout(()=> {node.setParamValue("/bubble/drop", 0)}, 10);
+    setTimeout(()=> {node.keyOff(0, freq, 100);}, 100);
 }
 
 //=================================================================================
 //Concatenative Synthesis
 //=================================================================================
+function playSampler(freq, node) {
+    console.log(freq)
+    node.keyOn(0, freq, 100);
+    // setTimeout(() => node.keyOn(0, 64, 100), 1000);
+    // setTimeout(() => node.keyOn(0, 67, 100), 2000);
+    setTimeout(() => node.allNotesOff(), 5000);
+    // setTimeout(() => playSampler(node), 7000);
+}
