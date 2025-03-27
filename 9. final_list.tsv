@@ -1,0 +1,862 @@
+Scopus ID	Label	Title	over threshold for co-citations	over threshold for bib. coupling
+2-s2.0-85152313344	MatinfarSalehi2023	Sonification as a reliable alternative to conventional visual surgical navigation	True	True
+2-s2.0-85028987855	RoodakiNavab2017	SonifEye: Sonification of Visual Information Using Physical Modeling Sound Synthesis	True	False
+2-s2.0-85141175249	SharifWang2022	What Makes Sonification User-Friendly Exploring Usability and User-Friendliness of Sonified Responses	True	False
+2-s2.0-85135945331	WangJung2022	Seeing Through Sounds: Mapping Auditory Dimensions to Data and Charts for People with Visual Impairments	True	True
+2-s2.0-85130566986	SiuShkim2022	Supporting Accessible Data Visualization Through Audio Data Narratives	True	True
+2-s2.0-85130547092	HollowayGoncu2022	Infosonics: Accessible Infographics for People who are Blind using Sonification and Voice	True	False
+2-s2.0-85130559393	FanSiu2022	Slide-Tone and Tilt-Tone: 1-DOF Haptic Techniques for Conveying Shape Characteristics of Graphs to Blind Users	True	True
+2-s2.0-85118628104	ChunduryPatnaik2022	Towards Understanding Sensory Substitution for Accessible Visualization: An Interview Study	True	True
+2-s2.0-43949128428	ZhaoPlaisant2008	Data sonification for users with visual impairment: A case study with georeferenced data	True	False
+2-s2.0-85135228668	ZhangSigafoos2022	SonifyIt: Towards Transformative Sound for All Robots	True	False
+2-s2.0-85106399168	FridBresin2022	Perceptual Evaluation of Blended Sonification of Mechanical Robot Sounds Produced by Emotionally Expressive Gestures: Augmenting Consequential Sounds to Improve Non-verbal Robot Communication	True	True
+2-s2.0-85123366435	KantanSpaich2022	A Technical Framework for Musical Biofeedback in Stroke Rehabilitation	True	True
+2-s2.0-85078835671	GuerraSmith2020	The use of sonification for physiotherapy in human movement tasks: A scoping review Sonification du mouvement en kinésithérapie: une revue exploratoire de la littérature	True	True
+2-s2.0-85107976976	KoKutchek2022	Effects of Non-Speech Auditory Cues on Control Transition Behaviors in Semi-Automated Vehicles: Empirical Study, Modeling, and Validation	True	True
+2-s2.0-85015358574	PetermeijerBazilinskyy2017	Take-over again: Investigating multimodal and directional TORs to get the driver back into the loop	True	True
+2-s2.0-85102780630	RobinsonVelonaki2021	Smooth operator: Tuning robot perception through artificial movement sound	True	True
+2-s2.0-85095746398	ZahraySavery2020	Robot Gesture Sonification to Enhance Awareness of Robot Status and Enjoyment of Interaction	True	False
+2-s2.0-85067622801	FridBresin2018	Perception of mechanical sounds inherent to expressive gestures of a NAO robot - Implications for movement sonification of humanoids	True	True
+2-s2.0-85159298730	TuckerbrownHarrison2022	Evaluating the efficacy of sonification for signal detection in univariate, evenly sampled light curves using astronify	True	False
+2-s2.0-85134024351	ZanellaHarrison2022	Sonification and sound design for astronomy research, education and public engagement	True	False
+2-s2.0-85141660632	MisdariisÖzcan2022	Sound experts’ perspectives on astronomy sonification projects	True	False
+2-s2.0-85107772096	SaweChafe2020	Using Data Sonification to Overcome Science Literacy, Numeracy, and Visualization Barriers in Science Communication	True	False
+2-s2.0-85111964963	MilazzoBuehler2021	Designing and fabricating materials from fire using sonification and deep learning	True	False
+2-s2.0-85068460153	YuQin2019	A Self-Consistent Sonification Method to Translate Amino Acid Sequences into Musical Compositions and Application in Protein Design Using Artificial Intelligence	True	True
+2-s2.0-85107464809	FranjouMilazzo2021	A perspective on musical representations of folded protein nanostructures	True	True
+2-s2.0-85103744152	RaglioPanigazzi2021	Hand rehabilitation with sonification techniques in the subacute stage of stroke	True	True
+2-s2.0-84977657335	ScholzRohde2016	Sonification of arm movements in stroke rehabilitation - a novel approach in neurologic music therapy	True	True
+2-s2.0-85092199459	VanrhedenGrah2020	Sonification approaches in sports in the past decade: A literature review	True	True
+2-s2.0-85061377945	SchaffertJanzen2019	A review on the relationship between sound and movement in sports and rehabilitation	True	True
+2-s2.0-85090254386	YuBuehler2020	Sonification based de novo protein design using artificial intelligence, structure prediction, and analysis using molecular modeling	True	True
+2-s2.0-85090259984	Buehler2020	Liquified protein vibrations, classification and cross-paradigm de novo image generation using deep neural networks	True	False
+2-s2.0-85075709898	FranjouMilazzo2019	Sounds interesting: can sonification help us design new proteins?	True	False
+2-s2.0-85064463641	QinBuehler2019	Analysis of the vibrational and sound spectrum of over 100,000 protein structures and application in sonification	True	False
+2-s2.0-85089468020	LenziCiuccarelli2020	Intentionality and design in the data sonification of social issues	True	False
+2-s2.0-85091302319	AhmetovicSato2020	ReCog: Supporting Blind People in Recognizing Personal Objects	True	False
+2-s2.0-85074950996	LeeHong2019	Revisiting blind photography in the context of teachable object recognizers	True	False
+2-s2.0-84893070216	DubusBresin2013	A systematic review of mapping strategies for the sonification of physical quantities	True	True
+2-s2.0-85079349505	ZhangGe2020	Modeling of Individual HRTFs Based on Spatial Principal Component Analysis	True	True
+2-s2.0-84962916557	GrijalvaMartini2016	A manifold learning approach for personalizing HRTFS from anthropometric features	True	True
+2-s2.0-0027170085	WenzelArruda1993	Localization using nonindividualized head-related transfer functions	True	True
+2-s2.0-85083115066	NewboldGold2020	Movement sonification expectancy model: leveraging musical expectancy theory to create movement-altering sonifications	True	False
+2-s2.0-85015054154	NewboldBianchiberthouze2016	Musically informed sonification for chronic pain rehabilitation: Facilitating progress & avoiding over-doing	True	False
+2-s2.0-85091586097	MezzarobbaGrassi2020	Action observation improves sit-to-walk in patients with Parkinson's disease and freezing of gait. Biomechanical analysis of performance	True	False
+2-s2.0-85040451616	MezzarobbaGrassi2018	Action observation plus sonification. A novel therapeutic protocol for Parkinson's patient with freezing of gait	True	False
+2-s2.0-84973514484	EffenbergFehse2016	Movement sonification: Effects on motor learning beyond rhythmic adjustments	True	True
+2-s2.0-20344384538	Effenberg2005	Movement sonification: Effects on perception and action	True	False
+2-s2.0-85077797740	LeyfloresBevilacqua2019	Altering body perception and emotion in physically inactive people through movement sonification	True	True
+2-s2.0-85067599304	TajadurajiménezNewbold2019	As light as you aspire to be: Changing body perception with sound to support physical activity	True	True
+2-s2.0-85044860190	SinghBianchiberthouze2017	Supporting everyday function in chronic pain using wearable technology	True	True
+2-s2.0-84988378007	BevilacquaBoyer2016	Sensori-motor learning with movement sonification: Perspectives from recent interdisciplinary studies	True	True
+2-s2.0-84954098724	SinghPiana2016	Go-with-the-Flow: Tracking, Analysis and Sonification of Movement and Breathing to Build Confidence in Activity Despite Chronic Pain	True	True
+2-s2.0-84982921020	CesariniCalvaresi2016	MEDIATION: An eMbEddeD System for Auditory Feedback of Hand-water InterAcTION while Swimming	True	False
+2-s2.0-84924626271	ScholzRhode2015	Moving with music for stroke rehabilitation: A sonification feasibility study	True	True
+2-s2.0-84950991167	TajadurajiménezBasia2015	As light as your footsteps: Altering walking sounds to change perceived body weight, emotional state and gait	True	True
+2-s2.0-84922879577	TajadurajimenezBianchiberthouze2015	Sonification of surface tapping changes behavior, surface perception, and emotion	True	False
+2-s2.0-85070232917	AhmetovicAvanzini2019	Sonification of rotation instructions to support navigation of people with visual impairment	True	True
+2-s2.0-84956798528	MascettiPicinali2016	Sonification of guidance data during road crossing for people with visual impairments or blindness	True	False
+2-s2.0-85053554933	GhaiSchmitz2019	Training proprioception with sound: effects of real-time auditory feedback on intermodal learning	True	True
+2-s2.0-85050105312	Ghai2018	Effects of real-time (sonification) and rhythmic auditory stimuli on recovering arm function post stroke: A systematic review and meta-analysis	True	True
+2-s2.0-85043363088	GhaiSchmitz2018	Auditory proprioceptive integration: Effects of real-time kinematic auditory feedback on knee proprioception	True	True
+2-s2.0-85058102696	JiangXie2019	The role of dynamic cue in auditory vertical localisation	True	True
+2-s2.0-85070635057	DavidsonRyu2019	The impact of concurrent linguistic tasks on participants’ identification of spearcons	True	True
+2-s2.0-85063009490	SandersonBrecknell2019	Monitoring vital signs with time-compressed speech	True	True
+2-s2.0-85024118838	LiTang2017	Spearcons for Patient Monitoring: Laboratory Investigation Comparing Earcons and Spearcons	True	True
+2-s2.0-85061815009	KlueberWolf2019	Supporting multiple patient monitoring with head-worn displays and spearcons	True	True
+2-s2.0-82055170511	FerrisSarter2011	Continuously informing vibrotactile displays in support of attention management and multitasking in anesthesiology	True	True
+2-s2.0-85067612443	RehHwang2019	Dual mode gait sonification for rehabilitation after unilateral hip arthroplasty	True	True
+2-s2.0-85052109892	BallatoreGordon2019	Sonifying data uncertainty with sound dimensions	True	False
+2-s2.0-85041105630	SchitoFabrikant2018	Exploring maps by sounds: using parameter mapping sonification to make digital elevation models audible	True	False
+2-s2.0-85067287851	Jeon2019	Multimodal displays for take-over in level 3 automated vehicles while playing a game	True	False
+2-s2.0-85067276360	KutchekJeon2019	Takeover and handover requests using non-speech auditory displays in semi-automated vehicles	True	False
+2-s2.0-84922900978	SchaffertMattes2015	Interactive sonification in rowing: Acoustic feedback for on-water training	True	False
+2-s2.0-85065546453	DascaluDavid2019	Skin cancer detection by deep learning and sound analysis algorithms: A prospective clinical study of an elementary dermoscope	True	True
+2-s2.0-85060096270	WalkerRehg2019	Dermoscopy diagnosis of cancerous lesions utilizing dual deep learning algorithms via visual and audio (sonification) outputs: Laboratory and prospective observational studies	True	True
+2-s2.0-85077609863	NikmaramScholz2019	Musical Sonification of Arm Movements in Stroke Rehabilitation Yields Limited Benefits	True	True
+2-s2.0-85047489928	EffenbergSchmitz2018	Acceleration and deceleration at constant speed: Systematic modulation of motion perception by kinematic sonification	True	True
+2-s2.0-85047865193	SchmitzBergmann2018	Movement sonification in stroke rehabilitation	True	True
+2-s2.0-85026895061	DyerStapleton2017	Advantages of melodic over rhythmic movement sonification in bimanual motor skill learning	True	True
+2-s2.0-84995739642	BoyerBevilacqua2017	Investigating three types of continuous auditory feedback in visuo-manual tracking	True	False
+2-s2.0-85028362798	DyerStapleton2017	Mapping sonification for perception and action in motor skill learning	True	True
+2-s2.0-85017185837	DannaVelay2017	On the auditory-proprioception substitution hypothesis: Movement sonification in two deafferented subjects learning to write new characters	True	True
+2-s2.0-84982947935	SigristFox2016	Benefits of Crank Moment Sonification in Cycling	True	True
+2-s2.0-84941267633	DannaFontaine2015	The effect of real-time auditory feedback on learning new characters	True	True
+2-s2.0-84953736962	DyerStapleton2015	Sonification as concurrent augmented feedback for motor skill learning and the importance of mapping design	True	True
+2-s2.0-84910045825	ScholzWu2014	Sonification as a possible stroke rehabilitation strategy	True	True
+2-s2.0-84874935035	SchmitzMohammadi2013	Observation of sonified movements engages a basal ganglia frontocortical network	True	True
+2-s2.0-84894138585	VinkenKröger2013	Auditory coding of human movement kinematics	True	True
+2-s2.0-80054784505	StienstraOverbeeke2011	Embodying complexity through movement sonification: Case study on empowering the speed-skater	True	False
+2-s2.0-85059942103	LiTse2019	Spearcon Sequences for Monitoring Multiple Patients: Laboratory Investigation Comparing Two Auditory Display Designs	True	True
+2-s2.0-85059936824	RocheSomieski2019	Behavioral Changes to Repeated Takeovers in Highly Automated Driving: Effects of the Takeover-Request Design and the Nondriving-Related Task Modality	True	False
+2-s2.0-85044179955	PetermeijerDoubek2017	Driver response times to auditory, visual, and tactile take-over requests: A simulator study with 101 participants	True	False
+2-s2.0-85059261070	ZesticBrecknell2019	A Novel Auditory Display for Neonatal Resuscitation: Laboratory Studies Simulating Pulse Oximetry in the First 10 Minutes After Birth	True	False
+2-s2.0-84962788690	DeschampsSanderson2016	Improving the detectability of oxygen saturation level targets for preterm neonates: A laboratory test of tremolo and beacon sonifications	True	True
+2-s2.0-84958961259	HinckfussSanderson2016	Novel Pulse Oximetry Sonifications for Neonatal Oxygen Saturation Monitoring: A Laboratory Study	True	True
+2-s2.0-85057529762	LorenzoniVandenberghe2019	Design and validation of an auditory biofeedback system for modification of running parameters	True	True
+2-s2.0-84898863105	WoodKipp2014	Use of audio biofeedback to reduce tibial impact accelerations during running	True	False
+2-s2.0-85057314649	ZiemerSchultheis2019	Psychoacoustic auditory display for navigation: an auditory assistance system for spatial orientation tasks	True	True
+2-s2.0-84963856294	ParseihianGondre2016	Comparison and Evaluation of Sonification Strategies for Guidance Tasks	True	True
+2-s2.0-85072865507	SakhardandeJoshi2019	Comparing User Performance on Parallel-Tone, Parallel-Speech, Serial-Tone and Serial-Speech Auditory Graphs	True	True
+2-s2.0-77953112806	ChoiWalker2010	Digitizer Auditory Graph: Making graphs accessible to the visually impaired	True	False
+2-s2.0-85069499205	GodfroycooperMiller2018	Isomorphic spatial visual-auditory displays for operations in DVE for obstacle avoidance	True	True
+2-s2.0-85054546508	MillerGodfroycooper2018	Arsad: An augmented-reality spatial auditory display for obstacle avoidance during all phases of flight	True	True
+2-s2.0-85056775974	ZiemerSchultheis2018	Psychoacoustical interactive sonification for short range navigation	True	True
+2-s2.0-85030166269	ZiemerBlack2017	Psychoacoustic sonification design for navigation in surgical interventions	True	True
+2-s2.0-84874993922	HansenBlack2013	Auditory support for resection guidance in navigated liver surgery	True	False
+2-s2.0-85048842151	YuFunk2018	Unwind: a musical biofeedback for relaxation assistance	True	True
+2-s2.0-84900555126	HarrisParnandi2014	Sonic respiration: Controlling respiration rate through auditory biofeedback	True	False
+2-s2.0-84904738941	BergstromSeinfeld2014	Using music as a signal for biofeedback	True	False
+2-s2.0-85046977804	FergusonBrewster2018	Investigating perceptual congruence between data and display dimensions in sonification	True	True
+2-s2.0-85046792410	FergusonBrewster2017	Evaluation of psychoacoustic sound parameters for sonification	True	True
+2-s2.0-85044053416	ParviziGururangan2018	Detecting silent seizures by their sound	True	False
+2-s2.0-85048764072	HobbsKrishnamohan2018	Rapid Bedside Evaluation of Seizures in the ICU by Listening to the Sound of Brainwaves: A Prospective Observational Clinical Trial of Ceribell’s Brain Stethoscope Function	True	False
+2-s2.0-84864415502	KhamisMohamed2012	Detection of temporal lobe seizures and identification of lateralisation from audified EEG	True	False
+2-s2.0-85040935696	GhaiGhai2018	“Low road” to rehabilitation: A perspective on subliminal sensory neuroprosthetics	True	True
+2-s2.0-85044835746	HwangSchmitz2018	Effect- and performance-based auditory feedback on interpersonal coordination	True	True
+2-s2.0-85049655516	Scaletti2018	Sonification ≠ music	True	False
+2-s2.0-85021884138	Vickers2016	Sonification and music, music and sonification	True	True
+2-s2.0-85029628798	GodfroycooperMiller2017	3D-sonification for obstacle avoidance in brownout conditions	True	True
+2-s2.0-1542360367	WatsonSanderson2004	Sonification supports eyes-free respiratory monitoring and task time-sharing	True	True
+2-s2.0-0030111182	BronkhorstVeltman1996	Application of a three-dimensional auditory display in a flight task	True	False
+2-s2.0-0027850399	Begault1993	Head-up auditory displays for traffic collision avoidance system advisories: A preliminary investigation	True	False
+2-s2.0-85019569213	BazilinskyyDewinter2017	Analyzing crowdsourced ratings of speech-based take-over requests for automated driving	True	False
+2-s2.0-85044858615	WangLyckvi2017	Using advisory 3D sound cues to improve drivers' performance and situation awareness	True	False
+2-s2.0-79955825060	Gray2011	Looming auditory collision warnings for driving	True	False
+2-s2.0-84858986532	NeesWalker2011	Auditory Displays for In-Vehicle Technologies	True	True
+2-s2.0-67651118078	MohebbiGray2009	Driver reaction time to tactile and auditory rear-end collision warnings while talking on a cell phone	True	False
+2-s2.0-0035868653	Liu2001	Comparative study of the effects of auditory, visual and multimodality displays on drivers' performance in advanced traveler information systems	True	True
+2-s2.0-85028313531	GorgasSchön2017	Short-Term Effects of Real-Time Auditory Display (Sonification) on Gait Parameters in People with Parkinsons’ Disease—A Pilot Study	True	False
+2-s2.0-84964240816	HorsakDlapka2016	SONIGait: a wireless instrumented insole device for real-time sonification of gait	True	False
+2-s2.0-85021994558	VickersHogg2017	Aesthetics of sonification: Taking the subject-position	True	True
+2-s2.0-85040040634	PatersonSanderson2017	Effectiveness of enhanced pulse oximetry sonifications for conveying oxygen saturation ranges: A laboratory comparison of five auditory displays	True	True
+2-s2.0-84982896886	PatersonSanderson2016	The effectiveness of pulse oximetry sonification enhanced with tremolo and brightness for distinguishing clinically important oxygen saturation ranges: A laboratory study	True	True
+2-s2.0-84911380166	BeattieBaillie2014	What's around the corner? Enhancing driver awareness in autonomous vehicles via in-vehicle spatial auditory displays	True	True
+2-s2.0-84865992559	GrosshauserBläsing2012	Wearable sensor-based real-time sonification of motion and foot pressure in dance teaching and training	True	False
+2-s2.0-78651248615	VogtPirrò2010	PhysioSonic - Evaluated movement sonification as auditory feedback in physiotherapy	True	False
+2-s2.0-84990239859	IsherwoodMckeown2017	Semantic congruency of auditory warnings	True	False
+2-s2.0-34249074520	MckeownIsherwood2007	Mapping candidate within-vehicle auditory displays to their referents	True	False
+2-s2.0-84925536399	SigristRauter2015	Sonification and haptic feedback in addition to visual feedback enhances complex motor task learning	True	True
+2-s2.0-85018694177	EdworthyReid2017	The Recognizability and Localizability of Auditory Alarms: Setting Global Medical Device Standards	True	True
+2-s2.0-85018169759	HicklingBrecknell2017	Using a sequence of earcons to monitor multiple simulated patients	True	True
+2-s2.0-84875695480	JanataEdwards2013	A novel sonification strategy for auditory display of heart rate and oxygen saturation changes in clinical settings	True	False
+2-s2.0-0033498316	BelzRobinson1999	A new class of auditory warning signals for complex systems: Auditory icons	True	False
+2-s2.0-0036988701	Walker2002	Magnitude estimation of conceptual data dimensions for use in sonification	True	True
+2-s2.0-85015196812	GrijalvaMartini2017	Interpolation of Head-Related Transfer Functions Using Manifold Learning	True	True
+2-s2.0-85013074693	BlackHettig2017	Auditory feedback to support image-guided medical needle placement	True	True
+2-s2.0-85014722988	BlackHansen2017	A Survey of auditory display in image-guided interventions	True	True
+2-s2.0-84954537558	BlackIssawi2013	Auditory support for navigated radiofrequency ablation	True	False
+2-s2.0-85016407724	PatéBoschi2017	Auditory display of seismic data: On the use of experts' categorizations and verbal descriptions as heuristics for geoscience	True	True
+2-s2.0-84956736637	PatéBoschi2016	Categorization of seismic sources by auditory display: A blind test	True	True
+2-s2.0-85071602437	CookeDiazmerced2017	Exploring data sonification to enable, enhance, and accelerate the analysis of big, noisy, and multi-dimensional data	True	False
+2-s2.0-84884505532	DiazmercedCandey2011	Sonification of astronomical data	True	False
+2-s2.0-84970956386	DyerStapleton2017	Transposing musical skill: sonification of movement as concurrent augmented feedback enhances learning in a bimanual task	True	True
+2-s2.0-84979792051	CamurriVolpe2016	The dancer in the eye: Towards a multi-layered computational framework of qualities in movement	True	False
+2-s2.0-84991111310	CamurriCanepa2016	A system to support the learning of movement qualities in dance: A case study on dynamic symmetry	True	False
+2-s2.0-85006041906	CsapóWersényi2016	A survey on hardware and software solutions for multimodal wearable assistive devices targeting the visually impaired	True	True
+2-s2.0-84947865877	CsapóWersényi2015	A survey of assistive technologies and applications for blind users on mobile platforms: a review and foundation for research	True	True
+2-s2.0-84872840793	StevensonSchlesinger2013	Effects of divided attention and operating room noise on perception of pulse oximeter pitch changes: A laboratory study	True	False
+2-s2.0-84947811039	WahnSchwandt2016	Multisensory teamwork: using a tactile or an auditory display to exchange gaze information improves performance in joint visual search	True	True
+2-s2.0-85063975275	WahnKönig2015	Audition and vision share spatial attentional resources, yet attentional load does not disrupt audiovisual integration	True	True
+2-s2.0-85009812516	MaesBuhmann2016	3Mo: A model for music-based biofeedback	True	True
+2-s2.0-84980349490	FujiiLulic2016	More feedback is better than less: Learning a novel upper limb joint coordination pattern with augmented auditory feedback	True	False
+2-s2.0-84953746445	EffenbergSchmitz2015	SoundScript – Supporting the acquisition of character writing by multisensory integration	True	True
+2-s2.0-84892616479	BrockSchmitz2012	If motion sounds: Movement sonification based on inertial sensor data	True	False
+2-s2.0-58349097927	ScheefBoecker2009	Multimodal motion processing in area V5/MT: Evidence from an artificial class of audio-visual events	True	True
+2-s2.0-84904458581	FrançoiseAlaoui2014	Vocalizing dance movement for interactive sonification of Laban Effort Factors	True	False
+2-s2.0-85083347960	BoyerBabayan2013	From ear to hand: The role of the auditory-motor loop in pointing to an auditory source	True	False
+2-s2.0-44649185628	SandersonWatson2008	Advanced auditory displays and head-mounted displays: Advantages and disadvantages for monitoring by the distracted anesthesiologist	True	True
+2-s2.0-84962859730	NeesHelbein2016	Speech Auditory Alerts Promote Memory for Alerted Events in a Video-Simulated Self-Driving Car Ride	True	True
+2-s2.0-0040844859	LoomisGolledge1998	Navigation system for the blind: Auditory display modes and guidance	True	False
+2-s2.0-84905046737	FinkRay2015	Individualization of head related transfer functions using principal component analysis	True	True
+2-s2.0-84905248159	GrijalvaMartini2014	Anthropometric-based customization of head-related transfer functions using Isomap in the horizontal plane	True	True
+2-s2.0-3242772950	ZotkinDuraiswami2004	Rendering localized spatial audio in a virtual auditory space	True	True
+2-s2.0-84956778895	LudovicoPresti2016	The sonification space: A reference system for sonification tasks	True	False
+2-s2.0-84956742819	GeronazzoBedin2016	Interactive spatial sonification for non-visual exploration of virtual maps	True	True
+2-s2.0-84860222109	Barrass2012	The aesthetic turn in sonification towards a social and cultural medium	True	False
+2-s2.0-84872192507	SpagnolGeronazzo2013	On the relation between pinna reflection patterns and head-related transfer function features	True	True
+2-s2.0-84923282916	XieZhong2015	Typical data and cluster analysis on head-related transfer functions from Chinese subjects	True	True
+2-s2.0-84908163202	JakusDicke2015	A user study of auditory, head-up and multi-modal displays in vehicles	True	False
+2-s2.0-84869188700	WeinbergHarsham2011	Evaluating the usability of a head-up display for selection from choice lists in cars	True	False
+2-s2.0-13144256718	HorreyWickens2004	Driving and side task performance: The effects of display clutter, separation, and modality	True	False
+2-s2.0-70349533039	VisellFontana2009	Sound design and perception in walking interactions	True	False
+2-s2.0-4644315384	HermannRitter2004	Sound and meaning in auditory data display	True	False
+2-s2.0-84887815904	SigristRauter2013	Terminal feedback outperforms concurrent visual, auditory, and haptic feedback in learning a complex rowing-type task	True	True
+2-s2.0-84926506586	DannaVelay2015	Basic and supplementary sensory feedback in handwriting	True	True
+2-s2.0-84918497350	DannaPazvillagrán2014	Movement sonification for the diagnosis and the rehabilitation of graphomotor disorders	True	True
+2-s2.0-84937039947	AndreopoulouBegault2015	Inter-Laboratory Round Robin HRTF Measurement Comparison	True	False
+2-s2.0-84918585163	JeonGable2015	Menu Navigation With In-Vehicle Technologies: Auditory Menu Cues Improve Dual Task Performance, Preference, and Workload	True	True
+2-s2.0-84930165254	LarssonNiemand2015	Using Sound to Reduce Visual Distraction from In-vehicle Human–Machine Interfaces	True	False
+2-s2.0-84919860097	SchaffertMattes2015	Effects of acoustic feedback training in elite-standard Para-Rowing	True	True
+2-s2.0-84892647555	CsaṕoWersényi2013	Overview of auditory representations in human-machine interfaces	True	True
+2-s2.0-84923250080	DubusBresin2015	Exploration and evaluation of a system for interactive sonification of elite rowing	True	True
+2-s2.0-84911365559	FiannacaApostolopoulous2014	Headlock: A wearable navigation aid that helps blind cane users traverse large open spaces	True	False
+2-s2.0-84949117748	RomighSimpson2014	Do you hear where i hear?: Isolating the individualized sound localization cues	True	False
+2-s2.0-84907919813	ParseihianJouffrais2014	Reaching nearby sources: Comparison between real and virtual sound and visual targets	True	True
+2-s2.0-84945117975	MeshramMehra2014	P-HRTF: Efficient personalized HRTF computation for high-fidelity spatial sound	True	True
+2-s2.0-84896364007	RoddyFurlong2014	Embodied aesthetics in auditory display	True	True
+2-s2.0-84896326676	Ballora2014	Sonification, science and popular music: In search of the 'wow'	True	False
+2-s2.0-84860214823	Greshamlancaster2012	Relationships of sonification to music and sound art	True	False
+2-s2.0-84869594581	JenseniusBjerkestrand2012	Exploring micromovements with motion capture and sonification	True	False
+2-s2.0-84892889849	Supper2014	Sublime frequencies: The construction of sublime listening experiences in the sonification of scientific data	True	False
+2-s2.0-0027876229	BrewsterWright1993	Evaluation of earcons for use in auditory human-computer interfaces	True	False
+2-s2.0-84875998209	BanfBlanz2013	Sonification of images for the visually impaired using a multi-level approach	True	False
+2-s2.0-79953118564	YoshidaKitani2011	EdgeSonic: Image feature sonification for the visually impaired	True	False
+2-s2.0-33947646337	WatsonSanderson2007	Designing for attention with sound: Challenges and extensions to ecological interface design	True	True
+2-s2.0-84875943183	SongShi2013	Carbon nanotubes-reinforced hollow fibre solid-phase microextraction coupled with high performance liquid chromatography for the determination of carbamate pesticides in apples	True	True
+2-s2.0-84878574473	SongShi2013	Carbon nanotubes reinforced hollow fiber solid phase microextraction for the determination of strychnine and brucine in urine	True	True
+2-s2.0-77953719492	Es'haghiGolsefidi2010	Carbon nanotube reinforced hollow fiber solid/liquid phase microextraction: A novel extraction technique for the measurement of caffeic acid in Echinacea purpurea herbal extracts combined with high-performance liquid chromatography	True	False
+2-s2.0-0036148885	LoebFitch2002	A laboratory evaluation of an auditory display designed to enhance intraoperative monitoring	True	False
+2-s2.0-20744441818	SandersonWatson2005	Advanced patient monitoring displays: Tools for continuous informing	True	True
+2-s2.0-84883261576	BetsworthRajput2013	Audvert: Using spatial audio to gain a sense of place	True	False
+2-s2.0-80053642067	McgookinBrewster2011	PULSE: An auditory display to provide a social vibe	True	False
+2-s2.0-84859072818	HasegawaIshijima2012	Realtime sonification of the center of gravity for skiing	True	False
+2-s2.0-84860224794	GrondHermann2012	Aesthetic strategies in sonification	True	False
+2-s2.0-84861014654	VarniDubus2012	Interactive sonification of synchronisation of motoric behaviour in social active listening to music with mobile devices	True	False
+2-s2.0-34447578955	Walker2007	Consistency of magnitude estimations with conceptual data dimensions used for sonification	True	True
+2-s2.0-41149131898	WilsonWalker2007	SWAN: System for wearable audio navigation	True	True
+2-s2.0-33745966449	WalkerLindsay2006	Navigation performance with a virtual auditory display: Effects of beacon sound, capture radius, and practice	True	True
+2-s2.0-85016909437	WalkerKramer2005	Mappings and Metaphors in Auditory Displays: An Experimental Assessment	True	False
+2-s2.0-20344382520	HermannHunt2005	An introduction to interactive sonification	True	False
+2-s2.0-28844478352	ChiariDozza2005	Audio-biofeedback for balance improvement: An accelerometry-based system	True	False
+2-s2.0-33749018649	BalloraPennycook2004	Heart rate sonification: A new approach to medical diagnosis	True	False
+2-s2.0-0032657953	BarrassKramer1999	Using sonification	True	True
+2-s2.0-84887486709	OhKane2013	Follow that sound: Using sonification and corrective verbal feedback to teach touchscreen gestures	True	True
+2-s2.0-78249234710	SuRosenzweig2010	Timbremap: Enabling the visually-impaired to use maps on touch-enabled devices	True	False
+2-s2.0-78651574684	WalkerMauney2010	Universal design of auditory graphs: A comparison of sonification mappings for visually impaired and sighted listeners	True	True
+2-s2.0-84885214966	BrockKristensson2013	Supporting blind navigation using depth sensing and sonification	True	False
+2-s2.0-33750944370	SainarayananNagarajan2007	Fuzzy image processing scheme for autonomous navigation of human blind	True	False
+2-s2.0-84879823128	KaklanisVotis2013	A mobile interactive maps application for a visually impaired audience	True	False
+2-s2.0-34248213127	BaierHermann2007	Event-based sonification of EEG rhythms in real time	True	False
+2-s2.0-84861949460	GonzalezSoma2012	Psycho-physiological assessment of a prosthetic hand sensory feedback system based on an auditory display: A preliminary study	True	True
+2-s2.0-84880838328	GonzalezSuzuki2012	Auditory display as a prosthetic hand sensory feedback for reaching and grasping tasks	True	False
+2-s2.0-84860990213	Dubus2012	Evaluation of four models for the sonification of elite rowing	True	True
+2-s2.0-84871761614	VazquezalvarezOakley2012	Auditory display design for exploration in mobile audio-augmented reality	True	False
+2-s2.0-70350459217	McgookinBrewster2009	Audio bubbles: Employing non-speech audio to support tourist wayfinding	True	False
+2-s2.0-0039907889	CohenAoki1993	Augmented audio reality: Telepresence/VR hybrid acoustic environments	True	False
+2-s2.0-84857081277	YoungBirrell2012	Ecological IVIS design: Using EID to develop a novel in-vehicle information system	True	False
+2-s2.0-79960924268	DefantiAcevedo2011	The future of the CAVE	True	False
+2-s2.0-52949125611	DefantiDawe2009	The StarCAVE, a third-generation CAVE and virtual reality OptIPortal	True	False
+2-s2.0-79960107288	BalloraGiacobe2011	Songs of cyberspace: An update on sonifications of network traffic to support situational awareness	True	True
+2-s2.0-79953704515	BalloraHall2010	Do you see what I hear: Experiments in multi-channel sound and 3D visualization for network monitoring?	True	False
+2-s2.0-34547178322	HeutenWichmann2006	Interactive 3D sonification for the exploration of city maps	True	False
+2-s2.0-0029568049	FlowersHauer1995	Musical versus visual graphs: Cross-modal equivalence in perception of time series data	True	False
+2-s2.0-77951210490	XieZhang2010	The audibility of spectral detail of head-Related transfer functions at high frequency	True	True
+2-s2.0-77951683538	DeloguPalmiero2010	Non-visual exploration of geographic maps: Does sonification help?	True	False
+2-s2.0-77954184524	MckeownIsherwood2010	Auditory displays as occasion setters	True	True
+2-s2.0-77954202496	McintireHavig2010	Visual search performance with 3-D auditory cues: Effects of motion, target location, and practice	True	True
+2-s2.0-77951639908	VarshosazMinayian2010	Enhancement of oral bioavailability of pentoxifylline by solid lipid nanoparticles	True	False
+2-s2.0-78049467754	VarshosazTabbakhian2010	Formulation and optimization of solid lipid nanoparticles of buspirone HCl for enhancement of its oral bioavailability	True	False
+2-s2.0-33745551811	HermannHöner2006	AcouMotion - An interactive sonification system for acoustic motion control	True	False
+2-s2.0-70449476734	SandersonLiu2009	Auditory displays in anesthesiology	True	True
+2-s2.0-33744931914	Sanderson2006	The multimodal world of medical monitoring displays	True	True
+2-s2.0-70449512263	AndersonSanderson2009	Sonification Design for Complex Work Domains: Dimensions and Distractors	True	True
+2-s2.0-57849125867	GiansantiDozza2009	Energetic assessment of trunk postural modifications induced by a wearable audio-biofeedback system	True	False
+2-s2.0-67650115075	WuLi2009	Scale-free music of the brain	True	False
+2-s2.0-20344392677	HinterbergerBaier2005	Parametric orchestral sonification of EEG in real time	True	False
+2-s2.0-70350676507	JeonDavison2009	Enhanced auditory menu cues improve dual task performance and are preferred with in-vehicle technologies	True	True
+2-s2.0-0031141950	Brewster1997	Using non-speech sound to overcome information overload	True	True
+2-s2.0-85057393013	NeesWalker2009	Auditory interfaces and sonification	True	True
+2-s2.0-1542334789	WatsonSanderson2004	Tailoring reveals information requirements: The case of anaesthesia alarms	True	True
+2-s2.0-41849096491	ShinPark2008	Enhanced vertical perception through head-related impulse response customization based on pinna response tuning in the median plane	True	True
+2-s2.0-38949201614	KogaHashimoto2008	New insight into hierarchical structures of carbon black dispersed in polymer matrices: A combined small-angle scattering study	True	True
+2-s2.0-28944450055	KogaTakenaka2005	Structure factors of dispersible units of carbon black filler in rubbers	True	True
+2-s2.0-60649100647	MokhtariTakemoto2008	Computer simulation of HRTFs for personalization of 3D audio	True	False
+2-s2.0-33845886957	KahanaNelson2007	Boundary element simulations of the transfer function of human heads and baffled pinnae using accurate geometric models	True	True
+2-s2.0-38149080442	SilvaNogueira2008	New approach on trace analysis of triclosan in personal care products, biological and environmental matrices	True	True
+2-s2.0-35348913766	NengPinto2007	Development, optimisation and application of polyurethane foams as new polymeric phases for stir bar sorptive extraction	True	True
+2-s2.0-34247593466	HondaShibata2007	Transfer effects on sound localization performances from playing a virtual three-dimensional auditory game	True	False
+2-s2.0-33750914664	Iwaya2006	Individualization of head-related transfer functions with tournament-style listening test: Listening with other's ears	True	False
+2-s2.0-33745754794	ZahorikBangayan2006	Perceptual recalibration in human sound localization: Learning to remediate front-back reversals	True	True
+2-s2.0-29744431535	SmithWalker2005	Effects of auditory context cues and training on performance of a point estimation sonification task	True	True
+2-s2.0-0036512035	NeuhoffWayand2002	Pitch and loudness interact in auditory displays: Can the data get lost in the map?	True	False
+2-s2.0-1642579600	MiliosKapralos2003	Sonification of Range Information for 3-D Space Perception	True	False
+2-s2.0-33750732612	VialatteCichocki2006	Sparse bump sonification: A new tool for multichannel EEG diagnosis of mental disorders; application to the detection of the early stage of Alzheimer's disease	True	True
+2-s2.0-3142727188	CatchpoleMckeown2004	Localizable auditory warning pulses	True	True
+2-s2.0-0028835281	HaasCasali1995	Perceived urgency of and response time to multi-tone and frequency-modulated warning signals in broadband noise	True	False
+2-s2.0-34248524996	MarstonLoomis2007	Orientation & mobility: Nonvisual route following with guidance from a simple haptic or auditory display	True	False
+2-s2.0-38349000971	SongZhizhong2007	Individualization of head-related transfer function for three-dimensional virtual auditory display: A review	True	True
+2-s2.0-85019477834	McgookinBrewster2004	Understanding Concurrent Earcons: Applying Auditory Scene Analysis Principles to Concurrent Earcon Recognition	True	True
+2-s2.0-0033932818	TranLetowski2000	Evaluation of acoustic beacon characteristics for navigation tasks	True	False
+2-s2.0-33745739587	BlancoBiever2006	The impact of secondary task cognitive processing demand on driving performance	True	False
+2-s2.0-20344378960	ZhaoSmith2005	Interactive sonification of choropleth maps	True	False
+2-s2.0-84980326211	WightmanKistler1993	Multidimensional scaling analysis of head-related transfer functions	True	False
+2-s2.0-84866515118	BegaultGodfroy2006	Design and verification of HeadZap, A semiautomated HRIR measurement system	True	False
+2-s2.0-41849125271	KimSeo2006	Vibrotactile display for driving safety information	True	False
+2-s2.0-79961201310	TraylorTan2002	Development of a wearable haptic display for situation awareness in altered-gravity environment: Some initial findings	True	False
+2-s2.0-33747084848	AlghamdiSudol2006	Encapsulation of titanium dioxide in styrene/n-butyl acrylate copolymer by miniemulsion polymerization	True	False
+2-s2.0-0034506614	ErdemSudol2000	Encapsulation of inorganic particles via miniemulsion polymerization. I. Dispersion of titanium dioxide particles in organic media using OLOA 370 as stabilizer	True	False
+2-s2.0-0034503851	ErdemSudol2000	Encapsulation of inorganic particles via miniemulsion polymerization. II. Preparation and characterization of styrene miniemulsion droplets containing TiO2 particles	True	False
+2-s2.0-0034499238	ErdemSudol2000	Encapsulation of inorganic particles via miniemulsion polymerization. III. Characterization of encapsulation	True	False
+2-s2.0-0033663533	ErdemSudol2000	Encapsulation of inorganic particles via miniemulsion polymerization	True	False
+2-s2.0-0004046903	PollackFicks1954	Information of Elementary Multidimensional Auditory Displays	True	False
+2-s2.0-85016877281	FlowersBuhman2005	Data Sonification from the Desktop: Should Sound Be Part of Standard Data Analysis Software	True	False
+2-s2.0-25444448740	WalkerLindsay2005	Using virtual environments to prototype auditory navigation displays	True	True
+2-s2.0-20344387222	RathRocchesso2005	Continuous sonic feedback from a rolling ball	True	False
+2-s2.0-0037619112	RocchessoBresin2003	Sounding objects	True	False
+2-s2.0-41549162986	WickensDixon2005	Auditory preemption versus multiple resources: Who wins in interruption management?	True	False
+2-s2.0-10444275162	LiuLee2004	New pathway for sonoelectrochemical synthesis of gold-silver alloy nanoparticles from their bulk substrates	True	True
+2-s2.0-10944228203	LiuLin2004	Size-controlled synthesis of gold nanoparticles from bulk gold substrates by sonoelectrochemical methods	True	True
+2-s2.0-1542360369	SandersonCrawford2004	Visual and auditory attention in patient monitoring: a formative analysis	True	False
+2-s2.0-0442294452	SeagullWickens2001	When is less more? Attention and workload in auditory, visual, and redundant patient-monitoring conditions	True	False
+2-s2.0-0030326327	BegaultPittman1996	Three-Dimensional Audio Versus Head-Down Traffic Alert and Collision Avoidance System Displays	True	False
+2-s2.0-0033226024	GishStaplin1999	Sensory and cognitive factors affecting automotive head-up display effectiveness	True	False
+2-s2.0-0030159416	HendrixBarfield1996	The sense of presence within auditory virtual environments	True	False
+2-s2.0-84991860256	WenzelFoster1993	Perceptual consequences of interpolating head-related transfer functions during spatial synthesis	True	False
+2-s2.0-2642574134	MentlerMayer2004	Characterisation of soil aggregate stability by ultrasonic dispersion	True	False
+2-s2.0-0027871282	RaineSo1993	An energy based parameter for the assessment of aggregate bond energy	True	False
+2-s2.0-4043065067	VeltmanOving2004	3-D audio in the fighter cockpit improves task performance	True	False
+2-s2.0-84860066607	EdworthyHellier2004	Designing trend-monitoring sounds for helicopters: Methodological issues and an application	True	False
+2-s2.0-0344494549	LiuChuang2003	Synthesis and Characterization of Gold/Polypyrrole Core-Shell Nanocomposites and Elemental Gold Nanoparticles Based on the Gold-Containing Nanocomplexes Prepared by Electrochemical Methods in Aqueous Solutions	True	True
+2-s2.0-0242368184	Martens2003	Perceptual evaluation of filters controlling source direction: Customized and generalized HRTFs for binaural synthesis	True	True
+2-s2.0-84942318005	EnriquezMaclean2003	The hapticon editor: A tool in support of haptic communication research	True	False
+2-s2.0-0036530351	HardingKakadiaris2002	A multi-sensory system for the investigation of geoscientific data	True	False
+2-s2.0-0033340336	FroehlichBarrass1999	Exploring geo-scientific data in virtual environments	True	False
+2-s2.0-0036624731	MacdonaldBalakrishnan2002	Intelligibility of speech in a virtual 3-D environment	True	False
+2-s2.0-0034037674	DrullmanBronkhorst2000	Multichannel speech intelligibility and talker recognition using monaural, binaural, and three-dimensional auditory presentation	True	False
+2-s2.0-0036568890	EnokidaAbdelfatah2002	Ultrasound-enhanced dissolution of UO2 in supercritical CO2 containing a CO2-philic complexant of tri-n-butylphosphate and nitric acid	True	False
+2-s2.0-0035194496	TrofimovSamsonov2001	Ultrasound enhancement of dissolution kinetics of uranium oxides in supercritical carbon dioxide	True	False
+2-s2.0-0036810594	VickersAlty2002	Musical program auralisation: A structured approach to motif design	True	False
+2-s2.0-0036811721	VickersAlty2002	Using music to communicate computing information	True	True
+2-s2.0-0036890881	VickersAlty2002	When bugs sing	True	False
+2-s2.0-0034149797	WalkerEhrenstein2000	Pitch and pitch change interact in auditory displays	True	False
+2-s2.0-32744468268	ZotkinDuraiswami2002	Virtual audio system customization using visual matching of ear parameters	True	True
+2-s2.0-0034291818	Liu2000	Effect of advanced traveler information system displays on younger and older drivers' performance	True	True
+2-s2.0-0020735295	WickensSandry1983	Compatibility and resource competition between modalities of input, central processing, and output	True	False
+2-s2.0-0029406633	CrispienEhrenberg1995	Evaluation of the 'cocktail-party effect' for multiple speech stimuli within a spatial auditory display	True	False
+2-s2.0-0033989374	LangendijkBronkhorst2000	Fidelity of three-dimensional-sound reproduction using a virtual auditory display	True	False
+2-s2.0-0002350811	KaperWiebel1999	Data sonification and sound visualization	True	False
+2-s2.0-0032913154	JovanovStarcevic1999	Perceptualization of biomedical data: An experimental environment for visualization and sonification of brain electrical activity	True	False
+2-s2.0-85075540797	GrinsteinSmith1990	The perceptualization of scientific data	True	False
+2-s2.0-0032914505	RudmannStrybel1999	Auditory spatial facilitation of visual search performance: Effect of cue precision and distractor density	True	False
+2-s2.0-0031796123	NelsonHettinger1998	Effects of localized auditory information on visual target detection performance using a helmet-mounted display	True	False
+2-s2.0-33749063179	SalvadorMinghim1998	Sonification to support visualization tasks	True	True
+2-s2.0-0029534423	MinghimForrest1995	Illustrated analysis of sonification for scientific visualisation	True	False
+2-s2.0-0028121959	BrewsterWright1994	Design and evaluation of an auditory-enhanced scrollbar	True	False
+2-s2.0-0031171711	KingOldfield1997	The impact of signal bandwidth on auditory localization: Implications for the design of three-dimensional audio displays	True	False
+2-s2.0-0031340632	PangWittenbrink1997	Approaches to uncertainty visualization	True	True
+2-s2.0-0030400448	LodhaWilson1996	LISTEN: Sounding uncertainty visualization	True	False
+2-s2.0-0028220816	MckinleyErickson1994	3-Dimensional auditory displays: Development, applications, and performance	True	False
+2-s2.0-0029274664	MadhyasthaReed1995	Data Sonification: Do You See What I Hear?	True	False
+2-s2.0-0029550541	GilkeyAnderson1995	The accuracy of absolute localization judgments for speech stimuli	True	False
+2-s2.0-0028668755	RaineSo1994	Ultrasonic dispersion of soil in water: The effect of suspension properties on energy dissipation and soil dispersion	True	False
+2-s2.0-0027788522	LevyAgassi1993	Microaggregate stability of kaolinitic and illitic soils determined by ultrasonic energy	True	False
+2-s2.0-84900549189	WenzelWightman1991	Localization with non-individualized virtual acoustic display cues	True	False
+2-s2.0-0026180604	Begault1991	Preferred sound intensity increase for sensation of half distance.	True	False
+2-s2.0-0025849852	ScalettiCraig1991	Using sound to extract meaning from complex data	True	False
+2-s2.0-0018432571	GugliemelliDoane1979	Preparation of soapless latexes by sonification of starch‐based poly(isoprene–co–acrylonitrile) graft reaction mixtures	True	False
+2-s2.0-0017015837	GugliemelliSwanson1976	Latexes of starch‐based graft polymers containing polymerized acrylonitrile	True	False
+2-s2.0-0001556389	Pollack1953	The Information of Elementary Auditory Displays. II	True	False
+2-s2.0-84933881808	Pollack1952	The Information of Elementary Auditory Displays	True	False
+2-s2.0-85209650026	WangYao2025	Effects of spectral peaks and notches in head-related transfer function on median plane sound localization with dynamic binaural playback	False	True
+2-s2.0-85210986733	Xie2024	Dynamic auditory localization cue and its role on spatial sound reproduction 动态听觉定位因素及其在空间声重放的作用	False	True
+2-s2.0-85171497679	XieLiu2023	Auditory vertical localization in the median plane with conflicting dynamic interaural time difference and other elevation cues	False	True
+2-s2.0-85210755595	Raglio2025	Applications of technology innovations in music therapy practice	False	True
+2-s2.0-85178259399	RaglioDemaria2023	Movement Sonification Techniques to Improve Balance in Parkinson’s Disease: A Pilot Randomized Controlled Trial	False	True
+2-s2.0-85185224579	VidalTajadurajimenez2024	Body Transformation: An Experiential Quality of Sensory Feedback Wearables for Altering Body Perception	False	True
+2-s2.0-85205374316	SinghHrobat2024	Pushed by Sound: Effects of Sound and Movement Direction on Body Perception, Experience Quality, and Exercise Support	False	True
+2-s2.0-85194863863	D'adamoRoellesur2024	SoniWeight Shoes: Investigating Efects and Personalization of a Wearable Sound Device for Altering Body Perception and Behavior	False	True
+2-s2.0-85133801459	NownUpadhyay2023	A Mapping Review of Real-Time Movement Sonification Systems for Movement Rehabilitation	False	True
+2-s2.0-85096625254	CibrianLeyflores2021	Interactive sonification to assist children with autism during motor therapeutic interventions	False	True
+2-s2.0-85197756893	Donnelly2024	The Motion Augmented Acoustic Skate (MAAS) System: A Device for Real-Time Figure Skating Sonification	False	True
+2-s2.0-85185956999	AgostiniSors2024	Enhancing Perceptual—Motor Skills in Sports: The Role of Ecological Sounds	False	True
+2-s2.0-85204988498	KantanDahl2024	Developing Enjoyable Auditory Feedback Paradigms to Alleviate Toe Walking in Children with Cerebral Palsy	False	True
+2-s2.0-85205015126	KantanDahl2024	Making Movement Sonification Usable in Clinical Gait Rehabilitation: A User-Centered Study	False	True
+2-s2.0-85205013062	ChoiAndres2024	Tonal Cognition in Sonification: Exploring the Needs of Practitioners in Sonic Interaction Design	False	True
+2-s2.0-85164032130	Choi2023	Music theoretical approach to auditory interface design: progressive, explainable, and accessible	False	True
+2-s2.0-85203448740	KantanDahl2024	Sonifying gait kinematics: generating water wading sounds through a digital Foley approach	False	True
+2-s2.0-85125858877	KantanSpaich2022	An Embodied Sonification Model for Sit-to-Stand Transfers	False	True
+2-s2.0-85162255025	ValdezAlvarezmolina2023	Zens: Designing and evaluating a movement sonification interface to alter body and flexibility perception in Yoga	False	True
+2-s2.0-85204394629	SeiçaRoque2024	A Design Model for Systemic Sonification	False	True
+2-s2.0-85174569197	SeiçaRoque2023	An interdisciplinary journey towards an aesthetics of sonification experience	False	True
+2-s2.0-85139862524	SeiçaRoque2022	An Illustrative Design Case of Systemic Sonification	False	True
+2-s2.0-85204350111	LindborgCaiola2024	Re(de)fining Sonification: Project Classification Strategies in the Data Sonification Archive	False	True
+2-s2.0-85195487913	EngeElmquist2024	Open Your Ears and Take a Look: A State-of-the-Art Report on the Integration of Sonification and Visualization	False	True
+2-s2.0-85183027675	LenziTerenghi2023	The design of Datascapes: toward a design framework for sonification for anomaly detection in AI-supported networked environments	False	True
+2-s2.0-85147680345	LindborgLenzi2023	Climate data sonification and visualization: An analysis of topics, aesthetics, and characteristics in 32 recent projects	False	True
+2-s2.0-85192678577	Ziemer2024	Sound Terminology in Sonification	False	True
+2-s2.0-85175543792	LinkeBader2023	Model-based sonification based on the impulse pattern formulation	False	True
+2-s2.0-85139816674	ZiemerSchultheis2022	Both Rudimentary Visualization and Prototypical Sonification can Serve as a Benchmark to Evaluate New Sonification Designs	False	True
+2-s2.0-85140205972	ZiemerSchultheis2022	PAMPAS: A PsychoAcoustical Method for the Perceptual Analysis of multidimensional Sonification	False	True
+2-s2.0-85202587426	SchwartzKing2024	EchoSee: An Assistive Mobile Application for Real-Time 3D Environment Reconstruction and Sonification Supporting Enhanced Navigation for People with Vision Impairments †	False	True
+2-s2.0-85049396114	MassicetiHicks2018	Stereosonic vision: Exploring visual-to-auditory sensory substitution mappings in an immersive virtual reality navigation paradigm	False	True
+2-s2.0-85191754890	BraunTfirn2024	Listening to life: Sonification for enhancing discovery in biological research	False	True
+2-s2.0-85194873985	MartinKnotts2024	Innovative communication of molecular evolution through sound: a biological sonification concert	False	True
+2-s2.0-85092395604	Temple2020	Real-Time audio and visual display of the Coronavirus genome	False	True
+2-s2.0-85018616426	Temple2017	An auditory display tool for DNA sequence analysis	False	True
+2-s2.0-85191992877	ElmquistEnge2024	Parallel Chords: an audio-visual analytics design for parallel coordinates	False	True
+2-s2.0-85183851360	Walker2023	THE PAST, PRESENT, AND PROMISE OF SONIFICATION PASADO, PRESENTE Y PROMESAS DE LA SONIFICACIÓN	False	True
+2-s2.0-85169160278	FitzpatrickNeff2023	Perceptually congruent sonification of auditory line charts	False	True
+2-s2.0-85168491397	EngeRind2023	Towards a unified terminology for sonification and visualization	False	True
+2-s2.0-85132253592	AignerEnge2022	Workshop on Audio-Visual Analytics	False	True
+2-s2.0-85117880937	EngeRind2021	It's about Time: Adopting theoretical constructs from visualization for sonification	False	True
+2-s2.0-85117940396	Rönnberg2021	Sonification for conveying data and emotion	False	True
+2-s2.0-85071458064	Rönnberg2019	Musical sonification supports visual discrimination of color intensity	False	True
+2-s2.0-85076766294	Iber2019	Auditory Display in Workplace Environments	False	True
+2-s2.0-85194881984	KimKim2024	Erie: A Declarative Grammar for Data Sonification	False	True
+2-s2.0-85188627991	SeoXia2024	MAIDR: Making Statistical Visualizations Accessible with Multimodal Data Representation	False	True
+2-s2.0-85181568409	ChunduryReyazuddin2024	TactualPlot: Spatializing Data as Sound Using Sensory Substitution for Touchscreen Accessibility	False	True
+2-s2.0-85194918818	HessGreenlee2024	Auditory vigilance task performance and cerebral hemodynamics: effects of spatial uncertainty	False	True
+2-s2.0-85143594540	GreenleeHess2024	Vigilance to Spatialized Auditory Displays: Initial Assessment of Performance and Workload	False	True
+2-s2.0-85212298115	SimmonsBremner2024	The ballad of the bots: sonification using cognitive metaphor to support immersed teleoperation of robot teams	False	True
+2-s2.0-85138224307	BremnerMitchell2022	The impact of data sonification in virtual reality robot teleoperation	False	True
+2-s2.0-85197083675	RossoGener2024	Perceptual coupling in human dyads: Kinematics does not affect interpersonal synchronization	False	True
+2-s2.0-85135688152	DeschampsSanderson2024	Auditory Sequences Presented With Spearcons Support Better Multiple Patient Monitoring Than Single-Patient Alarms: A Preclinical Simulation	False	True
+2-s2.0-85167820384	LiMoledo2023	Representing patient vital signs with overlapping or serial earcon components	False	True
+2-s2.0-85136534267	ClarkeLeav2024	Enhanced Neonatal Pulse Oximetry Sounds for the First Minutes of Life: A Laboratory Trial	False	True
+2-s2.0-85141915705	HinckfussSanderson2023	Evaluating enhanced pulse oximetry auditory displays for neonatal oxygen targeting: A randomized laboratory trial with clinicians and non-clinicians	False	True
+2-s2.0-85052300537	Baldwin2016	Auditory cognition and human performance: Research and applications	False	True
+2-s2.0-84884412751	ShawSatterfield2013	Using cerebral hemovelocity to measure workload during a spatialised auditory vigilance task in novice and experienced observers	False	True
+2-s2.0-85197266007	BarkasiBansal2024	Online reach adjustments induced by real-time movement sonification	False	True
+2-s2.0-85205277024	EffenbergHwang2024	Movement sonification: Intermodal transformation of movement data to enhance motor learning	False	True
+2-s2.0-85173418650	PeyreRobybrami2023	Effect of sonification types in upper-limb movement: a quantitative and qualitative study in hemiparetic and healthy participants	False	True
+2-s2.0-85125348630	LiuMagalhaes2022	Motor Variability in Complex Gesture Learning: Effects of Movement Sonification and Musical Background	False	True
+2-s2.0-85129250980	FuchsKnauer2020	Audio Feedback for Device-Supported Balance Training: Parameter Mapping and Influencing Factors	False	True
+2-s2.0-85079761986	FehseSchmitz2020	Auditory coding of reaching space	False	True
+2-s2.0-85081914306	O’brienJuhas2020	Online sonification for golf putting gesture: reduced variability of motor behaviour and perceptual judgement	False	True
+2-s2.0-85207428123	NguyenDaly2024	Low-Power Real-Time Seizure Monitoring using AI-Assisted Sonification of Neonatal EEG	False	True
+2-s2.0-85165791505	VannguyenDaly2023	A real-time and ultra-low power implementation of an AI-assisted sonification algorithm for neonatal EEG	False	True
+2-s2.0-85204390359	SchützMatinfar2024	A Framework for Multimodal Medical Image Interaction	False	True
+2-s2.0-85174729650	MatinfarSalehi2023	From Tissue to Sound: Model-Based Sonification of Medical Imaging	False	True
+2-s2.0-85160016730	HoqueEhteshamulhaque2023	Accessible Data Representation with Natural Sound	False	True
+2-s2.0-85187390276	GuaresePretty2024	Exploring Audio Interfaces for Vertical Guidance in Augmented Reality via Hand-Based Feedback	False	True
+2-s2.0-85148440054	GuareseZambetta2022	Evaluating micro-guidance sonification methods in manual tasks for Blind and Visually Impaired people	False	True
+2-s2.0-85199198237	DamLee2024	Audio augmented reality using sonification to enhance visual art experiences: Lessons learned	False	True
+2-s2.0-85175550542	DamSiddiqui2024	Taxonomy and definition of audio augmented reality (AAR): A grounded theory study	False	True
+2-s2.0-85175554380	DamLee2023	Enhancing Art Gallery Visitors' Experiences through Audio Augmented Reality Technology	False	True
+2-s2.0-85149320247	NadriKo2024	Sonification Use Cases in Highly Automated Vehicles: Designing and Evaluating Use Cases in Level 4 Automation	False	True
+2-s2.0-85138309734	NadriKo2021	Novel Auditory Displays in Highly Automated Vehicles: Sonification Improves Driver Situation Awareness, Perceived Workload, and Overall Experience	False	True
+2-s2.0-85209997331	Roddy2024	The Design and Formalization of an Embodied Soundscape Sonification Framework	False	True
+2-s2.0-85079143885	RoddyBridges2020	Mapping for meaning: the embodied sonification listening model and its implications for the mapping problem in sonic information design	False	True
+2-s2.0-85038389207	Roddy2017	Composing the Good Ship Hibernia and the hole in the bottom of the world	False	True
+2-s2.0-85188660056	PoudratchiSekhavat2024	BatSight: A Navigation Game to Map Environmental Information into Audio Cues	False	True
+2-s2.0-85123831583	SekhavatAzadehfar2022	Sonification and interaction design in computer games for visually impaired individuals	False	True
+2-s2.0-85174418987	PelegLahav2024	Listening to or looking at models: Learning about dynamic complex systems in science among learners who are blind and learners who are sighted	False	True
+2-s2.0-85052530775	LahavHagab2018	Listen to the models: Sonified learning models for people who are blind	False	True
+2-s2.0-84996922095	LahavChagab2016	Use of a sonification system for science learning by people who are blind	False	True
+2-s2.0-84987789015	PelegLevy2016	Listening versus looking: Learning about dynamic complex systems in science among blind and sighted students	False	True
+2-s2.0-85193501838	TabbarahCao2024	Sonically-enhanced in-vehicle air gesture interactions: evaluation of different spearcon compression rates	False	True
+2-s2.0-85173820011	TabbarahCao2023	Novel In-Vehicle Gesture Interactions: Design and Evaluation of Auditory Displays and Menu Generation Interfaces	False	True
+2-s2.0-85129989039	SongWang2022	Novel sonification designs: Compressed, iconic, and pitch-dynamic auditory icons boost driving behavior	False	True
+2-s2.0-85063039419	SterkenburgLandry2019	Design and evaluation of auditory-supported air gesture controls in vehicles	False	True
+2-s2.0-85160667552	KacemZbiss2024	Wave space sonification of the folding pathways of protein molecules modeled as hyper-redundant robotic mechanisms	False	True
+2-s2.0-85205988116	KacemZbiss2024	TRANSFORMING MOTION INTO SOUND: A NOVEL SONIFICATION APPROACH FOR TEAMS OF MOBILE ROBOTS	False	True
+2-s2.0-85193719030	GhambariArsham2024	The Effects of Motionless Interventions Based on Visual-Auditory Instructions With Sonification on Learning a Rhythmic Motor Skill	False	True
+2-s2.0-85196265080	Bergsland2024	Beginnings and endings—dance phrase edges in an interactive dance study	False	True
+2-s2.0-85137717553	Bergsland2022	DESIGNING INTERACTIVE SONIFICATIONS FOR THE EXPLORATION OF DANCE PHRASE EDGES	False	True
+2-s2.0-85204408270	ParimiAbdoli2024	The Effect of Internal and external imagery on learning badminton long serve skill: The role of visual and audiovisual imagery	False	True
+2-s2.0-85147881727	RamezanzadeBadicu2023	Sonification of Motor Imagery in the Basketball Jump Shot: Effect on Muscle Activity Amplitude	False	True
+2-s2.0-85193522486	ClarkDoryab2024	Changing Your Tune: Lessons for Using Music to Encourage Physical Activity	False	True
+2-s2.0-85146423471	ClarkDoryab2023	Sounds of Health: Using Personalized Sonification Models to Communicate Health Information	False	True
+2-s2.0-85138039656	Xie2022	Spatial sound: Principles and applications	False	True
+2-s2.0-85060774997	JiangXie2018	The effects of dynamic cue and spectral cue on auditory vertical localization	False	True
+2-s2.0-85210981260	ZhuXie2024	An experimental investigation on cues of auditory distance perception in the free field based on dynamic virtual experiment 自由场听觉距离感知因素的动态虚拟实验研究	False	True
+2-s2.0-84983446097	SpagnolTavazzi2017	Distance rendering and perception of nearby virtual sound sources with a near-field filter model	False	True
+2-s2.0-85057351159	EffenbergHwang2018	Auditory Modulation of Multisensory Representations	False	True
+2-s2.0-85210627015	Pauletto2024	Sonification and sustainability	False	True
+2-s2.0-85136726985	PaulettoBresin2021	Sonification Research and Emerging Topics	False	True
+2-s2.0-85181449398	OrthmannLeite2023	Sounding Robots: Design and Evaluation of Auditory Displays for Unintentional Human-robot Interaction	False	True
+2-s2.0-85170233153	LatupeirissaPanariello2023	Probing Aesthetics Strategies for Robot Sound: Complexity and Materiality in Movement Sonification	False	True
+2-s2.0-85084391030	LatupeirissaFrid2019	Sonic characteristics of robots in films	False	True
+2-s2.0-85166043752	DupréDenjean2023	Analysis by synthesis of engine sounds for the design of dynamic auditory feedback of electric vehicles	False	True
+2-s2.0-85164615389	DupréDenjean2023	Spatial Integration of Dynamic Auditory Feedback in Electric Vehicle Interior	False	True
+2-s2.0-85123173112	DupreDenjean2021	Spatial Sound Design in a Car Cockpit: Challenges and Perspectives	False	True
+2-s2.0-85162913085	NearyLi2023	Effects of multitasking on interpreting a spearcon sequence display for monitoring multiple patients	False	True
+2-s2.0-85144283379	SamaraDeriche2023	Design and Implementation of a Real-Time Color Recognition System for the Visually Impaired	False	True
+2-s2.0-85118374280	OsińskiŁukowska2021	Colorophone 2.0: A wearable color sonification device generating live stereo-soundscapes—design, implementation, and usability audit	False	True
+2-s2.0-85139706158	WalkerKramer2021	ECOLOGICAL ECOLOGICAL PSYCHOACOUSTICS AND AUDITORY DISPLAYS: HEARING, GROUPING, AND MEANING MAKING	False	True
+2-s2.0-85092430677	MihalasAndor2020	Adding sound to medical data	False	True
+2-s2.0-84966604744	PapachristodoulouBetella2014	Sonification of large datasets in a 3D immersive environment: A neuroscience case study	False	True
+2-s2.0-84949788064	Goudarzi2014	Contextual inquiry for a climate audio interface	False	True
+2-s2.0-84887825338	NeesBerry2013	Audio assistive technology and accommodations for students with visual impairments: Potentials and problems for delivering curricula and educational assessments	False	True
+2-s2.0-84924940609	Worrall2012	An Introduction to Data Sonification	False	True
+2-s2.0-70349996074	HusseinTilevich2009	Sonification design guidelines to enhance program comprehension	False	True
+2-s2.0-52249087549	NeesWalker2008	Data density and trend reversals in auditory graphs: Effects on point-estimation and trend-identification tasks	False	True
+2-s2.0-81855214297	PeresBest2008	Auditory Interfaces	False	True
+2-s2.0-85160261366	BoevéGiot2023	Parameter Mapping Sonification of Human Olfactory Thresholds	False	True
+2-s2.0-85118788821	BoevéGiot2021	Chemical composition: Hearing insect defensive volatiles	False	True
+2-s2.0-85164195254	MannoneSeidita2023	Quantum Robotic Swarms: What, Why, and How	False	True
+2-s2.0-85140739696	MannoneSeidita2022	Quantum RoboSound: Auditory Feedback of a Quantum-Driven Robotic Swarm	False	True
+2-s2.0-85164109296	ElmquistBock2023	SonAir: the design of a sonification of radar data for air traffic control	False	True
+2-s2.0-85150252243	AsonitisAllmendinger2023	SonOpt: understanding the behaviour of bi-objective population-based optimisation algorithms through sound	False	True
+2-s2.0-85128945959	AsonitisAllmendinger2022	SonOpt: Sonifying Bi-objective Population-Based Optimization Algorithms	False	True
+2-s2.0-85132111137	RehSchmitz2022	Loudness affects motion: asymmetric volume of auditory feedback results in asymmetric gait in healthy young adults	False	True
+2-s2.0-85106712148	LiuDementyev2021	Sonichoop: Using interactive sonification to support aerial hoop practices	False	True
+2-s2.0-85123041768	Giomi2020	Somatic Sonification in Dance Performances. from the Artistic to the Perceptual and Back	False	True
+2-s2.0-85159828340	CommereRouat2023	Evaluation of Short-Range Depth Sonifications for Visual-to-Auditory Sensory Substitution	False	True
+2-s2.0-85136887688	CommereRouat2023	Sonified Distance in Sensory Substitution Does Not Always Improve Localization: Comparison With a 2-D and 3-D Handheld Device	False	True
+2-s2.0-85144337526	SanghaviZhang2023	Exploring the influence of driver affective state and auditory display urgency on takeover performance in semi-automated vehicles: Experiment and modelling	False	True
+2-s2.0-85093086491	SanghaviZhang2020	Effects of Anger and Display Urgency on Takeover Performance in Semi-automated Vehicles	False	True
+2-s2.0-85159857424	AhmetovicAvanzini2023	Sonification of navigation instructions for people with visual impairment	False	True
+2-s2.0-85118631013	PrestiAhmetovic2021	Iterative Design of Sonification Techniques to Support People with Visual Impairments in Obstacle Avoidance	False	True
+2-s2.0-85167406447	Giomi2023	Frequencies of gesture: archiving and re-embodying kinesthetic traces through technical inscription into sound and image	False	True
+2-s2.0-85174896193	Ziemer2023	Three-dimensional sonification as a surgical guidance tool	False	True
+2-s2.0-85089348105	VajsbaherZiemer2020	A multi-modal approach to cognitive training and assistance in minimally invasive surgery	False	True
+2-s2.0-85122066993	PoretIbarboure2021	PERIPHERAL AUDITORY DISPLAY for 3D-PRINTING PROCESS MONITORING	False	True
+2-s2.0-85129268979	ToffaMignotte2023	Dataset and semantic based-approach for image sonification	False	True
+2-s2.0-85100263635	ToffaMignotte2021	A Hierarchical Visual Feature-Based Approach for Image Sonification	False	True
+2-s2.0-85159583038	GuaresePretty2023	Evoking empathy with visually impaired people through an augmented reality embodiment experience	False	True
+2-s2.0-85182606562	BruTrautner2023	Line Harp: Importance-Driven Sonification for Dense Line Charts	False	True
+2-s2.0-85204903690	MateosLópez2023	Sonification and journalism: how to play data through sounds Sonificación y periodismo: la representación de datos mediante sonidos	False	True
+2-s2.0-85128362247	RönnbergRingdahl2023	Measurement and sonification of construction site noise and particle pollution data	False	True
+2-s2.0-85069181714	Rönnberg2019	Sonification supports perception of brightness contrast	False	True
+2-s2.0-85151734917	LiuHuang2022	Median-Plane Head-Related Transfer Function Personalization Using Two-Dimensional Independent Component Analysis	False	True
+2-s2.0-85067234412	LiuSong2019	A hybrid algorithm for predicting median-plane head-related transfer functions from anthropometric measurements	False	True
+2-s2.0-85139820636	SenanCorbetta2022	Towards Sound-based Crowd Management: Investigating Sonification for Pedestrian Steering	False	True
+2-s2.0-85139863679	SenanHengeveld2022	Sounding Obstacles for Social Distance Sonification	False	True
+2-s2.0-85140910286	KantanDahl2022	Sound-Guided 2-D Navigation: Effects of Information Concurrency and Coordinate System	False	True
+2-s2.0-85137697272	Kantan2022	Comparing Sonification Strategies Applied to Musical and Non-Musical Signals for Auditory Guidance Purposes	False	True
+2-s2.0-85139258305	GaoWang2022	Exploring Sonification Mapping Strategies for Spatial Auditory Guidance in Immersive Virtual Environments	False	True
+2-s2.0-85074045834	ŠabićChen2021	Toward a Better Understanding of In-Vehicle Auditory Warnings and Background Noise	False	True
+2-s2.0-85108004447	NadriLee2021	Effects of auditory display types and acoustic variables on subjective driver assessment in a rail crossing context	False	True
+2-s2.0-85063516838	CabralRemijn2019	Auditory icons: Design and physical characteristics	False	True
+2-s2.0-85046959845	GlatzKrupenia2018	Use the right sound for the right job: Verbal commands and auditory icons for a task-management system favor different information processes in the brain	False	True
+2-s2.0-85050830294	AmerJohnson2018	Earcons versus auditory icons in communicating computing events: Learning and user preference	False	True
+2-s2.0-85136983074	ZhaoXie2022	An Algorithm for Generating Virtual Sources in Dynamic Virtual Auditory Display Based on Tensor Decomposition of Head-Related Impulse Responses	False	True
+2-s2.0-85074005348	LahavKittany2022	Perception of sonified representations of complex systems by people who are blind	False	True
+2-s2.0-85124151797	ArevaloKariyado2022	Virtual Reality Tool for Exploration of Three-Dimensional Cellular Automata	False	True
+2-s2.0-85107453655	KariyadoArevalo2021	Auralization of Three-Dimensional Cellular Automata	False	True
+2-s2.0-85133358436	ArcherCottingham2022	Listening to the Magnetosphere: How Best to Make ULF Waves Audible	False	True
+2-s2.0-85056315592	ArcherHartinger2018	First Results From Sonification and Exploratory Citizen Science of Magnetospheric ULF Waves: Long-Lasting Decreasing-Frequency Poloidal Field Line Resonances Following Geomagnetic Storms	False	True
+2-s2.0-85160205104	Duplessis2022	Composing quantum music: Psi	False	True
+2-s2.0-85137654903	Duplessis2022	A QUANTUM MODEL FOR SOUND SYNTHESIS: QHOSYN	False	True
+2-s2.0-85134425225	GolbabaeikootenaeiMehrdadi2022	Improvement of Sludge Dewatering by Ultrasonic Pretreatment	False	True
+2-s2.0-85057391037	MehrdadiKootenaei2018	An investigation on effect of ultrasound waves on sludge treatment	False	True
+2-s2.0-85073599309	KoZhang2019	Modeling the effects of auditory display takeover requests on drivers’ behavior in autonomous vehicles	False	True
+2-s2.0-85125568896	McmullenWan2022	A machine learning tutorial for spatial auditory display using head-related transfer functions	False	True
+2-s2.0-85109276540	HamiltonfletcherAlvarez2022	SoundSight: a mobile sensory substitution device that sonifies colour, distance, and temperature	False	True
+2-s2.0-84964841844	HamiltonfletcherWright2016	Cross-modal correspondences enhance performance on a colour-to-sound sensory substitution device	False	True
+2-s2.0-85108248597	SuHattwick2022	Interactive exploration of a hierarchical spider web structure with sound	False	True
+2-s2.0-85095454224	SuQin2020	Sonification of a 3-D Spider Web and Reconstitution for Musical Composition Using Granular Synthesis	False	True
+2-s2.0-85111392151	PatéFarge2022	Combining audio and visual displays to highlight temporal and spatial seismic patterns	False	True
+2-s2.0-85137692096	PoretSemal2022	A Perceptual Study of Sound Ecology in Peripheral Sonification	False	True
+2-s2.0-85142746971	LinnhoffPloigt2022	Sofigait—A Wireless Inertial Sensor-Based Gait Sonification System	False	True
+2-s2.0-85097466535	LinnhoffAlizadeh2020	Use of acoustic feedback to change gait patterns: Implementation and transfer to motor learning theory-a scoping review	False	True
+2-s2.0-85115147927	LuQi2021	Pre-Trained-Based Individualization Model for Real-Time Spatial Audio Rendering System	False	True
+2-s2.0-85119718083	AlsheikhSalman2021	Auto-detection of Spectral Notches of Head-related Transfer Function using Wavelet Multi-resolution Analysis	False	True
+2-s2.0-85056656948	HuTrevino2019	Modeling head-related transfer functions with spherical wavelets	False	True
+2-s2.0-85030991669	HowardAngus2017	Acoustics and psychoacoustics: Fifth edition	False	True
+2-s2.0-85035070169	Ise2017	Development of a sound field sharing system for creating and exchanging music	False	True
+2-s2.0-85018624852	BrungartCohen2017	The localization of non-individualized virtual sounds by hearing impaired listeners	False	True
+2-s2.0-85006572496	CarlileLeung2016	The Perception of Auditory Motion	False	True
+2-s2.0-84960872122	RomighBrungart2015	Free-Field Localization Performance with a Head-Tracked Virtual Auditory Display	False	True
+2-s2.0-84930063541	LiuXie2015	Analysis of the spatial discrimination threshold of head-related transfer function magnitude	False	True
+2-s2.0-84955124440	SodnikSăotomažič2015	Spatial auditory human-computer interfaces	False	True
+2-s2.0-85057066242	VorländerShinncunningham2014	Virtual Auditory Displays	False	True
+2-s2.0-84878836574	XieZhong2013	Report on research projects on head-related transfer functions and virtual auditory displays in China	False	True
+2-s2.0-84883329314	FinkRay2012	Feasibility of virtual auditory display customization through principal component modeling	False	True
+2-s2.0-79953824259	XieZhong2011	Some recent works on head-related transfer functions and virtual auditory display in China	False	True
+2-s2.0-70350381168	AlsheikhMatin2009	All-pole and all-zero models of human and cat head related transfer functions	False	True
+2-s2.0-52249098334	FontanaRocchesso2008	Auditory distance perception in an acoustic pipe	False	True
+2-s2.0-38049055858	WatanabeOzawa2007	Estimation of interaural level difference based on anthropometry and its effect on sound localization	False	True
+2-s2.0-18144384759	ArrabitoCooke2005	Recommendations for enhancing the role of the auditory modality for processing sonar data	False	True
+2-s2.0-0343061030	GiguèreAbel2000	Binaural technology for application to active noise reduction communication headsets: design considerations	False	True
+2-s2.0-0343826050	GiguèreAbel2000	Binaural technology for application to active noise reduction communication headsets: design considerations	False	True
+2-s2.0-85117462117	MichelakisZidianakis2021	ACOUSMA: Ubiquitous & intelligent auditory displays	False	True
+2-s2.0-85108946363	MillerGodfroycooper2021	Degraded visual environment mitigation (DVE-M) program, bumper radar obstacle cueing flight trials 2020	False	True
+2-s2.0-85096933964	GodfroycooperMiller2019	Multimodal pilot cueing for 360° situation awareness	False	True
+2-s2.0-85083946776	MillerGodfroycooper2019	Augmented-reality multimodal cueing for obstacle awareness: Towards a new topology for threat-level presentation	False	True
+2-s2.0-85083945112	GodfroycooperMiller2019	Isomorphic spatial visual-auditory displays for operations in DVE for obstacle avoidance	False	True
+2-s2.0-85073166147	Rönnberg2019	Musical elements in sonification support visual perception	False	True
+2-s2.0-84896367343	WintersWanderley2014	Sonification of Emotion: Strategies and results from the intersection with music	False	True
+2-s2.0-85100292560	FazalFerguson2021	Evaluation of Information Comprehension in Concurrent Speech-based Designs	False	True
+2-s2.0-85087440923	AbuulfazalFerguson2020	Investigating efficient speech-based information communication: a comparison between the high-rate and the concurrent playback designs	False	True
+2-s2.0-85108019670	CastroBryjka2021	Sonification of combined action observation and motor imagery: Effects on corticospinal excitability	False	True
+2-s2.0-85102238186	CastroOsman2021	Does sonification of action simulation training impact corticospinal excitability and audiomotor plasticity?	False	True
+2-s2.0-85112343153	ArduimDasilvaamaral2021	Evaluation of Aliphatic Hydrocarbons in Surface Sediments of Lagoa Mirim (RS, Brazil)	False	True
+2-s2.0-85117746396	SanchesfilhoAndrade2021	Determination of aliphatic hydrocarbons in surface sediments of Mangueira Lagoon (RS—Brazil)	False	True
+2-s2.0-85108548520	Supper2015	Sound information: Sonification in the age of complex data and digital audio	False	True
+2-s2.0-85136673222	Bonet2021	Creating and Evaluating Aesthetics in Sonification	False	True
+2-s2.0-85072684214	Bonet2019	Musical Borrowing in Sonification	False	True
+2-s2.0-33745126322	Eldridge2006	Issues in auditory display	False	True
+2-s2.0-85117134785	AbriGutiérrez2021	A comparative analysis of modeling and predicting perceived and induced emotions in sonification	False	True
+2-s2.0-85103843688	AbriGutierrez2020	Predicting Emotions Perceived from Sounds	False	True
+2-s2.0-85159389051	MaraWestwood2021	A Hidden Order: Revealing the Bonds Between Music and Geometric Art - Part One	False	True
+2-s2.0-85159415483	WestwoodMara2021	A Hidden Order: Revealing the Bonds Between Music and Geometric Art - Part Two	False	True
+2-s2.0-85144308862	BranaghanO'brian2021	Humanizing healthcare - Human factors for medical device design	False	True
+2-s2.0-85118978743	FergusonFreeman2021	Investigating the Effect of Polarity in Auditory and Vibrotactile Displays under Cognitive Load	False	True
+2-s2.0-85056603263	FergusonWilliamson2018	Evaluating mapping designs for conveying data through tactons	False	True
+2-s2.0-85054979498	QiTao2018	Sparsity-constrained weight mapping for head-related transfer functions individualization from anthropometric features	False	True
+2-s2.0-85049063975	FernandesMigotina2021	Brain's Night Symphony (BraiNSy): A Methodology for EEG Sonification	False	True
+2-s2.0-85032510620	FernandesMigotina2017	Sonification of Sleep EEG	False	True
+2-s2.0-85106040791	AxonHappa2021	Sonification to Support the Monitoring Tasks of Security Operations Centres	False	True
+2-s2.0-85084256315	AxonAlahmadi2020	Data presentation in security operations centres: Exploring the potential for sonification to enhance existing practice	False	True
+2-s2.0-85099282518	GuoLu2021	Anthropometric-based clustering of pinnae and its application in personalizing HRTFs	False	True
+2-s2.0-85099407065	Kew2021	A model for spectroscopic food sample analysis using data sonification	False	True
+2-s2.0-85101693455	KewStables2020	Sonification of Spectroscopic analysis of food data using FM Synthesis	False	True
+2-s2.0-85082859657	IberLechner2021	Auditory augmented process monitoring for cyber physical production systems	False	True
+2-s2.0-85076773882	IberLechner2019	Auditory augmented reality for cyber physical production systems	False	True
+2-s2.0-85107333303	AhmetovicBernareggi2021	Multi-touch exploration and sonification of line segments	False	True
+2-s2.0-85096978337	AhmetovicBernareggi2020	SoundLines: Exploration of Line Segments through Sonification and Multi-touch Interaction	False	True
+2-s2.0-85119447207	PittsJean2021	Rhythmanalysis, concrete abstraction and the quantified self: Sonification and performance research as remediation of data	False	True
+2-s2.0-85073980470	PittsJean2020	Sonifying the quantified self: Rhythmanalysis and performance research in and against the reduction of life-time to labour-time	False	True
+2-s2.0-85080026032	O’brienJuhas2021	Sonification of Golf Putting Gesture Reduces Swing Movement Variability in Novices	False	True
+2-s2.0-85061051307	BieńkiewiczBringoux2019	The limitations of being a copycat: Learning golf putting through auditory and visual guidance	False	True
+2-s2.0-85057433388	O’brienJuhas2018	Considerations for Developing Sound in Golf Putting Experiments	False	True
+2-s2.0-85080120965	GrausánchezMünte2020	Potential benefits of music playing in stroke upper limb motor rehabilitation	False	True
+2-s2.0-85064588318	ColomboRaglio2019	The SonicHand Protocol for Rehabilitation of Hand Motor Function: A Validation and Feasibility Study	False	True
+2-s2.0-85052740517	OsinskiHjelme2018	A sensory substitution device inspired by the human visual system	False	True
+2-s2.0-85097988323	PutraSetiawan2020	Investigation of multi reference point estimation with timbre for effective mobile auditory devices	False	True
+2-s2.0-85086802197	PutraSetiawan2020	Point estimation with markers for effective mobile auditory graphs	False	True
+2-s2.0-85137690082	GiomiLeonard2020	Towards an interactive model-based sonification of hand gesture for dance performance	False	True
+2-s2.0-85055352448	GiomiFratagnoli2018	Listening touch. A case study about multimodal awareness in movement analysis with interactive sound feedback	False	True
+2-s2.0-85086104710	VérondelorPinto2020	Musical sonification improves motor control in Parkinson's disease: a proof of concept with handwriting	False	True
+2-s2.0-85057400128	VérondelorPinto2018	Music and Musical Sonification for the Rehabilitation of Parkinsonian Dysgraphia: Conceptual Framework	False	True
+2-s2.0-85085053573	YuZhang2020	Flower-like shaped Bi12TiO20/g-C3N4 heterojunction for effective elimination of organic pollutants: Preparation, characterization, and mechanism study	False	True
+2-s2.0-84985025943	ZhaoYan2016	BiVO4/g-C3N4 composite visible-light photocatalyst for effective elimination of aqueous organic pollutants	False	True
+2-s2.0-85085579628	Monajjemi2020	Molecular biology’s symphony orchestra from dna to ribosome: A sonification from gene to protein	False	True
+2-s2.0-85075728240	Monajjemi2019	Artificial intelligence & self-consistent sonification method for converting DNA sequence to music	False	True
+2-s2.0-85071770847	Monajjemi2019	13C-NMR sonification of human insulin: A method for conversion of amino-acid sequences to music notes	False	True
+2-s2.0-85087980281	PatersonSanderson2020	Evaluation of an enhanced pulse oximeter auditory display: a simulaion study	False	True
+2-s2.0-85067892079	CollettSalisbury2020	Smooth or Stepped? Laboratory Comparison of Enhanced Sonifications for Monitoring Patient Oxygen Saturation	False	True
+2-s2.0-85072943055	PatersonSanderson2019	Comparison of Standard and Enhanced Pulse Oximeter Auditory Displays of Oxygen Saturation: A Laboratory Study With Clinician and Nonclinician Participants	False	True
+2-s2.0-85069870746	RadeckiBujacz2020	Interactive sonification of images in serious games as an education aid for visually impaired children	False	True
+2-s2.0-85052749785	StrumilloSkulimowski2018	A mobile application for interactive sonification of images for the visually impaired	False	True
+2-s2.0-85099214166	MoustakasRovithis2020	Adaptive audio mixing for enhancing immersion in augmented reality audio games	False	True
+2-s2.0-85070941085	RovithisFloros2019	Bridging audio and augmented reality towards a new generation of serious audio-only games	False	True
+2-s2.0-85086748183	KimWu2020	Miniaturized Intracavitary Forward-Looking Ultrasound Transducer for Tissue Ablation	False	True
+2-s2.0-85077571364	KimWu2019	Small Aperture Ultrasound Transducers for Intracavitary Tissue Ablation	False	True
+2-s2.0-85088232522	TarnasStemplewski2020	Sex differences in maintaining the requested handgrip force enhanced by auditory or visual feedback	False	True
+2-s2.0-85063050015	AxonHappa2019	Hearing attacks in network data: An effectiveness study	False	True
+2-s2.0-85107787886	Roddy2019	Using Conceptual Metaphors to Represent Temporal Context in Time Series Data Sonification	False	True
+2-s2.0-85087275824	SkulimowskiStrumillo2020	Interactive travel aid for the visually impaired: From depth maps to sonic patterns and verbal messages	False	True
+2-s2.0-85085369378	BoucharaMontes2020	Immersive sonification of protein surface	False	True
+2-s2.0-85062096576	BoucharaRaigneau2018	Immersive sonification of protein surface	False	True
+2-s2.0-85097002001	O’brienHardouin2020	Online sonification improves cycling performance through kinematic and muscular reorganisations	False	True
+2-s2.0-85040508647	MihalasAndor2017	Can sonification become a useful tool for medical data representation?	False	True
+2-s2.0-85061749386	GhaiGhai2019	Role of sonification and rhythmic auditory cueing for enhancing gait associated deficits induced by neurotoxic cancer therapies: A perspective on auditory neuroprosthetics	False	True
+2-s2.0-85062367450	LimSanderson2019	A comparison of two designs for earcons conveying pulse oximetry information	False	True
+2-s2.0-85144117604	Nuara2019	Music and Mirror Neuron System	False	True
+2-s2.0-85070266564	SchaffertEngel2019	The sound of the underwater dolphin-kick: developing real-time audio feedback in swimming	False	True
+2-s2.0-85029719818	SchaffertGodbout2017	Towards an application of interactive sonification for the forces applied on the pedals during cycling on the Wattbike ergometer	False	True
+2-s2.0-85101270232	RovithisFloros2018	Astrosonic: An educational audio gamification approach	False	True
+2-s2.0-85141053349	Mcgookin2019	Auditory Cue Design	False	True
+2-s2.0-84874891621	GamperDicke2013	Sound sample detection and numerosity estimation using auditory display	False	True
+2-s2.0-85027874484	SchmitzEffenberg2017	Coxswain 2.0 – movement–acoustic dimensions of interpersonal coordination in team sports Schlagmann 2.0 – Bewegungsakustische Dimensionen interpersonaler Koordination im Mannschaftssport	False	True
+2-s2.0-85011019986	ManikashaniBoyd2016	A phase-entrained particle filter for audio-locomotion synchronization	False	True
+2-s2.0-84939235114	DannaPazvillagrán2015	"Let me hear your handwriting!" Evaluating the movement fluency from its sonification	False	True
+2-s2.0-84961746438	GodboutBoyd2015	Audio Visual Synchronization of Rhythm	False	True
+2-s2.0-85078643486	StantonEdworthy2019	Auditory warnings and displays: An overview	False	True
+2-s2.0-85074019852	ArrabitoHo2019	Multisensory Cues for Encoding Urgency of System Hazards: Effect of Operator Experience on Perceived Urgency	False	True
+2-s2.0-84889843679	ArrabitoHo2013	Multimodal displays for enhancing performance in a supervisory monitoring task: Reaction time to detect critical events	False	True
+2-s2.0-85078845863	BlackLilge2019	Auditory Display for Telerobotic Transnasal Surgery Using a Continuum Robot	False	True
+2-s2.0-85032492312	BlackUnger2018	Auditory display as feedback for a novel eye-tracking system for sterile operating room interaction	False	True
+2-s2.0-85056296578	MaesLorenzoni2019	The SoundBike: musical sonification strategies to enhance cyclists’ spontaneous synchronization to external music	False	True
+2-s2.0-85055315681	LorenzoniMaes2018	A biofeedback music-sonification system for gait retraining	False	True
+2-s2.0-85034825601	SterkenburgLandry2017	Eyes-free In-vehicle gesture controls: Auditory-only displays reduced visual distraction and workload	False	True
+2-s2.0-85060437869	Morawitz2018	Quantum: An art-science case study on sonification and sound design in virtual reality	False	True
+2-s2.0-85003726522	Morawitz2016	Molecular sonification of nuclear magnetic resonance data as a novel tool for sound creation	False	True
+2-s2.0-85022333765	PetermeijerHornberger2018	The design of a vibrotactile seat for conveying take-over requests in automated driving	False	True
+2-s2.0-85055019133	BurloiuMihai2018	Layered motion and gesture sonification in an interactive installation	False	True
+2-s2.0-85057376244	Burloiu2018	Adapting the SoundThimble movement sonification system for young motion-impaired users	False	True
+2-s2.0-85038372330	BurloiuDamian2017	Structured interaction in the SoundThimble real-time gesture sonification framework	False	True
+2-s2.0-85030850094	VasilijevicJambrosic2018	Teleoperated path following and trajectory tracking of unmanned vehicles using spatial auditory guidance system	False	True
+2-s2.0-84994157674	VasilijevicVukic2016	Teleoperated trajectory tracking of remotely operated vehicles using spatial auditory interface	False	True
+2-s2.0-84929733505	VasilijevicNad2014	Auditory interface for teleoperation - Path following experimental results	False	True
+2-s2.0-84885199995	VasilijevicMiskovic2013	Comparative assessment of human machine interfaces for ROV guidance with different levels of secondary visual workload	False	True
+2-s2.0-84999106965	YuHu2016	A study on user acceptance of different auditory content for relaxation	False	True
+2-s2.0-85056602939	AnishKanimozhi2018	Experimental and numerical analysis of heat transfer from main vessel to safety vessel using h2o/al2o3 nanofluid in a nuclear reactor vault	False	True
+2-s2.0-85047492259	AnishKanimozhi2018	Experimental study of heat transfer through cooling water circuit in a reactor vault by using Al2O3 Nanofluid	False	True
+2-s2.0-85042300441	LewisEisert2018	Validation of Essential Acoustic Parameters for Highly Urgent In-Vehicle Collision Warnings	False	True
+2-s2.0-84954285291	BaldwinGarcia2015	Multimodal and cross-modal perception: Audition	False	True
+2-s2.0-85029601983	BlackHahn2018	Auditory display for fluorescence-guided open brain tumor surgery	False	True
+2-s2.0-85056426112	LinChen2018	Visualization and Sonification of Long-Term Epilepsy Electroencephalogram Monitoring	False	True
+2-s2.0-84953269047	ChenShen2015	Epileptic EEG visualization and sonification based on linear discriminate analysis	False	True
+2-s2.0-85022202861	ChiroiuBrişan2018	A sonification algorithm for developing the off-roads models for driving simulators	False	True
+2-s2.0-84916220483	MunteanuChiroiu2015	On the 3D normal tire/off-road vibro-contact problem with friction	False	True
+2-s2.0-85045939809	DebashiVickers2018	Sonification of network traffic flow for monitoring and situational awareness	False	True
+2-s2.0-84969262554	VickersLaing2017	Sonification of a network's self-organized criticality for real-time situational awareness	False	True
+2-s2.0-85017223492	MascettiGerino2017	On the evaluation of novel sonification techniques for non-visual shape exploration	False	True
+2-s2.0-84962748156	GerinoPicinali2015	Towards large scale evaluation of novel sonification techniques for non visual shape exploration	False	True
+2-s2.0-85032957830	BermanGallagher2017	Evaluating the use of sound in static program comprehension	False	True
+2-s2.0-70450195711	BermanGallagher2009	Using sound to understand software architecture	False	True
+2-s2.0-85006371535	GonzálezcastañedaTorresgarcía2017	Sonification and textification: Proposing methods for classifying unspoken words from EEG signals	False	True
+2-s2.0-85025075685	GonzálezcastañedaTorresgarcía2015	EEG sonification for classifying unspoken words	False	True
+2-s2.0-85034866186	ChaudhuriDey2017	A study on variability of anthropometric data of various pinna patterns of human ear for individualization of head related transfer function	False	True
+2-s2.0-84969498055	PoirierquinotParseihian2017	Comparative study on the effect of Parameter Mapping Sonification on perceived instabilities, efficiency, and accuracy in real-time interactive exploration of noisy data streams	False	True
+2-s2.0-84945388824	FairfaxLaing2014	Network situational awareness: Sonification and visualization in the cyber battlespace	False	True
+2-s2.0-85009926955	DannaVelay2017	Handwriting Movement Sonification: Why and How?	False	True
+2-s2.0-85078431809	MalikovaPasko2017	Sound Matrices approach in multisensory analytics: For multidimensional scalar fields data analysis	False	True
+2-s2.0-85037142285	MalikovaPasko2017	Multisensory analytics for several interconnected scalar fields analysis	False	True
+2-s2.0-85037137797	MalikovaPilyugin2017	Multisensory analytics: Case of visual-auditory analysis of scalar fields	False	True
+2-s2.0-85037100939	AdzhievMalikova2016	Multidimensional scalar fields data analysis by means of multisensory visualization	False	True
+2-s2.0-84998854162	MalikovaPilyugin2016	Multisensory scientific visualization for multidimensional scalar fields data analysis in particular visual-Auditory case	False	True
+2-s2.0-84929302292	MalikovaPilyugin2014	Scientific visualization extended with sonification for data analysis	False	True
+2-s2.0-85025114207	WalkerTomlinson2017	Universal design of mobile apps: Making weather information accessible	False	True
+2-s2.0-84991387146	TomlinsonSchuett2016	"Talkin' about the weather": Incorporating TalkBack functionality and sonifications for accessible app design	False	True
+2-s2.0-85013156205	PapousekRuch2017	The Use of Bright and Dark Types of Humour is Rooted in the Brain	False	True
+2-s2.0-84908657291	PapousekWeiss2014	Affective processing in positive schizotypy: Loose control of social-emotional information	False	True
+2-s2.0-85021815291	SchwarzeLauer2017	An intuitive camera-based system to assist visually impaired people Ein intuitives kamerabasiertes System zur Assistenz sehbehinderter Menschen	False	True
+2-s2.0-84996694486	SchwarzeLauer2016	A Camera-Based Mobility Aid for Visually Impaired People	False	True
+2-s2.0-84986238197	RojasMartin2016	Evaluating a sound-enhanced intrusion detection system to identify network congestion	False	True
+2-s2.0-84866504079	GarcíaruizVargasmartin2007	Towards multimodal interfaces for intrusion detection	False	True
+2-s2.0-84964879877	VazquezalvarezAylett2016	Designing interactions with multilevel auditory displays in mobile audio-augmented reality	False	True
+2-s2.0-84900553572	VazquezalvarezVonjungenfeld2014	Multilevel auditory displays for mobile eyes-free location-based interaction	False	True
+2-s2.0-85021814153	PatersonSanderson2016	The effect of a secondary task on identification accuracy of oxygen saturation ranges using an enhanced pulse oximetry sonification: A laboratory study	False	True
+2-s2.0-84996618854	BujaczStrumiłło2016	Sonification: Review of Auditory Display Solutions in Electronic Travel Aids for the Blind	False	True
+2-s2.0-84897005457	SanzMezcua2014	Scenes and images into sounds: A taxonomy of image sonification methods for mobility applications	False	True
+2-s2.0-84868558915	BujaczSkulimowski2012	Naviton-a prototype mobility aid for auditory presentation of three-dimensional scenes to the visually impaired	False	True
+2-s2.0-84954203982	NeuhoffHeller2015	Applied ecological acoustics	False	True
+2-s2.0-84911383651	TowersBurgesslimerick2014	Concurrent 3-D sonifications enable the head-up monitoring of two interrelated aircraft navigation instruments	False	True
+2-s2.0-84957612411	NeesWalker2014	Performance of a sonification task in the presence of verbal, visuospatial, and auditory interference tasks	False	True
+2-s2.0-84883353919	PolottiLemaitre2013	Rhetorical strategies for sound design and auditory display: A case study	False	True
+2-s2.0-79955954679	ShahabTerken2010	Auditory messages for speed advice in advanced driver assistance systems	False	True
+2-s2.0-85137897539	Baldwin2009	Mental Workload and Driver Distraction with In-Vehicle Displays	False	True
+2-s2.0-52749084663	SpainBliss2008	The effect of sonification display pulse rate and reliability on operator trust and perceived workload during a simulated patient monitoring task	False	True
+2-s2.0-0037081971	BaldwinStruckmanjohnson2002	Impact of speech presentation level on cognitive task performance: Implications for auditory display design	False	True
+2-s2.0-84969791856	GeronazzoAvanzini2016	Auditory navigation with a tubular acoustic model for interactive distance cues and personalized head-related transfer functions: An auditory target-reaching task	False	True
+2-s2.0-85030264862	LahavKittany2015	Perception of multi-varied sound patterns of sonified representations of complex systems by people who are blind	False	True
+2-s2.0-84965032090	MetatlaMartin2016	Audio-haptic interfaces for digital audio workstations: A participatory design approach	False	True
+2-s2.0-84925640469	MetatlaBryankinns2015	Designing with and for people living with visual impairments: audio-tactile mock-ups, audio diaries and participatory prototyping	False	True
+2-s2.0-85017650855	LocktonBowden2016	Powerchord: Exploring ambient audio feedback on energy use	False	True
+2-s2.0-84921629407	LocktonBowden2014	Powerchord: Towards ambient appliance-level electricity use feedback through real-time sonification	False	True
+2-s2.0-84947067295	Johnstone2015	Busking the digital highway: The aesthetics of the exabyte	False	True
+2-s2.0-84971260444	XieZhong2015	Statistical analysis of the similarity on headrelated transfer function magnitudes between Chinese and western subjects	False	True
+2-s2.0-84954211491	OhBranham2015	Audio-based feedback techniques for teaching touchscreen gestures	False	True
+2-s2.0-84867615434	FinkRay2012	Tuning principal component weights to individualize HRTFs	False	True
+2-s2.0-84928897577	TardieuMisdariis2015	Sonification of in-vehicle interface reduces gaze movements under dual-task condition	False	True
+2-s2.0-84886956333	MisdariisTardieu2013	Menu Sonification in an Automotive Media Center: Design and Evaluation	False	True
+2-s2.0-84923485013	Supper2012	The Search for the "Killer Application": Drawing the Boundaries around the Sonification of Scientific Data	False	True
+2-s2.0-84865980572	JeonGupta2012	Auditory Menus Are Not Just Spoken Visual Menus: A Case Study of "Unavailable" Menu Items	False	True
+2-s2.0-84944683825	O'sullivanPicinali2015	A prototype audio-tactile map system with an advanced auditory display	False	True
+2-s2.0-84953328671	O'sullivanPicinali2014	Audio tactile maps (ATM) system for the exploration of digital heritage buildings by visually-impaired individuals - First prototype and preliminary evaluation	False	True
+2-s2.0-84935451232	SchaffertMattes2014	Testing immediate and retention effects of acoustic feedback on the boat motion in high-performance rowing	False	True
+2-s2.0-84944251386	WalkerSmith2015	Interactive sonification markup language (ISML) for efficient motion-sound mappings	False	True
+2-s2.0-84901588137	JeonSmith2014	Constructing the immersive interactive sonification platform (iISoP)	False	True
+2-s2.0-84943758713	LastGorelik2015	Listen to the sound of data	False	True
+2-s2.0-84865675081	LastGorelik2008	Using sonification for mining time series data	False	True
+2-s2.0-84924862267	Whalley2015	Developing telematic electroacoustic music: Complex networks, machine intelligence and affective data stream sonification	False	True
+2-s2.0-84908886543	Whalley2014	Broadening telematic electroacoustic music by affective rendering and embodied real-time data sonification	False	True
+2-s2.0-84988474311	RoddyFurlong2015	Embodied auditory display affordances	False	True
+2-s2.0-84879000409	LiuXie2013	Auditory discrimination on the distance dependence of near-field head-related transfer function magnitudes	False	True
+2-s2.0-84960882307	BeattieBaillie2015	A comparison of artificial driving sounds for automated vehicles	False	True
+2-s2.0-84937427289	IbrahimEmbug2014	Sonification of 3D body movement using parameter mapping technique	False	True
+2-s2.0-0032091692	Begault1998	Virtual acoustics, aeronautics, and communications	False	True
+2-s2.0-84886882237	GoudarziVogt2013	Contextual inquiry for a climate audio interface	False	True
+2-s2.0-84897527758	Miranda2014	Harnessing the intelligence of physarum polycephalum for unconventional computing-aided musical composition	False	True
+2-s2.0-84894129512	Miranda2013	Harnessing the intelligence of physarum polycephalum for unconventional computing-aided musical composition	False	True
+2-s2.0-84856858123	SchaffertMattes2011	Examining effects of acoustic feedback on perception and modification of movement patterns in on-water rowing training	False	True
+2-s2.0-84908097529	MenelasPicinali2014	Non-visual identification, localization, and selection of entities of interest in a 3D environment	False	True
+2-s2.0-84866028966	PicinaliMenelas2010	Evaluation of a haptic/audio system for 3D targeting tasks	False	True
+2-s2.0-84907001374	FlorosVlamou2014	Hearing the buildings: Smart monitoring through advanced sonification approaches	False	True
+2-s2.0-84856875495	BikakiFloros2011	An RSS-feed auditory aggregator using earcons	False	True
+2-s2.0-84926212273	ElgendiDauwels2014	From auditory and visual to immersive neurofeedback: Application to diagnosis of alzheimer’s disease	False	True
+2-s2.0-84862193997	ElgendiVialatte2011	Immersive neurofeedback: A new paradigm	False	True
+2-s2.0-84899426473	KagawaNishino2013	A medical imaging diagnosis supporting method with sound effects	False	True
+2-s2.0-84885204731	KagawaTanoue2013	A sonification method for medical images to support diagnostic imaging	False	True
+2-s2.0-84866614465	KagawaKudo2012	A supporting method of medical imaging diagnosis with sonification	False	True
+2-s2.0-84865998649	ParseihianKatz2012	Morphocons: A new sonification concept based on morphological earcons	False	True
+2-s2.0-78651245198	GygiShafiro2010	From signal to substance and back: Insights from environmental sound research to auditory display design	False	True
+2-s2.0-85054633561	ParkitnaKowalczyk2013	Dewatering of sewage sludge conditioned by means of the combined method of using ultrasound field, Fenton’s reaction and gypsum	False	True
+2-s2.0-84880145824	ParkitnaKowalczyk2013	Dewatering of sewage sludge conditioned by means of the combined method of using ultrasound field, Fenton's reaction and gypsum	False	True
+2-s2.0-79953807194	LangloisLoiseau2010	Evaluation of the sonification of an automobile multimedia system Evaluation de la sonifcation d'un système multimédia automobile	False	True
+2-s2.0-84893637202	KajastilaLokki2013	Eyes-free interaction with free-hand gestures and auditory menus	False	True
+2-s2.0-84870279093	KajastilaLokki2012	Combining auditory and visual menus	False	True
+2-s2.0-85166627579	IberWindt2013	Order Related Acoustic Characterization of Production Data	False	True
+2-s2.0-84872721062	IberWindt2012	Order-related acoustic characterization of production data	False	True
+2-s2.0-84883050988	OtaduyGarre2013	Representations and algorithms for force-feedback display	False	True
+2-s2.0-33846407273	OtaduyLin2006	High fidelity haptic rendering	False	True
+2-s2.0-84872694326	YeoBerger2013	Application of raster scanning method to image sonification, sound visualization, sound analysis and synthesis	False	True
+2-s2.0-84923601013	YeoBerger2006	Raster scanning: A new approach to image sonification, sound visualization, sound analysis and synthesis	False	True
+2-s2.0-84883575861	IwayaOtani2012	Effective rendering of ambient sounds in virtual auditory display	False	True
+2-s2.0-84868599157	IwayaToyoda2012	Evaluation of realism of dynamic sound space using a virtual auditory display	False	True
+2-s2.0-84878482723	AlonsoarevaloShelley2012	Curve shape and curvature perception through interactive sonification	False	True
+2-s2.0-70350459215	ShelleyAlonso2009	Interactive sonification of curve shape and curvature data	False	True
+2-s2.0-84878521109	RocchessoMonache2012	Perception and replication of planar sonic gestures	False	True
+2-s2.0-84905165383	RocchessoMonache2011	Spatio-temporal unfolding of sound sequences	False	True
+2-s2.0-84874089533	StewartSandler2012	Spatial auditory display	False	True
+2-s2.0-85032750879	StewartSandler2011	An auditory display in playlist generation	False	True
+2-s2.0-77953111443	JeonGupta2010	Auditory menus are not just spoken visual menus: A case study of "unavailable" menu items	False	True
+2-s2.0-84980053103	VialatteDauwels2012	Audio representations of multi-channel EEG: A new tool for diagnosis of brain disorders	False	True
+2-s2.0-84858071829	LiuJhuang2012	Effects of in-vehicle warning information displays with or without spatial compatibility on driving behaviors and response performance	False	True
+2-s2.0-78751681094	JhuangLiu2010	A comparison study of five in-vehicle warning information displays with or without spatial compatibility	False	True
+2-s2.0-84864304762	BearmanFisher2012	Using sound to represent spatial data in ArcGIS	False	True
+2-s2.0-78650557229	BearmanLovett2010	Using sound to represent positional accuracy of address locations	False	True
+2-s2.0-84860888665	LiuWang2012	Auditory feedback and sensory substitution during teleoperated navigation	False	True
+2-s2.0-65449118844	Liu2009	Auditory display with sensory substitution for internet-based teleoperation: A feasibility study	False	True
+2-s2.0-84870835698	GonzalezSoma2011	Auditory display as a prosthetic hand biofeedback	False	True
+2-s2.0-84870161894	BalloraGiacobe2012	Information data fusion and computer network defense	False	True
+2-s2.0-78651259324	Worrall2010	Using sound to identify correlations in market data	False	True
+2-s2.0-81855166769	FerrisSarter2011	Evaluation of multiparameter vibrotactile display designs to support physiological monitoring performance in anesthesiology	False	True
+2-s2.0-84857719430	IbrahimYassin2011	Overview of design issues and evaluation of sonification applications	False	True
+2-s2.0-38049108090	IbrahimHunt2007	An HCI model for usability of sonification applications	False	True
+2-s2.0-66149090775	BonebrightNees2009	Most earcons do not interfere with spoken passage comprehension	False	True
+2-s2.0-70350616085	NeesWalker2008	Encoding of information in auditory displays: Initial research on flexibility and processing codes in dual-task scenarios	False	True
+2-s2.0-77949918727	Capek2010	On inverse miniemulsion polymerization of conventional water-soluble monomers	False	True
+2-s2.0-84886124987	Capek2010	Inverse Miniemulsion Polymerization of Unsaturated Monomers	False	True
+2-s2.0-0035062191	CapekChern2001	Radical polymerization in direct mini-emulsion systems	False	True
+2-s2.0-77956562045	CáceresChafe2010	JackTrip/SoundWIRE meets server farm	False	True
+2-s2.0-84883407917	ĆaceresChafe2009	Jacktrip/soundwire meets server farm	False	True
+2-s2.0-78649491242	KieferHoeft2010	Display of information in the operating room	False	True
+2-s2.0-44349181983	McintireHavig2008	Aurally-aided visual search performance in a dynamic environment	False	True
+2-s2.0-84924993946	ParkKim2010	Composition with path: Musical sonification of geo-referenced data with online map interface	False	True
+2-s2.0-84921423591	ParkKim2010	Online map interface for creative and interactive music-making	False	True
+2-s2.0-78651227613	Brazil2010	A review of methods and frameworks for sonic interaction design: Exploring existing approaches	False	True
+2-s2.0-78651246239	BrazilFernström2009	Empirically based auditory display design	False	True
+2-s2.0-78651236474	DickeAaltonen2010	Simulator sickness in mobile spatial sound spaces	False	True
+2-s2.0-70349509848	Väljamäe2009	Auditorily-induced illusory self-motion: A review	False	True
+2-s2.0-77952398364	MoroniManzolli2010	From evolutionary composition to robotic sonification	False	True
+2-s2.0-77950937506	MoroniSpina2009	An evolutionary sonification process based on robotic trajectories	False	True
+2-s2.0-34347235817	GygiShafiro2007	General functions and specific applications of environmental sound research	False	True
+2-s2.0-84901555980	GarciaruizMartin2010	Auditory feedback for network intrusion detection	False	True
+2-s2.0-78650111107	HenthorneTilevich2010	Sonifying performance data to facilitate tuning of complex systems: Performance tuning: Music to my ears	False	True
+2-s2.0-85160328203	BeilharzMoere2010	Expressive wearable sonification and visualisation: Design and evaluation of a flexible display	False	True
+2-s2.0-48249125771	BeilharzVandemoere2008	Sonic drapery as a folding metaphor for a wearable visualization and sonification display	False	True
+2-s2.0-70350611267	MoroniGuimarães2009	AURAL: An evolutionary interface for a robotic sonification process	False	True
+2-s2.0-68549106022	RaghuvanshiNarain2009	Efficient and accurate sound propagation using adaptive rectangular decomposition	False	True
+2-s2.0-70449435253	ManochaLin2009	Interactive sound rendering	False	True
+2-s2.0-84892339414	MagladryBruce2009	Improved vehicle safety and how technology will get us there, hopefully	False	True
+2-s2.0-1842786762	BruceBoehmdavis2000	In-vehicle auditory display of symbolic information	False	True
+2-s2.0-70349625784	FrauenbergerStockman2009	Auditory display design-An investigation of a design pattern approach	False	True
+2-s2.0-77953988613	FrauenbergerStockman2007	Pattern design in the context space: Paco - A methodological framework for designing auditory display with patterns	False	True
+2-s2.0-84999122347	FlowersTurnage2005	Desktop Data Sonification	False	True
+2-s2.0-62449169604	WalkerKramer2005	Sonification Design and Metaphors: Comments on Walker and Kramer, ICAD 1996	False	True
+2-s2.0-59149092163	YairiIwaya2008	Influence of large system latency of virtual auditory display on behavior of head movement in sound localization task	False	True
+2-s2.0-34247602565	YairiIwaya2007	Estimation of detection threshold of system latency of virtual auditory display	False	True
+2-s2.0-50349102410	SalterBaalman2008	Between mapping, sonification and composition: Responsive audio environments in live performance	False	True
+2-s2.0-84900157729	SalterBaalman2007	Between mapping, sonification and composition: Responsive audio environments in live performance	False	True
+2-s2.0-44149111616	SunWang2007	Touch-enabled haptic modeling of deformable multi-resolution surfaces	False	True
+2-s2.0-33646908254	ToukoniittyToukoniitty2006	Suppression of catalyst deactivation by means of acoustic irradiation-Application on fine and specialty chemicals	False	True
+2-s2.0-29544433070	ToukoniittyKuusisto2005	Effect of ultrasound on catalytic hydrogenation of D-fructose to D-mannitol	False	True
+2-s2.0-84864533895	Nesbitt2006	Modelling human perception to leverage the reuse of concepts across the multi-sensory design space	False	True
+2-s2.0-4644282629	Nesbitt2004	MS-Taxonomy: A conceptual framework for designing multi-sensory displays	False	True
+2-s2.0-33745677261	LiuYu2006	Active catalysts of electrochemically prepared gold nanoparticles for the decomposition of aldehyde in alcohol solutions	False	True
+2-s2.0-33750422629	Arrabito2006	Three-dimensional auditory display for enhancing detection of passive sonar signals	False	True
+2-s2.0-84923638778	CullenCoyle2006	Musical pattern design using contour icons	False	True
+2-s2.0-32844466490	CullenCoyle2005	Information delivery on mobile devices using contour icon sonification	False	True
+2-s2.0-33745960754	Bitterman2006	Technologies and solutions for data display in the operating room	False	True
+2-s2.0-62849100244	WeinbergThatcher2006	Interactive sonification: Aesthetics, functionality and performance	False	True
+2-s2.0-76649095750	WeinbergThatcher2006	Interactive sonification of neural activity	False	True
+2-s2.0-33748914694	GuXu2006	Transferrin-mediated PEGylated nanoparticles for delivery of DNA/PLL	False	True
+2-s2.0-0037685283	LiOgris2003	Nanoparticles bearing polyethyleneglycol-coupled transferrin as gene carriers: Preparation and in vitro evaluation	False	True
+2-s2.0-84864052253	FrauenbergerStockman2006	Design patterns for auditory displays	False	True
+2-s2.0-84871955595	FrauenbergerPutz2005	An auditory 3D file manager designed from interaction patterns	False	True
+2-s2.0-33746863117	FrauenbergerStockman2005	Mode independent interaction pattern design	False	True
+2-s2.0-84949751439	KimOtaduy2002	Six-degree-of-freedom haptic display using localized contact computations	False	True
+2-s2.0-33749520151	WójsGudra2006	Experimental research into the cavitation noise spectrum in water solutions of high molecular weight polymers	False	True
+2-s2.0-12344292681	WójsRedzicki2004	Experimental research into the cavitation noise spectrum in water solutions polymers Analiza widma szumu kawitacyjnego w wodnych roztworach polimerów	False	True
+2-s2.0-84859012725	Beilharz2005	Responsive sensate environments: Past and future directions: Designing space as an interface with socio-spatial information	False	True
+2-s2.0-84901857010	Beilharz2005	Architecture as the Computer Interface: 4D Gestural Interaction with Socio-Spatial Sonification	False	True
+2-s2.0-70449787955	Polli2005	Atmospherics/weather works: A spatialized meteorological data sonification project	False	True
+2-s2.0-13444282023	Polli2004	Datareader: A tool for art and science collaborations	False	True
+2-s2.0-3042613229	MattaKumar2004	An approach for image sonification	False	True
+2-s2.0-1942471984	MattaKumar2004	Discriminative Analysis for Image to Sound Mapping	False	True
+2-s2.0-84941950498	Obrenović2004	Experimental evaluation of user performance in a pursuit tracking task with multimodal feedback	False	True
+2-s2.0-33845325184	ObrenovicStarcevic2003	Toward optimization of multimodal user interfaces for tactical audio applications	False	True
+2-s2.0-84944448108	SalvadorMinghim2003	An interaction model for scientific visualization using sound	False	True
+2-s2.0-0036059435	MinghimSalvador2002	Distributed sound for volumes - Data analysis using distributed visualization and sonification	False	True
+2-s2.0-0034875954	LodhaVenable2001	Use of natural sounds and metaphors for data perceptualization	False	True
+2-s2.0-84963812577	FontanaRocchesso2002	A structural approach to distance rendering in personal auditory displays	False	True
+2-s2.0-33751112112	OttavianiFontana2002	RECOGNITION OF DISTANCE CUES FROM A VIRTUAL SPATIALIZATION MODEL	False	True
+2-s2.0-0036055612	Gröhn2002	Is audio useful in immersive visualization?	False	True
+2-s2.0-0034868134	GröhnLokki2001	Some aspects of role of audio in immersive visualization	False	True
+2-s2.0-0035387642	MartinsRangayyan2001	Audification and sonification of texture in images	False	True
+2-s2.0-0035205718	KrishnanRangayyan2001	Auditory display of knee-joint vibration signals	False	True
+2-s2.0-84878612055	LodhaJoseph1999	Audio-visual data mapping for GIS-based data: An experimental evaluation	False	True
+2-s2.0-0033545495	JovanovStarčević1999	EEG analysis in a telemedical virtual world	False	True
+2-s2.0-84893080138	JovanovStarcevic1999	Multi modal presentation in virtual telemedical environments	False	True
+2-s2.0-0032284132	Brewster1998	The design of sonically-enhanced widgets	False	True
+2-s2.0-11244266389	FerreiradeoliveiraMinghim1998	Towards perception driven visualization	False	True
+2-s2.0-0005387123	ChibaLodha1997	MUSURF: Visualizing geometric uncertainty of multiple surface interpolants	False	True
+2-s2.0-0018263859	BöhmeKunert1978	The role of plastidic cytochrome c in algal electron transport and photophosphorylation	False	True
+2-s2.0-0017188799	KunertBöhme1976	Reactions of plastocyanin and cytochrome 553 with Photosystem I of Scenedesmus	False	True

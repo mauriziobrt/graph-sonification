@@ -1,0 +1,171 @@
+{
+    "name": "sampler",
+    "filename": "sampler.dsp",
+    "version": "2.78.3",
+    "compile_options": "-lang wasm-e -ct 1 -es 1 -mcd 16 -mdd 1024 -mdy 33 -single -ftz 2",
+    "library_list": [
+        "/usr/share/faust/stdfaust.lib",
+        "/usr/share/faust/soundfiles.lib",
+        "/usr/share/faust/interpolators.lib",
+        "/usr/share/faust/signals.lib",
+        "/usr/share/faust/maths.lib",
+        "/usr/share/faust/platform.lib",
+        "/usr/share/faust/envelopes.lib"
+    ],
+    "include_pathnames": [
+        "/share/faust",
+        "/usr/local/share/faust",
+        "/usr/share/faust",
+        "."
+    ],
+    "size": 96,
+    "code": "8HHK",
+    "inputs": 0,
+    "outputs": 2,
+    "meta": [
+        {
+            "compile_options": "-lang wasm-e -ct 1 -es 1 -mcd 16 -mdd 1024 -mdy 33 -single -ftz 2"
+        },
+        {
+            "envelopes.lib/adsr:author": "Yann Orlarey and Andrey Bundin"
+        },
+        {
+            "envelopes.lib/author": "GRAME"
+        },
+        {
+            "envelopes.lib/copyright": "GRAME"
+        },
+        {
+            "envelopes.lib/license": "LGPL with exception"
+        },
+        {
+            "envelopes.lib/name": "Faust Envelope Library"
+        },
+        {
+            "envelopes.lib/version": "1.3.0"
+        },
+        {
+            "filename": "sampler.dsp"
+        },
+        {
+            "interpolators.lib/name": "Faust Interpolator Library"
+        },
+        {
+            "interpolators.lib/version": "1.4.0"
+        },
+        {
+            "maths.lib/author": "GRAME"
+        },
+        {
+            "maths.lib/copyright": "GRAME"
+        },
+        {
+            "maths.lib/license": "LGPL with exception"
+        },
+        {
+            "maths.lib/name": "Faust Math Library"
+        },
+        {
+            "maths.lib/version": "2.8.1"
+        },
+        {
+            "name": "sampler"
+        },
+        {
+            "options": "[midi:on][nvoices:16]"
+        },
+        {
+            "platform.lib/name": "Generic Platform Library"
+        },
+        {
+            "platform.lib/version": "1.3.0"
+        },
+        {
+            "signals.lib/name": "Faust Signal Routing Library"
+        },
+        {
+            "signals.lib/version": "1.6.0"
+        },
+        {
+            "soundfiles": "https://raw.githubusercontent.com/mauriziobrt/graph-sonification/main/samples"
+        },
+        {
+            "soundfiles.lib/name": "Faust Soundfile Library"
+        },
+        {
+            "soundfiles.lib/version": "1.7.0"
+        }
+    ],
+    "ui": [
+        {
+            "type": "vgroup",
+            "label": "sampler",
+            "items": [
+                {
+                    "type": "hslider",
+                    "label": "freq",
+                    "varname": "fHslider1",
+                    "shortname": "freq",
+                    "address": "/sampler/freq",
+                    "index": 24,
+                    "init": 440,
+                    "min": 200,
+                    "max": 3000,
+                    "step": 0.1
+                },
+                {
+                    "type": "hslider",
+                    "label": "gain",
+                    "varname": "fHslider0",
+                    "shortname": "gain",
+                    "address": "/sampler/gain",
+                    "index": 4,
+                    "init": 1,
+                    "min": 0,
+                    "max": 1,
+                    "step": 0.01
+                },
+                {
+                    "type": "button",
+                    "label": "gate",
+                    "varname": "fButton0",
+                    "shortname": "gate",
+                    "address": "/sampler/gate",
+                    "index": 60
+                },
+                {
+                    "type": "hslider",
+                    "label": "release",
+                    "varname": "fHslider2",
+                    "shortname": "release",
+                    "address": "/sampler/release",
+                    "index": 84,
+                    "init": 0.5,
+                    "min": 0.1,
+                    "max": 2,
+                    "step": 0.01
+                },
+                {
+                    "type": "nentry",
+                    "label": "sample",
+                    "varname": "fEntry0",
+                    "shortname": "sample",
+                    "address": "/sampler/sample",
+                    "index": 8,
+                    "init": 0,
+                    "min": 0,
+                    "max": 1,
+                    "step": 1
+                },
+                {
+                    "type": "soundfile",
+                    "label": "sound",
+                    "varname": "fSoundfile0",
+                    "url": "{-snd_obj_20.wav-;-snd_obj_21.wav-}",
+                    "address": "/sampler/sound",
+                    "index": 0
+                }
+            ]
+        }
+    ]
+}
