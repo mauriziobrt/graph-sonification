@@ -47,6 +47,22 @@ function sendOSCMessage(node, address, degree) {
             address: address,
             args: [node["id"], node["openacces"],node["citations"], degree]  // Send frequency as a number
         };
+        document.getElementById("openaccess").innerText = node["openacces"];
+        document.getElementById("citations").innerText = node["citations"];
+        document.getElementById("co-citations").innerText = degree;
+        ws.send(JSON.stringify(message));
+        console.log('Sent message:', message);
+        // updateStatus(`Sent frequency: ${frequency}Hz`);
+    } else {
+        // updateStatus('WebSocket not connected', true);
+    }
+}
+function sendOSCStopMessage(address) {
+    if (ws && ws.readyState === WebSocket.OPEN) {
+        const message = {
+            address: address,
+            args: [0, 0 , 0, 0]  // Send frequency as a number
+        };
         ws.send(JSON.stringify(message));
         console.log('Sent message:', message);
         // updateStatus(`Sent frequency: ${frequency}Hz`);
@@ -64,7 +80,8 @@ connectWebSocket();
 
 function fetchExternalData() {
     return Promise.all([
-        fetch("./data/rich_output.json")
+        fetch("./data/co-cit-rich.json"),
+        // fetch("./data/rich_output.json")
     ])
         .then(
             results => Promise.all(

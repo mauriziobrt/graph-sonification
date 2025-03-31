@@ -14,7 +14,7 @@ app.use(express.static('public'));
 const oscClient = new OSC({
   plugin: new OSC.DatagramPlugin({
     send: {
-      port: 57121,      // SuperCollider's default OSC port
+      port: 57120,      // SuperCollider's default OSC port
       host: 'localhost'
     }
   })

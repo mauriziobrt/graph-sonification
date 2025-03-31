@@ -81,4 +81,4 @@ def process_json(json_file):
 # process_json("scripts/network_data.json")
 # process_json("public/data/correct_output.json")
 # Example usage
-filter_json("6d. CitDict.json", "9. final_list.tsv", "correct_output.json", "out.csv", "scripts/network_data.json")
+filter_json("6d. CitDict.json", "9. final_list.tsv", "co-cit-rich.json", "co_cit.csv", "scripts/network_data.json")

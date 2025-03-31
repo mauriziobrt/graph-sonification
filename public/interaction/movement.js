@@ -100,191 +100,14 @@ function findClosestNodeInDirection(currentNode, direction, graph) {
     }, null)?.node;
 }
 
-// // Function to select a node and highlight it
-// function selectNode(node, centerView = false, graph) {
-//     selectedNodes = []
-//     selectedNode = node;
-    
-//     // Highlight the selected node
-//     updateNodeColors(graph);
-//     // graph.nodeColor(n => n === selectedNode ? 'red' : 'blue');
-    
-//     // Only center if explicitly requested (and we'll avoid this for WASD navigation)
-//     if (centerView) {
-//         graph.centerAt(node.x, node.y, 300);
-//     }
-// }
-
-
-// function clearActiveAnimations() {
-//     // Clear all active timeouts
-//     activeTimeouts.forEach(timeoutId => clearTimeout(timeoutId));
-//     activeTimeouts = []; // Reset the array
-
-// }
-
-// // Function to select a node and highlight it
-// function selectNode(node, graph, centerView = false) {
-//     selectedNode = node;
-    
-//     // Highlight the selected node
-//     graph.nodeColor(n => n === selectedNode ? 'red' : 'blue');
-    
-//     // Only center if explicitly requested (and we'll avoid this for WASD navigation)
-//     if (centerView) {
-//         graph.centerAt(node.x, node.y, 300);
-//     }
-// }
-
-// function highlightNeighborsGradually(node, graph) {
-//     // requestFullScreen(elem);
-//     // Find connected nodes
-//     console.log(degree[node.id])
-//     clearActiveAnimations();
-//     const connectedNodes = data.links
-//         .filter(link => link.source.id === node.id || link.target.id === node.id)
-//         .map(link => link.source.id === node.id ? link.target : link.source);
-
-//     // Reset all nodes before applying new highlights
-//     data.nodes.forEach(n => n.highlighted = false);
-//     node.highlighted = true; // Highlight the clicked node immediately
-//     let previouslyHighlighted = []; // Keep track of past nodes
-
-//     graph.nodeColor(n => n === node ? 'yellow' : 'gray'); // Initially set the clicked node to yellow
-
-//     // connectedNodes.forEach((neighbor, index) => {
-//     //           setTimeout(() => {
-//     //             neighbor.highlighted = true; // Highlight the node
-//     //             // console.log()
-//     //             graph.nodeColor(n => n.highlighted ? 'red' : 'gray'); // Update color dynamically
-//     //             // console.log(1250 - (degree[neighbor.id] * 40))
-//     //             // console.log(2000 - (degree[neighbor.id] * 30))
-//     //             playfaust(800, 1)
-//     //             // graph.restart();
-                
-//     //           }, (index + 1) * (degree[neighbor.id])* 10); // 1 second delay per node
-//     //         });
-//     connectedNodes.forEach((neighbor, index) => {
-//         const timeoutId = setTimeout(() => {
-//             neighbor.highlighted = true; // Highlight the node
-//             graph.nodeColor(n => n.highlighted ? 'red' : 'gray'); // Update color dynamically
-//             // console.log(2000 - (degree[neighbor.id] * 30));
-//             playfaust(2000 - (degree[neighbor.id] * 30), 1);
-//         }, (index + 1) * (degree[neighbor.id]) * 10); // 1 second delay per node
-        
-//         activeTimeouts.push(timeoutId); // Store the timeout ID
-//     });
-        
-//     // Highlight each connected node one by one with a delay
-//     // connectedNodes.forEach((neighbor, index) => {
-//     //   setTimeout(() => {
-//     //     if (previouslyHighlighted.length > 0) {
-//     //       previouslyHighlighted.forEach(n => n.colorState = 'red'); // Set previous nodes to red
-//     //     }
-//     //     neighbor.highlighted = true;
-//     //     previouslyHighlighted.push(neighbor); // Add to previous nodes list
-//     //     neighbor.colorState = 'yellow'; // Newest node is yellow
-
-//     //     graph.nodeColor(n => {
-//     //       if (n.colorState === 'yellow') return 'yellow';
-//     //       if (n.colorState === 'red') return 'red';
-//     //       return 'gray'; // Default color
-//     //     });
-//     //     let freqval = 2000 - (degree[neighbor.id] * 30)
-//     //     if(freqval < 20){playfaust(40, 1)}{
-//     //         playfaust(1000, 1)
-//     //     }
-//     //     // graph.refresh();
-//     //   }, (index + 1)); // 1 second delay per node
-//     // });
-// }
-
-// Track selected nodes
-// let selectedNodes = [];
-// let shiftKeyPressed = false;
-
-// // Track shift key state
-// document.addEventListener('keydown', (event) => {
-// if (event.key === 'Shift') {
-//     shiftKeyPressed = true;
-//     console.log("shiftKeyPressed")
-// }
-// });
-
-// document.addEventListener('keyup', (event) => {
-// if (event.key === 'Shift') {
-//     shiftKeyPressed = false;
-//     selectedNodes = []
-//     console.log("shiftKeyNotPressed")
-// }
-// });
-
-// // Function to handle node selection with shift key
-// function shiftSelection(node, graph) {
-//     if (shiftKeyPressed) {
-//       // If node is already selected, deselect it
-//       const index = selectedNodes.indexOf(node);
-//       if (index !== -1) {
-//         selectedNodes.splice(index, 1);
-//       } else {
-//         // Add node to selection (max 2 nodes)
-//         if (selectedNodes.length < 2) {
-//           selectedNodes.push(node);
-//         }
-//       }
-      
-//       // Update node colors based on selection
-//       updateNodeColors(graph);
-      
-//       // If exactly 2 nodes are selected, trigger your function
-//       if (selectedNodes.length === 2) {
-//         connectSelectedNodes(selectedNodes, graph);
-//       }
-//     } else {
-//       // Regular selection behavior (single node)
-//       selectNode(node, true, graph);
-//     }
-// }
-
-// function updateNodeColors(graph) {
-//     graph.nodeColor(n => {
-//       if (selectedNodes.length > 0) {
-//         // Multi-selection mode
-//         return selectedNodes.includes(n) ? 'red' : 'blue';
-//       } else {
-//         // Single selection mode
-//         return n === selectedNode ? 'red' : 'blue';
-//       }
-//     });
-// }
-
-// // Function that triggers when two nodes are selected
-// function connectSelectedNodes(nodes, graph) {
-//     console.log("Two nodes selected:", nodes);
-//     // Your custom logic here - e.g., create a link between nodes
-//     // For example:
-//     // graph.addLink(nodes[0].id, nodes[1].id);
-    
-//     // Maybe highlight the connection
-//     // Or show a UI element for additional actions
-    
-//     // You could also clear the selection after processing
-//     // selectedNodes = [];
-//     // updateNodeColors(graph);
-//   }
-
 //==================================================
-
-
-
-
 
 // Function to handle node selection with shift key
 function shiftSelection(node, graph,degree) {
   if (shiftKeyPressed) {
     // If an animation is in progress, cancel it
     if (animationInProgress) {
-      clearInterval(animationTimer);
+      clearTimeout(animationTimer);
       animationInProgress = false;
       highlightedPath = [];
     }
@@ -320,7 +143,7 @@ function shiftSelection(node, graph,degree) {
 function selectNode(node, centerView = false, graph) {
   // If an animation is in progress, cancel it
   if (animationInProgress) {
-    clearInterval(animationTimer);
+    clearTimeout(animationTimer);
     animationInProgress = false;
     highlightedPath = [];
   }
@@ -355,14 +178,6 @@ function updateNodeColors(graph) {
       (pathLink.source === link.target && pathLink.target === link.source)
     ) ? 'rgba(236, 131, 139, 0.5)' : linkStaticColor;
   });
-  
-  // // Make highlighted links thicker
-  // graph.linkWidth(link => {
-  //   return highlightedPath.some(pathLink => 
-  //     (pathLink.source === link.source && pathLink.target === link.target) || 
-  //     (pathLink.source === link.target && pathLink.target === link.source)
-  //   ) ? 3 : node.weight / 2.0;
-  // });
 }
 
 // Find shortest path between two nodes using BFS
@@ -427,17 +242,20 @@ function connectSelectedNodes(nodes, graph, degree) {
   }
   
   console.log("Shortest path:", path);
+  sendOSCMessage(nodes[0], '/additive', degree[nodes[0].id]);
   console.log("Path links:", links);
   
   // Start animation
   animatePathTraversal(path, links, graph, degree);
 }
 
+// CLAUDE TEST
+
 // Function to animate the path traversal
 function animatePathTraversal(nodePath, linkPath, graph, degree) {
   // Clear any existing animation
   if (animationTimer) {
-    clearInterval(animationTimer);
+    clearTimeout(animationTimer); // Change clearInterval to clearTimeout
   }
   
   animationInProgress = true;
@@ -451,33 +269,96 @@ function animatePathTraversal(nodePath, linkPath, graph, degree) {
     nodeMap[node.id] = node;
   });
   
-  // Animation function
-  animationTimer = setInterval(() => {
+  // Animation function that calls itself recursively with dynamic timeout
+  function animateStep() {
     if (currentStep >= linkPath.length) {
       // Animation completed
-      clearInterval(animationTimer);
       animationInProgress = false;
+      sendOSCStopMessage('/additive');
       return;
     }
+    
     // Add the next link to the highlighted path
     highlightedPath.push(linkPath[currentStep]);
+    
     // Highlight current node in the path
     const currentNodeId = nodePath[currentStep + 1];
     const currentNode = nodeMap[currentNodeId];
     document.getElementById("content").innerText = currentNode["description"];
-    // console.log(degree[currentNode.id])
-    // playFaust(220, degree[currentNode.id], "additivefilter", faustNode, audioContext);
+    
+    // Send OSC message
     sendOSCMessage(currentNode, '/additive', degree[currentNode.id]);
+    
     // Center on current node
     graph.centerAt(currentNode.x, currentNode.y, 300);
     
     // Update colors
     updateNodeColors(graph);
     
-    // Move to next step
+    // Calculate the delay for the next step based on current node's citations
+    const nextNodeId = nodePath[currentStep + 1];
+    const nextDelay = nodeMap[nextNodeId]["citations"] * 100;
+    console.log("DELAY", nextDelay);
+    // Move to next step with dynamic timeout
     currentStep++;
-  }, 1000); // 1 second interval
+    
+    // Set the next timeout with dynamic delay
+    animationTimer = setTimeout(animateStep, nextDelay);
+  }
+  
+  // Start the animation with the first node's delay
+  const firstDelay = nodeMap[nodePath[0]]["citations"] * 100;
+  animationTimer = setTimeout(animateStep, firstDelay);
 }
+
+//END TEST
+
+// // Function to animate the path traversal
+// function animatePathTraversal(nodePath, linkPath, graph, degree) {
+//   // Clear any existing animation
+//   if (animationTimer) {
+//     clearInterval(animationTimer);
+//   }
+  
+//   animationInProgress = true;
+//   highlightedPath = [];
+//   let currentStep = 0;
+  
+//   // Get node objects from their IDs
+//   const nodeObjects = graph.graphData().nodes;
+//   const nodeMap = {};
+//   nodeObjects.forEach(node => {
+//     nodeMap[node.id] = node;
+//   });
+//   nodeStep = 0;
+//   console.log("miao", nodeMap[nodePath[0]]["citations"])
+//   // Animation function
+//   animationTimer = setTimeout(() => {
+//     if (currentStep >= linkPath.length) {
+//       // Animation completed
+//       clearInterval(animationTimer);
+//       animationInProgress = false;
+//       sendOSCStopMessage('/additive');
+//       return;
+//     }
+//     // Add the next link to the highlighted path
+//     highlightedPath.push(linkPath[currentStep]);
+//     // Highlight current node in the path
+//     const currentNodeId = nodePath[currentStep + 1];
+//     const currentNode = nodeMap[currentNodeId];
+//     document.getElementById("content").innerText = currentNode["description"];
+//     // console.log(degree[currentNode.id])
+//     // playFaust(220, degree[currentNode.id], "additivefilter", faustNode, audioContext);
+//     sendOSCMessage(currentNode, '/additive', degree[currentNode.id]);
+//     // Center on current node
+//     graph.centerAt(currentNode.x, currentNode.y, 300);
+//     nodeStep++;
+//     // Update colors
+//     updateNodeColors(graph);
+//     // Move to next step
+//     currentStep++;
+//   }, nodeMap[nodePath[nodeStep]]["citations"] * 5); // 1 second interval
+// }
 
 //==================================================
 
@@ -496,6 +377,13 @@ function highlightNeighbors(node, graph) {
 
     graph.nodeColor(node => node.highlighted ? 'red' : 'gray'); // Change color dynamically
     // graph.refresh(); // Refresh the graph
+}
+
+function clearTransitionAnimations() {
+    if (animationTimer) {
+      clearTimeout(animationTimer);
+      sendOSCStopMessage('/additive');
+    }
 }
 
 function clearActiveAnimations() {
@@ -529,7 +417,7 @@ function highlightNeighborsGradually(node, graph, degree, data) {
             graph.nodeColor(n => n.highlighted ? 'red' : 'gray'); // Update color dynamically
             // console.log(2000 - (degree[neighbor.id] * 30));
             // playFaust(2000 - (degree[neighbor.id] * 30), 1, "bubbles", audioNode, audioContext);
-            sendOSCMessage(neighbor, '/bubbles', degree[node.id]);
+            sendOSCMessage(neighbor, '/bubbles', degree[neighbor.id]);
         }, (index + 1) * (degree[neighbor.id]) * 10); // 1 second delay per node
         
         activeTimeouts.push(timeoutId); // Store the timeout ID

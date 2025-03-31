@@ -33,33 +33,6 @@ fetchExternalData().then(
     
         (async () => {
             //=================================================================================
-            //Audio init
-            //=================================================================================
-            // const { createFaustNode } = await import("./audio/create-node.js");
-            // // Create audio context
-            // const AudioCtx = window.AudioContext || window.webkitAudioContext;
-            // const audioContext = new AudioCtx({ latencyHint: 0.00001 });
-            // audioContext.suspend();
-            // // Create Faust node for each Synth
-            // const { faustNode: additiveNode, dspMeta: { name } } = await createFaustNode(audioContext, "./audio/additive-dsp-meta.json", "./audio/additive-dsp-module.wasm","additive", FAUST_DSP_VOICES);
-            // const { faustNode: dropNode, dspMeta: { bubblename } } = await createFaustNode(audioContext, "./audio/drop-meta.json","./audio/drop-module.wasm",  "drop", FAUST_DSP_VOICES);
-            // const { faustNode: additivePlusNode, dspMeta: { additivename } } = await createFaustNode(audioContext, "./audio/additiveplus-dsp-meta.json", "./audio/additiveplus-dsp-module.wasm","additiveplus", FAUST_DSP_VOICES);
-            // const { faustNode: samplerNode, dspMeta: { samplername } } = await createFaustNode(audioContext, "./audio/dsp-meta.json", "./audio/dsp-module.wasm","sampler", FAUST_DSP_VOICES);
-            // const { faustNode: additiveFilterNode, dspMeta: { addfiltername } } = await createFaustNode(audioContext, "./audio/additivefilter-meta.json", "./audio/additivefilter-module.wasm","additivefilter", FAUST_DSP_VOICES);
-
-            // if (!additiveNode) throw new Error("Faust DSP not compiled");
-            // // Connect the Faust node to the audio output
-            // dropNode.connect(audioContext.destination);
-            // additiveNode.connect(audioContext.destination);
-            // additivePlusNode.connect(audioContext.destination);
-            // samplerNode.connect(audioContext.destination);
-            // additiveFilterNode.connect(audioContext.destination);
-            
-            // if (additiveNode.getNumInputs() > 0) {
-            //     const { connectToAudioInput } = await import("./audio/create-node.js");
-            //     await connectToAudioInput(audioContext, null, additiveNode, null);
-            // }
-            //=================================================================================
             //Graph
             //=================================================================================
             const graph = new ForceGraph(elem)
@@ -99,32 +72,12 @@ fetchExternalData().then(
                     // additiveNode.setParamValue('/additive/gate', 0);
                     return
                 }
-                // if (!hoverOn){
-                //     // console.log(hoverOn)
-                //     return
-                // }
-                // highlightNodes.clear();
-                // highlightLinks.clear();
-                // console.log(document.getElementById("mitch"));
                 if (node) {
-                    console.log(node)
-                    sendOSCMessage(node, "/control", degree[node.id])
-
-                    // sendOSCMessage([node["id"], node["openacces"],node["citations"]], ''); //, node["user"]
-                    // console.log(node)
-                    // highlightNodes.add(node);
-                    // // console.log(node)
-                    // if(!node.neighbors)
-                    //     return
-                    // node.neighbors.forEach(neighbor => highlightNodes.add(neighbor));
-                    // node.links.forEach(link => highlightLinks.add(link));
-                    
-                    // console.log(node.neighbors.length)
-                    // console.log(1250 - (degree[node.id] * 43.4/4))
-                    // console.log(220 + (degree[node.id] * 4));
-                        // playFaust(degree[node.id] + 60, 2, "sampler", samplerNode, audioContext);
+                    if (hoverOn) {
+                        sendOSCMessage(node, "/control", degree[node.id])
                     }
-                // hoverNode = node || null;
+                    // console.log(node)
+                    }
                 });
 
             graph.nodeColor(node => {
@@ -133,13 +86,13 @@ fetchExternalData().then(
                 return colorScale(node.user);
             });
 
-            // let originalNodeColorFunction = graph.nodeAutoColorBy('user');
-            // graph.onNodeClick(node => attractNeighbors(node, graph));
-            // graph.onBackgroundClick(graph.nodeAutoColorBy('user'));
             // UPDATE LATER, it should also work if there's already a selectednode
             function setupNodeSelection(graph) {
                 graph.onNodeClick((node, event) => {
                     document.getElementById("content").innerText = node["description"];
+                    document.getElementById("openaccess").innerText = node["openacces"];
+                    document.getElementById("citations").innerText = node["citations"];
+                    document.getElementById("co-citations").innerText = degree[node.id];
                   if (shiftKeyPressed) {
                     shiftSelection(node, graph, degree);
                     clearActiveAnimations();
@@ -174,14 +127,13 @@ fetchExternalData().then(
                 selectedNode = null;
                 highlightedPath = [];
                 clearActiveAnimations();
+                clearTransitionAnimations();
                 graph.nodeColor(node => {
                     // Use the same coloring scheme you had initially
                     // For example, if you used a color scale based on user property:
                     return colorScale(node.user);
                   });
                 // Reset link coloring and width
-                // graph.linkColor(() => 'rgba(255,255,255,0.2)'); // Reset to default
-                // graph.linkColor(link =>  '#'+(Math.random()*0xFFFFFF<<0).toString(16))
                 graph.linkCurvature(0.2)
                 graph.linkWidth(node => node.weight / 2.0)
                 });

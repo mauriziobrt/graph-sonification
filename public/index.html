@@ -123,8 +123,8 @@ input:checked + .slider:before {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="//unpkg.com/force-graph"></script>
-  <script src="https://www.unpkg.com/force-graph"></script>
+  <!-- <script src="//unpkg.com/force-graph"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/force-graph"></script>
   <script type="text/javascript" src="./interaction/movement.js"></script>
   <script type="text/javascript" src="./audio/synthesis.js"></script>
   <script type="text/javascript" src="./helpers.js"></script>
@@ -133,67 +133,26 @@ input:checked + .slider:before {
 </head>
 
 <body style="background-color:#101020; overflow: hidden;">
-  <!-- <button class="dropbtn">Load Data</button>  -->
-    <!-- <div class="dropdown">
-      <button class="dropbtn">Force Type</button>
-      <div class="dropdown-content">
-        <a href="#">Attraction</a>
-        <a href="#">Repulsion</a>
-      </div>
-    </div>  -->
-    <!-- <div class="dropdown">
-      <button class="dropbtn">Exploration Mode</button>
-      <div class="dropdown-content">
-        <a href="#">WASD navigation</a>
-        <a href="#">Mouse hover</a>
-        <a href="#">Find path</a>
-      </div>
-    </div> 
-    <div class="dropdown">
-      <button class="dropbtn">Audio Type</button>
-      <div class="dropdown-content">
-        <a href="#">Harmonic Synthesis</a>
-        <a href="#">Temporal divergence</a>
-        <a href="#">Temporal convergence</a>
-      </div>
-    </div>
-    <p class="simple_text">Interact between elements</p>
-    <div class="dropdown">
-      <button class="dropbtn">Action 1</button>
-      <div class="dropdown-content">
-        <a href="#">Harmonic Synthesis</a>
-        <a href="#">Temporal divergence</a>
-        <a href="#">Temporal convergence</a>
-      </div>
-    </div>
-    <div class="dropdown">
-      <button class="dropbtn">Parameter Mapping</button>
-      <div class="dropdown-content">
-        <a href="#">Harmonic Synthesis</a>
-        <a href="#">Temporal divergence</a>
-        <a href="#">Temporal convergence</a>
-      </div>
-    </div> -->
-    <p class="simple_text">Toggle Hover Sound</p>
-    <label class="switch">
-      <input type="checkbox" id="mitch">
-      <div class="slider"></div>
-    </label>
-    <p class="simple_text">Selected node: </p>
-    <p class="simple_text" id="content" style="text-align: center;" >...</p>
-    
-    <div class="bottomright">
-      <p class="simple_text" id="miaomiao"></p>
-    </div>
-
-    <div class="bottomleft">
-      wasd = navigation from selected node <br>
-      spacebar+nodeclick = play neighbours <br>
-      shift+2 node clicks = find nearest path and play <br>
-      background click = reset play<br>
-      if hover on -> play onhover
-    </div> 
-
+  <p class="simple_text">Toggle Hover Sound</p>
+  <label class="switch">
+    <input type="checkbox" id="mitch">
+    <div class="slider"></div>
+  </label>
+  <p class="simple_text">Selected node: </p>
+  <p class="simple_text" id="content" style="text-align: center;" >...</p>
+  <div class="bottomright" style="text-align: left;">
+    <p class="simple_text" id="miaomiao"></p><br>
+    OpenAccess: <p class="simple_text" id="openaccess">none</p><br>
+    Citations: <p class="simple_text" id="citations">none</p><br>
+    Co-citations: <p class="simple_text" id="co-citations">none</p><br>
+  </div>
+  <div class="bottomleft">
+    wasd = navigation from selected node <br>
+    spacebar+nodeclick = play neighbours <br>
+    shift+2 node clicks = find nearest path and play <br>
+    background click = reset play<br>
+    if hover on -> play onhover
+  </div> 
   <script type="module" src="./audio/create-node.js"></script>
   <script type="module" src="force_graphs.js"></script>
   <div id="graph"></div>
