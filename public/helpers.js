@@ -7,6 +7,39 @@
 //   });
 // });
 
+// function mapValue(inputVal, options = {}) {
+//     // Default parameters
+//     const inMin = options.inMin !== undefined ? options.inMin : 0;
+//     const inMax = options.inMax !== undefined ? options.inMax : 860;
+//     const outMin = options.outMin !== undefined ? options.outMin : 5000;
+//     const outMax = options.outMax !== undefined ? options.outMax : 10000;
+
+//     // Optional focus range parameters (for special emphasis on a particular range)
+//     const focusRangeEnd = options.focusRangeEnd !== undefined ? options.focusRangeEnd : 20;
+//     const focusRangeOutput = options.focusRangeOutput !== undefined ? options.focusRangeOutput : 3000;
+//     const focusLogBase = options.focusLogBase !== undefined ? options.focusLogBase : 1.2;
+//     const mainLogBase = options.mainLogBase !== undefined ? options.mainLogBase : 4;
+
+//     // Ensure input is within bounds
+//     inputVal = Math.max(inMin, Math.min(inMax, inputVal));
+
+//     // For values in the focus range
+//     if (inputVal <= focusRangeEnd) {
+//         // Map focus range using log scale
+//         const normalized = (Math.log(inputVal - inMin + 1) / Math.log(focusLogBase)) / 
+//                             (Math.log(focusRangeEnd - inMin + 1) / Math.log(focusLogBase));
+//         return Math.round(outMin + normalized * (focusRangeOutput - outMin));
+//     } else {
+//         // Map remaining range using log scale
+//         const normalized = (Math.log(inputVal - focusRangeEnd) / Math.log(mainLogBase)) / 
+//                             (Math.log(inMax - focusRangeEnd) / Math.log(mainLogBase));
+//         return Math.round(focusRangeOutput + normalized * (outMax - focusRangeOutput));
+// }
+// }
+
+const mapNumRange = (num, inMin, inMax, outMin, outMax) =>
+    ((num - inMin) * (outMax - outMin)) / (inMax - inMin) + outMin;
+  
 //======================================================================
 // Server Part
 //======================================================================
@@ -43,16 +76,26 @@ function connectWebSocket() {
 
 function sendOSCMessage(node, address, degree) {
     if (ws && ws.readyState === WebSocket.OPEN) {
+        const cit = node["citations"];
+        // const timeCit = mapValue(cit, {
+        //     inMin: 0,
+        //     inMax: 836,
+        //     outMin: 5000,
+        //     outMax: 10000,
+        //     focusRangeEnd: 30,
+        //     focusRangeOutput: 0.4
+        // });
+        timeCit = mapNumRange(cit, 0,836,5000,10000);
+        console.log("TIME SENT: ", timeCit)
         const message = {
             address: address,
-            args: [node["id"], node["openacces"],node["citations"], degree]  // Send frequency as a number
+            args: [node["id"], node["openacces"],cit, degree, timeCit]
         };
         document.getElementById("openaccess").innerText = node["openacces"];
-        document.getElementById("citations").innerText = node["citations"];
+        document.getElementById("citations").innerText = cit;
         document.getElementById("co-citations").innerText = degree;
         ws.send(JSON.stringify(message));
         console.log('Sent message:', message);
-        // updateStatus(`Sent frequency: ${frequency}Hz`);
     } else {
         // updateStatus('WebSocket not connected', true);
     }
@@ -61,7 +104,7 @@ function sendOSCStopMessage(address) {
     if (ws && ws.readyState === WebSocket.OPEN) {
         const message = {
             address: address,
-            args: [0, 0 , 0, 0]  // Send frequency as a number
+            args: [0, 0 , 0, 0, 0]  // Send frequency as a number
         };
         ws.send(JSON.stringify(message));
         console.log('Sent message:', message);
@@ -100,3 +143,5 @@ let animationInProgress = false;
 let highlightedPath = [];
 let animationTimer = null;
 let linkStaticColor = 'rgba(104, 100, 100, 0.3)';
+
+

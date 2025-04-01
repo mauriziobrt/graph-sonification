@@ -277,7 +277,7 @@ function animatePathTraversal(nodePath, linkPath, graph, degree) {
       sendOSCStopMessage('/additive');
       return;
     }
-    
+    // console.log("AAAA")
     // Add the next link to the highlighted path
     highlightedPath.push(linkPath[currentStep]);
     
@@ -297,8 +297,19 @@ function animatePathTraversal(nodePath, linkPath, graph, degree) {
     
     // Calculate the delay for the next step based on current node's citations
     const nextNodeId = nodePath[currentStep + 1];
-    const nextDelay = nodeMap[nextNodeId]["citations"] * 100;
-    console.log("DELAY", nextDelay);
+    // Maps 100-500 to 0-1 with focus on 100-150 range
+    // TODO TOMORROW
+    // const nextDelay = mapValue(nodeMap[nextNodeId]["citations"], {
+    //   inMin: 0,
+    //   inMax: 1000,
+    //   outMin: 5000,
+    //   outMax: 10000,
+    //   focusRangeEnd: 30,
+    //   focusRangeOutput: 0.4
+    // });
+    const nextDelay = mapNumRange(nodeMap[nextNodeId]["citations"], 0,836,5000,10000);
+    // const nextDelay = nodeMap[nextNodeId]["citations"];
+    console.log("Next Delay:", nextDelay);
     // Move to next step with dynamic timeout
     currentStep++;
     
@@ -307,7 +318,16 @@ function animatePathTraversal(nodePath, linkPath, graph, degree) {
   }
   
   // Start the animation with the first node's delay
-  const firstDelay = nodeMap[nodePath[0]]["citations"] * 100;
+  const firstDelay = mapNumRange(nodeMap[nodePath[0]]["citations"], 0,836,5000,10000);
+  // const firstDelay = mapValue(nodeMap[nodePath[0]]["citations"], {
+  //   inMin: 0,
+  //   inMax: 1000,
+  //   outMin: 1000,
+  //   outMax: 10000,
+  //   focusRangeEnd: 30,
+  //   focusRangeOutput: 0.4
+  // });
+  console.log("First Delay", firstDelay);
   animationTimer = setTimeout(animateStep, firstDelay);
 }
 
