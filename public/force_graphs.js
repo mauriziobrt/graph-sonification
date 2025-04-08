@@ -74,6 +74,7 @@ fetchExternalData().then(
                 }
                 if (node) {
                     if (hoverOn) {
+                        document.getElementById("content").innerText = node["description"];
                         sendOSCMessage(node, "/control", degree[node.id])
                     }
                     // console.log(node)
@@ -83,15 +84,17 @@ fetchExternalData().then(
             graph.nodeColor(node => {
                 // Use the same coloring scheme you had initially
                 // For example, if you used a color scale based on user property:
-                return colorScale(node.user);
+                return colorScale(node.openacces);
             });
 
             // UPDATE LATER, it should also work if there's already a selectednode
             function setupNodeSelection(graph) {
                 graph.onNodeClick((node, event) => {
+                    console.log(node)
                     document.getElementById("content").innerText = node["description"];
                     document.getElementById("openaccess").innerText = node["openacces"];
                     document.getElementById("citations").innerText = node["citations"];
+                    document.getElementById("year").innerText = node["year"];
                     document.getElementById("co-citations").innerText = degree[node.id];
                   if (shiftKeyPressed) {
                     shiftSelection(node, graph, degree);
@@ -108,7 +111,7 @@ fetchExternalData().then(
             function createColorScale(graph) {
                 // Get all unique user values
                 const nodes = graph.graphData().nodes;
-                const userValues = [...new Set(nodes.map(node => node.user))];
+                const userValues = [...new Set(nodes.map(node => node.openacces))];
                 // Create a color scale with d3
                 // const colorScale = d3.scaleSequential([0, 100], d3.interpolateBlues);
                 const colorScale = d3.scaleOrdinal()
@@ -131,7 +134,7 @@ fetchExternalData().then(
                 graph.nodeColor(node => {
                     // Use the same coloring scheme you had initially
                     // For example, if you used a color scale based on user property:
-                    return colorScale(node.user);
+                    return colorScale(node.openacces);
                   });
                 // Reset link coloring and width
                 graph.linkCurvature(0.2)

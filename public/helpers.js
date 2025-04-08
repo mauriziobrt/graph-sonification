@@ -89,11 +89,12 @@ function sendOSCMessage(node, address, degree) {
         console.log("TIME SENT: ", timeCit)
         const message = {
             address: address,
-            args: [node["id"], node["openacces"],cit, degree, timeCit]
+            args: [node["id"], node["openacces"],cit, degree, timeCit, node["year"]]
         };
         document.getElementById("openaccess").innerText = node["openacces"];
         document.getElementById("citations").innerText = cit;
         document.getElementById("co-citations").innerText = degree;
+        document.getElementById("year").innerText = node["year"];
         ws.send(JSON.stringify(message));
         console.log('Sent message:', message);
     } else {
