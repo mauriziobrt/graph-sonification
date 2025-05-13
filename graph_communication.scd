@@ -29,16 +29,17 @@ OSCdef(\bubbleControl, {|msg, time, addr, recvPort|
 	var bell3 = [ 3901.8504142761, 3278.7544727325, 3938.3745193481, 1065.1204586029, 3879.1404008865, 3816.3529872894, 2989.7552490234, 1730.3744077682, 678.00426483154, 2374.1246700287, 2525.9301900864, 3549.2574453354 ];
 	var bell4 = [ 2657.4152469635, 912.29071617126, 1286.7574691772, 3869.4250106812, 1136.3956451416, 2689.750957489, 459.87751483917, 2751.2355566025, 3400.4847288132, 1524.5981216431, 2834.7212314606, 2828.8508653641 ];
 	// msg[].postln;
-	(msg[3].linlin(0,200,0,1)).postln;
+	// (msg[3].linlin(0,200,0,1)).postln;
 	// {SinOsc.ar(Rand(500, 1500),0, EnvGen.kr(Env.perc, doneAction: Done.freeSelf) * 0.1)}.play;
 	Synth("help-KlankOverlapTexture", [
 		\atk, 0,
 		\sus, 0,
 		\rel, 4,
 		\pan, 1.0.rand2,
-		\amp, (msg[3].linlin(0,200,-7,0).dbamp),
+		\amp, (msg[3].linlin(0,200,-10,0).dbamp),
 		\freqs, [bell1, bell2, bell3, bell4].choose,
 		\rings, {0.1.rrand(msg[3]/10.0)}.dup(12),
+		\rel, (msg[4].linlin(0,60,100,1300)/50)
 		// \filterfreq, msg[4].linlin(0,55, 60, 20000)
         ]);
 }, '/bubbles');
@@ -154,10 +155,10 @@ Ndef(\resControlled, {
 	var sig = DynKlank.ar(`[Array.series(10, fund, 3 * fund * a.ratios[2]), nil, [1, 1, 1, 1]], PinkNoise.ar([0.007, 0.007])) * 0.3;
 	sig = sig +
 	(sig * Pulse.ar(Rand(1,20),mul:0.1) * Saw.ar(0.5)) * 0.2 +
-	SinOsc.ar([fund, fund*a.ratios.choose, fund, fund*a.ratios.choose], mul: 0.2) +
+	SinOsc.ar([XLine.ar(fund, fund/10,300), fund*a.ratios.choose, fund, fund*a.ratios.choose], mul: 0.2 * SinOsc.kr(0.01).abs) +
 	GVerb.ar(Pluck.ar(WhiteNoise.ar(0.1), Dust.kr([Rand(0.1,5),Rand(0.1,5)]), [fund.reciprocal, (fund*a.ratios.choose).reciprocal], [fund.reciprocal, (fund*a.ratios.choose).reciprocal], mul:0.1),drylevel:0.0,taillevel:1) +
-	PitchShift.ar(Dust.ar([10,9]), pitchRatio: [0.12,0.2]);
-	sig = sig * EnvGen.ar(env, doneAction: Done.freeSelf);
+	PitchShift.ar(Dust.ar([1,4]), pitchRatio: [0.12,0.2]);
+	sig = GVerb.ar(sig*0.5+PitchShift.ar(sig,pitchRatio: Rand(1,20)));// * EnvGen.ar(env, doneAction: Done.freeSelf);
 	Pan2.ar(sig)// stereo output
 });
 )
@@ -165,20 +166,24 @@ Array.series(10)
 (
 SynthDef(\miaoControlled, {|out, fund= 80, size = 10|
 	var env = Env.new(levels: [0, 1, 0.4, 0], times: [0.1, 0.2, fund/100], curve: [-5, 0, -5]);
-	var sig = DynKlank.ar(`[Array.series(, fund, 3 * fund * a.ratios[2]), nil, [1, 1, 1, 1]], PinkNoise.ar([0.007, 0.007])) * 0.3;
-	sig = sig +
-	(sig * Pulse.ar(Rand(1,20),mul:0.1) * Saw.ar(0.5)) * 0.2 +
-	SinOsc.ar([fund, fund*a.ratios.choose], mul: 0.2);
+	var sig = DynKlank.ar(`[Array.series(10, fund, 3 * fund * a.ratios[2]), nil, [1, 1, 1, 1]], PinkNoise.ar([0.007, 0.007])) * 0.3;
+	sig = sig + (sig * Pulse.ar(Rand(1,20),mul:0.1) * Saw.ar(0.5)) * 0.2 + SinOsc.ar([fund, fund*a.ratios.choose], mul: 0.2);
 	sig = sig * EnvGen.ar(env, doneAction: Done.freeSelf);
 	Out.ar(out, Pan2.ar(sig))// stereo output
 }).add;
 )
+(
+r = Routine({
+	  // Wait a short time
+	inf.do{Synth(\miaoControlled);
+		0.25.wait;
+	};
+}).play;
+)
 Synth(\miaoControlled)
-Ndef(\resControlled).fadeTime_(2)
+Ndef(\resControlled).fadeTime_(20)
 Ndef(\resControlled).play;
 Ndef(\resControlled).free;
-
-
 
 // -- overlap texture
 (
@@ -397,6 +402,10 @@ Routine({
     }.loop;
 }).play;
 )
+
+//================================================================================================================================================
+// A Spectralist Supercollider, experiments on timbre
+//================================================================================================================================================
 
 
 // Function to distort a spectrum in SuperCollider

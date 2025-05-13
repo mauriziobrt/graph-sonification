@@ -439,6 +439,7 @@ function highlightNeighborsGradually(node, graph, degree, data) {
             // playFaust(2000 - (degree[neighbor.id] * 30), 1, "bubbles", audioNode, audioContext);
             // document.getElementById("content").innerText = neighbor["description"];
             sendOSCMessage(neighbor, '/bubbles', degree[neighbor.id]);
+            console.log("HERE", neighbor.id)
         }, (index + 1) * (degree[neighbor.id]) * 10); // 1 second delay per node
         
         activeTimeouts.push(timeoutId); // Store the timeout ID

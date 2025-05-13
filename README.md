@@ -1,24 +1,50 @@
-# graph-sonification
+# Force-Layout Graph Sonification
 
-Interface for the sonification of graphs using OSC. Graphs can be loaded as json inside the ```helpers.js``` file. You can find an example of the json inside ```/data/correct_output.json```.
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15197962.svg)](https://doi.org/10.5281/zenodo.15197962)
 
-### Run the following from terminal to initialize: 
+![](graph-screen.png)
+
+Interface for the sonification of graphs using OSC. Graphs can be loaded as json inside the ```helpers.js``` file. You can find an example of a properly formatted json inside ```/data/correct_output.json```.
+
+## Requirements:
+- Supercollider - [Download Link](https://supercollider.github.io/)
+
+## Run the following from terminal to initialize: 
 
 1. `npm init -y`
 2. `npm install --save express osc-js ws`
 3. `node server.js`
+4. open the link displayed after you launch the previous command
 
-# Commands
+## From Supercollider
 
-## Toggle Enabled:
+Evaluate the code by opening the file `graph_communication.scd`, boot the server and press `cmd+enter` on the highlighted portion of code.  
+
+## Modes of interaction
+
+The user can interact with the graph using four different inputs: (1)
+Mouse hover on nodes, (2) WASD keyboard navigation on node,
+(3) Spacebar + mouse click on a node, and (4) Shift + mouse click
+on two nodes. The use of these gestures triggers both a sonic and
+a visual event.
+
+### 1. Toggle Enabled:
     
-    Hover on node = sonify the node
+- Hover on node = sonify the node
 
-## OnNode:
+### 2. WASD navigation:
 
-    Shif+Click = Find shortest path between nodes and sonify it
-    Spacebar+Click = Sonify number of neighbors temporally
+- Use WASD keys to navigate around nodes
 
-## OnBackground:
+### 3. Click On Node:
 
-    Click = Reset view
+- Spacebar+Click = Sonify number of neighbors temporally
+
+### 4. Nearest Path:
+
+- Shif+Click = Find shortest path between nodes and sonify it
+
+
+### 5. OnBackground:
+
+- Click = Reset view
