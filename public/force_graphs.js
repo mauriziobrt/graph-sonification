@@ -4,41 +4,99 @@ import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
 //Main Body
 //=================================================================================
 
-fetchExternalData().then(
-    (data) => {
-    data = data[0]
-    const degree = {};
-        data.links.forEach(link => {
-        degree[link.source] = (degree[link.source] || 0) + 1;
-        degree[link.target] = (degree[link.target] || 0) + 1;
+function selectFile() {
+  return new Promise((resolve, reject) => {
+    // Create a file input element
+    const fileInput = document.createElement('input');
+    fileInput.type = 'file';
+    fileInput.style.display = 'none';
+    document.body.appendChild(fileInput);
+    
+    // Set up event listener for when a file is selected
+    fileInput.addEventListener('change', (event) => {
+      if (fileInput.files && fileInput.files.length > 0) {
+        const fileName = fileInput.files[0].name;
+        console.log(`Selected file: ${fileName}`);
+        
+        // Clean up the file input element
+        document.body.removeChild(fileInput);
+        
+        // Return the file name
+        resolve(fileName);
+      } else {
+        // Clean up if no file was selected
+        document.body.removeChild(fileInput);
+        reject(new Error('No file selected'));
+      }
     });
     
+    // Trigger the file selection dialog
+    fileInput.click();
+  });
+}
+
+var GUI = lil.GUI;
+const gui = new GUI();
+var obj = { 
+    // size: 'Medium', 
+    hoverOn: false,
+    file: "./data/co-cit-rich.json",
+    loadFile: function() {obj.file = selectFile().fileName},
+    oscPort: 57120,
+    // reloadGraph: function() {main()}
+}
+
+gui.add(obj, "hoverOn");
+gui.add(obj, "file", ["./data/co-cit-rich.json", "./data/rich_output.json"])
+gui.add( obj, 'oscPort' ); 	// number field
+
+gui.onChange( event => {
+    console.log(event.property)
+    if (event.property  == "hoverOn") {
+        hoverOn = event.value;
+        console.log('State hover: ', hoverOn);
+    }
+    if (event.property == "oscPort") {
+        console.log(oscClient);
+    }
+    if (event.property == "file") {
+        main()
+    }
+} );
+
+let graph;
+
+function main() {
+    fetchExternalData(obj.file).then(
+        (data) => {
+            data = data[0]
+            const degree = {};
+                data.links.forEach(link => {
+                degree[link.source] = (degree[link.source] || 0) + 1;
+                degree[link.target] = (degree[link.target] || 0) + 1;
+        });
     
-    var checkbox = document.getElementById('mitch');
+        const highlightNodes = new Set();
+        const highlightLinks = new Set();
+        const elem = document.getElementById('graph');
+        if (!graph){
+            const graph = new ForceGraph(elem);
+        else {graph.graphData = elem}
+    //================================================================================================
+    // Reload Graph
+    //================================================================================================
+    // function updateGraph(graph)  {
+    //     graph.graphData(elem)
+    // }
+    // updateGraph(graph)
 
-    checkbox.addEventListener('change', function () {
-        if (checkbox.checked) {
-            hoverOn = true;
-            console.log('Checked');
-        } else {
-            hoverOn = false;
-            console.log('Not checked');
-        }
-    });
-
-
-    const highlightNodes = new Set();
-    const highlightLinks = new Set();
-    const elem = document.getElementById('graph');
-    
-        (async () => {
+    (async () => {
             //=================================================================================
             //Graph
             //=================================================================================
-            const graph = new ForceGraph(elem)
+            graph
                 .backgroundColor('#101020')
                 .nodeRelSize(6)
-                // .nodeAutoColorBy('user')
                 .nodeLabel(node => `${node.user}: ${node.description}`)
                 .linkCurvature(0.2)
                 .linkWidth(node => node.weight / 2.0)
@@ -49,12 +107,6 @@ fetchExternalData().then(
                 .linkDirectionalParticles(1)
                 .graphData(data)
                 .autoPauseRedraw(false) // keep redrawing after engine has stopped
-                .onNodeDrag(node => {
-                    // playfaust((node.x / 100) + (node.y / 10), degree[node.id] );
-                })
-                .onNodeDragEnd(node => {
-                    // playfaust(0, degree[node.id]);
-                })
                 .onLinkHover(link => {
                     highlightNodes.clear();
                     highlightLinks.clear();
@@ -65,11 +117,9 @@ fetchExternalData().then(
                     highlightNodes.add(link.target);
                     };
                 })
-                // .onNodeClick(node => shiftSelection(node, Graph));
                 .onNodeHover(node => {
                     
                 if (!node){
-                    // additiveNode.setParamValue('/additive/gate', 0);
                     return
                 }
                 if (node) {
@@ -77,15 +127,12 @@ fetchExternalData().then(
                         document.getElementById("content").innerText = node["description"];
                         sendOSCMessage(node, "/control", degree[node.id])
                     }
-                    // console.log(node)
                     }
                 });
-
-            graph.nodeColor(node => {
-                // Use the same coloring scheme you had initially
-                // For example, if you used a color scale based on user property:
-                return colorScale(node.openacces);
-            });
+            
+            //================================================================================================
+            //Select function depending on status
+            //================================================================================================
 
             // UPDATE LATER, it should also work if there's already a selectednode
             function setupNodeSelection(graph) {
@@ -96,17 +143,27 @@ fetchExternalData().then(
                     document.getElementById("citations").innerText = node["citations"];
                     document.getElementById("year").innerText = node["year"];
                     document.getElementById("co-citations").innerText = degree[node.id];
-                  if (shiftKeyPressed) {
+                    if (shiftKeyPressed) {
                     shiftSelection(node, graph, degree);
                     clearActiveAnimations();
-                  } else {
+                    } else {
                     selectNode(node, true, graph);
                     clearActiveAnimations();
                     if (spaceKeyPressed) {highlightNeighborsGradually(node, graph, degree, data)};
-                  }
+                    }
                 });
             }
             setupNodeSelection(graph)
+
+            //================================================================================================
+            //COLORS
+            //================================================================================================
+            graph.nodeColor(node => {
+                // Use the same coloring scheme you had initially
+                // For example, if you used a color scale based on user property:
+                return colorScale(node.openacces);
+            });
+
             // Create a color scale using d3-scale
             function createColorScale(graph) {
                 // Get all unique user values
@@ -135,14 +192,18 @@ fetchExternalData().then(
                     // Use the same coloring scheme you had initially
                     // For example, if you used a color scale based on user property:
                     return colorScale(node.openacces);
-                  });
+                    });
                 // Reset link coloring and width
                 graph.linkCurvature(0.2)
                 graph.linkWidth(node => node.weight / 2.0)
                 });
             }
             setupBackgroundClick(graph)
+
+            //================================================================================================
             // WASD - Interaction
+            //================================================================================================
+
             // Set up key event listeners for WASD navigation
             document.addEventListener('keydown', (event) => {
             if (!selectedNode) return;
@@ -176,7 +237,9 @@ fetchExternalData().then(
             }
             });
 
+            //================================================================================================
             // Track shift key state
+            //================================================================================================
             document.addEventListener('keydown', (event) => {
                 if (event.key === 'Shift') {
                     shiftKeyPressed = true;
@@ -198,7 +261,10 @@ fetchExternalData().then(
                 }
             });
 
+
+            //================================================================================================
             // Track space bar state
+            //================================================================================================
             document.addEventListener('keydown', (event) => {
                 if (event.key === ' ') {
                     spaceKeyPressed = true;
@@ -215,5 +281,7 @@ fetchExternalData().then(
                 }
             });
             
-        })();
+        })()
 });
+}
+main()

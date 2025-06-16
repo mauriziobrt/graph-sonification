@@ -14,5 +14,8 @@
     "express": "^4.21.2",
     "osc-js": "^2.4.1",
     "ws": "^8.18.1"
+  },
+  "devDependencies": {
+    "lil-gui": "^0.20.0"
   }
 }

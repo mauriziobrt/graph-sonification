@@ -10,6 +10,7 @@
 }
 
 .bottomleft {
+  pointer-events: none;
   position: absolute;
   bottom: 20px;
   right: 30px;
@@ -21,6 +22,7 @@
 }
 
 .bottomright {
+  pointer-events: none;
   position: absolute;
   top:20px;
   left: 20px;
@@ -123,25 +125,15 @@ input:checked + .slider:before {
 
 <head>
   <meta charset="UTF-8">
+  <script src="https://cdn.jsdelivr.net/npm/lil-gui@0.20"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <script src="//unpkg.com/force-graph"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/force-graph"></script>
   <script type="text/javascript" src="./interaction/movement.js"></script>
   <script type="text/javascript" src="./audio/synthesis.js"></script>
-  <script type="text/javascript" src="./helpers.js"></script>
-
-  
 </head>
 
 <body style="background-color:#101020; overflow: hidden;">
-  <div style="position: absolute; bottom: 30px;   z-index: 1; left: 20px">
-  <p class="simple_text">Toggle Hover Sound</p>
-  <label class="switch">
-    <input type="checkbox" id="mitch">
-    <div class="slider"></div>
-  </label>
-  </div>
-  <div class="bottomright" style="text-align: left;">
+  <div class="bottomright" onselectstart="return false" style="text-align: left;">
     <!-- <p class="simple_text">Selected node: </p> -->
     Selected node: <p class="simple_text" id="content" style="text-align: center;" >...</p> <br> 
     OpenAccess: <p class="simple_text" id="openaccess">none</p><br>
@@ -158,7 +150,10 @@ input:checked + .slider:before {
     if hover on -> play onhover
   </div> 
   <script type="module" src="./audio/create-node.js"></script>
+  
   <script type="module" src="force_graphs.js"></script>
+  <script type="text/javascript" src="./helpers.js"></script>
+  
   <div id="graph"></div>
 </body>
 </html>

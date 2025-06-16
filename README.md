@@ -48,3 +48,8 @@ a visual event.
 ### 5. OnBackground:
 
 - Click = Reset view
+
+## To-Do
+- [ ] Add menu https://lil-gui.georgealways.com/
+- [ ] Cleaner Menu with https://jamiebuilds.github.io/tinykeys/
+- [ ] Add loading screen with drag and drop loading of file

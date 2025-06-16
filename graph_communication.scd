@@ -1,15 +1,63 @@
-
+Array.series(10, 50, 20)
 //================================================================================================================================================
 // SYNTHESIS
 //================================================================================================================================================
 //TODO: openaccess -> shape of the sound -- citation impact -> transition duration
 Synth("help-KlankOverlapTexture")
 {Decay.ar(Impulse.ar(Rand(0.8, 2.2)), 0.0, ClipNoise.ar(0.01))}.play;
+(
+(
+OSCdef(\hoverControl, {|msg, time, addr, recvPort|
+	var cit = msg[3].linlin(0, 1000, 1, 100).postln;
+	var myfreq = (msg[4]).linlin(0, 60, 50, 1300);
+	var x = DC.ar(msg[7]/2500);
+	var y = DC.ar(msg[8]/2500);
+	(
+		SynthDef(\hoverControlled, {|out, fund= 80|
+			var freq = myfreq;
+			var env = Env.new(levels: [0, 1, 0.4, 0], times: [0.1, 0.2, freq/100], curve: [-5, 0, -5]);
+			var arraySeries = `[Array.series(cit, freq, 2 * freq * a.ratios[2]), nil, [1, 1, 1, 1]];
+			var sig = DynKlank.ar(arraySeries, PinkNoise.ar([0.007, 0.007])) * 0.3;
+			sig = sig +
+			(sig * Pulse.ar(Rand(1,20),mul:0.1) * Saw.ar(0.5)) * 0.2 +
+			SinOsc.ar([freq, freq*a.ratios[3]], mul: 0.2);
+			sig = sig * EnvGen.ar(env, doneAction: Done.freeSelf);
+			#w, x, y, z = BFEncode2.ar(sig,x,y, 0, 0.6);
+			BFDecode1.ar(w, x, y, z, [7pi/6, 5pi/6, 2pi/3, pi/3, pi/6, 11pi/6, 5pi/3, 4pi/3], 0);
+			// Out.ar(out, sig)// stereo output
+		});
+	);
+}, '/control');
+)
+)
+
+(
+OSCdef(\transitionControl, {|msg, time, addr, recvPort|
+	var x = (msg[7]/2500);
+	var y = (msg[8]/2500);
+	// #w, x, y, z = BFEncode2.ar(WhiteNoise.ar, MouseX.kr(-1, 1), MouseY.kr(1, -1), 0, 0.03);
+	var cit = msg[3].linlin(0, 1000, 1, 100);
+	var freq = (msg[4]).linlin(0, 60, 50, 1300);
+	var env = Env.new(levels: [0, 1, 0.4, 0], times: [0.1, 0.2, freq/100], curve: [-5, 0, -5]);
+	var arraySeries = `[Array.series(cit, freq, 2 * freq * a.ratios[2]), nil, [1, 1, 1, 1]];
+	// var sig = DynKlank.ar(arraySeries, PinkNoise.ar([0.007, 0.007])) * 0.3;
+	// sig = sig +(sig * Pulse.ar(Rand(1,20),mul:0.1) * Saw.ar(0.5)) * 0.2 + SinOsc.ar([freq, freq*a.ratios[3]], mul: 0.2);
+	// sig = sig * EnvGen.ar(env, doneAction: Done.freeSelf);
+	var sig = SinOsc.ar(440);
+	#w, x, y, z = BFEncode2.ar(sig,x,y, 0, 0.6);
+    //decode for 4 channels
+	// x -> 1 right, -1 left
+	// y -> 1 back, -1 front
+    BFDecode1.ar(w, x, y, z, [7pi/6, 5pi/6, 2pi/3, pi/3, pi/6, 11pi/6, 5pi/3, 4pi/3], 0);
+}, '/control');
+)
+Ndef(\ciao).play
+
 //================================================================================================================================================
 // BUBBLES FIXFIXFIX
 (
 (
-SynthDef("help-KlankOverlapTexture",
+SynthDef("help-KlankOverlapdTexture",
 	{|out = 0, amp = 1, freqs = #[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], rings = #[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], atk = 5, sus = 8, rel = 5, pan = 0, filterfreq=440|
 		var e = EnvGen.kr(Env.linen(atk, sus, rel, 1, -50), doneAction: Done.freeSelf);
 		// var i = Decay.ar(Impulse.ar(Rand(0.8, 2.2)), 0.0, ClipNoise.ar(0.01));
@@ -474,6 +522,12 @@ Routine({
     results;
 };
 )
+
+{SinOsc.ar([200,400])}.play
+s.options.numOutputBusChannels = 10;
+s.options.device = "MADIface Pro (79251090)"; // Make sure device name matches exactly
+s.reboot;
+
 // Documentation for the function
 /*
 ~distProc - Progressively distorts a chord until specified distortion is reached
@@ -498,7 +552,8 @@ Example usage:
 ~chordarray[30]
 (
 Ndef(\mina, {
-	var sig=SinOsc.ar(~chordarray[0],mul:~vol * EnvGen.kr(
+	var sig=SinOsc.ar(~chordarray[0],
+		mul: ~vol * EnvGen.kr(
             Env.new(levels: [0, 1, 0.9, 0], times: [10, 15, 20], curve: [-5, 0, -5])
         ));
 	Splay.ar(sig *0.5)
@@ -580,12 +635,12 @@ p = NodeProxy.audio(s, 2);
 (
 // Set the source to play all samples at once
 p.source = {
-	var signals = ~buffers[2..30].collect({ |buf, i|
+	var signals = ~buffers[420..430].collect({ |buf, i|
 		var sig = PlayBuf.ar(
 			numChannels: buf.numChannels,
 			bufnum: buf,
 			rate: 1 * BufRateScale.kr(buf),// * XLine.kr(1,Rand(0.5,2),30),
-			trigger: Dust2.ar(XLine.kr(10,0.01, 30).postln),
+			trigger: Dust2.ar(XLine.kr(1,1, 30).postln),
 			startPos: 9.5 * BufDur.kr(buf)/10,
 			loop: 0,
 			doneAction: 0  // No doneAction inside NodeProxy
@@ -593,7 +648,7 @@ p.source = {
 
 		// Pan mono samples, pass stereo through
 		if(buf.numChannels == 1) {
-			Pan2.ar(sig, 0)
+			Pan2.ar(sig, i%2)
 		} {
 			sig
 		};

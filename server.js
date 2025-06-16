@@ -20,25 +20,6 @@ const oscClient = new OSC({
   })
 });
 
-// wss.on('connection', (ws) => {
-//   console.log('Client connected');
-  
-//   ws.on('message', (message) => {
-//     // console.log("message")
-//     try {
-//       const data = JSON.parse(message);
-//       console.log(data);
-//       // Convert number strings to actual numbers
-//       const args = data.args.map(arg => typeof arg === 'string' && !isNaN(arg) ? Number(arg) : arg);
-//       const oscMessage = new OSC.Message(data.address, ...args); // Spread the args array
-//       oscClient.send(data);
-//       console.log('Sent OSC message:', oscMessage);
-//     } catch (error) {
-//       console.error('Error processing message:', error);
-//     }
-//   });
-// });
-
 wss.on('connection', (ws) => {
     console.log('Client connected');
     ws.on('message', (message) => {
