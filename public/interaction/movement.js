@@ -35,69 +35,85 @@ function attractNeighbors(node, graph) {
 //=================================================================================
 //User interaction
 //=================================================================================
-// Function to find the closest node in a specific direction
-function findClosestNodeInDirection(currentNode, direction, graph) {
-    if (!currentNode) return null;
-    // Get all nodes from the graph
-    const nodes = graph.graphData().nodes;
+function findClosestNodeInDirection(currentNodeId, direction, graph) {
+  if (!currentNodeId || !direction || !graph) return null;
+  if (!['up', 'down', 'left', 'right'].includes(direction)) return null;
+  
+  const nodes = graph.graphData().nodes;
+  if (!nodes || nodes.length === 0) return null;
 
-    // Use the actual rendered positions (not the data positions)
-    // For force-graph, we need to check if the simulation has assigned positions
-    const currentX = currentNode.x !== undefined ? currentNode.x : 0;
-    const currentY = currentNode.y !== undefined ? currentNode.y : 0;
+  // Find the current node by ID instead of using stale reference
+  const currentNode = nodes.find(node => node.id === currentNodeId);
+  // console.log("CURRENT NODE IS", currentNode)
+  if (!currentNode) {
+    console.warn(`Current node with ID ${currentNodeId} not found in graph data`);
+    return null;
+  }
+  // Ensure we have valid coordinates (force simulation might still be running)
+  if (currentNode.x === undefined || currentNode.y === undefined) {
+      console.warn('Current node coordinates not yet available');
+      return null;
+  }
+
+  const currentX = currentNode.x ?? 0;
+  const currentY = currentNode.y ?? 0;
+
+  function isInDirection(angle, targetDirection) {
+  // Normalize angle to range [0, 2π)
+  const a = (angle + 2 * Math.PI) % (2 * Math.PI);
+
+  const ranges = {
+    'right': [7 * Math.PI / 4, Math.PI / 4],      // 315°–45°
+    'up': [Math.PI / 4, 3 * Math.PI / 4],         // 45°–135°
+    'left': [3 * Math.PI / 4, 5 * Math.PI / 4],   // 135°–225°
+    'down': [5 * Math.PI / 4, 7 * Math.PI / 4],   // 225°–315°
+  };
+
+  const [start, end] = ranges[targetDirection];
+
+  if (start < end) {
+    return a >= start && a <= end;
+  } else {
+    // Handles wrap-around (e.g., right: 315°–45°)
+    return a >= start || a <= end;
+  }
+}
+
+  const MIN_DISTANCE_SQUARED = 0;
+  let closest = null;
+  let closestDistanceSquared = Infinity;
+
+  for (const node of nodes) {
+    // console.log("Node count:", nodes.length, "Unique IDs:", new Set(nodes.map(n => n.id)).size);
+
+    if (node.id === currentNodeId) continue; // Compare by ID, not reference
+
+    const nodeX = node.x ?? 0;
+    const nodeY = node.y ?? 0;
     
-    // Filter nodes based on direction relative to current node
-    let candidateNodes = [];
-    // left is up, down is left, right is down, up is right
-    // Define acceptable angle ranges for each direction
-    const angleRanges = {
-        'right': [-Math.PI/4, Math.PI/4], // Top quadrant: -45° to 45°
-        'down': [Math.PI/4, 3*Math.PI/4], // Right quadrant: 45° to 135°
-        'left': [3*Math.PI/4, -3*Math.PI/4], // Bottom quadrant: 135° to -135°
-        'up': [-3*Math.PI/4, -Math.PI/4] // Left quadrant: -135° to -45°
-    };
+    const dx = nodeX - currentX;
+    const dy = nodeY - currentY;
     
-    candidateNodes = nodes.filter(node => {
-        if (node === currentNode) return false;
-        
-        // Get node position
-        const nodeX = node.x !== undefined ? node.x : 0;
-        const nodeY = node.y !== undefined ? node.y : 0;
-        
-        // Calculate angle between current node and this node
-        // Note: y-axis is inverted in many canvas implementations (0 is top)
-        const dx = nodeX - currentX;
-        const dy = nodeY - currentY;
-        let angle = Math.atan2(dy, dx);
-        
-        // Check if angle falls within the range for the specified direction
-        const range = angleRanges[direction];
-        
-        if (range[0] <= range[1]) {
-        // Normal range
-        return angle >= range[0] && angle <= range[1];
-        } else {
-        // Range that crosses the -π/π boundary
-        return angle >= range[0] || angle <= range[1];
-        }
-    });
+    const distanceSquared = dx * dx + dy * dy;
+    if (distanceSquared < MIN_DISTANCE_SQUARED) continue;
+
+    const angle = Math.atan2(-dy, dx);
     
-    if (candidateNodes.length === 0) return null;
-    
-    // Find the closest node in that direction
-    return candidateNodes.reduce((closest, node) => {
-        // Calculate distance
-        const nodeX = node.x !== undefined ? node.x : 0;
-        const nodeY = node.y !== undefined ? node.y : 0;
-        const dx = nodeX - currentX;
-        const dy = nodeY - currentY;
-        const distance = Math.sqrt(dx * dx + dy * dy);
-        
-        if (!closest || distance < closest.distance) {
-        return { node, distance };
-        }
-        return closest;
-    }, null)?.node;
+    if (isInDirection(angle, direction) && distanceSquared < closestDistanceSquared) {
+      closest = node;
+      closestDistanceSquared = distanceSquared;
+    }
+  }
+  // console.log('WASD triggered with current node:', currentNodeId);
+  // console.log('Available nodes:', nodes.map(n => ({ id: n.id, x: n.x, y: n.y })));
+  // console.log('Direction:', direction);
+  // console.log('Current position:', { x: currentX, y: currentY });
+  // console.log('Next node', closest)
+
+  // Allora la posizione è quella del nodo giusto ma ne seleziona un'altro sbagliato,
+  // sembra quasi che faccia più di uno step
+  // console.log('END --------')
+  return closest; // Returns the fresh node object from current graph data
 }
 
 //==================================================
@@ -105,35 +121,38 @@ function findClosestNodeInDirection(currentNode, direction, graph) {
 // Function to handle node selection with shift key
 function shiftSelection(node, graph,degree) {
   if (shiftKeyPressed) {
-    // If an animation is in progress, cancel it
-    if (animationInProgress) {
-      clearTimeout(animationTimer);
-      animationInProgress = false;
-      highlightedPath = [];
-    }
+    // console.log("WELA")
+  // If an animation is in progress, cancel it
+  if (animationInProgress) {
+    clearTimeout(animationTimer);
+    animationInProgress = false;
+    highlightedPath = [];
+  }
 
-    // If node is already selected, deselect it
-    const index = selectedNodes.indexOf(node);
-    if (index !== -1) {
-      selectedNodes.splice(index, 1);
-    } else {
-      // Add node to selection (max 2 nodes)
-      if (selectedNodes.length < 2) {
-        selectedNodes.push(node);
-      } else {
-        // Replace the second node
-        selectedNodes[1] = node;
-      }
-    }
-    
-    // Update node colors based on selection
-    updateNodeColors(graph);
-    
-    // If exactly 2 nodes are selected, trigger your function
-    if (selectedNodes.length === 2) {
-      connectSelectedNodes(selectedNodes, graph, degree);
-    }
+  // If node is already selected, deselect it
+  const index = selectedNodes.indexOf(node);
+  if (index !== -1) {
+    selectedNodes.splice(index, 1);
   } else {
+    // Add node to selection (max 2 nodes)
+    if (selectedNodes.length < 2) {
+      selectedNodes.push(node);
+    } else {
+      // Replace the second node
+      selectedNodes[1] = node;
+    }
+  }
+  
+  // Update node colors based on selection
+  updateNodeColors(graph);
+  
+  // If exactly 2 nodes are selected, trigger your function
+  if (selectedNodes.length === 2) {
+    connectSelectedNodes(selectedNodes, graph, degree);
+  }
+  } else {
+        // console.log("AZZ")
+
     // Regular selection behavior (single node)
     selectNode(node, true, graph);
   }
@@ -180,124 +199,124 @@ function updateNodeColors(graph) {
   });
 }
 
-// Find shortest path between two nodes using DFS with path tracking
-function findShortestPath(startNode, endNode, graph) {
-    // Get the graph data
-    const nodes = graph.graphData().nodes;
-    const links = graph.graphData().links;
-    
-    // Create an adjacency list representation of the graph
-    const adjacencyList = {};
-    nodes.forEach(node => {
-        adjacencyList[node.id] = [];
-    });
-    links.forEach(link => {
-        const source = typeof link.source === 'object' ? link.source.id : link.source;
-        const target = typeof link.target === 'object' ? link.target.id : link.target;
-        adjacencyList[source].push({node: target, link: link});
-        adjacencyList[target].push({node: source, link: link}); // For undirected graph
-    });
-    
-    let shortestPath = null;
-    let shortestLinks = null;
-    let minLength = Infinity;
-    
-    // DFS recursive function to explore all paths
-    function dfs(currentNode, targetNode, currentPath, currentLinks, visited) {
-        // If we've reached the target
-        if (currentNode === targetNode) {
-            if (currentPath.length < minLength) {
-                minLength = currentPath.length;
-                shortestPath = [...currentPath];
-                shortestLinks = [...currentLinks];
-            }
-            return;
-        }
-        
-        // Pruning: if current path is already longer than shortest found, stop
-        if (currentPath.length >= minLength) {
-            return;
-        }
-        
-        // Explore all neighbors
-        adjacencyList[currentNode].forEach(neighbor => {
-            if (!visited.has(neighbor.node)) {
-                visited.add(neighbor.node);
-                dfs(
-                    neighbor.node, 
-                    targetNode, 
-                    [...currentPath, neighbor.node], 
-                    [...currentLinks, neighbor.link], 
-                    visited
-                );
-                visited.delete(neighbor.node); // Backtrack
-            }
-        });
-    }
-    
-    // Start DFS from the start node
-    const visited = new Set([startNode.id]);
-    dfs(startNode.id, endNode.id, [startNode.id], [], visited);
-    
-    // Return result
-    if (shortestPath) {
-        return {
-            path: shortestPath,
-            links: shortestLinks
-        };
-    } else {
-        return {path: [], links: []};
-    }
-}
-
-// // Find shortest path between two nodes using BFS
+// // Find shortest path between two nodes using DFS with path tracking
 // function findShortestPath(startNode, endNode, graph) {
-//   // Get the graph data
-//   const nodes = graph.graphData().nodes;
-//   const links = graph.graphData().links;
-  
-//   // Create an adjacency list representation of the graph
-//   const adjacencyList = {};
-//   nodes.forEach(node => {
-//     adjacencyList[node.id] = [];
-//   });
-  
-//   links.forEach(link => {
-//     const source = typeof link.source === 'object' ? link.source.id : link.source;
-//     const target = typeof link.target === 'object' ? link.target.id : link.target;
-//     adjacencyList[source].push({node: target, link: link});
-//     adjacencyList[target].push({node: source, link: link}); // For undirected graph
-//   });
-  
-//   // BFS implementation
-//   const queue = [{node: startNode.id, path: [], links: []}];
-//   const visited = new Set([startNode.id]);
-  
-//   while (queue.length > 0) {
-//     const {node, path, links} = queue.shift();
+//     // Get the graph data
+//     const nodes = graph.graphData().nodes;
+//     const links = graph.graphData().links;
     
-//     if (node === endNode.id) {
-//       return {
-//         path: [...path, node],
-//         links: links
-//       };
+//     // Create an adjacency list representation of the graph
+//     const adjacencyList = {};
+//     nodes.forEach(node => {
+//         adjacencyList[node.id] = [];
+//     });
+//     links.forEach(link => {
+//         const source = typeof link.source === 'object' ? link.source.id : link.source;
+//         const target = typeof link.target === 'object' ? link.target.id : link.target;
+//         adjacencyList[source].push({node: target, link: link});
+//         adjacencyList[target].push({node: source, link: link}); // For undirected graph
+//     });
+    
+//     let shortestPath = null;
+//     let shortestLinks = null;
+//     let minLength = Infinity;
+    
+//     // DFS recursive function to explore all paths
+//     function dfs(currentNode, targetNode, currentPath, currentLinks, visited) {
+//         // If we've reached the target
+//         if (currentNode === targetNode) {
+//             if (currentPath.length < minLength) {
+//                 minLength = currentPath.length;
+//                 shortestPath = [...currentPath];
+//                 shortestLinks = [...currentLinks];
+//             }
+//             return;
+//         }
+        
+//         // Pruning: if current path is already longer than shortest found, stop
+//         if (currentPath.length >= minLength) {
+//             return;
+//         }
+        
+//         // Explore all neighbors
+//         adjacencyList[currentNode].forEach(neighbor => {
+//             if (!visited.has(neighbor.node)) {
+//                 visited.add(neighbor.node);
+//                 dfs(
+//                     neighbor.node, 
+//                     targetNode, 
+//                     [...currentPath, neighbor.node], 
+//                     [...currentLinks, neighbor.link], 
+//                     visited
+//                 );
+//                 visited.delete(neighbor.node); // Backtrack
+//             }
+//         });
 //     }
     
-//     adjacencyList[node].forEach(neighbor => {
-//       if (!visited.has(neighbor.node)) {
-//         visited.add(neighbor.node);
-//         queue.push({
-//           node: neighbor.node, 
-//           path: [...path, node],
-//           links: [...links, neighbor.link]
-//         });
-//       }
-//     });
-//   }
-  
-//   // No path found
-//   return {path: [], links: []};
+//     // Start DFS from the start node
+//     const visited = new Set([startNode.id]);
+//     dfs(startNode.id, endNode.id, [startNode.id], [], visited);
+    
+//     // Return result
+//     if (shortestPath) {
+//         return {
+//             path: shortestPath,
+//             links: shortestLinks
+//         };
+//     } else {
+//         return {path: [], links: []};
+//     }
 // }
+
+// Find shortest path between two nodes using BFS
+function findShortestPath(startNode, endNode, graph) {
+  // Get the graph data
+  const nodes = graph.graphData().nodes;
+  const links = graph.graphData().links;
+  
+  // Create an adjacency list representation of the graph
+  const adjacencyList = {};
+  nodes.forEach(node => {
+    adjacencyList[node.id] = [];
+  });
+  
+  links.forEach(link => {
+    const source = typeof link.source === 'object' ? link.source.id : link.source;
+    const target = typeof link.target === 'object' ? link.target.id : link.target;
+    adjacencyList[source].push({node: target, link: link});
+    adjacencyList[target].push({node: source, link: link}); // For undirected graph
+  });
+  
+  // BFS implementation
+  const queue = [{node: startNode.id, path: [], links: []}];
+  const visited = new Set([startNode.id]);
+  
+  while (queue.length > 0) {
+    const {node, path, links} = queue.shift();
+    
+    if (node === endNode.id) {
+      return {
+        path: [...path, node],
+        links: links
+      };
+    }
+    
+    adjacencyList[node].forEach(neighbor => {
+      if (!visited.has(neighbor.node)) {
+        visited.add(neighbor.node);
+        queue.push({
+          node: neighbor.node, 
+          path: [...path, node],
+          links: [...links, neighbor.link]
+        });
+      }
+    });
+  }
+  
+  // No path found
+  return {path: [], links: []};
+}
 
 // Function that triggers when two nodes are selected
 function connectSelectedNodes(nodes, graph, degree) {

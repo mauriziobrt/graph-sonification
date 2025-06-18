@@ -4,6 +4,10 @@ import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
 //Main Body
 //=================================================================================
 
+//========================================================
+// LIL GUI
+//========================================================
+
 function selectFile() {
   return new Promise((resolve, reject) => {
     // Create a file input element
@@ -40,62 +44,204 @@ const gui = new GUI();
 var obj = { 
     // size: 'Medium', 
     hoverOn: false,
-    file: "./data/co-cit-rich.json",
+    file: "select file",
     loadFile: function() {obj.file = selectFile().fileName},
-    oscPort: 57120,
-    // reloadGraph: function() {main()}
+    textDisplay: true,
+    textHelp: true
+    // oscPort: 57120,
+    // reloadGraph: function() {updateGraphData(obj.file)}
+}
+
+var filedata = {"1-wasd": ["./data/1-wasd.json", "gatto"],
+    "2-transition": ["./data/2-transition.json", "gatto"],
+    "3-bubbles": ["./data/3-bubbles.json", "gatto"],
+    "4-hover": ["./data/4-hover.json", "gatto"],
+    "5-bib-coupling": ["./data/5-bib-coupling.json", "gatto"],
+    "6-cit-coupling": ["./data/6-co-cit-coupling.json", "gatto"],
 }
 
 gui.add(obj, "hoverOn");
-gui.add(obj, "file", ["./data/co-cit-rich.json", "./data/rich_output.json"])
-gui.add( obj, 'oscPort' ); 	// number field
+gui.add(obj, "file", ["1-wasd", "2-transition","3-bubbles", "4-hover", "5-bib-coupling", "6-cit-coupling"])
+gui.add(obj, "textDisplay");
+gui.add(obj, "textHelp");
 
 gui.onChange( event => {
-    console.log(event.property)
+    // console.log(event.property)-
     if (event.property  == "hoverOn") {
         hoverOn = event.value;
         console.log('State hover: ', hoverOn);
     }
-    if (event.property == "oscPort") {
-        console.log(oscClient);
+    if (event.property  == "textDisplay") {
+        obj.textDisplay = event.value;
+        const tmp_text = document.getElementById("displayText");
+        if (obj.textDisplay) {
+            tmp_text.style = "z-index: 1";
+        } else {
+            tmp_text.style = "z-index: 0";
+        }
+        console.log('State display: ', obj.textDisplay);
     }
+    
+    if (event.property  == "textHelp") {
+        obj.textHelp = event.value;
+        const tmp_text = document.getElementById("textControls");
+        if (obj.textHelp) {
+            tmp_text.style = "z-index: 1";
+        } else {
+            tmp_text.style = "z-index: 0";
+        }
+        console.log('State display: ', obj.textHelp);
+    }
+    // if (event.property == "oscPort") {
+    //     console.log(oscClient);
+    // }
     if (event.property == "file") {
-        main()
+        const tmpfile = filedata[obj.file]
+        updateGraphData(tmpfile[0])
     }
 } );
 
-let graph;
+//========================================================
+// GLOBAL VARIABLES
+//========================================================
 
-function main() {
-    fetchExternalData(obj.file).then(
+let graph;
+let degree = {};
+let onHover = false;
+let onWasd = false;
+let onTransition = false;
+let onSpace = false;
+let dataTextSpec = "Bibliographic Coupling"; //e.g. Co-citations, Bibliographic Coupling
+let dataText = document.getElementById("mySpec");
+dataText.innerText = dataTextSpec;
+let displayFeatures = false;
+
+//========================================================
+
+//========================================================
+// EVENT LISTENERS
+//========================================================
+
+// Initialize event listeners once when the page loads
+function initializeEventListeners() {
+    if (onTransition) {
+        // Track shift key state
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Shift') {
+                shiftKeyPressed = true;
+                console.log("shiftKeyPressed");
+                const element = document.getElementById("miaomiao");
+                if (element) {
+                    element.innerText = "shift";
+                }
+            }
+        });
+
+        document.addEventListener('keyup', (event) => {
+            if (event.key === 'Shift') {
+                shiftKeyPressed = false;
+                const element = document.getElementById("miaomiao");
+                if (element) {
+                    element.innerText = "";
+                }
+                console.log("shiftKeyNotPressed");
+                
+                // Only clear selection when shift key is released if no animation is running
+                if (!animationInProgress && graph) {
+                    selectedNodes = [];
+                    updateNodeColors(graph);
+                }
+            }
+        });
+    }
+    //================================================================================================
+    // WASD - Interaction
+    //================================================================================================
+
+    // Set up key event listeners for WASD navigation
+    if (onWasd) {
+        document.addEventListener('keydown', (event) => {
+        if (!selectedNode) return;
+        let direction;
+        switch(event.key.toLowerCase()) {
+            case 'w':
+            direction = 'up';
+            break;
+            case 's':
+            direction = 'down';
+            break;
+            case 'a':
+            direction = 'left';
+            break;
+            case 'd':
+            direction = 'right';
+            break;
+            default:
+            return; // Not a WASD key
+        }
+        const nextNode = findClosestNodeInDirection(selectedNode.id, direction, graph);
+            //nextNode si rompe quindi l'errore è lì dentro
+            if (nextNode) {
+                // Select the new node WITHOUT centering the view
+                // stopFaust();
+                selectNode(nextNode, true, graph);
+                // console.log(nextNode)
+                document.getElementById("content").innerText = nextNode["description"];
+                // playFaust(220, degree[nextNode.id], "additiveplus", additivePlusNode, audioContext);
+                sendOSCMessage(nextNode, "/wasd", degree[nextNode.id])
+                // console.log(degree)
+            }
+        });
+    }
+
+    //================================================================================================
+    // Track space bar state
+    //================================================================================================
+    if (onSpace) {
+        document.addEventListener('keydown', (event) => {
+            if (event.key === ' ') {
+                spaceKeyPressed = true;
+                document.getElementById("miaomiao").innerText = "space";
+                console.log("spaceKeyPressed");
+            }
+        });
+
+        document.addEventListener('keyup', (event) => {
+            if (event.key === ' ') {
+                spaceKeyPressed = false;
+                document.getElementById("miaomiao").innerText = "";
+                console.log("spaceKeyNotPressed");
+            }
+        });
+    }
+}
+
+// Call this once when your page loads
+initializeEventListeners();
+
+function main(fileName) {
+    fetchExternalData(fileName || obj.file).then(
         (data) => {
-            data = data[0]
-            const degree = {};
-                data.links.forEach(link => {
+            data = data[0];
+            
+            // Calculate node degrees
+            // const degree = {};
+            data.links.forEach(link => {
                 degree[link.source] = (degree[link.source] || 0) + 1;
                 degree[link.target] = (degree[link.target] || 0) + 1;
-        });
-    
-        const highlightNodes = new Set();
-        const highlightLinks = new Set();
-        const elem = document.getElementById('graph');
-        if (!graph){
-            const graph = new ForceGraph(elem);
-        else {graph.graphData = elem}
-    //================================================================================================
-    // Reload Graph
-    //================================================================================================
-    // function updateGraph(graph)  {
-    //     graph.graphData(elem)
-    // }
-    // updateGraph(graph)
-
-    (async () => {
-            //=================================================================================
-            //Graph
-            //=================================================================================
-            graph
-                .backgroundColor('#101020')
+            });
+            
+            const highlightNodes = new Set();
+            const highlightLinks = new Set();
+            const elem = document.getElementById('graph');
+            
+            // Initialize graph only once
+            if (!graph) {
+                graph = new ForceGraph(elem);
+                
+                // Set up your graph configuration here (one-time setup)
+                graph
+                    .backgroundColor('#101020')
                 .nodeRelSize(6)
                 .nodeLabel(node => `${node.user}: ${node.description}`)
                 .linkCurvature(0.2)
@@ -108,13 +254,12 @@ function main() {
                 .graphData(data)
                 .autoPauseRedraw(false) // keep redrawing after engine has stopped
                 .onLinkHover(link => {
-                    highlightNodes.clear();
-                    highlightLinks.clear();
-
+                        highlightNodes.clear();
+                        highlightLinks.clear();
                     if (link) {
-                    highlightLinks.add(link);
-                    highlightNodes.add(link.source);
-                    highlightNodes.add(link.target);
+                        highlightLinks.add(link);
+                        highlightNodes.add(link.source);
+                        highlightNodes.add(link.target);
                     };
                 })
                 .onNodeHover(node => {
@@ -129,7 +274,7 @@ function main() {
                     }
                     }
                 });
-            
+            }
             //================================================================================================
             //Select function depending on status
             //================================================================================================
@@ -137,18 +282,18 @@ function main() {
             // UPDATE LATER, it should also work if there's already a selectednode
             function setupNodeSelection(graph) {
                 graph.onNodeClick((node, event) => {
-                    console.log(node)
+                    // console.log(node)
                     document.getElementById("content").innerText = node["description"];
                     document.getElementById("openaccess").innerText = node["openacces"];
                     document.getElementById("citations").innerText = node["citations"];
                     document.getElementById("year").innerText = node["year"];
                     document.getElementById("co-citations").innerText = degree[node.id];
                     if (shiftKeyPressed) {
-                    shiftSelection(node, graph, degree);
-                    clearActiveAnimations();
+                        shiftSelection(node, graph, degree);
+                        clearActiveAnimations();
                     } else {
-                    selectNode(node, true, graph);
-                    clearActiveAnimations();
+                        selectNode(node, true, graph);
+                        clearActiveAnimations();
                     if (spaceKeyPressed) {highlightNeighborsGradually(node, graph, degree, data)};
                     }
                 });
@@ -176,7 +321,7 @@ function main() {
                 .range(d3.schemePaired); // Use a predefined color scheme
             return colorScale;
             }
-            
+
             const colorScale = createColorScale(graph)
             // Function to handle background clicks with Force Graph library
             function setupBackgroundClick(graph) {
@@ -200,88 +345,28 @@ function main() {
             }
             setupBackgroundClick(graph)
 
-            //================================================================================================
-            // WASD - Interaction
-            //================================================================================================
+            
+            graph.graphData({ nodes: [], links: [] }); // Clear old graph data
 
-            // Set up key event listeners for WASD navigation
-            document.addEventListener('keydown', (event) => {
-            if (!selectedNode) return;
-            let direction;
-            switch(event.key.toLowerCase()) {
-                case 'w':
-                direction = 'up';
-                break;
-                case 's':
-                direction = 'down';
-                break;
-                case 'a':
-                direction = 'left';
-                break;
-                case 'd':
-                direction = 'right';
-                break;
-                default:
-                return; // Not a WASD key
+            // Update graph data (this is what you want for dynamic updates)
+            graph.graphData(data);
+
+            if (selectedNode) {
+                selectedNode = graph.graphData().nodes.find(n => n.id === selectedNode.id) || graph.graphData().nodes[0] || null;
+            } else {
+                selectedNode = graph.graphData().nodes[0] || null;
             }
-            const nextNode = findClosestNodeInDirection(selectedNode, direction, graph);
-
-            if (nextNode) {
-                // Select the new node WITHOUT centering the view
-                stopFaust();
-                selectNode(nextNode, false, graph);
-                // console.log(nextNode)
-                document.getElementById("content").innerText = nextNode["description"];
-                // playFaust(220, degree[nextNode.id], "additiveplus", additivePlusNode, audioContext);
-                sendOSCMessage(nextNode, "/wasd", degree[nextNode.id])
-            }
-            });
-
-            //================================================================================================
-            // Track shift key state
-            //================================================================================================
-            document.addEventListener('keydown', (event) => {
-                if (event.key === 'Shift') {
-                    shiftKeyPressed = true;
-                    console.log("shiftKeyPressed");
-                    document.getElementById("miaomiao").innerText = "shift";
-                }
-            });
-            
-            document.addEventListener('keyup', (event) => {
-                if (event.key === 'Shift') {
-                    shiftKeyPressed = false;
-                    document.getElementById("miaomiao").innerText = "";
-                    console.log("shiftKeyNotPressed");
-                // Only clear selection when shift key is released if no animation is running
-                if (!animationInProgress) {
-                    selectedNodes = [];
-                    updateNodeColors(graph);
-                }
-                }
-            });
-
-
-            //================================================================================================
-            // Track space bar state
-            //================================================================================================
-            document.addEventListener('keydown', (event) => {
-                if (event.key === ' ') {
-                    spaceKeyPressed = true;
-                    document.getElementById("miaomiao").innerText = "space";
-                    console.log("spaceKeyPressed");
-                }
-            });
-            
-            document.addEventListener('keyup', (event) => {
-                if (event.key === ' ') {
-                    spaceKeyPressed = false;
-                    document.getElementById("miaomiao").innerText = "";
-                    console.log("spaceKeyNotPressed");
-                }
-            });
-            
-        })()
-});
+            // Optional: Restart the simulation to re-position nodes
+            graph.d3ReheatSimulation();
+        }
+    ).catch(error => {
+        console.error('Error loading graph data:', error);
+    });
 }
-main()
+
+// Function to specifically update graph with new file
+function updateGraphData(fileName) {
+    main(fileName);
+}
+
+main("./data/6-co-cit-coupling.json")

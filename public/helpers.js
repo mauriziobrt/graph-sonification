@@ -38,17 +38,18 @@ function sendOSCMessage(node, address, degree) {
             address: address,
             args: [node["id"], node["openacces"],cit, degree, timeCit, node["year"], node["x"], node["y"]]
         };
-        console.log("X: ", node["x"], ". Y: ", node["y"], ". VX: ", node["vx"], ". VY: ", node["vy"])
+        // console.log("X: ", node["x"], ". Y: ", node["y"], ". VX: ", node["vx"], ". VY: ", node["vy"])
         document.getElementById("openaccess").innerText = node["openacces"];
         document.getElementById("citations").innerText = cit;
         document.getElementById("co-citations").innerText = degree;
         document.getElementById("year").innerText = node["year"];
         ws.send(JSON.stringify(message));
-        console.log('Sent message:', message);
+        // console.log('Sent message:', message);
     } else {
         // updateStatus('WebSocket not connected', true);
     }
 }
+
 function sendOSCStopMessage(address) {
     if (ws && ws.readyState === WebSocket.OPEN) {
         const message = {

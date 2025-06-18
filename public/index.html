@@ -24,11 +24,12 @@
 .bottomright {
   pointer-events: none;
   position: absolute;
+  /* display: inline-block; */
   top:20px;
   left: 20px;
   font-size: 16px;
   line-height: 10%;
-  text-align: right;
+  text-align: left;
   color: rgba(255, 255, 255, 0.675);
   z-index: 1;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -133,16 +134,16 @@ input:checked + .slider:before {
 </head>
 
 <body style="background-color:#101020; overflow: hidden;">
-  <div class="bottomright" onselectstart="return false" style="text-align: left;">
+  <div class="bottomright" onselectstart="return false" id="displayText">
     <!-- <p class="simple_text">Selected node: </p> -->
     Selected node: <p class="simple_text" id="content" style="text-align: center;" >...</p> <br> 
     OpenAccess: <p class="simple_text" id="openaccess">none</p><br>
     Citations: <p class="simple_text" id="citations">none</p><br>
-    Co-citations: <p class="simple_text" id="co-citations">none</p><br>
+    <p id="mySpec">Co-citations:</p> <p class="simple_text" id="co-citations">none</p><br>
     Publication Year: <p class="simple_text" id="year">none</p><br>
     <p class="simple_text" id="miaomiao"></p><br>
   </div>
-  <div class="bottomleft">
+  <div class="bottomleft" id="textControls">
     wasd = navigation from selected node <br>
     spacebar+nodeclick = play neighbours <br>
     shift+2 node clicks = find nearest path and play <br>
