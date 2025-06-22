@@ -2,6 +2,20 @@ Array.series(10, 50, 20)
 //================================================================================================================================================
 // SYNTHESIS
 //================================================================================================================================================
+((
+SynthDef("help-KlankOverlapdTexture",
+	{|out = 0, amp = 1, freqs = #[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], rings = #[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], atk = 5, sus = 8, rel = 5, pan = 0, filterfreq=440|
+		var e = EnvGen.kr(Env.linen(atk, sus, rel, 1, -50), doneAction: Done.freeSelf);
+		// var i = Decay.ar(Impulse.ar(Rand(0.8, 2.2)), 0.0, ClipNoise.ar(0.01));
+		var z = Klank.ar(
+			`[freqs, nil, rings],     // specs
+			ClipNoise.ar(0.01) * e                    // input
+		);
+
+		Out.ar(out, Pan2.ar(LPF.ar(z*e*amp, filterfreq), pan));
+}).add;
+);
+)
 //TODO: openaccess -> shape of the sound -- citation impact -> transition duration
 Synth("help-KlankOverlapTexture")
 {Decay.ar(Impulse.ar(Rand(0.8, 2.2)), 0.0, ClipNoise.ar(0.01))}.play;
@@ -57,7 +71,7 @@ Ndef(\ciao).play
 // BUBBLES FIXFIXFIX
 (
 (
-SynthDef("help-KlankOverlapdTexture",
+SynthDef("help-KlankOverlapTexture",
 	{|out = 0, amp = 1, freqs = #[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], rings = #[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], atk = 5, sus = 8, rel = 5, pan = 0, filterfreq=440|
 		var e = EnvGen.kr(Env.linen(atk, sus, rel, 1, -50), doneAction: Done.freeSelf);
 		// var i = Decay.ar(Impulse.ar(Rand(0.8, 2.2)), 0.0, ClipNoise.ar(0.01));
@@ -70,12 +84,15 @@ SynthDef("help-KlankOverlapdTexture",
 }).add;
 );
 a = Scale.major;
+
 (
 OSCdef(\bubbleControl, {|msg, time, addr, recvPort|
 	var bell1 = [ 3958.2691669464, 2219.5205450058, 3720.8760738373, 3930.4407596588, 827.31196880341, 3670.5682277679, 550.56445598602, 3677.7821779251, 581.56654834747, 3224.8901605606, 2330.4237604141, 756.98308944702 ];
 	var bell2 = [ 223.22008609772, 1996.9875097275, 3631.1988592148, 753.74145507812, 659.04550552368, 953.89244556427, 612.56682872772, 426.58507823944, 1644.7909116745, 875.82595348358, 1946.9505548477, 3229.9587249756 ];
 	var bell3 = [ 3901.8504142761, 3278.7544727325, 3938.3745193481, 1065.1204586029, 3879.1404008865, 3816.3529872894, 2989.7552490234, 1730.3744077682, 678.00426483154, 2374.1246700287, 2525.9301900864, 3549.2574453354 ];
 	var bell4 = [ 2657.4152469635, 912.29071617126, 1286.7574691772, 3869.4250106812, 1136.3956451416, 2689.750957489, 459.87751483917, 2751.2355566025, 3400.4847288132, 1524.5981216431, 2834.7212314606, 2828.8508653641 ];
+	var bell5 = [ 1328.7076234818, 456.14535808563, 643.3787345886, 1934.7125053406, 568.1978225708, 1344.8754787445, 229.93875741958, 1375.6177783012, 1700.2423644066, 762.29906082155, 1417.3606157303, 1414.4254326821 ];
+
 	// msg[].postln;
 	// (msg[3].linlin(0,200,0,1)).postln;
 	// {SinOsc.ar(Rand(500, 1500),0, EnvGen.kr(Env.perc, doneAction: Done.freeSelf) * 0.1)}.play;
@@ -85,7 +102,7 @@ OSCdef(\bubbleControl, {|msg, time, addr, recvPort|
 		\rel, 4,
 		\pan, 1.0.rand2,
 		\amp, (msg[3].linlin(0,200,-10,0).dbamp),
-		\freqs, [bell1, bell2, bell3, bell4].choose,
+		\freqs, [bell1, bell2, bell3, bell4, bell5].choose,
 		\rings, {0.1.rrand(msg[3]/10.0)}.dup(12),
 		\rel, (msg[4].linlin(0,60,100,1300)/50)
 		// \filterfreq, msg[4].linlin(0,55, 60, 20000)
@@ -140,7 +157,9 @@ OSCdef(\wasdControl, {|msg, time, addr, recvPort|
 	var myfreq = (msg[4]).linlin(0, 60, 50, 1300);
 	(
 		SynthDef(\miaoControlled, {|out, fund= 80|
-			var freq = myfreq;
+			// Sweep da basso a alto e da alto a basso
+			var freq = XLine.kr(myfreq);
+			// var freq = myfreq;
 			var env = Env.new(levels: [0, 1, 0.4, 0], times: [0.1, 0.2, freq/100], curve: [-5, 0, -5]);
 			var arraySeries = `[Array.series(cit, freq, 2 * freq * a.ratios[2]), nil, [1, 1, 1, 1]];
 			var sig = DynKlank.ar(arraySeries, PinkNoise.ar([0.007, 0.007])) * 0.3;

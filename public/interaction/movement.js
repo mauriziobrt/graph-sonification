@@ -1,9 +1,13 @@
+let onHover = false;
+let onWasd = false;
+let onTransition = false;
+let onSpace = false;
 //=================================================================================
 //Graph Behaviour
 //=================================================================================
 
 //=================================================================================
-//Attraction
+//Attraction TODO NOT IN USE
 //=================================================================================
 function attractNeighbors(node, graph) {
     // Find connected nodes
@@ -29,13 +33,23 @@ function attractNeighbors(node, graph) {
     // graph.restart(); // Restart simulation with new forces
 }
 //=================================================================================
-//Repulsion
+//Repulsion TODO
 //=================================================================================
 
 //=================================================================================
+
 //User interaction
+
 //=================================================================================
+
+//==================================================
+
+// WASD
+
+//==================================================
+
 function findClosestNodeInDirection(currentNodeId, direction, graph) {
+  if (!onWasd)return null;
   if (!currentNodeId || !direction || !graph) return null;
   if (!['up', 'down', 'left', 'right'].includes(direction)) return null;
   
@@ -118,8 +132,12 @@ function findClosestNodeInDirection(currentNodeId, direction, graph) {
 
 //==================================================
 
+// Transition
+
+//==================================================
 // Function to handle node selection with shift key
 function shiftSelection(node, graph,degree) {
+  if (!onTransition) return null;
   if (shiftKeyPressed) {
     // console.log("WELA")
   // If an animation is in progress, cancel it
@@ -199,76 +217,6 @@ function updateNodeColors(graph) {
   });
 }
 
-// // Find shortest path between two nodes using DFS with path tracking
-// function findShortestPath(startNode, endNode, graph) {
-//     // Get the graph data
-//     const nodes = graph.graphData().nodes;
-//     const links = graph.graphData().links;
-    
-//     // Create an adjacency list representation of the graph
-//     const adjacencyList = {};
-//     nodes.forEach(node => {
-//         adjacencyList[node.id] = [];
-//     });
-//     links.forEach(link => {
-//         const source = typeof link.source === 'object' ? link.source.id : link.source;
-//         const target = typeof link.target === 'object' ? link.target.id : link.target;
-//         adjacencyList[source].push({node: target, link: link});
-//         adjacencyList[target].push({node: source, link: link}); // For undirected graph
-//     });
-    
-//     let shortestPath = null;
-//     let shortestLinks = null;
-//     let minLength = Infinity;
-    
-//     // DFS recursive function to explore all paths
-//     function dfs(currentNode, targetNode, currentPath, currentLinks, visited) {
-//         // If we've reached the target
-//         if (currentNode === targetNode) {
-//             if (currentPath.length < minLength) {
-//                 minLength = currentPath.length;
-//                 shortestPath = [...currentPath];
-//                 shortestLinks = [...currentLinks];
-//             }
-//             return;
-//         }
-        
-//         // Pruning: if current path is already longer than shortest found, stop
-//         if (currentPath.length >= minLength) {
-//             return;
-//         }
-        
-//         // Explore all neighbors
-//         adjacencyList[currentNode].forEach(neighbor => {
-//             if (!visited.has(neighbor.node)) {
-//                 visited.add(neighbor.node);
-//                 dfs(
-//                     neighbor.node, 
-//                     targetNode, 
-//                     [...currentPath, neighbor.node], 
-//                     [...currentLinks, neighbor.link], 
-//                     visited
-//                 );
-//                 visited.delete(neighbor.node); // Backtrack
-//             }
-//         });
-//     }
-    
-//     // Start DFS from the start node
-//     const visited = new Set([startNode.id]);
-//     dfs(startNode.id, endNode.id, [startNode.id], [], visited);
-    
-//     // Return result
-//     if (shortestPath) {
-//         return {
-//             path: shortestPath,
-//             links: shortestLinks
-//         };
-//     } else {
-//         return {path: [], links: []};
-//     }
-// }
-
 // Find shortest path between two nodes using BFS
 function findShortestPath(startNode, endNode, graph) {
   // Get the graph data
@@ -338,8 +286,6 @@ function connectSelectedNodes(nodes, graph, degree) {
   animatePathTraversal(path, links, graph, degree);
 }
 
-// CLAUDE TEST
-
 // Function to animate the path traversal
 function animatePathTraversal(nodePath, linkPath, graph, degree) {
   // Clear any existing animation
@@ -398,6 +344,7 @@ function animatePathTraversal(nodePath, linkPath, graph, degree) {
     // });
     const nextDelay = mapNumRange(nodeMap[nextNodeId]["citations"], 0,836,5000,10000);
     // const nextDelay = nodeMap[nextNodeId]["citations"];
+    console.log("Current Node: ", nodeMap[nextNodeId])
     console.log("Next Delay:", nextDelay);
     // Move to next step with dynamic timeout
     currentStep++;
@@ -407,7 +354,7 @@ function animatePathTraversal(nodePath, linkPath, graph, degree) {
   }
   
   // Start the animation with the first node's delay
-  const firstDelay = mapNumRange(nodeMap[nodePath[0]]["citations"], 0,836,5000,10000);
+  const firstDelay = mapNumRange(nodeMap[nodePath[0]]["citations"], 0,836,500,10000);
   // const firstDelay = mapValue(nodeMap[nodePath[0]]["citations"], {
   //   inMin: 0,
   //   inMax: 1000,
@@ -420,57 +367,13 @@ function animatePathTraversal(nodePath, linkPath, graph, degree) {
   animationTimer = setTimeout(animateStep, firstDelay);
 }
 
-//END TEST
+//==================================================
 
-// // Function to animate the path traversal
-// function animatePathTraversal(nodePath, linkPath, graph, degree) {
-//   // Clear any existing animation
-//   if (animationTimer) {
-//     clearInterval(animationTimer);
-//   }
-  
-//   animationInProgress = true;
-//   highlightedPath = [];
-//   let currentStep = 0;
-  
-//   // Get node objects from their IDs
-//   const nodeObjects = graph.graphData().nodes;
-//   const nodeMap = {};
-//   nodeObjects.forEach(node => {
-//     nodeMap[node.id] = node;
-//   });
-//   nodeStep = 0;
-//   console.log("miao", nodeMap[nodePath[0]]["citations"])
-//   // Animation function
-//   animationTimer = setTimeout(() => {
-//     if (currentStep >= linkPath.length) {
-//       // Animation completed
-//       clearInterval(animationTimer);
-//       animationInProgress = false;
-//       sendOSCStopMessage('/additive');
-//       return;
-//     }
-//     // Add the next link to the highlighted path
-//     highlightedPath.push(linkPath[currentStep]);
-//     // Highlight current node in the path
-//     const currentNodeId = nodePath[currentStep + 1];
-//     const currentNode = nodeMap[currentNodeId];
-//     document.getElementById("content").innerText = currentNode["description"];
-//     // console.log(degree[currentNode.id])
-//     // playFaust(220, degree[currentNode.id], "additivefilter", faustNode, audioContext);
-//     sendOSCMessage(currentNode, '/additive', degree[currentNode.id]);
-//     // Center on current node
-//     graph.centerAt(currentNode.x, currentNode.y, 300);
-//     nodeStep++;
-//     // Update colors
-//     updateNodeColors(graph);
-//     // Move to next step
-//     currentStep++;
-//   }, nodeMap[nodePath[nodeStep]]["citations"] * 5); // 1 second interval
-// }
+// Bubbles
 
 //==================================================
 
+// Function to Higlight the Neighbors of a node (Not in use)
 function highlightNeighbors(node, graph) {
     // Find connected nodes
     const connectedNodes = new Set(
@@ -488,24 +391,10 @@ function highlightNeighbors(node, graph) {
     // graph.refresh(); // Refresh the graph
 }
 
-function clearTransitionAnimations() {
-    if (animationTimer) {
-      clearTimeout(animationTimer);
-      sendOSCStopMessage('/additive');
-    }
-}
-
-function clearActiveAnimations() {
-    // Clear all active timeouts
-    activeTimeouts.forEach(timeoutId => clearTimeout(timeoutId));
-    activeTimeouts = []; // Reset the array
-}
-
 let activeTimeouts = []; // Array to store all active timeouts
 
+// Function to Higlight the Neighbors of a node in time
 function highlightNeighborsGradually(node, graph, degree, data) {
-    // requestFullScreen(elem);
-    // console.log(node)
     // Find connected nodes
     // console.log(degree[node.id])
     clearActiveAnimations();
@@ -535,3 +424,21 @@ function highlightNeighborsGradually(node, graph, degree, data) {
     });
 } 
 
+//==================================================
+
+// Utilities
+
+//==================================================
+
+function clearTransitionAnimations() {
+    if (animationTimer) {
+      clearTimeout(animationTimer);
+      sendOSCStopMessage('/additive');
+    }
+}
+
+function clearActiveAnimations() {
+    // Clear all active timeouts
+    activeTimeouts.forEach(timeoutId => clearTimeout(timeoutId));
+    activeTimeouts = []; // Reset the array
+}

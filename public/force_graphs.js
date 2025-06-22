@@ -1,4 +1,34 @@
 import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
+import yaml from 'https://cdn.skypack.dev/yaml';
+
+//========================================================
+// GLOBAL VARIABLES
+//========================================================
+
+let graph;
+let degree = {};
+
+let dataTextSpec = "Bibliographic Coupling"; //e.g. Co-citations, Bibliographic Coupling
+let dataText = document.getElementById("mySpec");
+dataText.innerText = dataTextSpec;
+let displayFeatures = false;
+
+//========================================================
+
+async function load_yml(file) {   
+    const response = await fetch(file);
+    const content = await response.text();
+    const yml_cnt = yaml.parse(content)
+    // const data_spec = yml_cnt["data-spec"]
+    onWasd = yml_cnt["interactions"]["wasd"]
+    onTransition = yml_cnt["interactions"]["transition"]
+    onSpace = yml_cnt["interactions"]["space"]
+    dataTextSpec = yml_cnt["display-text"]["data-spec"]
+    dataText.innerText = dataTextSpec;
+    console.log(yml_cnt["interactions"]["wasd"])
+    // return yml_cnt["display-text"]
+    // initializeEventListeners();
+}
 
 //=================================================================================
 //Main Body
@@ -52,12 +82,12 @@ var obj = {
     // reloadGraph: function() {updateGraphData(obj.file)}
 }
 
-var filedata = {"1-wasd": ["./data/1-wasd.json", "gatto"],
-    "2-transition": ["./data/2-transition.json", "gatto"],
-    "3-bubbles": ["./data/3-bubbles.json", "gatto"],
-    "4-hover": ["./data/4-hover.json", "gatto"],
-    "5-bib-coupling": ["./data/5-bib-coupling.json", "gatto"],
-    "6-cit-coupling": ["./data/6-co-cit-coupling.json", "gatto"],
+var filedata = {"1-wasd": ["./data/1-wasd.json", "./data/1-config.yml"],
+    "2-transition": ["./data/2-transition.json", "./data/2-config.yml"],
+    "3-bubbles": ["./data/3-bubbles.json", "./data/3-config.yml"],
+    "4-hover": ["./data/4-hover.json", "./data/4-config.yml"],
+    "5-bib-coupling": ["./data/5-bib-coupling.json", "./data/5-config.yml"],
+    "6-cit-coupling": ["./data/6-co-cit-coupling.json", "./data/6-config.yml"],
 }
 
 gui.add(obj, "hoverOn");
@@ -98,25 +128,10 @@ gui.onChange( event => {
     if (event.property == "file") {
         const tmpfile = filedata[obj.file]
         updateGraphData(tmpfile[0])
+        const tmpdata = load_yml(tmpfile[1])
+        // console.log("TMPDATA", tmpdata)
     }
 } );
-
-//========================================================
-// GLOBAL VARIABLES
-//========================================================
-
-let graph;
-let degree = {};
-let onHover = false;
-let onWasd = false;
-let onTransition = false;
-let onSpace = false;
-let dataTextSpec = "Bibliographic Coupling"; //e.g. Co-citations, Bibliographic Coupling
-let dataText = document.getElementById("mySpec");
-dataText.innerText = dataTextSpec;
-let displayFeatures = false;
-
-//========================================================
 
 //========================================================
 // EVENT LISTENERS
@@ -124,12 +139,13 @@ let displayFeatures = false;
 
 // Initialize event listeners once when the page loads
 function initializeEventListeners() {
-    if (onTransition) {
+    // if (onTransition) {
         // Track shift key state
         document.addEventListener('keydown', (event) => {
             if (event.key === 'Shift') {
                 shiftKeyPressed = true;
                 console.log("shiftKeyPressed");
+                
                 const element = document.getElementById("miaomiao");
                 if (element) {
                     element.innerText = "shift";
@@ -153,14 +169,14 @@ function initializeEventListeners() {
                 }
             }
         });
-    }
+    // }
     //================================================================================================
     // WASD - Interaction
     //================================================================================================
 
     // Set up key event listeners for WASD navigation
-    if (onWasd) {
-        document.addEventListener('keydown', (event) => {
+    // if (onWasd) {
+    document.addEventListener('keydown', (event) => {
         if (!selectedNode) return;
         let direction;
         switch(event.key.toLowerCase()) {
@@ -179,7 +195,8 @@ function initializeEventListeners() {
             default:
             return; // Not a WASD key
         }
-        const nextNode = findClosestNodeInDirection(selectedNode.id, direction, graph);
+        
+            const nextNode = findClosestNodeInDirection(selectedNode.id, direction, graph);
             //nextNode si rompe quindi l'errore è lì dentro
             if (nextNode) {
                 // Select the new node WITHOUT centering the view
@@ -190,14 +207,13 @@ function initializeEventListeners() {
                 // playFaust(220, degree[nextNode.id], "additiveplus", additivePlusNode, audioContext);
                 sendOSCMessage(nextNode, "/wasd", degree[nextNode.id])
                 // console.log(degree)
-            }
+            }   
         });
-    }
-
+    // }
     //================================================================================================
     // Track space bar state
     //================================================================================================
-    if (onSpace) {
+    // if (onSpace) {
         document.addEventListener('keydown', (event) => {
             if (event.key === ' ') {
                 spaceKeyPressed = true;
@@ -213,7 +229,7 @@ function initializeEventListeners() {
                 console.log("spaceKeyNotPressed");
             }
         });
-    }
+    // }
 }
 
 // Call this once when your page loads
@@ -223,16 +239,13 @@ function main(fileName) {
     fetchExternalData(fileName || obj.file).then(
         (data) => {
             data = data[0];
-            
             // Calculate node degrees
             // const degree = {};
             data.links.forEach(link => {
                 degree[link.source] = (degree[link.source] || 0) + 1;
                 degree[link.target] = (degree[link.target] || 0) + 1;
             });
-            
-            const highlightNodes = new Set();
-            const highlightLinks = new Set();
+
             const elem = document.getElementById('graph');
             
             // Initialize graph only once
@@ -245,7 +258,7 @@ function main(fileName) {
                 .nodeRelSize(6)
                 .nodeLabel(node => `${node.user}: ${node.description}`)
                 .linkCurvature(0.2)
-                .linkWidth(node => node.weight / 2.0)
+                .linkWidth(link => link.weight / 2.0)
                 .linkColor(() => linkStaticColor)
                 .nodeVal(node => degree[node.id] || 1) // Default to 1 if no links
                 .d3Force('charge', d3.forceManyBody().strength(node => -degree[node.id] * 20)) // Repulsion
@@ -253,28 +266,20 @@ function main(fileName) {
                 .linkDirectionalParticles(1)
                 .graphData(data)
                 .autoPauseRedraw(false) // keep redrawing after engine has stopped
-                .onLinkHover(link => {
-                        highlightNodes.clear();
-                        highlightLinks.clear();
-                    if (link) {
-                        highlightLinks.add(link);
-                        highlightNodes.add(link.source);
-                        highlightNodes.add(link.target);
-                    };
-                })
                 .onNodeHover(node => {
-                    
-                if (!node){
-                    return
-                }
-                if (node) {
-                    if (hoverOn) {
-                        document.getElementById("content").innerText = node["description"];
-                        sendOSCMessage(node, "/control", degree[node.id])
+                    if (!node){
+                        return
                     }
-                    }
+                    if (node) {
+                        if (hoverOn) {
+                            selectNode(node, false, graph);
+                            document.getElementById("content").innerText = node["description"];
+                            sendOSCMessage(node, "/control", degree[node.id])
+                        }
+                        }
                 });
             }
+            
             //================================================================================================
             //Select function depending on status
             //================================================================================================
@@ -288,6 +293,7 @@ function main(fileName) {
                     document.getElementById("citations").innerText = node["citations"];
                     document.getElementById("year").innerText = node["year"];
                     document.getElementById("co-citations").innerText = degree[node.id];
+                    
                     if (shiftKeyPressed) {
                         shiftSelection(node, graph, degree);
                         clearActiveAnimations();
@@ -296,6 +302,7 @@ function main(fileName) {
                         clearActiveAnimations();
                     if (spaceKeyPressed) {highlightNeighborsGradually(node, graph, degree, data)};
                     }
+                    
                 });
             }
             setupNodeSelection(graph)
@@ -345,7 +352,6 @@ function main(fileName) {
             }
             setupBackgroundClick(graph)
 
-            
             graph.graphData({ nodes: [], links: [] }); // Clear old graph data
 
             // Update graph data (this is what you want for dynamic updates)
@@ -369,4 +375,5 @@ function updateGraphData(fileName) {
     main(fileName);
 }
 
+load_yml("./data/6-config.yml")
 main("./data/6-co-cit-coupling.json")

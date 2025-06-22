@@ -1,0 +1,10 @@
+display-text:
+  # Co-citations or Bibliographic Coupling
+  data-spec: Bibliographic Coupling
+  display-features: false
+  display-navigation: false
+interactions:
+  hover: false
+  wasd: true
+  transition: false
+  space: false
