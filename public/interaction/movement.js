@@ -2,6 +2,7 @@ let onHover = false;
 let onWasd = false;
 let onTransition = false;
 let onSpace = false;
+let currentWeight = 0;
 //=================================================================================
 //Graph Behaviour
 //=================================================================================
@@ -222,6 +223,7 @@ function findShortestPath(startNode, endNode, graph) {
   // Get the graph data
   const nodes = graph.graphData().nodes;
   const links = graph.graphData().links;
+  console.log(links)
   
   // Create an adjacency list representation of the graph
   const adjacencyList = {};
@@ -312,26 +314,36 @@ function animatePathTraversal(nodePath, linkPath, graph, degree) {
       sendOSCStopMessage('/additive');
       return;
     }
+    
     // console.log("AAAA")
     // Add the next link to the highlighted path
     highlightedPath.push(linkPath[currentStep]);
     
     // Highlight current node in the path
+    // It's actually the next node but I have to light up that one
     const currentNodeId = nodePath[currentStep + 1];
+    // console.log("CURRENT NODE",nodePath[currentStep])
+
     const currentNode = nodeMap[currentNodeId];
     document.getElementById("content").innerText = currentNode["description"];
     
+    currentWeight = getWeightBetweenNodesWithDefault(graph.graphData(), nodePath[currentStep], currentNodeId);
+    // console.log("WEIGHT:", getWeightBetweenNodesWithDefault(graph.graphData(), nodePath[currentStep], currentNodeId), "Start:", nodePath[currentStep], "End:", currentNodeId)
+
     // Send OSC message
-    sendOSCMessage(currentNode, '/additive', degree[currentNode.id]);
+    sendOSCMessage(currentNode, '/additive', degree[currentNode.id], currentWeight);
     
     // Center on current node
     graph.centerAt(currentNode.x, currentNode.y, 300);
-    
+    selectedNodes.push(currentNode);
     // Update colors
     updateNodeColors(graph);
     
     // Calculate the delay for the next step based on current node's citations
     const nextNodeId = nodePath[currentStep + 1];
+    // console.log("GRAPHDATA", graph.graphData())
+    // console.log("TARGET NODE",nextNodeId)
+
     // Maps 100-500 to 0-1 with focus on 100-150 range
     // TODO TOMORROW
     // const nextDelay = mapValue(nodeMap[nextNodeId]["citations"], {
@@ -342,19 +354,23 @@ function animatePathTraversal(nodePath, linkPath, graph, degree) {
     //   focusRangeEnd: 30,
     //   focusRangeOutput: 0.4
     // });
-    const nextDelay = mapNumRange(nodeMap[nextNodeId]["citations"], 0,836,5000,10000);
+    // const nextDelay = mapNumRange(nodeMap[nextNodeId]["citations"], 0,836,500,5000);
+    const nextDelay = mapNumRange(currentWeight, 0,107,500,5000);
+
     // const nextDelay = nodeMap[nextNodeId]["citations"];
-    console.log("Current Node: ", nodeMap[nextNodeId])
-    console.log("Next Delay:", nextDelay);
+    // console.log("Current Node: ", nodeMap[nextNodeId])
+    // console.log("Next Delay:", nextDelay);
     // Move to next step with dynamic timeout
     currentStep++;
     
     // Set the next timeout with dynamic delay
     animationTimer = setTimeout(animateStep, nextDelay);
   }
-  
+  // First weight  
+  const firstWeight = getWeightBetweenNodesWithDefault(graph.graphData(), nodePath[0], nodePath[1]);
   // Start the animation with the first node's delay
-  const firstDelay = mapNumRange(nodeMap[nodePath[0]]["citations"], 0,836,500,10000);
+  const firstDelay = mapNumRange(firstWeight, 0, 106, 500, 5000);
+  // const firstDelay = mapNumRange(nodeMap[nodePath[0]]["citations"], 0,836,500,10000);
   // const firstDelay = mapValue(nodeMap[nodePath[0]]["citations"], {
   //   inMin: 0,
   //   inMax: 1000,
@@ -402,6 +418,9 @@ function highlightNeighborsGradually(node, graph, degree, data) {
         .filter(link => link.source.id === node.id || link.target.id === node.id)
         .map(link => link.source.id === node.id ? link.target : link.source);
 
+    // instead of using the degree use the weight
+    // currentWeight = getWeightBetweenNodesWithDefault(graph.graphData(), nodePath[currentStep], currentNodeId);
+
     // Reset all nodes before applying new highlights
     data.nodes.forEach(n => n.highlighted = false);
     node.highlighted = true; // Highlight the clicked node immediately
@@ -417,8 +436,8 @@ function highlightNeighborsGradually(node, graph, degree, data) {
             // playFaust(2000 - (degree[neighbor.id] * 30), 1, "bubbles", audioNode, audioContext);
             // document.getElementById("content").innerText = neighbor["description"];
             sendOSCMessage(neighbor, '/bubbles', degree[neighbor.id]);
-            console.log("HERE", neighbor.id)
-        }, (index + 1) * (degree[neighbor.id]) * 10); // 1 second delay per node
+            console.log("HERE", node.id, neighbor.id, getWeightBetweenNodesWithDefault(graph.graphData(), node.id, neighbor.id))
+        }, (index + 1) * (getWeightBetweenNodesWithDefault(graph.graphData(), node.id, neighbor.id)) * 10); // 1 second delay per node
         
         activeTimeouts.push(timeoutId); // Store the timeout ID
     });
@@ -441,4 +460,15 @@ function clearActiveAnimations() {
     // Clear all active timeouts
     activeTimeouts.forEach(timeoutId => clearTimeout(timeoutId));
     activeTimeouts = []; // Reset the array
+}
+
+// Find weight between nodes
+function getWeightBetweenNodesWithDefault(data, sourceId, targetId) {
+  // console.log("OMADON", data.links)
+  const link = data.links.find(link => 
+    (link.source.id === sourceId && link.target.id === targetId) ||
+    (link.source.id === targetId && link.target.id === sourceId)
+  );
+  // console.log(link)
+  return link ? link.weight : 0;
 }

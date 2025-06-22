@@ -163,10 +163,10 @@ function initializeEventListeners() {
                 console.log("shiftKeyNotPressed");
                 
                 // Only clear selection when shift key is released if no animation is running
-                if (!animationInProgress && graph) {
-                    selectedNodes = [];
-                    updateNodeColors(graph);
-                }
+                // if (!animationInProgress && graph) {
+                //     selectedNodes = [];
+                //     updateNodeColors(graph);
+                // }
             }
         });
     // }
@@ -239,45 +239,48 @@ function main(fileName) {
     fetchExternalData(fileName || obj.file).then(
         (data) => {
             data = data[0];
+
             // Calculate node degrees
-            // const degree = {};
             data.links.forEach(link => {
+                // console.log(link.source, link.target, link.weight);
                 degree[link.source] = (degree[link.source] || 0) + 1;
                 degree[link.target] = (degree[link.target] || 0) + 1;
             });
+            
+            // Find where the source is the starting point, get an array of that and then find where the target is the end point, there you have the weight
 
             const elem = document.getElementById('graph');
             
             // Initialize graph only once
             if (!graph) {
                 graph = new ForceGraph(elem);
-                
                 // Set up your graph configuration here (one-time setup)
                 graph
                     .backgroundColor('#101020')
-                .nodeRelSize(6)
-                .nodeLabel(node => `${node.user}: ${node.description}`)
-                .linkCurvature(0.2)
-                .linkWidth(link => link.weight / 2.0)
-                .linkColor(() => linkStaticColor)
-                .nodeVal(node => degree[node.id] || 1) // Default to 1 if no links
-                .d3Force('charge', d3.forceManyBody().strength(node => -degree[node.id] * 20)) // Repulsion
-                .d3Force('collision', d3.forceCollide(node => degree[node.id] * 2)) // Prevent overlap
-                .linkDirectionalParticles(1)
-                .graphData(data)
-                .autoPauseRedraw(false) // keep redrawing after engine has stopped
-                .onNodeHover(node => {
-                    if (!node){
-                        return
+                    .nodeRelSize(6)
+                    .nodeLabel(node => `${node.user}: ${node.description}`)
+                    .linkCurvature(0.2)
+                    .linkWidth(link => link.weight / 2.0)
+                    .linkColor(() => linkStaticColor)
+                    .nodeVal(node => degree[node.id] || 1) // Default to 1 if no links
+                    .d3Force('charge', d3.forceManyBody().strength(node => -degree[node.id] * 20)) // Repulsion
+                    .d3Force('collision', d3.forceCollide(node => degree[node.id] * 2)) // Prevent overlap
+                    .linkDirectionalParticles(1)
+                    .graphData(data)
+                    .autoPauseRedraw(false) // keep redrawing after engine has stopped
+                    .onNodeHover(node => {
+                        if (!node){
+                            return
+                        }
+                        if (node) {
+                            if (hoverOn) {
+                                selectNode(node, false, graph);
+                                document.getElementById("content").innerText = node["description"];
+                                sendOSCMessage(node, "/control", degree[node.id])
+                            }
+                            }
                     }
-                    if (node) {
-                        if (hoverOn) {
-                            selectNode(node, false, graph);
-                            document.getElementById("content").innerText = node["description"];
-                            sendOSCMessage(node, "/control", degree[node.id])
-                        }
-                        }
-                });
+                );
             }
             
             //================================================================================================

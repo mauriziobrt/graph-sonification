@@ -28,7 +28,7 @@ function connectWebSocket() {
     };
 }
 
-function sendOSCMessage(node, address, degree) {
+function sendOSCMessage(node, address, degree, weight) {
     if (ws && ws.readyState === WebSocket.OPEN) {
         const cit = node["citations"];
 
@@ -70,9 +70,6 @@ connectWebSocket();
 //======================================================================
 // Server Part
 //======================================================================
-
-// var file = "./data/co-cit-rich.json"
-
 
 function fetchExternalData(file) {
     return Promise.all([
