@@ -4,7 +4,7 @@
 
 ![Graph Interface Screenshot](graph-screen.png)
 
-An interactive interface for the sonification of graphs using OSC (Open Sound Control). This tool allows users to explore graph structures through both visual and auditory feedback.
+An interactive interface for the sonification of graphs using OSC (Open Sound Control). This tool allows users to explore graph structures through both visual and auditory feedback. The force-directed graph web component in use is [force-graph](https://github.com/vasturiano/force-graph) by Vasco Asturiano.
 
 ## Features
 
@@ -18,7 +18,7 @@ An interactive interface for the sonification of graphs using OSC (Open Sound Co
 
 - **SuperCollider** - [Download here](https://supercollider.github.io/)
 - **Node.js** - Required for running the web server
-- **Modern web browser** - For the interactive interface
+<!-- - **Modern web browser** - For the interactive interface -->
 
 ## Installation
 
@@ -79,13 +79,13 @@ The interface supports four different interaction methods, each triggering both 
 - **Action:** Click on empty background
 - **Effect:** Resets the view to default state
 
-## Technical Details
+<!-- ## Technical Details
 
 - **Frontend:** HTML5, CSS3, JavaScript (ES6+)
 - **Backend:** Node.js with Express
 - **Communication:** WebSocket for real-time updates, OSC for audio
 - **Audio Engine:** SuperCollider
-- **Graph Layout:** Force-directed layout algorithm
+- **Graph Layout:** Force-directed layout algorithm -->
 
 <!-- ## File Structure
 
