@@ -1,0 +1,1173 @@
+{
+  "nodes": [
+    {
+      "user": "Williams2024",
+      "description": "Wearable technology for health monitoring",
+      "year": 2021,
+      "openacces": "green",
+      "citations": 42,
+      "id": "52q",
+      "cluster": 1
+    },
+    {
+      "user": "Davis2024",
+      "description": "Natural language processing in clinical documentation",
+      "year": 2023,
+      "openacces": "hybrid",
+      "citations": 26,
+      "id": "78r",
+      "cluster": 1
+    },
+    {
+      "user": "Williams2024",
+      "description": "Computer vision for medical imaging analysis",
+      "year": 2024,
+      "openacces": "green",
+      "citations": 35,
+      "id": "65o",
+      "cluster": 1
+    },
+    {
+      "user": "Moore2023",
+      "description": "Robotic surgery optimization techniques",
+      "year": 2023,
+      "openacces": "gold",
+      "citations": 96,
+      "id": "79z",
+      "cluster": 1
+    },
+    {
+      "user": "Chen2024",
+      "description": "Robotic surgery optimization techniques",
+      "year": 2023,
+      "openacces": "gold",
+      "citations": 143,
+      "id": "65y",
+      "cluster": 1
+    },
+    {
+      "user": "Thomas2024",
+      "description": "Computer vision for medical imaging analysis",
+      "year": 2020,
+      "openacces": "gold",
+      "citations": 138,
+      "id": "86q",
+      "cluster": 1
+    },
+    {
+      "user": "Wilson2024",
+      "description": "Telemedicine platform development",
+      "year": 2020,
+      "openacces": "gold",
+      "citations": 59,
+      "id": "29g",
+      "cluster": 1
+    },
+    {
+      "user": "Johnson2023",
+      "description": "Natural language processing in clinical documentation",
+      "year": 2024,
+      "openacces": "gold",
+      "citations": 118,
+      "id": "16d",
+      "cluster": 1
+    },
+    {
+      "user": "Rodriguez2023",
+      "description": "Computer vision for medical imaging analysis",
+      "year": 2021,
+      "openacces": "gold",
+      "citations": 72,
+      "id": "52j",
+      "cluster": 1
+    },
+    {
+      "user": "Moore2023",
+      "description": "Deep learning for image recognition in healthcare",
+      "year": 2020,
+      "openacces": "green",
+      "citations": 105,
+      "id": "38o",
+      "cluster": 1
+    },
+    {
+      "user": "Johnson2023",
+      "description": "Wearable technology for health monitoring",
+      "year": 2024,
+      "openacces": "hybrid",
+      "citations": 56,
+      "id": "39t",
+      "cluster": 1
+    },
+    {
+      "user": "Wilson2024",
+      "description": "Artificial intelligence in drug discovery",
+      "year": 2023,
+      "openacces": "green",
+      "citations": 45,
+      "id": "29m",
+      "cluster": 1
+    },
+    {
+      "user": "Thomas2024",
+      "description": "Big data analytics in population health",
+      "year": 2021,
+      "openacces": "bronze",
+      "citations": 130,
+      "id": "39b",
+      "cluster": 1
+    },
+    {
+      "user": "Rodriguez2023",
+      "description": "Computer vision for medical imaging analysis",
+      "year": 2022,
+      "openacces": "closed",
+      "citations": 106,
+      "id": "33f",
+      "cluster": 1
+    },
+    {
+      "user": "Io",
+      "description": "Computer vision for medical imaging analysis",
+      "year": 2024,
+      "openacces": "bronze",
+      "citations": 140,
+      "id": "54w",
+      "cluster": 1
+    },
+    {
+      "user": "Io",
+      "description": "Blockchain applications in healthcare data management",
+      "year": 2020,
+      "openacces": "bronze",
+      "citations": 109,
+      "id": "86h",
+      "cluster": 1
+    },
+    {
+      "user": "Johnson2023",
+      "description": "Artificial intelligence in drug discovery",
+      "year": 2023,
+      "openacces": "closed",
+      "citations": 136,
+      "id": "48a",
+      "cluster": 1
+    },
+    {
+      "user": "Davis2024",
+      "description": "Blockchain applications in healthcare data management",
+      "year": 2021,
+      "openacces": "green",
+      "citations": 19,
+      "id": "86w",
+      "cluster": 1
+    },
+    {
+      "user": "Anderson2023",
+      "description": "Computer vision for medical imaging analysis",
+      "year": 2022,
+      "openacces": "green",
+      "citations": 49,
+      "id": "67p",
+      "cluster": 1
+    },
+    {
+      "user": "Rodriguez2023",
+      "description": "Artificial intelligence in drug discovery",
+      "year": 2024,
+      "openacces": "closed",
+      "citations": 37,
+      "id": "92w",
+      "cluster": 1
+    },
+    {
+      "user": "Williams2024",
+      "description": "Wearable technology for health monitoring",
+      "year": 2021,
+      "openacces": "green",
+      "citations": 42,
+      "id": "95c",
+      "cluster": 2
+    },
+    {
+      "user": "Davis2024",
+      "description": "Natural language processing in clinical documentation",
+      "year": 2023,
+      "openacces": "hybrid",
+      "citations": 26,
+      "id": "44n",
+      "cluster": 2
+    },
+    {
+      "user": "Williams2024",
+      "description": "Computer vision for medical imaging analysis",
+      "year": 2024,
+      "openacces": "green",
+      "citations": 35,
+      "id": "11a",
+      "cluster": 2
+    },
+    {
+      "user": "Moore2023",
+      "description": "Robotic surgery optimization techniques",
+      "year": 2023,
+      "openacces": "gold",
+      "citations": 96,
+      "id": "21u",
+      "cluster": 2
+    },
+    {
+      "user": "Chen2024",
+      "description": "Robotic surgery optimization techniques",
+      "year": 2023,
+      "openacces": "gold",
+      "citations": 143,
+      "id": "84y",
+      "cluster": 2
+    },
+    {
+      "user": "Thomas2024",
+      "description": "Computer vision for medical imaging analysis",
+      "year": 2020,
+      "openacces": "gold",
+      "citations": 138,
+      "id": "72j",
+      "cluster": 2
+    },
+    {
+      "user": "Wilson2024",
+      "description": "Telemedicine platform development",
+      "year": 2020,
+      "openacces": "gold",
+      "citations": 59,
+      "id": "45f",
+      "cluster": 2
+    },
+    {
+      "user": "Johnson2023",
+      "description": "Natural language processing in clinical documentation",
+      "year": 2024,
+      "openacces": "gold",
+      "citations": 118,
+      "id": "45o",
+      "cluster": 2
+    },
+    {
+      "user": "Rodriguez2023",
+      "description": "Computer vision for medical imaging analysis",
+      "year": 2021,
+      "openacces": "gold",
+      "citations": 72,
+      "id": "94m",
+      "cluster": 2
+    },
+    {
+      "user": "Moore2023",
+      "description": "Deep learning for image recognition in healthcare",
+      "year": 2020,
+      "openacces": "green",
+      "citations": 105,
+      "id": "73j",
+      "cluster": 2
+    },
+    {
+      "user": "Johnson2023",
+      "description": "Wearable technology for health monitoring",
+      "year": 2024,
+      "openacces": "hybrid",
+      "citations": 56,
+      "id": "35w",
+      "cluster": 2
+    },
+    {
+      "user": "Wilson2024",
+      "description": "Artificial intelligence in drug discovery",
+      "year": 2023,
+      "openacces": "green",
+      "citations": 45,
+      "id": "20o",
+      "cluster": 2
+    },
+    {
+      "user": "Thomas2024",
+      "description": "Big data analytics in population health",
+      "year": 2021,
+      "openacces": "bronze",
+      "citations": 130,
+      "id": "53p",
+      "cluster": 2
+    },
+    {
+      "user": "Rodriguez2023",
+      "description": "Computer vision for medical imaging analysis",
+      "year": 2022,
+      "openacces": "closed",
+      "citations": 106,
+      "id": "73g",
+      "cluster": 2
+    },
+    {
+      "user": "Io",
+      "description": "Computer vision for medical imaging analysis",
+      "year": 2024,
+      "openacces": "bronze",
+      "citations": 140,
+      "id": "84q",
+      "cluster": 2
+    },
+    {
+      "user": "Io",
+      "description": "Blockchain applications in healthcare data management",
+      "year": 2020,
+      "openacces": "bronze",
+      "citations": 109,
+      "id": "25f",
+      "cluster": 2
+    },
+    {
+      "user": "Johnson2023",
+      "description": "Artificial intelligence in drug discovery",
+      "year": 2023,
+      "openacces": "closed",
+      "citations": 136,
+      "id": "19r",
+      "cluster": 2
+    },
+    {
+      "user": "Davis2024",
+      "description": "Blockchain applications in healthcare data management",
+      "year": 2021,
+      "openacces": "green",
+      "citations": 19,
+      "id": "94o",
+      "cluster": 2
+    },
+    {
+      "user": "Anderson2023",
+      "description": "Computer vision for medical imaging analysis",
+      "year": 2022,
+      "openacces": "green",
+      "citations": 49,
+      "id": "19i",
+      "cluster": 2
+    },
+    {
+      "user": "Rodriguez2023",
+      "description": "Artificial intelligence in drug discovery",
+      "year": 2024,
+      "openacces": "closed",
+      "citations": 37,
+      "id": "24d",
+      "cluster": 2
+    },
+    {
+      "user": "Williams2024",
+      "description": "Wearable technology for health monitoring",
+      "year": 2021,
+      "openacces": "green",
+      "citations": 42,
+      "id": "80a",
+      "cluster": 3
+    },
+    {
+      "user": "Davis2024",
+      "description": "Natural language processing in clinical documentation",
+      "year": 2023,
+      "openacces": "hybrid",
+      "citations": 26,
+      "id": "87y",
+      "cluster": 3
+    },
+    {
+      "user": "Williams2024",
+      "description": "Computer vision for medical imaging analysis",
+      "year": 2024,
+      "openacces": "green",
+      "citations": 35,
+      "id": "16t",
+      "cluster": 3
+    },
+    {
+      "user": "Moore2023",
+      "description": "Robotic surgery optimization techniques",
+      "year": 2023,
+      "openacces": "gold",
+      "citations": 96,
+      "id": "35n",
+      "cluster": 3
+    },
+    {
+      "user": "Chen2024",
+      "description": "Robotic surgery optimization techniques",
+      "year": 2023,
+      "openacces": "gold",
+      "citations": 143,
+      "id": "37g",
+      "cluster": 3
+    },
+    {
+      "user": "Thomas2024",
+      "description": "Computer vision for medical imaging analysis",
+      "year": 2020,
+      "openacces": "gold",
+      "citations": 138,
+      "id": "91l",
+      "cluster": 3
+    },
+    {
+      "user": "Wilson2024",
+      "description": "Telemedicine platform development",
+      "year": 2020,
+      "openacces": "gold",
+      "citations": 59,
+      "id": "14k",
+      "cluster": 3
+    },
+    {
+      "user": "Johnson2023",
+      "description": "Natural language processing in clinical documentation",
+      "year": 2024,
+      "openacces": "gold",
+      "citations": 118,
+      "id": "26s",
+      "cluster": 3
+    },
+    {
+      "user": "Rodriguez2023",
+      "description": "Computer vision for medical imaging analysis",
+      "year": 2021,
+      "openacces": "gold",
+      "citations": 72,
+      "id": "73w",
+      "cluster": 3
+    },
+    {
+      "user": "Moore2023",
+      "description": "Deep learning for image recognition in healthcare",
+      "year": 2020,
+      "openacces": "green",
+      "citations": 105,
+      "id": "18d",
+      "cluster": 3
+    },
+    {
+      "user": "Johnson2023",
+      "description": "Wearable technology for health monitoring",
+      "year": 2024,
+      "openacces": "hybrid",
+      "citations": 56,
+      "id": "99j",
+      "cluster": 3
+    },
+    {
+      "user": "Wilson2024",
+      "description": "Artificial intelligence in drug discovery",
+      "year": 2023,
+      "openacces": "green",
+      "citations": 45,
+      "id": "75q",
+      "cluster": 3
+    },
+    {
+      "user": "Thomas2024",
+      "description": "Big data analytics in population health",
+      "year": 2021,
+      "openacces": "bronze",
+      "citations": 130,
+      "id": "20t",
+      "cluster": 3
+    },
+    {
+      "user": "Rodriguez2023",
+      "description": "Computer vision for medical imaging analysis",
+      "year": 2022,
+      "openacces": "closed",
+      "citations": 106,
+      "id": "44g",
+      "cluster": 3
+    },
+    {
+      "user": "Io",
+      "description": "Computer vision for medical imaging analysis",
+      "year": 2024,
+      "openacces": "bronze",
+      "citations": 140,
+      "id": "89f",
+      "cluster": 3
+    },
+    {
+      "user": "Io",
+      "description": "Blockchain applications in healthcare data management",
+      "year": 2020,
+      "openacces": "bronze",
+      "citations": 109,
+      "id": "42b",
+      "cluster": 3
+    },
+    {
+      "user": "Johnson2023",
+      "description": "Artificial intelligence in drug discovery",
+      "year": 2023,
+      "openacces": "closed",
+      "citations": 136,
+      "id": "10t",
+      "cluster": 3
+    },
+    {
+      "user": "Davis2024",
+      "description": "Blockchain applications in healthcare data management",
+      "year": 2021,
+      "openacces": "green",
+      "citations": 19,
+      "id": "89z",
+      "cluster": 3
+    },
+    {
+      "user": "Anderson2023",
+      "description": "Computer vision for medical imaging analysis",
+      "year": 2022,
+      "openacces": "green",
+      "citations": 49,
+      "id": "27m",
+      "cluster": 3
+    },
+    {
+      "user": "Rodriguez2023",
+      "description": "Artificial intelligence in drug discovery",
+      "year": 2024,
+      "openacces": "closed",
+      "citations": 37,
+      "id": "50t",
+      "cluster": 3
+    },
+    {
+      "user": "Williams2024",
+      "description": "Wearable technology for health monitoring",
+      "year": 2021,
+      "openacces": "green",
+      "citations": 42,
+      "id": "52i",
+      "cluster": 4
+    },
+    {
+      "user": "Davis2024",
+      "description": "Natural language processing in clinical documentation",
+      "year": 2023,
+      "openacces": "hybrid",
+      "citations": 26,
+      "id": "59u",
+      "cluster": 4
+    },
+    {
+      "user": "Williams2024",
+      "description": "Computer vision for medical imaging analysis",
+      "year": 2024,
+      "openacces": "green",
+      "citations": 35,
+      "id": "77e",
+      "cluster": 4
+    },
+    {
+      "user": "Moore2023",
+      "description": "Robotic surgery optimization techniques",
+      "year": 2023,
+      "openacces": "gold",
+      "citations": 96,
+      "id": "90d",
+      "cluster": 4
+    },
+    {
+      "user": "Chen2024",
+      "description": "Robotic surgery optimization techniques",
+      "year": 2023,
+      "openacces": "gold",
+      "citations": 143,
+      "id": "77v",
+      "cluster": 4
+    },
+    {
+      "user": "Thomas2024",
+      "description": "Computer vision for medical imaging analysis",
+      "year": 2020,
+      "openacces": "gold",
+      "citations": 138,
+      "id": "17w",
+      "cluster": 4
+    },
+    {
+      "user": "Wilson2024",
+      "description": "Telemedicine platform development",
+      "year": 2020,
+      "openacces": "gold",
+      "citations": 59,
+      "id": "91s",
+      "cluster": 4
+    },
+    {
+      "user": "Johnson2023",
+      "description": "Natural language processing in clinical documentation",
+      "year": 2024,
+      "openacces": "gold",
+      "citations": 118,
+      "id": "99e",
+      "cluster": 4
+    },
+    {
+      "user": "Rodriguez2023",
+      "description": "Computer vision for medical imaging analysis",
+      "year": 2021,
+      "openacces": "gold",
+      "citations": 72,
+      "id": "22r",
+      "cluster": 4
+    },
+    {
+      "user": "Moore2023",
+      "description": "Deep learning for image recognition in healthcare",
+      "year": 2020,
+      "openacces": "green",
+      "citations": 105,
+      "id": "92q",
+      "cluster": 4
+    },
+    {
+      "user": "Johnson2023",
+      "description": "Wearable technology for health monitoring",
+      "year": 2024,
+      "openacces": "hybrid",
+      "citations": 56,
+      "id": "74d",
+      "cluster": 4
+    },
+    {
+      "user": "Wilson2024",
+      "description": "Artificial intelligence in drug discovery",
+      "year": 2023,
+      "openacces": "green",
+      "citations": 45,
+      "id": "13c",
+      "cluster": 4
+    },
+    {
+      "user": "Thomas2024",
+      "description": "Big data analytics in population health",
+      "year": 2021,
+      "openacces": "bronze",
+      "citations": 130,
+      "id": "52d",
+      "cluster": 4
+    },
+    {
+      "user": "Rodriguez2023",
+      "description": "Computer vision for medical imaging analysis",
+      "year": 2022,
+      "openacces": "closed",
+      "citations": 106,
+      "id": "72r",
+      "cluster": 4
+    },
+    {
+      "user": "Io",
+      "description": "Computer vision for medical imaging analysis",
+      "year": 2024,
+      "openacces": "bronze",
+      "citations": 140,
+      "id": "21d",
+      "cluster": 4
+    },
+    {
+      "user": "Io",
+      "description": "Blockchain applications in healthcare data management",
+      "year": 2020,
+      "openacces": "bronze",
+      "citations": 109,
+      "id": "92z",
+      "cluster": 4
+    },
+    {
+      "user": "Johnson2023",
+      "description": "Artificial intelligence in drug discovery",
+      "year": 2023,
+      "openacces": "closed",
+      "citations": 136,
+      "id": "61m",
+      "cluster": 4
+    },
+    {
+      "user": "Davis2024",
+      "description": "Blockchain applications in healthcare data management",
+      "year": 2021,
+      "openacces": "green",
+      "citations": 19,
+      "id": "33x",
+      "cluster": 4
+    },
+    {
+      "user": "Anderson2023",
+      "description": "Computer vision for medical imaging analysis",
+      "year": 2022,
+      "openacces": "green",
+      "citations": 49,
+      "id": "13p",
+      "cluster": 4
+    },
+    {
+      "user": "Rodriguez2023",
+      "description": "Artificial intelligence in drug discovery",
+      "year": 2024,
+      "openacces": "closed",
+      "citations": 37,
+      "id": "82o",
+      "cluster": 4
+    }
+  ],
+  "links": [
+    {
+      "source": "52q",
+      "target": "78r",
+      "weight": 5
+    },
+    {
+      "source": "78r",
+      "target": "65o",
+      "weight": 5
+    },
+    {
+      "source": "65o",
+      "target": "79z",
+      "weight": 4
+    },
+    {
+      "source": "78r",
+      "target": "65y",
+      "weight": 3
+    },
+    {
+      "source": "65y",
+      "target": "86q",
+      "weight": 8
+    },
+    {
+      "source": "52q",
+      "target": "29g",
+      "weight": 9
+    },
+    {
+      "source": "65y",
+      "target": "16d",
+      "weight": 7
+    },
+    {
+      "source": "52q",
+      "target": "52j",
+      "weight": 3
+    },
+    {
+      "source": "79z",
+      "target": "38o",
+      "weight": 9
+    },
+    {
+      "source": "86q",
+      "target": "39t",
+      "weight": 5
+    },
+    {
+      "source": "65y",
+      "target": "29m",
+      "weight": 8
+    },
+    {
+      "source": "52j",
+      "target": "39b",
+      "weight": 4
+    },
+    {
+      "source": "39b",
+      "target": "33f",
+      "weight": 8
+    },
+    {
+      "source": "65o",
+      "target": "54w",
+      "weight": 7
+    },
+    {
+      "source": "16d",
+      "target": "86h",
+      "weight": 7
+    },
+    {
+      "source": "52j",
+      "target": "48a",
+      "weight": 4
+    },
+    {
+      "source": "39t",
+      "target": "86w",
+      "weight": 4
+    },
+    {
+      "source": "38o",
+      "target": "67p",
+      "weight": 5
+    },
+    {
+      "source": "86h",
+      "target": "92w",
+      "weight": 1
+    },
+    {
+      "source": "39t",
+      "target": "16d",
+      "weight": 8
+    },
+    {
+      "source": "54w",
+      "target": "16d",
+      "weight": 7
+    },
+    {
+      "source": "67p",
+      "target": "29m",
+      "weight": 1
+    },
+    {
+      "source": "95c",
+      "target": "44n",
+      "weight": 5
+    },
+    {
+      "source": "44n",
+      "target": "11a",
+      "weight": 5
+    },
+    {
+      "source": "11a",
+      "target": "21u",
+      "weight": 4
+    },
+    {
+      "source": "44n",
+      "target": "84y",
+      "weight": 3
+    },
+    {
+      "source": "84y",
+      "target": "72j",
+      "weight": 8
+    },
+    {
+      "source": "95c",
+      "target": "45f",
+      "weight": 9
+    },
+    {
+      "source": "84y",
+      "target": "45o",
+      "weight": 7
+    },
+    {
+      "source": "95c",
+      "target": "94m",
+      "weight": 3
+    },
+    {
+      "source": "21u",
+      "target": "73j",
+      "weight": 9
+    },
+    {
+      "source": "72j",
+      "target": "35w",
+      "weight": 5
+    },
+    {
+      "source": "84y",
+      "target": "20o",
+      "weight": 8
+    },
+    {
+      "source": "94m",
+      "target": "53p",
+      "weight": 4
+    },
+    {
+      "source": "53p",
+      "target": "73g",
+      "weight": 8
+    },
+    {
+      "source": "11a",
+      "target": "84q",
+      "weight": 7
+    },
+    {
+      "source": "45o",
+      "target": "25f",
+      "weight": 7
+    },
+    {
+      "source": "94m",
+      "target": "19r",
+      "weight": 4
+    },
+    {
+      "source": "35w",
+      "target": "94o",
+      "weight": 4
+    },
+    {
+      "source": "73j",
+      "target": "19i",
+      "weight": 5
+    },
+    {
+      "source": "25f",
+      "target": "24d",
+      "weight": 1
+    },
+    {
+      "source": "35w",
+      "target": "45o",
+      "weight": 8
+    },
+    {
+      "source": "84q",
+      "target": "45o",
+      "weight": 7
+    },
+    {
+      "source": "19i",
+      "target": "20o",
+      "weight": 1
+    },
+    {
+      "source": "13c",
+      "target": "87y",
+      "weight": 5
+    },
+    {
+      "source": "87y",
+      "target": "16t",
+      "weight": 5
+    },
+    {
+      "source": "16t",
+      "target": "35n",
+      "weight": 4
+    },
+    {
+      "source": "87y",
+      "target": "37g",
+      "weight": 3
+    },
+    {
+      "source": "37g",
+      "target": "91l",
+      "weight": 8
+    },
+    {
+      "source": "13c",
+      "target": "14k",
+      "weight": 9
+    },
+    {
+      "source": "37g",
+      "target": "26s",
+      "weight": 7
+    },
+    {
+      "source": "13c",
+      "target": "73w",
+      "weight": 3
+    },
+    {
+      "source": "35n",
+      "target": "18d",
+      "weight": 9
+    },
+    {
+      "source": "91l",
+      "target": "13c",
+      "weight": 5
+    },
+    {
+      "source": "37g",
+      "target": "75q",
+      "weight": 8
+    },
+    {
+      "source": "73w",
+      "target": "20t",
+      "weight": 4
+    },
+    {
+      "source": "20t",
+      "target": "44g",
+      "weight": 8
+    },
+    {
+      "source": "16t",
+      "target": "89f",
+      "weight": 7
+    },
+    {
+      "source": "26s",
+      "target": "42b",
+      "weight": 7
+    },
+    {
+      "source": "73w",
+      "target": "10t",
+      "weight": 4
+    },
+    {
+      "source": "13c",
+      "target": "89z",
+      "weight": 4
+    },
+    {
+      "source": "18d",
+      "target": "27m",
+      "weight": 5
+    },
+    {
+      "source": "42b",
+      "target": "50t",
+      "weight": 1
+    },
+    {
+      "source": "13c",
+      "target": "26s",
+      "weight": 8
+    },
+    {
+      "source": "89f",
+      "target": "26s",
+      "weight": 7
+    },
+    {
+      "source": "27m",
+      "target": "75q",
+      "weight": 1
+    },
+    {
+      "source": "52i",
+      "target": "59u",
+      "weight": 5
+    },
+    {
+      "source": "59u",
+      "target": "77e",
+      "weight": 5
+    },
+    {
+      "source": "77e",
+      "target": "90d",
+      "weight": 4
+    },
+    {
+      "source": "59u",
+      "target": "77v",
+      "weight": 3
+    },
+    {
+      "source": "77v",
+      "target": "17w",
+      "weight": 8
+    },
+    {
+      "source": "52i",
+      "target": "91s",
+      "weight": 9
+    },
+    {
+      "source": "77v",
+      "target": "99e",
+      "weight": 7
+    },
+    {
+      "source": "52i",
+      "target": "22r",
+      "weight": 3
+    },
+    {
+      "source": "90d",
+      "target": "92q",
+      "weight": 9
+    },
+    {
+      "source": "17w",
+      "target": "74d",
+      "weight": 5
+    },
+    {
+      "source": "77v",
+      "target": "13c",
+      "weight": 8
+    },
+    {
+      "source": "22r",
+      "target": "52d",
+      "weight": 4
+    },
+    {
+      "source": "52d",
+      "target": "72r",
+      "weight": 8
+    },
+    {
+      "source": "77e",
+      "target": "21d",
+      "weight": 7
+    },
+    {
+      "source": "99e",
+      "target": "92z",
+      "weight": 7
+    },
+    {
+      "source": "22r",
+      "target": "61m",
+      "weight": 4
+    },
+    {
+      "source": "74d",
+      "target": "33x",
+      "weight": 4
+    },
+    {
+      "source": "92q",
+      "target": "13p",
+      "weight": 5
+    },
+    {
+      "source": "92z",
+      "target": "82o",
+      "weight": 1
+    },
+    {
+      "source": "74d",
+      "target": "99e",
+      "weight": 8
+    },
+    {
+      "source": "21d",
+      "target": "99e",
+      "weight": 7
+    },
+    {
+      "source": "13p",
+      "target": "13c",
+      "weight": 1
+    }
+  ],
+  "metadata": {
+    "total_nodes": 80,
+    "total_clusters": 4,
+    "total_links": 88,
+    "cluster_size": 20,
+    "nodes_per_cluster": 20
+  }
+}

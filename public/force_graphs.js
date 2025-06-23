@@ -23,9 +23,17 @@ async function load_yml(file) {
     onWasd = yml_cnt["interactions"]["wasd"]
     onTransition = yml_cnt["interactions"]["transition"]
     onSpace = yml_cnt["interactions"]["space"]
+    hoverOn = yml_cnt["interactions"]["hover"]
     dataTextSpec = yml_cnt["display-text"]["data-spec"]
     dataText.innerText = dataTextSpec;
-    console.log(yml_cnt["interactions"]["wasd"])
+    // console.log(yml_cnt["interactions"]["wasd"])
+    
+    const tmp_text = document.getElementById("textControls");
+    if (yml_cnt["display-text"]["display-features"]) {
+        tmp_text.style = "z-index: 1";
+    } else {
+        tmp_text.style = "z-index: 0";
+    }
     // return yml_cnt["display-text"]
     // initializeEventListeners();
 }
@@ -71,6 +79,7 @@ function selectFile() {
 
 var GUI = lil.GUI;
 const gui = new GUI();
+gui.close()
 var obj = { 
     // size: 'Medium', 
     hoverOn: false,
@@ -82,16 +91,16 @@ var obj = {
     // reloadGraph: function() {updateGraphData(obj.file)}
 }
 
-var filedata = {"1-wasd": ["./data/1-wasd.json", "./data/1-config.yml"],
+var filedata = {"1-hover": ["./data/1-hover.json", "./data/1-config.yml"],
     "2-transition": ["./data/2-transition.json", "./data/2-config.yml"],
     "3-bubbles": ["./data/3-bubbles.json", "./data/3-config.yml"],
-    "4-hover": ["./data/4-hover.json", "./data/4-config.yml"],
-    "5-bib-coupling": ["./data/5-bib-coupling.json", "./data/5-config.yml"],
-    "6-cit-coupling": ["./data/6-co-cit-coupling.json", "./data/6-config.yml"],
+    "4-bib-coupling": ["./data/4-bib-coupling.json", "./data/4-config.yml"],
+    "5-cit-coupling": ["./data/5-co-cit-coupling.json", "./data/5-config.yml"],
+    // "7-test-db": ["./data/network_graph.json", "./data/6-config.yml"]
 }
 
 gui.add(obj, "hoverOn");
-gui.add(obj, "file", ["1-wasd", "2-transition","3-bubbles", "4-hover", "5-bib-coupling", "6-cit-coupling"])
+gui.add(obj, "file", ["1-hover", "2-transition","3-bubbles","4-bib-coupling", "5-cit-coupling"])
 gui.add(obj, "textDisplay");
 gui.add(obj, "textHelp");
 
@@ -247,6 +256,9 @@ function main(fileName) {
                 degree[link.target] = (degree[link.target] || 0) + 1;
             });
             
+            const max = data.links.reduce((prev, current) => (prev && prev.weight > current.weight) ? prev : current)
+            // console.log(max.weight)
+            maxWeight = max.weight;
             // Find where the source is the starting point, get an array of that and then find where the target is the end point, there you have the weight
 
             const elem = document.getElementById('graph');
@@ -265,7 +277,7 @@ function main(fileName) {
                     .nodeVal(node => degree[node.id] || 1) // Default to 1 if no links
                     .d3Force('charge', d3.forceManyBody().strength(node => -degree[node.id] * 20)) // Repulsion
                     .d3Force('collision', d3.forceCollide(node => degree[node.id] * 2)) // Prevent overlap
-                    .linkDirectionalParticles(1)
+                    .linkDirectionalParticles(2)
                     .graphData(data)
                     .autoPauseRedraw(false) // keep redrawing after engine has stopped
                     .onNodeHover(node => {
@@ -313,11 +325,6 @@ function main(fileName) {
             //================================================================================================
             //COLORS
             //================================================================================================
-            graph.nodeColor(node => {
-                // Use the same coloring scheme you had initially
-                // For example, if you used a color scale based on user property:
-                return colorScale(node.openacces);
-            });
 
             // Create a color scale using d3-scale
             function createColorScale(graph) {
@@ -333,6 +340,14 @@ function main(fileName) {
             }
 
             const colorScale = createColorScale(graph)
+
+            graph.nodeColor(node => {
+                // Use the same coloring scheme you had initially
+                // For example, if you used a color scale based on user property:
+                return colorScale(node.openacces);
+            });
+
+
             // Function to handle background clicks with Force Graph library
             function setupBackgroundClick(graph) {
                 // Add event listener to background clicks
@@ -378,5 +393,9 @@ function updateGraphData(fileName) {
     main(fileName);
 }
 
-load_yml("./data/6-config.yml")
-main("./data/6-co-cit-coupling.json")
+load_yml("./data/5-config.yml")
+main("./data/5-co-cit-coupling.json")
+// main("./data/1-hover.json")
+// main("./data/network_graph.json")
+// main("./data/fake_son.json")
+// main("./data/fab_son.json")

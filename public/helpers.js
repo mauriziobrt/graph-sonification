@@ -28,22 +28,35 @@ function connectWebSocket() {
     };
 }
 
-function sendOSCMessage(node, address, degree, weight) {
+function sendOSCMessage(node, address, degree) {
     if (ws && ws.readyState === WebSocket.OPEN) {
         const cit = node["citations"];
-
         timeCit = mapNumRange(cit, 0,836,5000,10000);
         // console.log("TIME SENT: ", timeCit)
-        const message = {
+        if (node["cluster"]) {
+            const message = {
+                address: address,
+                args: [node["id"], node["openacces"],cit, degree, timeCit, node["year"], node["x"], node["y"], node["cluster"]]
+            };
+            document.getElementById("openaccess").innerText = node["openacces"];
+            document.getElementById("citations").innerText = cit;
+            document.getElementById("co-citations").innerText = degree;
+            document.getElementById("year").innerText = node["year"];
+            ws.send(JSON.stringify(message));
+        }else
+        {
+            const message = {
             address: address,
-            args: [node["id"], node["openacces"],cit, degree, timeCit, node["year"], node["x"], node["y"]]
-        };
+            args: [node["id"], node["openacces"],cit, degree, timeCit, node["year"], node["x"], node["y"], 1]
+            };
+            document.getElementById("openaccess").innerText = node["openacces"];
+            document.getElementById("citations").innerText = cit;
+            document.getElementById("co-citations").innerText = degree;
+            document.getElementById("year").innerText = node["year"];
+            ws.send(JSON.stringify(message));
+        }
+
         // console.log("X: ", node["x"], ". Y: ", node["y"], ". VX: ", node["vx"], ". VY: ", node["vy"])
-        document.getElementById("openaccess").innerText = node["openacces"];
-        document.getElementById("citations").innerText = cit;
-        document.getElementById("co-citations").innerText = degree;
-        document.getElementById("year").innerText = node["year"];
-        ws.send(JSON.stringify(message));
         // console.log('Sent message:', message);
     } else {
         // updateStatus('WebSocket not connected', true);

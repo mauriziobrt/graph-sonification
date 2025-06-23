@@ -5,7 +5,7 @@ display-text:
   display-features: false
   display-navigation: false
 interactions:
-  hover: false
+  hover: true
   wasd: false
-  transition: true
-  space: true
+  transition: false
+  space: false

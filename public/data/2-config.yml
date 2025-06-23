@@ -5,6 +5,6 @@ display-text:
   display-navigation: false
 interactions:
   hover: false
-  wasd: true
-  transition: false
+  wasd: false
+  transition: true
   space: false

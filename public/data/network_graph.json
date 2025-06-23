@@ -1,0 +1,2333 @@
+{
+  "nodes": [
+    {
+      "user": "Smith2024",
+      "description": "Federated learning in healthcare privacy",
+      "year": 2023,
+      "openacces": "gold",
+      "citations": 37,
+      "id": "74s",
+      "cluster": 1
+    },
+    {
+      "user": "Williams2024",
+      "description": "Sonification as a reliable alternative to conventional visual surgical navigation",
+      "year": 2021,
+      "openacces": "hybrid",
+      "citations": 76,
+      "id": "24j",
+      "cluster": 1
+    },
+    {
+      "user": "Anderson2023",
+      "description": "Computer vision for medical imaging analysis",
+      "year": 2021,
+      "openacces": "gold",
+      "citations": 22,
+      "id": "38o",
+      "cluster": 1
+    },
+    {
+      "user": "Moore2023",
+      "description": "Natural language processing in clinical documentation",
+      "year": 2022,
+      "openacces": "closed",
+      "citations": 19,
+      "id": "34i",
+      "cluster": 1
+    },
+    {
+      "user": "Moore2023",
+      "description": "IoT sensors for remote patient monitoring",
+      "year": 2020,
+      "openacces": "bronze",
+      "citations": 127,
+      "id": "59a",
+      "cluster": 1
+    },
+    {
+      "user": "Smith2024",
+      "description": "Natural language processing in clinical documentation",
+      "year": 2024,
+      "openacces": "closed",
+      "citations": 128,
+      "id": "80e",
+      "cluster": 1
+    },
+    {
+      "user": "Miller2023",
+      "description": "Telemedicine platform development",
+      "year": 2023,
+      "openacces": "closed",
+      "citations": 121,
+      "id": "52l",
+      "cluster": 1
+    },
+    {
+      "user": "Io",
+      "description": "Wearable technology for health monitoring",
+      "year": 2022,
+      "openacces": "closed",
+      "citations": 133,
+      "id": "43m",
+      "cluster": 1
+    },
+    {
+      "user": "Thomas2024",
+      "description": "Sonification as a reliable alternative to conventional visual surgical navigation",
+      "year": 2023,
+      "openacces": "hybrid",
+      "citations": 39,
+      "id": "71x",
+      "cluster": 1
+    },
+    {
+      "user": "Williams2024",
+      "description": "Machine learning approaches to medical data analysis",
+      "year": 2021,
+      "openacces": "green",
+      "citations": 65,
+      "id": "60s",
+      "cluster": 1
+    },
+    {
+      "user": "Brown2023",
+      "description": "Cybersecurity in medical device networks",
+      "year": 2021,
+      "openacces": "bronze",
+      "citations": 34,
+      "id": "30p",
+      "cluster": 1
+    },
+    {
+      "user": "Taylor2024",
+      "description": "Cybersecurity in medical device networks",
+      "year": 2023,
+      "openacces": "gold",
+      "citations": 92,
+      "id": "27h",
+      "cluster": 1
+    },
+    {
+      "user": "Williams2024",
+      "description": "Sonification as a reliable alternative to conventional visual surgical navigation",
+      "year": 2021,
+      "openacces": "gold",
+      "citations": 7,
+      "id": "90s",
+      "cluster": 1
+    },
+    {
+      "user": "Chen2024",
+      "description": "Natural language processing in clinical documentation",
+      "year": 2020,
+      "openacces": "closed",
+      "citations": 111,
+      "id": "63e",
+      "cluster": 1
+    },
+    {
+      "user": "Davis2024",
+      "description": "Deep learning for image recognition in healthcare",
+      "year": 2022,
+      "openacces": "green",
+      "citations": 125,
+      "id": "59z",
+      "cluster": 1
+    },
+    {
+      "user": "Taylor2024",
+      "description": "Big data analytics in population health",
+      "year": 2020,
+      "openacces": "green",
+      "citations": 128,
+      "id": "54c",
+      "cluster": 1
+    },
+    {
+      "user": "Chen2024",
+      "description": "Machine learning approaches to medical data analysis",
+      "year": 2021,
+      "openacces": "gold",
+      "citations": 147,
+      "id": "34b",
+      "cluster": 1
+    },
+    {
+      "user": "MatinfarSalehi2023",
+      "description": "Computer vision for medical imaging analysis",
+      "year": 2024,
+      "openacces": "closed",
+      "citations": 112,
+      "id": "71h",
+      "cluster": 1
+    },
+    {
+      "user": "Chen2024",
+      "description": "Sonification as a reliable alternative to conventional visual surgical navigation",
+      "year": 2023,
+      "openacces": "green",
+      "citations": 40,
+      "id": "27m",
+      "cluster": 1
+    },
+    {
+      "user": "Thomas2024",
+      "description": "Blockchain applications in healthcare data management",
+      "year": 2023,
+      "openacces": "green",
+      "citations": 47,
+      "id": "55t",
+      "cluster": 1
+    },
+    {
+      "user": "Taylor2024",
+      "description": "Artificial intelligence in drug discovery",
+      "year": 2023,
+      "openacces": "gold",
+      "citations": 133,
+      "id": "33e",
+      "cluster": 1
+    },
+    {
+      "user": "Chen2024",
+      "description": "Sonification as a reliable alternative to conventional visual surgical navigation",
+      "year": 2020,
+      "openacces": "green",
+      "citations": 101,
+      "id": "81r",
+      "cluster": 1
+    },
+    {
+      "user": "Moore2023",
+      "description": "Deep learning for image recognition in healthcare",
+      "year": 2024,
+      "openacces": "closed",
+      "citations": 130,
+      "id": "26x",
+      "cluster": 1
+    },
+    {
+      "user": "Anderson2023",
+      "description": "Telemedicine platform development",
+      "year": 2020,
+      "openacces": "green",
+      "citations": 57,
+      "id": "70k",
+      "cluster": 1
+    },
+    {
+      "user": "Taylor2024",
+      "description": "Federated learning in healthcare privacy",
+      "year": 2022,
+      "openacces": "bronze",
+      "citations": 16,
+      "id": "18w",
+      "cluster": 1
+    },
+    {
+      "user": "Io",
+      "description": "Blockchain applications in healthcare data management",
+      "year": 2024,
+      "openacces": "bronze",
+      "citations": 112,
+      "id": "58l",
+      "cluster": 1
+    },
+    {
+      "user": "Smith2024",
+      "description": "Machine learning approaches to medical data analysis",
+      "year": 2023,
+      "openacces": "green",
+      "citations": 95,
+      "id": "48v",
+      "cluster": 1
+    },
+    {
+      "user": "Miller2023",
+      "description": "Sonification as a reliable alternative to conventional visual surgical navigation",
+      "year": 2021,
+      "openacces": "bronze",
+      "citations": 140,
+      "id": "12s",
+      "cluster": 1
+    },
+    {
+      "user": "Anderson2023",
+      "description": "Robotic surgery optimization techniques",
+      "year": 2020,
+      "openacces": "gold",
+      "citations": 107,
+      "id": "89j",
+      "cluster": 1
+    },
+    {
+      "user": "Smith2024",
+      "description": "Artificial intelligence in drug discovery",
+      "year": 2021,
+      "openacces": "hybrid",
+      "citations": 134,
+      "id": "97x",
+      "cluster": 1
+    },
+    {
+      "user": "Miller2023",
+      "description": "Deep learning for image recognition in healthcare",
+      "year": 2022,
+      "openacces": "gold",
+      "citations": 109,
+      "id": "18q",
+      "cluster": 1
+    },
+    {
+      "user": "Io",
+      "description": "Blockchain applications in healthcare data management",
+      "year": 2020,
+      "openacces": "bronze",
+      "citations": 108,
+      "id": "42o",
+      "cluster": 1
+    },
+    {
+      "user": "Davis2024",
+      "description": "Cybersecurity in medical device networks",
+      "year": 2022,
+      "openacces": "gold",
+      "citations": 59,
+      "id": "32z",
+      "cluster": 1
+    },
+    {
+      "user": "Chen2024",
+      "description": "Wearable technology for health monitoring",
+      "year": 2020,
+      "openacces": "closed",
+      "citations": 18,
+      "id": "81f",
+      "cluster": 1
+    },
+    {
+      "user": "Davis2024",
+      "description": "Federated learning in healthcare privacy",
+      "year": 2023,
+      "openacces": "green",
+      "citations": 126,
+      "id": "94x",
+      "cluster": 1
+    },
+    {
+      "user": "Smith2024",
+      "description": "Blockchain applications in healthcare data management",
+      "year": 2024,
+      "openacces": "green",
+      "citations": 96,
+      "id": "53v",
+      "cluster": 1
+    },
+    {
+      "user": "Anderson2023",
+      "description": "Deep learning for image recognition in healthcare",
+      "year": 2022,
+      "openacces": "gold",
+      "citations": 88,
+      "id": "63d",
+      "cluster": 1
+    },
+    {
+      "user": "Thomas2024",
+      "description": "Artificial intelligence in drug discovery",
+      "year": 2022,
+      "openacces": "green",
+      "citations": 101,
+      "id": "15c",
+      "cluster": 1
+    },
+    {
+      "user": "Williams2024",
+      "description": "Artificial intelligence in drug discovery",
+      "year": 2020,
+      "openacces": "green",
+      "citations": 41,
+      "id": "43r",
+      "cluster": 1
+    },
+    {
+      "user": "Davis2024",
+      "description": "Artificial intelligence in drug discovery",
+      "year": 2022,
+      "openacces": "hybrid",
+      "citations": 79,
+      "id": "70p",
+      "cluster": 1
+    },
+    {
+      "user": "Smith2024",
+      "description": "Federated learning in healthcare privacy",
+      "year": 2023,
+      "openacces": "gold",
+      "citations": 37,
+      "id": "96u",
+      "cluster": 2
+    },
+    {
+      "user": "Williams2024",
+      "description": "Sonification as a reliable alternative to conventional visual surgical navigation",
+      "year": 2021,
+      "openacces": "hybrid",
+      "citations": 76,
+      "id": "29b",
+      "cluster": 2
+    },
+    {
+      "user": "Anderson2023",
+      "description": "Computer vision for medical imaging analysis",
+      "year": 2021,
+      "openacces": "gold",
+      "citations": 22,
+      "id": "73o",
+      "cluster": 2
+    },
+    {
+      "user": "Moore2023",
+      "description": "Natural language processing in clinical documentation",
+      "year": 2022,
+      "openacces": "closed",
+      "citations": 19,
+      "id": "79u",
+      "cluster": 2
+    },
+    {
+      "user": "Moore2023",
+      "description": "IoT sensors for remote patient monitoring",
+      "year": 2020,
+      "openacces": "bronze",
+      "citations": 127,
+      "id": "89p",
+      "cluster": 2
+    },
+    {
+      "user": "Smith2024",
+      "description": "Natural language processing in clinical documentation",
+      "year": 2024,
+      "openacces": "closed",
+      "citations": 128,
+      "id": "35b",
+      "cluster": 2
+    },
+    {
+      "user": "Miller2023",
+      "description": "Telemedicine platform development",
+      "year": 2023,
+      "openacces": "closed",
+      "citations": 121,
+      "id": "31p",
+      "cluster": 2
+    },
+    {
+      "user": "Io",
+      "description": "Wearable technology for health monitoring",
+      "year": 2022,
+      "openacces": "closed",
+      "citations": 133,
+      "id": "42j",
+      "cluster": 2
+    },
+    {
+      "user": "Thomas2024",
+      "description": "Sonification as a reliable alternative to conventional visual surgical navigation",
+      "year": 2023,
+      "openacces": "hybrid",
+      "citations": 39,
+      "id": "77k",
+      "cluster": 2
+    },
+    {
+      "user": "Williams2024",
+      "description": "Machine learning approaches to medical data analysis",
+      "year": 2021,
+      "openacces": "green",
+      "citations": 65,
+      "id": "58p",
+      "cluster": 2
+    },
+    {
+      "user": "Brown2023",
+      "description": "Cybersecurity in medical device networks",
+      "year": 2021,
+      "openacces": "bronze",
+      "citations": 34,
+      "id": "15a",
+      "cluster": 2
+    },
+    {
+      "user": "Taylor2024",
+      "description": "Cybersecurity in medical device networks",
+      "year": 2023,
+      "openacces": "gold",
+      "citations": 92,
+      "id": "19w",
+      "cluster": 2
+    },
+    {
+      "user": "Williams2024",
+      "description": "Sonification as a reliable alternative to conventional visual surgical navigation",
+      "year": 2021,
+      "openacces": "gold",
+      "citations": 7,
+      "id": "63t",
+      "cluster": 2
+    },
+    {
+      "user": "Chen2024",
+      "description": "Natural language processing in clinical documentation",
+      "year": 2020,
+      "openacces": "closed",
+      "citations": 111,
+      "id": "94u",
+      "cluster": 2
+    },
+    {
+      "user": "Davis2024",
+      "description": "Deep learning for image recognition in healthcare",
+      "year": 2022,
+      "openacces": "green",
+      "citations": 125,
+      "id": "54z",
+      "cluster": 2
+    },
+    {
+      "user": "Taylor2024",
+      "description": "Big data analytics in population health",
+      "year": 2020,
+      "openacces": "green",
+      "citations": 128,
+      "id": "99h",
+      "cluster": 2
+    },
+    {
+      "user": "Chen2024",
+      "description": "Machine learning approaches to medical data analysis",
+      "year": 2021,
+      "openacces": "gold",
+      "citations": 147,
+      "id": "14f",
+      "cluster": 2
+    },
+    {
+      "user": "MatinfarSalehi2023",
+      "description": "Computer vision for medical imaging analysis",
+      "year": 2024,
+      "openacces": "closed",
+      "citations": 112,
+      "id": "99p",
+      "cluster": 2
+    },
+    {
+      "user": "Chen2024",
+      "description": "Sonification as a reliable alternative to conventional visual surgical navigation",
+      "year": 2023,
+      "openacces": "green",
+      "citations": 40,
+      "id": "88z",
+      "cluster": 2
+    },
+    {
+      "user": "Thomas2024",
+      "description": "Blockchain applications in healthcare data management",
+      "year": 2023,
+      "openacces": "green",
+      "citations": 47,
+      "id": "54h",
+      "cluster": 2
+    },
+    {
+      "user": "Taylor2024",
+      "description": "Artificial intelligence in drug discovery",
+      "year": 2023,
+      "openacces": "gold",
+      "citations": 133,
+      "id": "78k",
+      "cluster": 2
+    },
+    {
+      "user": "Chen2024",
+      "description": "Sonification as a reliable alternative to conventional visual surgical navigation",
+      "year": 2020,
+      "openacces": "green",
+      "citations": 101,
+      "id": "22i",
+      "cluster": 2
+    },
+    {
+      "user": "Moore2023",
+      "description": "Deep learning for image recognition in healthcare",
+      "year": 2024,
+      "openacces": "closed",
+      "citations": 130,
+      "id": "72u",
+      "cluster": 2
+    },
+    {
+      "user": "Anderson2023",
+      "description": "Telemedicine platform development",
+      "year": 2020,
+      "openacces": "green",
+      "citations": 57,
+      "id": "53e",
+      "cluster": 2
+    },
+    {
+      "user": "Taylor2024",
+      "description": "Federated learning in healthcare privacy",
+      "year": 2022,
+      "openacces": "bronze",
+      "citations": 16,
+      "id": "59o",
+      "cluster": 2
+    },
+    {
+      "user": "Io",
+      "description": "Blockchain applications in healthcare data management",
+      "year": 2024,
+      "openacces": "bronze",
+      "citations": 112,
+      "id": "88k",
+      "cluster": 2
+    },
+    {
+      "user": "Smith2024",
+      "description": "Machine learning approaches to medical data analysis",
+      "year": 2023,
+      "openacces": "green",
+      "citations": 95,
+      "id": "22n",
+      "cluster": 2
+    },
+    {
+      "user": "Miller2023",
+      "description": "Sonification as a reliable alternative to conventional visual surgical navigation",
+      "year": 2021,
+      "openacces": "bronze",
+      "citations": 140,
+      "id": "91j",
+      "cluster": 2
+    },
+    {
+      "user": "Anderson2023",
+      "description": "Robotic surgery optimization techniques",
+      "year": 2020,
+      "openacces": "gold",
+      "citations": 107,
+      "id": "56c",
+      "cluster": 2
+    },
+    {
+      "user": "Smith2024",
+      "description": "Artificial intelligence in drug discovery",
+      "year": 2021,
+      "openacces": "hybrid",
+      "citations": 134,
+      "id": "95p",
+      "cluster": 2
+    },
+    {
+      "user": "Miller2023",
+      "description": "Deep learning for image recognition in healthcare",
+      "year": 2022,
+      "openacces": "gold",
+      "citations": 109,
+      "id": "58c",
+      "cluster": 2
+    },
+    {
+      "user": "Io",
+      "description": "Blockchain applications in healthcare data management",
+      "year": 2020,
+      "openacces": "bronze",
+      "citations": 108,
+      "id": "34l",
+      "cluster": 2
+    },
+    {
+      "user": "Davis2024",
+      "description": "Cybersecurity in medical device networks",
+      "year": 2022,
+      "openacces": "gold",
+      "citations": 59,
+      "id": "76k",
+      "cluster": 2
+    },
+    {
+      "user": "Chen2024",
+      "description": "Wearable technology for health monitoring",
+      "year": 2020,
+      "openacces": "closed",
+      "citations": 18,
+      "id": "30a",
+      "cluster": 2
+    },
+    {
+      "user": "Davis2024",
+      "description": "Federated learning in healthcare privacy",
+      "year": 2023,
+      "openacces": "green",
+      "citations": 126,
+      "id": "21p",
+      "cluster": 2
+    },
+    {
+      "user": "Smith2024",
+      "description": "Blockchain applications in healthcare data management",
+      "year": 2024,
+      "openacces": "green",
+      "citations": 96,
+      "id": "54x",
+      "cluster": 2
+    },
+    {
+      "user": "Anderson2023",
+      "description": "Deep learning for image recognition in healthcare",
+      "year": 2022,
+      "openacces": "gold",
+      "citations": 88,
+      "id": "46t",
+      "cluster": 2
+    },
+    {
+      "user": "Thomas2024",
+      "description": "Artificial intelligence in drug discovery",
+      "year": 2022,
+      "openacces": "green",
+      "citations": 101,
+      "id": "17u",
+      "cluster": 2
+    },
+    {
+      "user": "Williams2024",
+      "description": "Artificial intelligence in drug discovery",
+      "year": 2020,
+      "openacces": "green",
+      "citations": 41,
+      "id": "77a",
+      "cluster": 2
+    },
+    {
+      "user": "Davis2024",
+      "description": "Artificial intelligence in drug discovery",
+      "year": 2022,
+      "openacces": "hybrid",
+      "citations": 79,
+      "id": "61d",
+      "cluster": 2
+    },
+    {
+      "user": "Smith2024",
+      "description": "Federated learning in healthcare privacy",
+      "year": 2023,
+      "openacces": "gold",
+      "citations": 37,
+      "id": "10m",
+      "cluster": 3
+    },
+    {
+      "user": "Williams2024",
+      "description": "Sonification as a reliable alternative to conventional visual surgical navigation",
+      "year": 2021,
+      "openacces": "hybrid",
+      "citations": 76,
+      "id": "47w",
+      "cluster": 3
+    },
+    {
+      "user": "Anderson2023",
+      "description": "Computer vision for medical imaging analysis",
+      "year": 2021,
+      "openacces": "gold",
+      "citations": 22,
+      "id": "11u",
+      "cluster": 3
+    },
+    {
+      "user": "Moore2023",
+      "description": "Natural language processing in clinical documentation",
+      "year": 2022,
+      "openacces": "closed",
+      "citations": 19,
+      "id": "50l",
+      "cluster": 3
+    },
+    {
+      "user": "Moore2023",
+      "description": "IoT sensors for remote patient monitoring",
+      "year": 2020,
+      "openacces": "bronze",
+      "citations": 127,
+      "id": "32o",
+      "cluster": 3
+    },
+    {
+      "user": "Smith2024",
+      "description": "Natural language processing in clinical documentation",
+      "year": 2024,
+      "openacces": "closed",
+      "citations": 128,
+      "id": "17o",
+      "cluster": 3
+    },
+    {
+      "user": "Miller2023",
+      "description": "Telemedicine platform development",
+      "year": 2023,
+      "openacces": "closed",
+      "citations": 121,
+      "id": "73b",
+      "cluster": 3
+    },
+    {
+      "user": "Io",
+      "description": "Wearable technology for health monitoring",
+      "year": 2022,
+      "openacces": "closed",
+      "citations": 133,
+      "id": "75r",
+      "cluster": 3
+    },
+    {
+      "user": "Thomas2024",
+      "description": "Sonification as a reliable alternative to conventional visual surgical navigation",
+      "year": 2023,
+      "openacces": "hybrid",
+      "citations": 39,
+      "id": "88m",
+      "cluster": 3
+    },
+    {
+      "user": "Williams2024",
+      "description": "Machine learning approaches to medical data analysis",
+      "year": 2021,
+      "openacces": "green",
+      "citations": 65,
+      "id": "51d",
+      "cluster": 3
+    },
+    {
+      "user": "Brown2023",
+      "description": "Cybersecurity in medical device networks",
+      "year": 2021,
+      "openacces": "bronze",
+      "citations": 34,
+      "id": "87v",
+      "cluster": 3
+    },
+    {
+      "user": "Taylor2024",
+      "description": "Cybersecurity in medical device networks",
+      "year": 2023,
+      "openacces": "gold",
+      "citations": 92,
+      "id": "55l",
+      "cluster": 3
+    },
+    {
+      "user": "Williams2024",
+      "description": "Sonification as a reliable alternative to conventional visual surgical navigation",
+      "year": 2021,
+      "openacces": "gold",
+      "citations": 7,
+      "id": "36x",
+      "cluster": 3
+    },
+    {
+      "user": "Chen2024",
+      "description": "Natural language processing in clinical documentation",
+      "year": 2020,
+      "openacces": "closed",
+      "citations": 111,
+      "id": "41h",
+      "cluster": 3
+    },
+    {
+      "user": "Davis2024",
+      "description": "Deep learning for image recognition in healthcare",
+      "year": 2022,
+      "openacces": "green",
+      "citations": 125,
+      "id": "40d",
+      "cluster": 3
+    },
+    {
+      "user": "Taylor2024",
+      "description": "Big data analytics in population health",
+      "year": 2020,
+      "openacces": "green",
+      "citations": 128,
+      "id": "86l",
+      "cluster": 3
+    },
+    {
+      "user": "Chen2024",
+      "description": "Machine learning approaches to medical data analysis",
+      "year": 2021,
+      "openacces": "gold",
+      "citations": 147,
+      "id": "93u",
+      "cluster": 3
+    },
+    {
+      "user": "MatinfarSalehi2023",
+      "description": "Computer vision for medical imaging analysis",
+      "year": 2024,
+      "openacces": "closed",
+      "citations": 112,
+      "id": "46j",
+      "cluster": 3
+    },
+    {
+      "user": "Chen2024",
+      "description": "Sonification as a reliable alternative to conventional visual surgical navigation",
+      "year": 2023,
+      "openacces": "green",
+      "citations": 40,
+      "id": "12h",
+      "cluster": 3
+    },
+    {
+      "user": "Thomas2024",
+      "description": "Blockchain applications in healthcare data management",
+      "year": 2023,
+      "openacces": "green",
+      "citations": 47,
+      "id": "93o",
+      "cluster": 3
+    },
+    {
+      "user": "Taylor2024",
+      "description": "Artificial intelligence in drug discovery",
+      "year": 2023,
+      "openacces": "gold",
+      "citations": 133,
+      "id": "67h",
+      "cluster": 3
+    },
+    {
+      "user": "Chen2024",
+      "description": "Sonification as a reliable alternative to conventional visual surgical navigation",
+      "year": 2020,
+      "openacces": "green",
+      "citations": 101,
+      "id": "26i",
+      "cluster": 3
+    },
+    {
+      "user": "Moore2023",
+      "description": "Deep learning for image recognition in healthcare",
+      "year": 2024,
+      "openacces": "closed",
+      "citations": 130,
+      "id": "30f",
+      "cluster": 3
+    },
+    {
+      "user": "Anderson2023",
+      "description": "Telemedicine platform development",
+      "year": 2020,
+      "openacces": "green",
+      "citations": 57,
+      "id": "29n",
+      "cluster": 3
+    },
+    {
+      "user": "Taylor2024",
+      "description": "Federated learning in healthcare privacy",
+      "year": 2022,
+      "openacces": "bronze",
+      "citations": 16,
+      "id": "44h",
+      "cluster": 3
+    },
+    {
+      "user": "Io",
+      "description": "Blockchain applications in healthcare data management",
+      "year": 2024,
+      "openacces": "bronze",
+      "citations": 112,
+      "id": "18m",
+      "cluster": 3
+    },
+    {
+      "user": "Smith2024",
+      "description": "Machine learning approaches to medical data analysis",
+      "year": 2023,
+      "openacces": "green",
+      "citations": 95,
+      "id": "51k",
+      "cluster": 3
+    },
+    {
+      "user": "Miller2023",
+      "description": "Sonification as a reliable alternative to conventional visual surgical navigation",
+      "year": 2021,
+      "openacces": "bronze",
+      "citations": 140,
+      "id": "62g",
+      "cluster": 3
+    },
+    {
+      "user": "Anderson2023",
+      "description": "Robotic surgery optimization techniques",
+      "year": 2020,
+      "openacces": "gold",
+      "citations": 107,
+      "id": "88d",
+      "cluster": 3
+    },
+    {
+      "user": "Smith2024",
+      "description": "Artificial intelligence in drug discovery",
+      "year": 2021,
+      "openacces": "hybrid",
+      "citations": 134,
+      "id": "73y",
+      "cluster": 3
+    },
+    {
+      "user": "Miller2023",
+      "description": "Deep learning for image recognition in healthcare",
+      "year": 2022,
+      "openacces": "gold",
+      "citations": 109,
+      "id": "91h",
+      "cluster": 3
+    },
+    {
+      "user": "Io",
+      "description": "Blockchain applications in healthcare data management",
+      "year": 2020,
+      "openacces": "bronze",
+      "citations": 108,
+      "id": "94r",
+      "cluster": 3
+    },
+    {
+      "user": "Davis2024",
+      "description": "Cybersecurity in medical device networks",
+      "year": 2022,
+      "openacces": "gold",
+      "citations": 59,
+      "id": "87o",
+      "cluster": 3
+    },
+    {
+      "user": "Chen2024",
+      "description": "Wearable technology for health monitoring",
+      "year": 2020,
+      "openacces": "closed",
+      "citations": 18,
+      "id": "84z",
+      "cluster": 3
+    },
+    {
+      "user": "Davis2024",
+      "description": "Federated learning in healthcare privacy",
+      "year": 2023,
+      "openacces": "green",
+      "citations": 126,
+      "id": "61h",
+      "cluster": 3
+    },
+    {
+      "user": "Smith2024",
+      "description": "Blockchain applications in healthcare data management",
+      "year": 2024,
+      "openacces": "green",
+      "citations": 96,
+      "id": "16s",
+      "cluster": 3
+    },
+    {
+      "user": "Anderson2023",
+      "description": "Deep learning for image recognition in healthcare",
+      "year": 2022,
+      "openacces": "gold",
+      "citations": 88,
+      "id": "24c",
+      "cluster": 3
+    },
+    {
+      "user": "Thomas2024",
+      "description": "Artificial intelligence in drug discovery",
+      "year": 2022,
+      "openacces": "green",
+      "citations": 101,
+      "id": "27b",
+      "cluster": 3
+    },
+    {
+      "user": "Williams2024",
+      "description": "Artificial intelligence in drug discovery",
+      "year": 2020,
+      "openacces": "green",
+      "citations": 41,
+      "id": "68v",
+      "cluster": 3
+    },
+    {
+      "user": "Davis2024",
+      "description": "Artificial intelligence in drug discovery",
+      "year": 2022,
+      "openacces": "hybrid",
+      "citations": 79,
+      "id": "16i",
+      "cluster": 3
+    },
+    {
+      "user": "Smith2024",
+      "description": "Federated learning in healthcare privacy",
+      "year": 2023,
+      "openacces": "gold",
+      "citations": 37,
+      "id": "60l",
+      "cluster": 4
+    },
+    {
+      "user": "Williams2024",
+      "description": "Sonification as a reliable alternative to conventional visual surgical navigation",
+      "year": 2021,
+      "openacces": "hybrid",
+      "citations": 76,
+      "id": "11s",
+      "cluster": 4
+    },
+    {
+      "user": "Anderson2023",
+      "description": "Computer vision for medical imaging analysis",
+      "year": 2021,
+      "openacces": "gold",
+      "citations": 22,
+      "id": "73w",
+      "cluster": 4
+    },
+    {
+      "user": "Moore2023",
+      "description": "Natural language processing in clinical documentation",
+      "year": 2022,
+      "openacces": "closed",
+      "citations": 19,
+      "id": "67u",
+      "cluster": 4
+    },
+    {
+      "user": "Moore2023",
+      "description": "IoT sensors for remote patient monitoring",
+      "year": 2020,
+      "openacces": "bronze",
+      "citations": 127,
+      "id": "26o",
+      "cluster": 4
+    },
+    {
+      "user": "Smith2024",
+      "description": "Natural language processing in clinical documentation",
+      "year": 2024,
+      "openacces": "closed",
+      "citations": 128,
+      "id": "40g",
+      "cluster": 4
+    },
+    {
+      "user": "Miller2023",
+      "description": "Telemedicine platform development",
+      "year": 2023,
+      "openacces": "closed",
+      "citations": 121,
+      "id": "17v",
+      "cluster": 4
+    },
+    {
+      "user": "Io",
+      "description": "Wearable technology for health monitoring",
+      "year": 2022,
+      "openacces": "closed",
+      "citations": 133,
+      "id": "24m",
+      "cluster": 4
+    },
+    {
+      "user": "Thomas2024",
+      "description": "Sonification as a reliable alternative to conventional visual surgical navigation",
+      "year": 2023,
+      "openacces": "hybrid",
+      "citations": 39,
+      "id": "21t",
+      "cluster": 4
+    },
+    {
+      "user": "Williams2024",
+      "description": "Machine learning approaches to medical data analysis",
+      "year": 2021,
+      "openacces": "green",
+      "citations": 65,
+      "id": "83l",
+      "cluster": 4
+    },
+    {
+      "user": "Brown2023",
+      "description": "Cybersecurity in medical device networks",
+      "year": 2021,
+      "openacces": "bronze",
+      "citations": 34,
+      "id": "40z",
+      "cluster": 4
+    },
+    {
+      "user": "Taylor2024",
+      "description": "Cybersecurity in medical device networks",
+      "year": 2023,
+      "openacces": "gold",
+      "citations": 92,
+      "id": "86r",
+      "cluster": 4
+    },
+    {
+      "user": "Williams2024",
+      "description": "Sonification as a reliable alternative to conventional visual surgical navigation",
+      "year": 2021,
+      "openacces": "gold",
+      "citations": 7,
+      "id": "21w",
+      "cluster": 4
+    },
+    {
+      "user": "Chen2024",
+      "description": "Natural language processing in clinical documentation",
+      "year": 2020,
+      "openacces": "closed",
+      "citations": 111,
+      "id": "46i",
+      "cluster": 4
+    },
+    {
+      "user": "Davis2024",
+      "description": "Deep learning for image recognition in healthcare",
+      "year": 2022,
+      "openacces": "green",
+      "citations": 125,
+      "id": "22a",
+      "cluster": 4
+    },
+    {
+      "user": "Taylor2024",
+      "description": "Big data analytics in population health",
+      "year": 2020,
+      "openacces": "green",
+      "citations": 128,
+      "id": "34k",
+      "cluster": 4
+    },
+    {
+      "user": "Chen2024",
+      "description": "Machine learning approaches to medical data analysis",
+      "year": 2021,
+      "openacces": "gold",
+      "citations": 147,
+      "id": "13v",
+      "cluster": 4
+    },
+    {
+      "user": "MatinfarSalehi2023",
+      "description": "Computer vision for medical imaging analysis",
+      "year": 2024,
+      "openacces": "closed",
+      "citations": 112,
+      "id": "83z",
+      "cluster": 4
+    },
+    {
+      "user": "Chen2024",
+      "description": "Sonification as a reliable alternative to conventional visual surgical navigation",
+      "year": 2023,
+      "openacces": "green",
+      "citations": 40,
+      "id": "80c",
+      "cluster": 4
+    },
+    {
+      "user": "Thomas2024",
+      "description": "Blockchain applications in healthcare data management",
+      "year": 2023,
+      "openacces": "green",
+      "citations": 47,
+      "id": "22h",
+      "cluster": 4
+    },
+    {
+      "user": "Taylor2024",
+      "description": "Artificial intelligence in drug discovery",
+      "year": 2023,
+      "openacces": "gold",
+      "citations": 133,
+      "id": "23b",
+      "cluster": 4
+    },
+    {
+      "user": "Chen2024",
+      "description": "Sonification as a reliable alternative to conventional visual surgical navigation",
+      "year": 2020,
+      "openacces": "green",
+      "citations": 101,
+      "id": "98e",
+      "cluster": 4
+    },
+    {
+      "user": "Moore2023",
+      "description": "Deep learning for image recognition in healthcare",
+      "year": 2024,
+      "openacces": "closed",
+      "citations": 130,
+      "id": "92l",
+      "cluster": 4
+    },
+    {
+      "user": "Anderson2023",
+      "description": "Telemedicine platform development",
+      "year": 2020,
+      "openacces": "green",
+      "citations": 57,
+      "id": "46f",
+      "cluster": 4
+    },
+    {
+      "user": "Taylor2024",
+      "description": "Federated learning in healthcare privacy",
+      "year": 2022,
+      "openacces": "bronze",
+      "citations": 16,
+      "id": "35l",
+      "cluster": 4
+    },
+    {
+      "user": "Io",
+      "description": "Blockchain applications in healthcare data management",
+      "year": 2024,
+      "openacces": "bronze",
+      "citations": 112,
+      "id": "74v",
+      "cluster": 4
+    },
+    {
+      "user": "Smith2024",
+      "description": "Machine learning approaches to medical data analysis",
+      "year": 2023,
+      "openacces": "green",
+      "citations": 95,
+      "id": "19o",
+      "cluster": 4
+    },
+    {
+      "user": "Miller2023",
+      "description": "Sonification as a reliable alternative to conventional visual surgical navigation",
+      "year": 2021,
+      "openacces": "bronze",
+      "citations": 140,
+      "id": "11e",
+      "cluster": 4
+    },
+    {
+      "user": "Anderson2023",
+      "description": "Robotic surgery optimization techniques",
+      "year": 2020,
+      "openacces": "gold",
+      "citations": 107,
+      "id": "77u",
+      "cluster": 4
+    },
+    {
+      "user": "Smith2024",
+      "description": "Artificial intelligence in drug discovery",
+      "year": 2021,
+      "openacces": "hybrid",
+      "citations": 134,
+      "id": "31h",
+      "cluster": 4
+    },
+    {
+      "user": "Miller2023",
+      "description": "Deep learning for image recognition in healthcare",
+      "year": 2022,
+      "openacces": "gold",
+      "citations": 109,
+      "id": "18u",
+      "cluster": 4
+    },
+    {
+      "user": "Io",
+      "description": "Blockchain applications in healthcare data management",
+      "year": 2020,
+      "openacces": "bronze",
+      "citations": 108,
+      "id": "23w",
+      "cluster": 4
+    },
+    {
+      "user": "Davis2024",
+      "description": "Cybersecurity in medical device networks",
+      "year": 2022,
+      "openacces": "gold",
+      "citations": 59,
+      "id": "96y",
+      "cluster": 4
+    },
+    {
+      "user": "Chen2024",
+      "description": "Wearable technology for health monitoring",
+      "year": 2020,
+      "openacces": "closed",
+      "citations": 18,
+      "id": "52b",
+      "cluster": 4
+    },
+    {
+      "user": "Davis2024",
+      "description": "Federated learning in healthcare privacy",
+      "year": 2023,
+      "openacces": "green",
+      "citations": 126,
+      "id": "73f",
+      "cluster": 4
+    },
+    {
+      "user": "Smith2024",
+      "description": "Blockchain applications in healthcare data management",
+      "year": 2024,
+      "openacces": "green",
+      "citations": 96,
+      "id": "18k",
+      "cluster": 4
+    },
+    {
+      "user": "Anderson2023",
+      "description": "Deep learning for image recognition in healthcare",
+      "year": 2022,
+      "openacces": "gold",
+      "citations": 88,
+      "id": "82q",
+      "cluster": 4
+    },
+    {
+      "user": "Thomas2024",
+      "description": "Artificial intelligence in drug discovery",
+      "year": 2022,
+      "openacces": "green",
+      "citations": 101,
+      "id": "63y",
+      "cluster": 4
+    },
+    {
+      "user": "Williams2024",
+      "description": "Artificial intelligence in drug discovery",
+      "year": 2020,
+      "openacces": "green",
+      "citations": 41,
+      "id": "45i",
+      "cluster": 4
+    },
+    {
+      "user": "Davis2024",
+      "description": "Artificial intelligence in drug discovery",
+      "year": 2022,
+      "openacces": "hybrid",
+      "citations": 79,
+      "id": "86m",
+      "cluster": 4
+    }
+  ],
+  "links": [
+    {
+      "source": "74s",
+      "target": "24j",
+      "weight": 7
+    },
+    {
+      "source": "24j",
+      "target": "38o",
+      "weight": 6
+    },
+    {
+      "source": "38o",
+      "target": "34i",
+      "weight": 9
+    },
+    {
+      "source": "24j",
+      "target": "59a",
+      "weight": 10
+    },
+    {
+      "source": "74s",
+      "target": "80e",
+      "weight": 7
+    },
+    {
+      "source": "24j",
+      "target": "52l",
+      "weight": 2
+    },
+    {
+      "source": "80e",
+      "target": "43m",
+      "weight": 7
+    },
+    {
+      "source": "24j",
+      "target": "71x",
+      "weight": 1
+    },
+    {
+      "source": "74s",
+      "target": "60s",
+      "weight": 8
+    },
+    {
+      "source": "38o",
+      "target": "30p",
+      "weight": 5
+    },
+    {
+      "source": "38o",
+      "target": "27h",
+      "weight": 5
+    },
+    {
+      "source": "74s",
+      "target": "90s",
+      "weight": 2
+    },
+    {
+      "source": "24j",
+      "target": "63e",
+      "weight": 4
+    },
+    {
+      "source": "38o",
+      "target": "59z",
+      "weight": 2
+    },
+    {
+      "source": "52l",
+      "target": "54c",
+      "weight": 2
+    },
+    {
+      "source": "27h",
+      "target": "27b",
+      "weight": 5
+    },
+    {
+      "source": "59z",
+      "target": "59o",
+      "weight": 5
+    },
+    {
+      "source": "43m",
+      "target": "27m",
+      "weight": 3
+    },
+    {
+      "source": "59a",
+      "target": "55t",
+      "weight": 3
+    },
+    {
+      "source": "27h",
+      "target": "33e",
+      "weight": 8
+    },
+    {
+      "source": "80e",
+      "target": "81r",
+      "weight": 5
+    },
+    {
+      "source": "52l",
+      "target": "26x",
+      "weight": 10
+    },
+    {
+      "source": "24j",
+      "target": "70k",
+      "weight": 6
+    },
+    {
+      "source": "59a",
+      "target": "18w",
+      "weight": 3
+    },
+    {
+      "source": "52l",
+      "target": "58l",
+      "weight": 5
+    },
+    {
+      "source": "55t",
+      "target": "48v",
+      "weight": 6
+    },
+    {
+      "source": "59z",
+      "target": "12s",
+      "weight": 5
+    },
+    {
+      "source": "27h",
+      "target": "89j",
+      "weight": 3
+    },
+    {
+      "source": "60s",
+      "target": "97x",
+      "weight": 8
+    },
+    {
+      "source": "81r",
+      "target": "18q",
+      "weight": 10
+    },
+    {
+      "source": "70k",
+      "target": "42o",
+      "weight": 8
+    },
+    {
+      "source": "26x",
+      "target": "32z",
+      "weight": 9
+    },
+    {
+      "source": "59z",
+      "target": "81f",
+      "weight": 9
+    },
+    {
+      "source": "71x",
+      "target": "94x",
+      "weight": 4
+    },
+    {
+      "source": "33e",
+      "target": "53v",
+      "weight": 9
+    },
+    {
+      "source": "48v",
+      "target": "63d",
+      "weight": 2
+    },
+    {
+      "source": "27h",
+      "target": "15c",
+      "weight": 1
+    },
+    {
+      "source": "74s",
+      "target": "43r",
+      "weight": 2
+    },
+    {
+      "source": "15c",
+      "target": "70p",
+      "weight": 3
+    },
+    {
+      "source": "59o",
+      "target": "48v",
+      "weight": 8
+    },
+    {
+      "source": "81r",
+      "target": "89j",
+      "weight": 6
+    },
+    {
+      "source": "81r",
+      "target": "55t",
+      "weight": 9
+    },
+    {
+      "source": "24j",
+      "target": "32z",
+      "weight": 2
+    },
+    {
+      "source": "59a",
+      "target": "12s",
+      "weight": 1
+    },
+    {
+      "source": "96u",
+      "target": "29b",
+      "weight": 7
+    },
+    {
+      "source": "29b",
+      "target": "73o",
+      "weight": 6
+    },
+    {
+      "source": "73o",
+      "target": "79u",
+      "weight": 9
+    },
+    {
+      "source": "29b",
+      "target": "89p",
+      "weight": 10
+    },
+    {
+      "source": "96u",
+      "target": "35b",
+      "weight": 7
+    },
+    {
+      "source": "29b",
+      "target": "31p",
+      "weight": 2
+    },
+    {
+      "source": "35b",
+      "target": "42j",
+      "weight": 7
+    },
+    {
+      "source": "29b",
+      "target": "77k",
+      "weight": 1
+    },
+    {
+      "source": "96u",
+      "target": "58p",
+      "weight": 8
+    },
+    {
+      "source": "73o",
+      "target": "15a",
+      "weight": 5
+    },
+    {
+      "source": "73o",
+      "target": "19w",
+      "weight": 5
+    },
+    {
+      "source": "96u",
+      "target": "63t",
+      "weight": 2
+    },
+    {
+      "source": "29b",
+      "target": "94u",
+      "weight": 4
+    },
+    {
+      "source": "73o",
+      "target": "54z",
+      "weight": 2
+    },
+    {
+      "source": "31p",
+      "target": "99h",
+      "weight": 2
+    },
+    {
+      "source": "19w",
+      "target": "14f",
+      "weight": 5
+    },
+    {
+      "source": "54z",
+      "target": "99p",
+      "weight": 5
+    },
+    {
+      "source": "42j",
+      "target": "88z",
+      "weight": 3
+    },
+    {
+      "source": "89p",
+      "target": "54h",
+      "weight": 3
+    },
+    {
+      "source": "19w",
+      "target": "78k",
+      "weight": 8
+    },
+    {
+      "source": "35b",
+      "target": "22i",
+      "weight": 5
+    },
+    {
+      "source": "31p",
+      "target": "72u",
+      "weight": 10
+    },
+    {
+      "source": "29b",
+      "target": "53e",
+      "weight": 6
+    },
+    {
+      "source": "89p",
+      "target": "59o",
+      "weight": 3
+    },
+    {
+      "source": "31p",
+      "target": "88k",
+      "weight": 5
+    },
+    {
+      "source": "54h",
+      "target": "22n",
+      "weight": 6
+    },
+    {
+      "source": "54z",
+      "target": "91j",
+      "weight": 5
+    },
+    {
+      "source": "19w",
+      "target": "56c",
+      "weight": 3
+    },
+    {
+      "source": "58p",
+      "target": "95p",
+      "weight": 8
+    },
+    {
+      "source": "22i",
+      "target": "58c",
+      "weight": 10
+    },
+    {
+      "source": "53e",
+      "target": "34l",
+      "weight": 8
+    },
+    {
+      "source": "72u",
+      "target": "76k",
+      "weight": 9
+    },
+    {
+      "source": "54z",
+      "target": "30a",
+      "weight": 9
+    },
+    {
+      "source": "77k",
+      "target": "21p",
+      "weight": 4
+    },
+    {
+      "source": "78k",
+      "target": "54x",
+      "weight": 9
+    },
+    {
+      "source": "22n",
+      "target": "46t",
+      "weight": 2
+    },
+    {
+      "source": "19w",
+      "target": "17u",
+      "weight": 1
+    },
+    {
+      "source": "96u",
+      "target": "77a",
+      "weight": 2
+    },
+    {
+      "source": "17u",
+      "target": "61d",
+      "weight": 3
+    },
+    {
+      "source": "99p",
+      "target": "22n",
+      "weight": 8
+    },
+    {
+      "source": "22i",
+      "target": "56c",
+      "weight": 6
+    },
+    {
+      "source": "22i",
+      "target": "54h",
+      "weight": 9
+    },
+    {
+      "source": "29b",
+      "target": "76k",
+      "weight": 2
+    },
+    {
+      "source": "89p",
+      "target": "91j",
+      "weight": 1
+    },
+    {
+      "source": "10m",
+      "target": "47w",
+      "weight": 7
+    },
+    {
+      "source": "47w",
+      "target": "11u",
+      "weight": 6
+    },
+    {
+      "source": "11u",
+      "target": "50l",
+      "weight": 9
+    },
+    {
+      "source": "47w",
+      "target": "32o",
+      "weight": 10
+    },
+    {
+      "source": "10m",
+      "target": "17o",
+      "weight": 7
+    },
+    {
+      "source": "47w",
+      "target": "73b",
+      "weight": 2
+    },
+    {
+      "source": "17o",
+      "target": "75r",
+      "weight": 7
+    },
+    {
+      "source": "47w",
+      "target": "88m",
+      "weight": 1
+    },
+    {
+      "source": "10m",
+      "target": "51d",
+      "weight": 8
+    },
+    {
+      "source": "11u",
+      "target": "87v",
+      "weight": 5
+    },
+    {
+      "source": "11u",
+      "target": "55l",
+      "weight": 5
+    },
+    {
+      "source": "10m",
+      "target": "36x",
+      "weight": 2
+    },
+    {
+      "source": "47w",
+      "target": "41h",
+      "weight": 4
+    },
+    {
+      "source": "11u",
+      "target": "40d",
+      "weight": 2
+    },
+    {
+      "source": "73b",
+      "target": "86l",
+      "weight": 2
+    },
+    {
+      "source": "55l",
+      "target": "93u",
+      "weight": 5
+    },
+    {
+      "source": "40d",
+      "target": "46j",
+      "weight": 5
+    },
+    {
+      "source": "75r",
+      "target": "12h",
+      "weight": 3
+    },
+    {
+      "source": "32o",
+      "target": "93o",
+      "weight": 3
+    },
+    {
+      "source": "55l",
+      "target": "67h",
+      "weight": 8
+    },
+    {
+      "source": "17o",
+      "target": "26i",
+      "weight": 5
+    },
+    {
+      "source": "73b",
+      "target": "30f",
+      "weight": 10
+    },
+    {
+      "source": "47w",
+      "target": "29n",
+      "weight": 6
+    },
+    {
+      "source": "32o",
+      "target": "77u",
+      "weight": 3
+    },
+    {
+      "source": "73b",
+      "target": "18m",
+      "weight": 5
+    },
+    {
+      "source": "93o",
+      "target": "51k",
+      "weight": 6
+    },
+    {
+      "source": "40d",
+      "target": "62g",
+      "weight": 5
+    },
+    {
+      "source": "55l",
+      "target": "88d",
+      "weight": 3
+    },
+    {
+      "source": "51d",
+      "target": "73y",
+      "weight": 8
+    },
+    {
+      "source": "26i",
+      "target": "91h",
+      "weight": 10
+    },
+    {
+      "source": "29n",
+      "target": "94r",
+      "weight": 8
+    },
+    {
+      "source": "30f",
+      "target": "87o",
+      "weight": 9
+    },
+    {
+      "source": "40d",
+      "target": "84z",
+      "weight": 9
+    },
+    {
+      "source": "88m",
+      "target": "61h",
+      "weight": 4
+    },
+    {
+      "source": "67h",
+      "target": "86m",
+      "weight": 9
+    },
+    {
+      "source": "51k",
+      "target": "24c",
+      "weight": 2
+    },
+    {
+      "source": "55l",
+      "target": "27b",
+      "weight": 1
+    },
+    {
+      "source": "10m",
+      "target": "68v",
+      "weight": 2
+    },
+    {
+      "source": "27b",
+      "target": "16i",
+      "weight": 3
+    },
+    {
+      "source": "46j",
+      "target": "51k",
+      "weight": 8
+    },
+    {
+      "source": "26i",
+      "target": "88d",
+      "weight": 6
+    },
+    {
+      "source": "26i",
+      "target": "93o",
+      "weight": 9
+    },
+    {
+      "source": "47w",
+      "target": "87o",
+      "weight": 2
+    },
+    {
+      "source": "32o",
+      "target": "62g",
+      "weight": 1
+    },
+    {
+      "source": "60l",
+      "target": "11s",
+      "weight": 7
+    },
+    {
+      "source": "11s",
+      "target": "73w",
+      "weight": 6
+    },
+    {
+      "source": "73w",
+      "target": "67u",
+      "weight": 9
+    },
+    {
+      "source": "11s",
+      "target": "26o",
+      "weight": 10
+    },
+    {
+      "source": "60l",
+      "target": "21t",
+      "weight": 7
+    },
+    {
+      "source": "11s",
+      "target": "17v",
+      "weight": 2
+    },
+    {
+      "source": "21t",
+      "target": "24m",
+      "weight": 7
+    },
+    {
+      "source": "11s",
+      "target": "21t",
+      "weight": 1
+    },
+    {
+      "source": "60l",
+      "target": "83l",
+      "weight": 8
+    },
+    {
+      "source": "73w",
+      "target": "40z",
+      "weight": 5
+    },
+    {
+      "source": "73w",
+      "target": "86r",
+      "weight": 5
+    },
+    {
+      "source": "60l",
+      "target": "21w",
+      "weight": 2
+    },
+    {
+      "source": "11s",
+      "target": "46i",
+      "weight": 4
+    },
+    {
+      "source": "73w",
+      "target": "22a",
+      "weight": 2
+    },
+    {
+      "source": "17v",
+      "target": "34k",
+      "weight": 2
+    },
+    {
+      "source": "86r",
+      "target": "13v",
+      "weight": 5
+    },
+    {
+      "source": "22a",
+      "target": "83z",
+      "weight": 5
+    },
+    {
+      "source": "24m",
+      "target": "80c",
+      "weight": 3
+    },
+    {
+      "source": "26o",
+      "target": "22h",
+      "weight": 3
+    },
+    {
+      "source": "86r",
+      "target": "23b",
+      "weight": 8
+    },
+    {
+      "source": "21t",
+      "target": "98e",
+      "weight": 5
+    },
+    {
+      "source": "17v",
+      "target": "92l",
+      "weight": 10
+    },
+    {
+      "source": "11s",
+      "target": "46f",
+      "weight": 6
+    },
+    {
+      "source": "26o",
+      "target": "35l",
+      "weight": 3
+    },
+    {
+      "source": "17v",
+      "target": "74v",
+      "weight": 5
+    },
+    {
+      "source": "22h",
+      "target": "19o",
+      "weight": 6
+    },
+    {
+      "source": "22a",
+      "target": "11e",
+      "weight": 5
+    },
+    {
+      "source": "86r",
+      "target": "77u",
+      "weight": 3
+    },
+    {
+      "source": "83l",
+      "target": "31h",
+      "weight": 8
+    },
+    {
+      "source": "98e",
+      "target": "18u",
+      "weight": 10
+    },
+    {
+      "source": "46f",
+      "target": "23w",
+      "weight": 8
+    },
+    {
+      "source": "92l",
+      "target": "96y",
+      "weight": 9
+    },
+    {
+      "source": "22a",
+      "target": "52b",
+      "weight": 9
+    },
+    {
+      "source": "21t",
+      "target": "73f",
+      "weight": 4
+    },
+    {
+      "source": "23b",
+      "target": "18k",
+      "weight": 9
+    },
+    {
+      "source": "19o",
+      "target": "82q",
+      "weight": 2
+    },
+    {
+      "source": "86r",
+      "target": "63y",
+      "weight": 1
+    },
+    {
+      "source": "60l",
+      "target": "45i",
+      "weight": 2
+    },
+    {
+      "source": "63y",
+      "target": "86m",
+      "weight": 3
+    },
+    {
+      "source": "83z",
+      "target": "19o",
+      "weight": 8
+    },
+    {
+      "source": "98e",
+      "target": "77u",
+      "weight": 6
+    },
+    {
+      "source": "98e",
+      "target": "22h",
+      "weight": 9
+    },
+    {
+      "source": "11s",
+      "target": "96y",
+      "weight": 2
+    },
+    {
+      "source": "26o",
+      "target": "11e",
+      "weight": 1
+    }
+  ],
+  "metadata": {
+    "total_nodes": 160,
+    "total_clusters": 4,
+    "total_links": 176,
+    "cluster_size": 40,
+    "nodes_per_cluster": 40
+  }
+}

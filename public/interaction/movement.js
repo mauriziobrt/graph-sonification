@@ -1,8 +1,9 @@
 let onHover = false;
 let onWasd = false;
 let onTransition = false;
-let onSpace = false;
+let onSpace = true;
 let currentWeight = 0;
+let maxWeight = 100;
 //=================================================================================
 //Graph Behaviour
 //=================================================================================
@@ -315,7 +316,6 @@ function animatePathTraversal(nodePath, linkPath, graph, degree) {
       return;
     }
     
-    // console.log("AAAA")
     // Add the next link to the highlighted path
     highlightedPath.push(linkPath[currentStep]);
     
@@ -411,34 +411,54 @@ let activeTimeouts = []; // Array to store all active timeouts
 
 // Function to Higlight the Neighbors of a node in time
 function highlightNeighborsGradually(node, graph, degree, data) {
+    if (!onSpace)return null;
     // Find connected nodes
     // console.log(degree[node.id])
     clearActiveAnimations();
-    const connectedNodes = data.links
-        .filter(link => link.source.id === node.id || link.target.id === node.id)
-        .map(link => link.source.id === node.id ? link.target : link.source);
 
-    // instead of using the degree use the weight
-    // currentWeight = getWeightBetweenNodesWithDefault(graph.graphData(), nodePath[currentStep], currentNodeId);
+    const connectedLinks = data.links
+  .filter(link => link.source.id === node.id || link.target.id === node.id);
 
+    const connectedNodes = connectedLinks
+      .map(link => link.source.id === node.id ? link.target : link.source);
+
+    const tmpMaxWeight = Math.max(...connectedLinks.map(link => link.weight));
+
+    // const connectedNodes = data.links
+    //     .filter(link => link.source.id === node.id || link.target.id === node.id)
+    //     .map(link => link.source.id === node.id ? link.target : link.source);
+
+    // // Get minimum weight among connected links
+    // const minWeight = Math.min(...data.links
+    //   .filter(link => link.source.id === node.id || link.target.id === node.id)
+    //   .map(link => link.weight)
+    // );
+    // console.log(minWeight)
+
+    console.log("the max weight is:", tmpMaxWeight)
     // Reset all nodes before applying new highlights
     data.nodes.forEach(n => n.highlighted = false);
     node.highlighted = true; // Highlight the clicked node immediately
     // let previouslyHighlighted = []; // Keep track of past nodes
-
+// (1- (Math.log((getWeightBetweenNodesWithDefault(graph.graphData(), node.id, neighbor.id))) / Math.log(maxWeight))) * 1000); // 1 second delay per node
     graph.nodeColor(n => n === node ? 'yellow' : 'gray'); // Initially set the clicked node to yellow
-    
+    // ((index + 1)) + 
     connectedNodes.forEach((neighbor, index) => {
         const timeoutId = setTimeout(() => {
             neighbor.highlighted = true; // Highlight the node
             graph.nodeColor(n => n.highlighted ? 'red' : 'gray'); // Update color dynamically
-            // console.log(2000 - (degree[neighbor.id] * 30));
-            // playFaust(2000 - (degree[neighbor.id] * 30), 1, "bubbles", audioNode, audioContext);
-            // document.getElementById("content").innerText = neighbor["description"];
-            sendOSCMessage(neighbor, '/bubbles', degree[neighbor.id]);
-            console.log("HERE", node.id, neighbor.id, getWeightBetweenNodesWithDefault(graph.graphData(), node.id, neighbor.id))
-        }, (index + 1) * (getWeightBetweenNodesWithDefault(graph.graphData(), node.id, neighbor.id)) * 10); // 1 second delay per node
-        
+            
+            sendOSCMessage(neighbor, '/bubbles', degree[neighbor.id], getWeightBetweenNodesWithDefault(graph.graphData(), node.id, neighbor.id));
+            //it should be a contextual maxweight, meaning that it's mapped according to the contextual value, so the first is always the closest and the rest slowly decays cause the connection
+            // is less strong
+            console.log("WEIGHT:", getWeightBetweenNodesWithDefault(graph.graphData(), node.id, neighbor.id));
+            console.log("Logarithmic Scaling", (1-(Math.log((getWeightBetweenNodesWithDefault(graph.graphData(), node.id, neighbor.id))) / Math.log(tmpMaxWeight))));
+            console.log("Exponential Scaling:", (Math.pow(1-((getWeightBetweenNodesWithDefault(graph.graphData(), node.id, neighbor.id)) / tmpMaxWeight),5)*10));
+            // Math.pow(value / 106, 0.3) * 10
+        }, (Math.pow(1-((getWeightBetweenNodesWithDefault(graph.graphData(), node.id, neighbor.id)) / tmpMaxWeight),3.2)*5000));
+        // scaled_value = (Math.log(10) / Math.log(maxWeight)) * 10;
+        // console.log("scaaala", scaled_value)
+        // need to pass it through a log function
         activeTimeouts.push(timeoutId); // Store the timeout ID
     });
 } 

@@ -1,27 +1,6862 @@
 {
-    "nodes": [
-        {
-            "id": "21a",
-            "user": "Io",
-            "description": "Sonification as a reliable alternative to conventional visual surgical navigation",
-            "year": 2023,
-            "openacces": "gold",
-            "citations": 16
-        },
-        {
-            "id": "24b",
-            "user": "MatinfarSalehi2023",
-            "description": "Sonification as a reliable alternative to conventional visual surgical navigation",
-            "year": 2023,
-            "openacces": "green",
-            "citations": 16
-        }
-        ],
-    "links": [
-        {
-            "source": "21a",
-            "target": "24b",
-            "weight": 6
-        }
-    ]
+  "nodes": [
+    {
+      "id": "2-s2.0-84977657335_cluster_0",
+      "user": "ScholzRohde2016",
+      "description": "Sonification of arm movements in stroke rehabilitation - a novel approach in neurologic music therapy",
+      "year": 2016,
+      "openacces": "gold",
+      "citations": 56,
+      "subject areas": [
+        "Medicine",
+        "Neurology",
+        "Neurology (clinical)",
+        "Neuroscience"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Upper Limb",
+        "Motor Control"
+      ],
+      "scival topics": [
+        "Stroke Rehabilitation",
+        "Apoplexy",
+        "Upper Limb"
+      ],
+      "cluster": 1
+    },
+    {
+      "id": "2-s2.0-85061377945_cluster_0",
+      "user": "SchaffertJanzen2019",
+      "description": "A review on the relationship between sound and movement in sports and rehabilitation",
+      "year": 2019,
+      "openacces": "gold",
+      "citations": 133,
+      "subject areas": [
+        "General Psychology",
+        "Psychology"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 1
+    },
+    {
+      "id": "2-s2.0-84893070216_cluster_0",
+      "user": "DubusBresin2013",
+      "description": "A systematic review of mapping strategies for the sonification of physical quantities",
+      "year": 2013,
+      "openacces": "gold",
+      "citations": 197,
+      "subject areas": [
+        "Multidisciplinary",
+        "Multidisciplinary"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 1
+    },
+    {
+      "id": "2-s2.0-0027170085_cluster_0",
+      "user": "WenzelArruda1993",
+      "description": "Localization using nonindividualized head-related transfer functions",
+      "year": 1993,
+      "openacces": "closed",
+      "citations": 836,
+      "subject areas": [
+        "Acoustics and Ultrasonics",
+        "Arts and Humanities",
+        "Arts and Humanities (miscellaneous)",
+        "Physics and Astronomy"
+      ],
+      "scival topics cluster": [
+        ""
+      ],
+      "scival topics": [
+        ""
+      ],
+      "cluster": 1
+    },
+    {
+      "id": "2-s2.0-85015054154_cluster_0",
+      "user": "NewboldBianchiberthouze2016",
+      "description": "Musically informed sonification for chronic pain rehabilitation: Facilitating progress & avoiding over-doing",
+      "year": 2016,
+      "openacces": "closed",
+      "citations": 40,
+      "subject areas": [
+        "Computer Graphics and Computer-Aided Design",
+        "Computer Science",
+        "Human-Computer Interaction",
+        "Software"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Expression Recognition"
+      ],
+      "scival topics": [
+        "Facial Expression",
+        "Chronic Pain",
+        "Machine Learning"
+      ],
+      "cluster": 1
+    },
+    {
+      "id": "2-s2.0-84973514484_cluster_0",
+      "user": "EffenbergFehse2016",
+      "description": "Movement sonification: Effects on motor learning beyond rhythmic adjustments",
+      "year": 2016,
+      "openacces": "gold",
+      "citations": 88,
+      "subject areas": [
+        "General Neuroscience",
+        "Neuroscience"
+      ],
+      "scival topics cluster": [
+        "Empathy",
+        "Visual Perception",
+        "Functional Magnetic Resonance Imaging"
+      ],
+      "scival topics": [
+        "Magnetic Resonance Imaging",
+        "Autism Spectrum Disorder",
+        "Motion Perception"
+      ],
+      "cluster": 1
+    },
+    {
+      "id": "2-s2.0-20344384538_cluster_0",
+      "user": "Effenberg2005",
+      "description": "Movement sonification: Effects on perception and action",
+      "year": 2005,
+      "openacces": "closed",
+      "citations": 125,
+      "subject areas": [
+        "Computer Science",
+        "Computer Science Applications",
+        "Engineering",
+        "Hardware and Architecture",
+        "Media Technology",
+        "Signal Processing",
+        "Software"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 1
+    },
+    {
+      "id": "2-s2.0-85044860190_cluster_0",
+      "user": "SinghBianchiberthouze2017",
+      "description": "Supporting everyday function in chronic pain using wearable technology",
+      "year": 2017,
+      "openacces": "green",
+      "citations": 51,
+      "subject areas": [
+        "Computer Graphics and Computer-Aided Design",
+        "Computer Science",
+        "Human-Computer Interaction",
+        "Software"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Expression Recognition"
+      ],
+      "scival topics": [
+        "Facial Expression",
+        "Chronic Pain",
+        "Machine Learning"
+      ],
+      "cluster": 1
+    },
+    {
+      "id": "2-s2.0-84988378007_cluster_0",
+      "user": "BevilacquaBoyer2016",
+      "description": "Sensori-motor learning with movement sonification: Perspectives from recent interdisciplinary studies",
+      "year": 2016,
+      "openacces": "gold",
+      "citations": 79,
+      "subject areas": [
+        "General Neuroscience",
+        "Neuroscience"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 1
+    },
+    {
+      "id": "2-s2.0-84954098724_cluster_0",
+      "user": "SinghPiana2016",
+      "description": "Go-with-the-Flow: Tracking, Analysis and Sonification of Movement and Breathing to Build Confidence in Activity Despite Chronic Pain",
+      "year": 2016,
+      "openacces": "hybrid",
+      "citations": 80,
+      "subject areas": [
+        "Applied Psychology",
+        "Computer Science",
+        "Human-Computer Interaction",
+        "Psychology"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Expression Recognition"
+      ],
+      "scival topics": [
+        "Facial Expression",
+        "Chronic Pain",
+        "Machine Learning"
+      ],
+      "cluster": 1
+    },
+    {
+      "id": "2-s2.0-84982921020_cluster_0",
+      "user": "CesariniCalvaresi2016",
+      "description": "MEDIATION: An eMbEddeD System for Auditory Feedback of Hand-water InterAcTION while Swimming",
+      "year": 2016,
+      "openacces": "gold",
+      "citations": 22,
+      "subject areas": [
+        "Engineering",
+        "General Engineering"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 1
+    },
+    {
+      "id": "2-s2.0-84950991167_cluster_0",
+      "user": "TajadurajiménezBasia2015",
+      "description": "As light as your footsteps: Altering walking sounds to change perceived body weight, emotional state and gait",
+      "year": 2015,
+      "openacces": "closed",
+      "citations": 154,
+      "subject areas": [
+        "Computer Graphics and Computer-Aided Design",
+        "Computer Science",
+        "Human-Computer Interaction",
+        "Software"
+      ],
+      "scival topics cluster": [
+        "Visual Perception",
+        "Behavior (Neuroscience)",
+        "Individual Differences"
+      ],
+      "scival topics": [
+        "Illusion",
+        "Body Image",
+        "Visual Perception"
+      ],
+      "cluster": 1
+    },
+    {
+      "id": "2-s2.0-84922900978_cluster_0",
+      "user": "SchaffertMattes2015",
+      "description": "Interactive sonification in rowing: Acoustic feedback for on-water training",
+      "year": 2015,
+      "openacces": "closed",
+      "citations": 34,
+      "subject areas": [
+        "Computer Science",
+        "Computer Science Applications",
+        "Engineering",
+        "Hardware and Architecture",
+        "Media Technology",
+        "Signal Processing",
+        "Software"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 1
+    },
+    {
+      "id": "2-s2.0-85017185837_cluster_0",
+      "user": "DannaVelay2017",
+      "description": "On the auditory-proprioception substitution hypothesis: Movement sonification in two deafferented subjects learning to write new characters",
+      "year": 2017,
+      "openacces": "gold",
+      "citations": 30,
+      "subject areas": [
+        "General Neuroscience",
+        "Neuroscience"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Upper Limb",
+        "Motor Control"
+      ],
+      "scival topics": [
+        "Motor Learning",
+        "Psychomotor Performance",
+        "Visual Perception"
+      ],
+      "cluster": 1
+    },
+    {
+      "id": "2-s2.0-84953736962_cluster_0",
+      "user": "DyerStapleton2015",
+      "description": "Sonification as concurrent augmented feedback for motor skill learning and the importance of mapping design",
+      "year": 2015,
+      "openacces": "green",
+      "citations": 24,
+      "subject areas": [
+        "General Psychology",
+        "Psychology"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 1
+    },
+    {
+      "id": "2-s2.0-84910045825_cluster_0",
+      "user": "ScholzWu2014",
+      "description": "Sonification as a possible stroke rehabilitation strategy",
+      "year": 2014,
+      "openacces": "gold",
+      "citations": 35,
+      "subject areas": [
+        "General Neuroscience",
+        "Neuroscience"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 1
+    },
+    {
+      "id": "2-s2.0-84874935035_cluster_0",
+      "user": "SchmitzMohammadi2013",
+      "description": "Observation of sonified movements engages a basal ganglia frontocortical network",
+      "year": 2013,
+      "openacces": "gold",
+      "citations": 67,
+      "subject areas": [
+        "Cellular and Molecular Neuroscience",
+        "General Neuroscience",
+        "Neuroscience"
+      ],
+      "scival topics cluster": [
+        "Empathy",
+        "Visual Perception",
+        "Functional Magnetic Resonance Imaging"
+      ],
+      "scival topics": [
+        "Magnetic Resonance Imaging",
+        "Autism Spectrum Disorder",
+        "Motion Perception"
+      ],
+      "cluster": 1
+    },
+    {
+      "id": "2-s2.0-84894138585_cluster_0",
+      "user": "VinkenKröger2013",
+      "description": "Auditory coding of human movement kinematics",
+      "year": 2013,
+      "openacces": "closed",
+      "citations": 28,
+      "subject areas": [
+        "Cognitive Neuroscience",
+        "Computer Science",
+        "Computer Vision and Pattern Recognition",
+        "Experimental and Cognitive Psychology",
+        "Medicine",
+        "Neuroscience",
+        "Ophthalmology",
+        "Psychology",
+        "Sensory Systems"
+      ],
+      "scival topics cluster": [
+        "Empathy",
+        "Visual Perception",
+        "Functional Magnetic Resonance Imaging"
+      ],
+      "scival topics": [
+        "Magnetic Resonance Imaging",
+        "Autism Spectrum Disorder",
+        "Motion Perception"
+      ],
+      "cluster": 1
+    },
+    {
+      "id": "2-s2.0-84963856294_cluster_0",
+      "user": "ParseihianGondre2016",
+      "description": "Comparison and Evaluation of Sonification Strategies for Guidance Tasks",
+      "year": 2016,
+      "openacces": "green",
+      "citations": 49,
+      "subject areas": [
+        "Computer Science",
+        "Computer Science Applications",
+        "Electrical and Electronic Engineering",
+        "Engineering",
+        "Media Technology",
+        "Signal Processing"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 1
+    },
+    {
+      "id": "2-s2.0-85046792410_cluster_0",
+      "user": "FergusonBrewster2017",
+      "description": "Evaluation of psychoacoustic sound parameters for sonification",
+      "year": 2017,
+      "openacces": "green",
+      "citations": 16,
+      "subject areas": [
+        ""
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 1
+    },
+    {
+      "id": "2-s2.0-85049655516_cluster_0",
+      "user": "Scaletti2018",
+      "description": "Sonification ≠ music",
+      "year": 2018,
+      "openacces": "closed",
+      "citations": 21,
+      "subject areas": [
+        ""
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 1
+    },
+    {
+      "id": "2-s2.0-85021884138_cluster_0",
+      "user": "Vickers2016",
+      "description": "Sonification and music, music and sonification",
+      "year": 2016,
+      "openacces": "closed",
+      "citations": 27,
+      "subject areas": [
+        ""
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 1
+    },
+    {
+      "id": "2-s2.0-1542360367_cluster_0",
+      "user": "WatsonSanderson2004",
+      "description": "Sonification supports eyes-free respiratory monitoring and task time-sharing",
+      "year": 2004,
+      "openacces": "closed",
+      "citations": 99,
+      "subject areas": [
+        "Applied Psychology",
+        "Behavioral Neuroscience",
+        "Human Factors and Ergonomics",
+        "Neuroscience",
+        "Psychology",
+        "Social Sciences"
+      ],
+      "scival topics cluster": [
+        "Nuclear Power Plant",
+        "Robot",
+        "Engineering"
+      ],
+      "scival topics": [
+        "Alarm Monitor",
+        "Physiologic Monitoring",
+        "Patient Safety"
+      ],
+      "cluster": 1
+    },
+    {
+      "id": "2-s2.0-85021994558_cluster_0",
+      "user": "VickersHogg2017",
+      "description": "Aesthetics of sonification: Taking the subject-position",
+      "year": 2017,
+      "openacces": "green",
+      "citations": 19,
+      "subject areas": [
+        ""
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 1
+    },
+    {
+      "id": "2-s2.0-84865992559_cluster_0",
+      "user": "GrosshauserBläsing2012",
+      "description": "Wearable sensor-based real-time sonification of motion and foot pressure in dance teaching and training",
+      "year": 2012,
+      "openacces": "unknown",
+      "citations": 48,
+      "subject areas": [
+        "Arts and Humanities",
+        "Engineering",
+        "General Engineering",
+        "Music"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 1
+    },
+    {
+      "id": "2-s2.0-78651248615_cluster_0",
+      "user": "VogtPirrò2010",
+      "description": "PhysioSonic - Evaluated movement sonification as auditory feedback in physiotherapy",
+      "year": 2010,
+      "openacces": "closed",
+      "citations": 34,
+      "subject areas": [
+        "Computer Science",
+        "General Computer Science",
+        "Mathematics",
+        "Theoretical Computer Science"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 1
+    },
+    {
+      "id": "2-s2.0-0033498316_cluster_0",
+      "user": "BelzRobinson1999",
+      "description": "A new class of auditory warning signals for complex systems: Auditory icons",
+      "year": 1999,
+      "openacces": "closed",
+      "citations": 121,
+      "subject areas": [
+        "Applied Psychology",
+        "Behavioral Neuroscience",
+        "Human Factors and Ergonomics",
+        "Neuroscience",
+        "Psychology",
+        "Social Sciences"
+      ],
+      "scival topics cluster": [
+        "Nuclear Power Plant",
+        "Robot",
+        "Engineering"
+      ],
+      "scival topics": [
+        "Alarm Monitor",
+        "Physiologic Monitoring",
+        "Patient Safety"
+      ],
+      "cluster": 1
+    },
+    {
+      "id": "2-s2.0-0036988701_cluster_0",
+      "user": "Walker2002",
+      "description": "Magnitude estimation of conceptual data dimensions for use in sonification",
+      "year": 2002,
+      "openacces": "closed",
+      "citations": 90,
+      "subject areas": [
+        "Experimental and Cognitive Psychology",
+        "Psychology"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 1
+    },
+    {
+      "id": "2-s2.0-84970956386_cluster_0",
+      "user": "DyerStapleton2017",
+      "description": "Transposing musical skill: sonification of movement as concurrent augmented feedback enhances learning in a bimanual task",
+      "year": 2017,
+      "openacces": "hybrid",
+      "citations": 23,
+      "subject areas": [
+        "Arts and Humanities",
+        "Arts and Humanities (miscellaneous)",
+        "Developmental and Educational Psychology",
+        "Experimental and Cognitive Psychology",
+        "Psychology"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Upper Limb",
+        "Motor Control"
+      ],
+      "scival topics": [
+        "Hemispheric Dominance",
+        "Psychomotor Performance",
+        "Motor Control"
+      ],
+      "cluster": 1
+    },
+    {
+      "id": "2-s2.0-84979792051_cluster_0",
+      "user": "CamurriVolpe2016",
+      "description": "The dancer in the eye: Towards a multi-layered computational framework of qualities in movement",
+      "year": 2016,
+      "openacces": "green",
+      "citations": 50,
+      "subject areas": [
+        "Computer Networks and Communications",
+        "Computer Science",
+        "Computer Vision and Pattern Recognition",
+        "Human-Computer Interaction",
+        "Software"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Expression Recognition"
+      ],
+      "scival topics": [
+        "Human Computer Interaction",
+        "Facial Expression",
+        "Robot"
+      ],
+      "cluster": 1
+    },
+    {
+      "id": "2-s2.0-84991111310_cluster_0",
+      "user": "CamurriCanepa2016",
+      "description": "A system to support the learning of movement qualities in dance: A case study on dynamic symmetry",
+      "year": 2016,
+      "openacces": "green",
+      "citations": 26,
+      "subject areas": [
+        ""
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Expression Recognition"
+      ],
+      "scival topics": [
+        "Neural Network",
+        "Support Vector Machine",
+        "Hidden Markov Model"
+      ],
+      "cluster": 1
+    },
+    {
+      "id": "2-s2.0-84892616479_cluster_0",
+      "user": "BrockSchmitz2012",
+      "description": "If motion sounds: Movement sonification based on inertial sensor data",
+      "year": 2012,
+      "openacces": "gold",
+      "citations": 12,
+      "subject areas": [
+        "Engineering",
+        "General Engineering"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 1
+    },
+    {
+      "id": "2-s2.0-58349097927_cluster_0",
+      "user": "ScheefBoecker2009",
+      "description": "Multimodal motion processing in area V5/MT: Evidence from an artificial class of audio-visual events",
+      "year": 2009,
+      "openacces": "closed",
+      "citations": 52,
+      "subject areas": [
+        "Biochemistry, Genetics and Molecular Biology",
+        "Developmental Biology",
+        "General Neuroscience",
+        "Medicine",
+        "Molecular Biology",
+        "Neurology (clinical)",
+        "Neuroscience"
+      ],
+      "scival topics cluster": [
+        "Visual Perception",
+        "Behavior (Neuroscience)",
+        "Individual Differences"
+      ],
+      "scival topics": [
+        "Multisensory Integration",
+        "Auditory Perception",
+        "Brain Mapping"
+      ],
+      "cluster": 1
+    },
+    {
+      "id": "2-s2.0-84904458581_cluster_0",
+      "user": "FrançoiseAlaoui2014",
+      "description": "Vocalizing dance movement for interactive sonification of Laban Effort Factors",
+      "year": 2014,
+      "openacces": "green",
+      "citations": 35,
+      "subject areas": [
+        ""
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Expression Recognition"
+      ],
+      "scival topics": [
+        "Human Computer Interaction",
+        "Facial Expression",
+        "Robot"
+      ],
+      "cluster": 1
+    },
+    {
+      "id": "2-s2.0-0040844859_cluster_0",
+      "user": "LoomisGolledge1998",
+      "description": "Navigation system for the blind: Auditory display modes and guidance",
+      "year": 1998,
+      "openacces": "closed",
+      "citations": 283,
+      "subject areas": [
+        "Computer Science",
+        "Computer Vision and Pattern Recognition",
+        "Control and Systems Engineering",
+        "Engineering",
+        "Human-Computer Interaction",
+        "Software"
+      ],
+      "scival topics cluster": [
+        "Prosthetics",
+        "Robot",
+        "Skeletal Muscle"
+      ],
+      "scival topics": [
+        "Visually Impaired People",
+        "Assistive Technology",
+        "Object Detection"
+      ],
+      "cluster": 1
+    },
+    {
+      "id": "2-s2.0-84860222109_cluster_0",
+      "user": "Barrass2012",
+      "description": "The aesthetic turn in sonification towards a social and cultural medium",
+      "year": 2012,
+      "openacces": "closed",
+      "citations": 29,
+      "subject areas": [
+        "Artificial Intelligence",
+        "Arts and Humanities",
+        "Computer Science",
+        "Human-Computer Interaction",
+        "Philosophy"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 1
+    },
+    {
+      "id": "2-s2.0-84911365559_cluster_0",
+      "user": "FiannacaApostolopoulous2014",
+      "description": "Headlock: A wearable navigation aid that helps blind cane users traverse large open spaces",
+      "year": 2014,
+      "openacces": "closed",
+      "citations": 49,
+      "subject areas": [
+        ""
+      ],
+      "scival topics cluster": [
+        "Prosthetics",
+        "Robot",
+        "Skeletal Muscle"
+      ],
+      "scival topics": [
+        "Visually Impaired People",
+        "Assistive Technology",
+        "Object Detection"
+      ],
+      "cluster": 1
+    },
+    {
+      "id": "2-s2.0-84869594581_cluster_0",
+      "user": "JenseniusBjerkestrand2012",
+      "description": "Exploring micromovements with motion capture and sonification",
+      "year": 2012,
+      "openacces": "closed",
+      "citations": 19,
+      "subject areas": [
+        "Computer Networks and Communications",
+        "Computer Science"
+      ],
+      "scival topics cluster": [
+        "Machine Learning",
+        "Artificial Intelligence",
+        "Auditory Perception"
+      ],
+      "scival topics": [
+        "Rhythm",
+        "Auditory Perception",
+        "Electroencephalography"
+      ],
+      "cluster": 1
+    },
+    {
+      "id": "2-s2.0-84892889849_cluster_0",
+      "user": "Supper2014",
+      "description": "Sublime frequencies: The construction of sublime listening experiences in the sonification of scientific data",
+      "year": 2014,
+      "openacces": "hybrid",
+      "citations": 41,
+      "subject areas": [
+        "Arts and Humanities",
+        "General Social Sciences",
+        "History",
+        "History and Philosophy of Science",
+        "Social Sciences"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 1
+    },
+    {
+      "id": "2-s2.0-34447578955_cluster_0",
+      "user": "Walker2007",
+      "description": "Consistency of magnitude estimations with conceptual data dimensions used for sonification",
+      "year": 2007,
+      "openacces": "green",
+      "citations": 43,
+      "subject areas": [
+        "Arts and Humanities",
+        "Arts and Humanities (miscellaneous)",
+        "Developmental and Educational Psychology",
+        "Experimental and Cognitive Psychology",
+        "Psychology"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 1
+    },
+    {
+      "id": "2-s2.0-41149131898_cluster_0",
+      "user": "WilsonWalker2007",
+      "description": "SWAN: System for wearable audio navigation",
+      "year": 2007,
+      "openacces": "green",
+      "citations": 165,
+      "subject areas": [
+        ""
+      ],
+      "scival topics cluster": [
+        "Prosthetics",
+        "Robot",
+        "Skeletal Muscle"
+      ],
+      "scival topics": [
+        "Visually Impaired People",
+        "Assistive Technology",
+        "Object Detection"
+      ],
+      "cluster": 1
+    },
+    {
+      "id": "2-s2.0-33745966449_cluster_0",
+      "user": "WalkerLindsay2006",
+      "description": "Navigation performance with a virtual auditory display: Effects of beacon sound, capture radius, and practice",
+      "year": 2006,
+      "openacces": "green",
+      "citations": 135,
+      "subject areas": [
+        "Applied Psychology",
+        "Behavioral Neuroscience",
+        "Human Factors and Ergonomics",
+        "Neuroscience",
+        "Psychology",
+        "Social Sciences"
+      ],
+      "scival topics cluster": [
+        "Prosthetics",
+        "Robot",
+        "Skeletal Muscle"
+      ],
+      "scival topics": [
+        "Visually Impaired People",
+        "Assistive Technology",
+        "Object Detection"
+      ],
+      "cluster": 1
+    },
+    {
+      "id": "2-s2.0-85016909437_cluster_0",
+      "user": "WalkerKramer2005",
+      "description": "Mappings and Metaphors in Auditory Displays: An Experimental Assessment",
+      "year": 2005,
+      "openacces": "closed",
+      "citations": 70,
+      "subject areas": [
+        "Computer Science",
+        "Experimental and Cognitive Psychology",
+        "General Computer Science",
+        "Mathematics",
+        "Psychology",
+        "Theoretical Computer Science"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 1
+    },
+    {
+      "id": "2-s2.0-20344382520_cluster_0",
+      "user": "HermannHunt2005",
+      "description": "An introduction to interactive sonification",
+      "year": 2005,
+      "openacces": "green",
+      "citations": 94,
+      "subject areas": [
+        "Computer Science",
+        "Computer Science Applications",
+        "Engineering",
+        "Hardware and Architecture",
+        "Media Technology",
+        "Signal Processing",
+        "Software"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 1
+    },
+    {
+      "id": "2-s2.0-78651574684_cluster_0",
+      "user": "WalkerMauney2010",
+      "description": "Universal design of auditory graphs: A comparison of sonification mappings for visually impaired and sighted listeners",
+      "year": 2010,
+      "openacces": "closed",
+      "citations": 68,
+      "subject areas": [
+        "Computer Science",
+        "Computer Science Applications",
+        "Human-Computer Interaction"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 1
+    },
+    {
+      "id": "2-s2.0-33750944370_cluster_0",
+      "user": "SainarayananNagarajan2007",
+      "description": "Fuzzy image processing scheme for autonomous navigation of human blind",
+      "year": 2007,
+      "openacces": "closed",
+      "citations": 96,
+      "subject areas": [
+        "Computer Science",
+        "Software"
+      ],
+      "scival topics cluster": [
+        "Prosthetics",
+        "Robot",
+        "Skeletal Muscle"
+      ],
+      "scival topics": [
+        "Visually Impaired People",
+        "Assistive Technology",
+        "Object Detection"
+      ],
+      "cluster": 1
+    },
+    {
+      "id": "2-s2.0-0029568049_cluster_0",
+      "user": "FlowersHauer1995",
+      "description": "Musical versus visual graphs: Cross-modal equivalence in perception of time series data",
+      "year": 1995,
+      "openacces": "closed",
+      "citations": 44,
+      "subject areas": [
+        "Applied Psychology",
+        "Behavioral Neuroscience",
+        "Human Factors and Ergonomics",
+        "Neuroscience",
+        "Psychology",
+        "Social Sciences"
+      ],
+      "scival topics cluster": [
+        ""
+      ],
+      "scival topics": [
+        ""
+      ],
+      "cluster": 1
+    },
+    {
+      "id": "2-s2.0-0031141950_cluster_0",
+      "user": "Brewster1997",
+      "description": "Using non-speech sound to overcome information overload",
+      "year": 1997,
+      "openacces": "green",
+      "citations": 72,
+      "subject areas": [
+        "Computer Science",
+        "Electrical and Electronic Engineering",
+        "Engineering",
+        "Hardware and Architecture",
+        "Human-Computer Interaction"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 1
+    },
+    {
+      "id": "2-s2.0-85057393013_cluster_0",
+      "user": "NeesWalker2009",
+      "description": "Auditory interfaces and sonification",
+      "year": 2009,
+      "openacces": "unknown",
+      "citations": 31,
+      "subject areas": [
+        ""
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 1
+    },
+    {
+      "id": "2-s2.0-29744431535_cluster_0",
+      "user": "SmithWalker2005",
+      "description": "Effects of auditory context cues and training on performance of a point estimation sonification task",
+      "year": 2005,
+      "openacces": "green",
+      "citations": 22,
+      "subject areas": [
+        "Arts and Humanities",
+        "Arts and Humanities (miscellaneous)",
+        "Developmental and Educational Psychology",
+        "Experimental and Cognitive Psychology",
+        "Psychology"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 1
+    },
+    {
+      "id": "2-s2.0-0036512035_cluster_0",
+      "user": "NeuhoffWayand2002",
+      "description": "Pitch and loudness interact in auditory displays: Can the data get lost in the map?",
+      "year": 2002,
+      "openacces": "closed",
+      "citations": 64,
+      "subject areas": [
+        "Experimental and Cognitive Psychology",
+        "Psychology"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 1
+    },
+    {
+      "id": "2-s2.0-0028835281_cluster_0",
+      "user": "HaasCasali1995",
+      "description": "Perceived urgency of and response time to multi-tone and frequency-modulated warning signals in broadband noise",
+      "year": 1995,
+      "openacces": "closed",
+      "citations": 115,
+      "subject areas": [
+        "Health Professions",
+        "Human Factors and Ergonomics",
+        "Physical Therapy, Sports Therapy and Rehabilitation",
+        "Social Sciences"
+      ],
+      "scival topics cluster": [
+        ""
+      ],
+      "scival topics": [
+        ""
+      ],
+      "cluster": 1
+    },
+    {
+      "id": "2-s2.0-34248524996_cluster_0",
+      "user": "MarstonLoomis2007",
+      "description": "Orientation & mobility: Nonvisual route following with guidance from a simple haptic or auditory display",
+      "year": 2007,
+      "openacces": "closed",
+      "citations": 57,
+      "subject areas": [
+        "Medicine",
+        "Ophthalmology",
+        "Rehabilitation"
+      ],
+      "scival topics cluster": [
+        "Prosthetics",
+        "Robot",
+        "Skeletal Muscle"
+      ],
+      "scival topics": [
+        "Visually Impaired People",
+        "Assistive Technology",
+        "Object Detection"
+      ],
+      "cluster": 1
+    },
+    {
+      "id": "2-s2.0-0004046903_cluster_0",
+      "user": "PollackFicks1954",
+      "description": "Information of Elementary Multidimensional Auditory Displays",
+      "year": 1954,
+      "openacces": "closed",
+      "citations": 93,
+      "subject areas": [
+        "Acoustics and Ultrasonics",
+        "Arts and Humanities",
+        "Arts and Humanities (miscellaneous)",
+        "Physics and Astronomy"
+      ],
+      "scival topics cluster": [
+        ""
+      ],
+      "scival topics": [
+        ""
+      ],
+      "cluster": 1
+    },
+    {
+      "id": "2-s2.0-85016877281_cluster_0",
+      "user": "FlowersBuhman2005",
+      "description": "Data Sonification from the Desktop: Should Sound Be Part of Standard Data Analysis Software",
+      "year": 2005,
+      "openacces": "closed",
+      "citations": 23,
+      "subject areas": [
+        "Computer Science",
+        "Experimental and Cognitive Psychology",
+        "General Computer Science",
+        "Mathematics",
+        "Psychology",
+        "Theoretical Computer Science"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 1
+    },
+    {
+      "id": "2-s2.0-25444448740_cluster_0",
+      "user": "WalkerLindsay2005",
+      "description": "Using virtual environments to prototype auditory navigation displays",
+      "year": 2005,
+      "openacces": "closed",
+      "citations": 17,
+      "subject areas": [
+        "Health Professions",
+        "Medicine",
+        "Physical Therapy, Sports Therapy and Rehabilitation",
+        "Rehabilitation"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 1
+    },
+    {
+      "id": "2-s2.0-84860066607_cluster_0",
+      "user": "EdworthyHellier2004",
+      "description": "Designing trend-monitoring sounds for helicopters: Methodological issues and an application",
+      "year": 2004,
+      "openacces": "closed",
+      "citations": 18,
+      "subject areas": [
+        "Experimental and Cognitive Psychology",
+        "Psychology"
+      ],
+      "scival topics cluster": [
+        "Nuclear Power Plant",
+        "Robot",
+        "Engineering"
+      ],
+      "scival topics": [
+        "Alarm Monitor",
+        "Physiologic Monitoring",
+        "Patient Safety"
+      ],
+      "cluster": 1
+    },
+    {
+      "id": "2-s2.0-0034149797_cluster_0",
+      "user": "WalkerEhrenstein2000",
+      "description": "Pitch and pitch change interact in auditory displays",
+      "year": 2000,
+      "openacces": "closed",
+      "citations": 25,
+      "subject areas": [
+        "Experimental and Cognitive Psychology",
+        "Psychology"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 1
+    },
+    {
+      "id": "2-s2.0-84977657335_cluster_1",
+      "user": "ScholzRohde2016",
+      "description": "Sonification of arm movements in stroke rehabilitation - a novel approach in neurologic music therapy",
+      "year": 2016,
+      "openacces": "gold",
+      "citations": 56,
+      "subject areas": [
+        "Medicine",
+        "Neurology",
+        "Neurology (clinical)",
+        "Neuroscience"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Upper Limb",
+        "Motor Control"
+      ],
+      "scival topics": [
+        "Stroke Rehabilitation",
+        "Apoplexy",
+        "Upper Limb"
+      ],
+      "cluster": 2
+    },
+    {
+      "id": "2-s2.0-85061377945_cluster_1",
+      "user": "SchaffertJanzen2019",
+      "description": "A review on the relationship between sound and movement in sports and rehabilitation",
+      "year": 2019,
+      "openacces": "gold",
+      "citations": 133,
+      "subject areas": [
+        "General Psychology",
+        "Psychology"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 2
+    },
+    {
+      "id": "2-s2.0-84893070216_cluster_1",
+      "user": "DubusBresin2013",
+      "description": "A systematic review of mapping strategies for the sonification of physical quantities",
+      "year": 2013,
+      "openacces": "gold",
+      "citations": 197,
+      "subject areas": [
+        "Multidisciplinary",
+        "Multidisciplinary"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 2
+    },
+    {
+      "id": "2-s2.0-0027170085_cluster_1",
+      "user": "WenzelArruda1993",
+      "description": "Localization using nonindividualized head-related transfer functions",
+      "year": 1993,
+      "openacces": "closed",
+      "citations": 836,
+      "subject areas": [
+        "Acoustics and Ultrasonics",
+        "Arts and Humanities",
+        "Arts and Humanities (miscellaneous)",
+        "Physics and Astronomy"
+      ],
+      "scival topics cluster": [
+        ""
+      ],
+      "scival topics": [
+        ""
+      ],
+      "cluster": 2
+    },
+    {
+      "id": "2-s2.0-85015054154_cluster_1",
+      "user": "NewboldBianchiberthouze2016",
+      "description": "Musically informed sonification for chronic pain rehabilitation: Facilitating progress & avoiding over-doing",
+      "year": 2016,
+      "openacces": "closed",
+      "citations": 40,
+      "subject areas": [
+        "Computer Graphics and Computer-Aided Design",
+        "Computer Science",
+        "Human-Computer Interaction",
+        "Software"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Expression Recognition"
+      ],
+      "scival topics": [
+        "Facial Expression",
+        "Chronic Pain",
+        "Machine Learning"
+      ],
+      "cluster": 2
+    },
+    {
+      "id": "2-s2.0-84973514484_cluster_1",
+      "user": "EffenbergFehse2016",
+      "description": "Movement sonification: Effects on motor learning beyond rhythmic adjustments",
+      "year": 2016,
+      "openacces": "gold",
+      "citations": 88,
+      "subject areas": [
+        "General Neuroscience",
+        "Neuroscience"
+      ],
+      "scival topics cluster": [
+        "Empathy",
+        "Visual Perception",
+        "Functional Magnetic Resonance Imaging"
+      ],
+      "scival topics": [
+        "Magnetic Resonance Imaging",
+        "Autism Spectrum Disorder",
+        "Motion Perception"
+      ],
+      "cluster": 2
+    },
+    {
+      "id": "2-s2.0-20344384538_cluster_1",
+      "user": "Effenberg2005",
+      "description": "Movement sonification: Effects on perception and action",
+      "year": 2005,
+      "openacces": "closed",
+      "citations": 125,
+      "subject areas": [
+        "Computer Science",
+        "Computer Science Applications",
+        "Engineering",
+        "Hardware and Architecture",
+        "Media Technology",
+        "Signal Processing",
+        "Software"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 2
+    },
+    {
+      "id": "2-s2.0-85044860190_cluster_1",
+      "user": "SinghBianchiberthouze2017",
+      "description": "Supporting everyday function in chronic pain using wearable technology",
+      "year": 2017,
+      "openacces": "green",
+      "citations": 51,
+      "subject areas": [
+        "Computer Graphics and Computer-Aided Design",
+        "Computer Science",
+        "Human-Computer Interaction",
+        "Software"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Expression Recognition"
+      ],
+      "scival topics": [
+        "Facial Expression",
+        "Chronic Pain",
+        "Machine Learning"
+      ],
+      "cluster": 2
+    },
+    {
+      "id": "2-s2.0-84988378007_cluster_1",
+      "user": "BevilacquaBoyer2016",
+      "description": "Sensori-motor learning with movement sonification: Perspectives from recent interdisciplinary studies",
+      "year": 2016,
+      "openacces": "gold",
+      "citations": 79,
+      "subject areas": [
+        "General Neuroscience",
+        "Neuroscience"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 2
+    },
+    {
+      "id": "2-s2.0-84954098724_cluster_1",
+      "user": "SinghPiana2016",
+      "description": "Go-with-the-Flow: Tracking, Analysis and Sonification of Movement and Breathing to Build Confidence in Activity Despite Chronic Pain",
+      "year": 2016,
+      "openacces": "hybrid",
+      "citations": 80,
+      "subject areas": [
+        "Applied Psychology",
+        "Computer Science",
+        "Human-Computer Interaction",
+        "Psychology"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Expression Recognition"
+      ],
+      "scival topics": [
+        "Facial Expression",
+        "Chronic Pain",
+        "Machine Learning"
+      ],
+      "cluster": 2
+    },
+    {
+      "id": "2-s2.0-84982921020_cluster_1",
+      "user": "CesariniCalvaresi2016",
+      "description": "MEDIATION: An eMbEddeD System for Auditory Feedback of Hand-water InterAcTION while Swimming",
+      "year": 2016,
+      "openacces": "gold",
+      "citations": 22,
+      "subject areas": [
+        "Engineering",
+        "General Engineering"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 2
+    },
+    {
+      "id": "2-s2.0-84950991167_cluster_1",
+      "user": "TajadurajiménezBasia2015",
+      "description": "As light as your footsteps: Altering walking sounds to change perceived body weight, emotional state and gait",
+      "year": 2015,
+      "openacces": "closed",
+      "citations": 154,
+      "subject areas": [
+        "Computer Graphics and Computer-Aided Design",
+        "Computer Science",
+        "Human-Computer Interaction",
+        "Software"
+      ],
+      "scival topics cluster": [
+        "Visual Perception",
+        "Behavior (Neuroscience)",
+        "Individual Differences"
+      ],
+      "scival topics": [
+        "Illusion",
+        "Body Image",
+        "Visual Perception"
+      ],
+      "cluster": 2
+    },
+    {
+      "id": "2-s2.0-84922900978_cluster_1",
+      "user": "SchaffertMattes2015",
+      "description": "Interactive sonification in rowing: Acoustic feedback for on-water training",
+      "year": 2015,
+      "openacces": "closed",
+      "citations": 34,
+      "subject areas": [
+        "Computer Science",
+        "Computer Science Applications",
+        "Engineering",
+        "Hardware and Architecture",
+        "Media Technology",
+        "Signal Processing",
+        "Software"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 2
+    },
+    {
+      "id": "2-s2.0-85017185837_cluster_1",
+      "user": "DannaVelay2017",
+      "description": "On the auditory-proprioception substitution hypothesis: Movement sonification in two deafferented subjects learning to write new characters",
+      "year": 2017,
+      "openacces": "gold",
+      "citations": 30,
+      "subject areas": [
+        "General Neuroscience",
+        "Neuroscience"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Upper Limb",
+        "Motor Control"
+      ],
+      "scival topics": [
+        "Motor Learning",
+        "Psychomotor Performance",
+        "Visual Perception"
+      ],
+      "cluster": 2
+    },
+    {
+      "id": "2-s2.0-84953736962_cluster_1",
+      "user": "DyerStapleton2015",
+      "description": "Sonification as concurrent augmented feedback for motor skill learning and the importance of mapping design",
+      "year": 2015,
+      "openacces": "green",
+      "citations": 24,
+      "subject areas": [
+        "General Psychology",
+        "Psychology"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 2
+    },
+    {
+      "id": "2-s2.0-84910045825_cluster_1",
+      "user": "ScholzWu2014",
+      "description": "Sonification as a possible stroke rehabilitation strategy",
+      "year": 2014,
+      "openacces": "gold",
+      "citations": 35,
+      "subject areas": [
+        "General Neuroscience",
+        "Neuroscience"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 2
+    },
+    {
+      "id": "2-s2.0-84874935035_cluster_1",
+      "user": "SchmitzMohammadi2013",
+      "description": "Observation of sonified movements engages a basal ganglia frontocortical network",
+      "year": 2013,
+      "openacces": "gold",
+      "citations": 67,
+      "subject areas": [
+        "Cellular and Molecular Neuroscience",
+        "General Neuroscience",
+        "Neuroscience"
+      ],
+      "scival topics cluster": [
+        "Empathy",
+        "Visual Perception",
+        "Functional Magnetic Resonance Imaging"
+      ],
+      "scival topics": [
+        "Magnetic Resonance Imaging",
+        "Autism Spectrum Disorder",
+        "Motion Perception"
+      ],
+      "cluster": 2
+    },
+    {
+      "id": "2-s2.0-84894138585_cluster_1",
+      "user": "VinkenKröger2013",
+      "description": "Auditory coding of human movement kinematics",
+      "year": 2013,
+      "openacces": "closed",
+      "citations": 28,
+      "subject areas": [
+        "Cognitive Neuroscience",
+        "Computer Science",
+        "Computer Vision and Pattern Recognition",
+        "Experimental and Cognitive Psychology",
+        "Medicine",
+        "Neuroscience",
+        "Ophthalmology",
+        "Psychology",
+        "Sensory Systems"
+      ],
+      "scival topics cluster": [
+        "Empathy",
+        "Visual Perception",
+        "Functional Magnetic Resonance Imaging"
+      ],
+      "scival topics": [
+        "Magnetic Resonance Imaging",
+        "Autism Spectrum Disorder",
+        "Motion Perception"
+      ],
+      "cluster": 2
+    },
+    {
+      "id": "2-s2.0-84963856294_cluster_1",
+      "user": "ParseihianGondre2016",
+      "description": "Comparison and Evaluation of Sonification Strategies for Guidance Tasks",
+      "year": 2016,
+      "openacces": "green",
+      "citations": 49,
+      "subject areas": [
+        "Computer Science",
+        "Computer Science Applications",
+        "Electrical and Electronic Engineering",
+        "Engineering",
+        "Media Technology",
+        "Signal Processing"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 2
+    },
+    {
+      "id": "2-s2.0-85046792410_cluster_1",
+      "user": "FergusonBrewster2017",
+      "description": "Evaluation of psychoacoustic sound parameters for sonification",
+      "year": 2017,
+      "openacces": "green",
+      "citations": 16,
+      "subject areas": [
+        ""
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 2
+    },
+    {
+      "id": "2-s2.0-85049655516_cluster_1",
+      "user": "Scaletti2018",
+      "description": "Sonification ≠ music",
+      "year": 2018,
+      "openacces": "closed",
+      "citations": 21,
+      "subject areas": [
+        ""
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 2
+    },
+    {
+      "id": "2-s2.0-85021884138_cluster_1",
+      "user": "Vickers2016",
+      "description": "Sonification and music, music and sonification",
+      "year": 2016,
+      "openacces": "closed",
+      "citations": 27,
+      "subject areas": [
+        ""
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 2
+    },
+    {
+      "id": "2-s2.0-1542360367_cluster_1",
+      "user": "WatsonSanderson2004",
+      "description": "Sonification supports eyes-free respiratory monitoring and task time-sharing",
+      "year": 2004,
+      "openacces": "closed",
+      "citations": 99,
+      "subject areas": [
+        "Applied Psychology",
+        "Behavioral Neuroscience",
+        "Human Factors and Ergonomics",
+        "Neuroscience",
+        "Psychology",
+        "Social Sciences"
+      ],
+      "scival topics cluster": [
+        "Nuclear Power Plant",
+        "Robot",
+        "Engineering"
+      ],
+      "scival topics": [
+        "Alarm Monitor",
+        "Physiologic Monitoring",
+        "Patient Safety"
+      ],
+      "cluster": 2
+    },
+    {
+      "id": "2-s2.0-85021994558_cluster_1",
+      "user": "VickersHogg2017",
+      "description": "Aesthetics of sonification: Taking the subject-position",
+      "year": 2017,
+      "openacces": "green",
+      "citations": 19,
+      "subject areas": [
+        ""
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 2
+    },
+    {
+      "id": "2-s2.0-84865992559_cluster_1",
+      "user": "GrosshauserBläsing2012",
+      "description": "Wearable sensor-based real-time sonification of motion and foot pressure in dance teaching and training",
+      "year": 2012,
+      "openacces": "unknown",
+      "citations": 48,
+      "subject areas": [
+        "Arts and Humanities",
+        "Engineering",
+        "General Engineering",
+        "Music"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 2
+    },
+    {
+      "id": "2-s2.0-78651248615_cluster_1",
+      "user": "VogtPirrò2010",
+      "description": "PhysioSonic - Evaluated movement sonification as auditory feedback in physiotherapy",
+      "year": 2010,
+      "openacces": "closed",
+      "citations": 34,
+      "subject areas": [
+        "Computer Science",
+        "General Computer Science",
+        "Mathematics",
+        "Theoretical Computer Science"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 2
+    },
+    {
+      "id": "2-s2.0-0033498316_cluster_1",
+      "user": "BelzRobinson1999",
+      "description": "A new class of auditory warning signals for complex systems: Auditory icons",
+      "year": 1999,
+      "openacces": "closed",
+      "citations": 121,
+      "subject areas": [
+        "Applied Psychology",
+        "Behavioral Neuroscience",
+        "Human Factors and Ergonomics",
+        "Neuroscience",
+        "Psychology",
+        "Social Sciences"
+      ],
+      "scival topics cluster": [
+        "Nuclear Power Plant",
+        "Robot",
+        "Engineering"
+      ],
+      "scival topics": [
+        "Alarm Monitor",
+        "Physiologic Monitoring",
+        "Patient Safety"
+      ],
+      "cluster": 2
+    },
+    {
+      "id": "2-s2.0-0036988701_cluster_1",
+      "user": "Walker2002",
+      "description": "Magnitude estimation of conceptual data dimensions for use in sonification",
+      "year": 2002,
+      "openacces": "closed",
+      "citations": 90,
+      "subject areas": [
+        "Experimental and Cognitive Psychology",
+        "Psychology"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 2
+    },
+    {
+      "id": "2-s2.0-84970956386_cluster_1",
+      "user": "DyerStapleton2017",
+      "description": "Transposing musical skill: sonification of movement as concurrent augmented feedback enhances learning in a bimanual task",
+      "year": 2017,
+      "openacces": "hybrid",
+      "citations": 23,
+      "subject areas": [
+        "Arts and Humanities",
+        "Arts and Humanities (miscellaneous)",
+        "Developmental and Educational Psychology",
+        "Experimental and Cognitive Psychology",
+        "Psychology"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Upper Limb",
+        "Motor Control"
+      ],
+      "scival topics": [
+        "Hemispheric Dominance",
+        "Psychomotor Performance",
+        "Motor Control"
+      ],
+      "cluster": 2
+    },
+    {
+      "id": "2-s2.0-84979792051_cluster_1",
+      "user": "CamurriVolpe2016",
+      "description": "The dancer in the eye: Towards a multi-layered computational framework of qualities in movement",
+      "year": 2016,
+      "openacces": "green",
+      "citations": 50,
+      "subject areas": [
+        "Computer Networks and Communications",
+        "Computer Science",
+        "Computer Vision and Pattern Recognition",
+        "Human-Computer Interaction",
+        "Software"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Expression Recognition"
+      ],
+      "scival topics": [
+        "Human Computer Interaction",
+        "Facial Expression",
+        "Robot"
+      ],
+      "cluster": 2
+    },
+    {
+      "id": "2-s2.0-84991111310_cluster_1",
+      "user": "CamurriCanepa2016",
+      "description": "A system to support the learning of movement qualities in dance: A case study on dynamic symmetry",
+      "year": 2016,
+      "openacces": "green",
+      "citations": 26,
+      "subject areas": [
+        ""
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Expression Recognition"
+      ],
+      "scival topics": [
+        "Neural Network",
+        "Support Vector Machine",
+        "Hidden Markov Model"
+      ],
+      "cluster": 2
+    },
+    {
+      "id": "2-s2.0-84892616479_cluster_1",
+      "user": "BrockSchmitz2012",
+      "description": "If motion sounds: Movement sonification based on inertial sensor data",
+      "year": 2012,
+      "openacces": "gold",
+      "citations": 12,
+      "subject areas": [
+        "Engineering",
+        "General Engineering"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 2
+    },
+    {
+      "id": "2-s2.0-58349097927_cluster_1",
+      "user": "ScheefBoecker2009",
+      "description": "Multimodal motion processing in area V5/MT: Evidence from an artificial class of audio-visual events",
+      "year": 2009,
+      "openacces": "closed",
+      "citations": 52,
+      "subject areas": [
+        "Biochemistry, Genetics and Molecular Biology",
+        "Developmental Biology",
+        "General Neuroscience",
+        "Medicine",
+        "Molecular Biology",
+        "Neurology (clinical)",
+        "Neuroscience"
+      ],
+      "scival topics cluster": [
+        "Visual Perception",
+        "Behavior (Neuroscience)",
+        "Individual Differences"
+      ],
+      "scival topics": [
+        "Multisensory Integration",
+        "Auditory Perception",
+        "Brain Mapping"
+      ],
+      "cluster": 2
+    },
+    {
+      "id": "2-s2.0-84904458581_cluster_1",
+      "user": "FrançoiseAlaoui2014",
+      "description": "Vocalizing dance movement for interactive sonification of Laban Effort Factors",
+      "year": 2014,
+      "openacces": "green",
+      "citations": 35,
+      "subject areas": [
+        ""
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Expression Recognition"
+      ],
+      "scival topics": [
+        "Human Computer Interaction",
+        "Facial Expression",
+        "Robot"
+      ],
+      "cluster": 2
+    },
+    {
+      "id": "2-s2.0-0040844859_cluster_1",
+      "user": "LoomisGolledge1998",
+      "description": "Navigation system for the blind: Auditory display modes and guidance",
+      "year": 1998,
+      "openacces": "closed",
+      "citations": 283,
+      "subject areas": [
+        "Computer Science",
+        "Computer Vision and Pattern Recognition",
+        "Control and Systems Engineering",
+        "Engineering",
+        "Human-Computer Interaction",
+        "Software"
+      ],
+      "scival topics cluster": [
+        "Prosthetics",
+        "Robot",
+        "Skeletal Muscle"
+      ],
+      "scival topics": [
+        "Visually Impaired People",
+        "Assistive Technology",
+        "Object Detection"
+      ],
+      "cluster": 2
+    },
+    {
+      "id": "2-s2.0-84860222109_cluster_1",
+      "user": "Barrass2012",
+      "description": "The aesthetic turn in sonification towards a social and cultural medium",
+      "year": 2012,
+      "openacces": "closed",
+      "citations": 29,
+      "subject areas": [
+        "Artificial Intelligence",
+        "Arts and Humanities",
+        "Computer Science",
+        "Human-Computer Interaction",
+        "Philosophy"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 2
+    },
+    {
+      "id": "2-s2.0-84911365559_cluster_1",
+      "user": "FiannacaApostolopoulous2014",
+      "description": "Headlock: A wearable navigation aid that helps blind cane users traverse large open spaces",
+      "year": 2014,
+      "openacces": "closed",
+      "citations": 49,
+      "subject areas": [
+        ""
+      ],
+      "scival topics cluster": [
+        "Prosthetics",
+        "Robot",
+        "Skeletal Muscle"
+      ],
+      "scival topics": [
+        "Visually Impaired People",
+        "Assistive Technology",
+        "Object Detection"
+      ],
+      "cluster": 2
+    },
+    {
+      "id": "2-s2.0-84869594581_cluster_1",
+      "user": "JenseniusBjerkestrand2012",
+      "description": "Exploring micromovements with motion capture and sonification",
+      "year": 2012,
+      "openacces": "closed",
+      "citations": 19,
+      "subject areas": [
+        "Computer Networks and Communications",
+        "Computer Science"
+      ],
+      "scival topics cluster": [
+        "Machine Learning",
+        "Artificial Intelligence",
+        "Auditory Perception"
+      ],
+      "scival topics": [
+        "Rhythm",
+        "Auditory Perception",
+        "Electroencephalography"
+      ],
+      "cluster": 2
+    },
+    {
+      "id": "2-s2.0-84892889849_cluster_1",
+      "user": "Supper2014",
+      "description": "Sublime frequencies: The construction of sublime listening experiences in the sonification of scientific data",
+      "year": 2014,
+      "openacces": "hybrid",
+      "citations": 41,
+      "subject areas": [
+        "Arts and Humanities",
+        "General Social Sciences",
+        "History",
+        "History and Philosophy of Science",
+        "Social Sciences"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 2
+    },
+    {
+      "id": "2-s2.0-34447578955_cluster_1",
+      "user": "Walker2007",
+      "description": "Consistency of magnitude estimations with conceptual data dimensions used for sonification",
+      "year": 2007,
+      "openacces": "green",
+      "citations": 43,
+      "subject areas": [
+        "Arts and Humanities",
+        "Arts and Humanities (miscellaneous)",
+        "Developmental and Educational Psychology",
+        "Experimental and Cognitive Psychology",
+        "Psychology"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 2
+    },
+    {
+      "id": "2-s2.0-41149131898_cluster_1",
+      "user": "WilsonWalker2007",
+      "description": "SWAN: System for wearable audio navigation",
+      "year": 2007,
+      "openacces": "green",
+      "citations": 165,
+      "subject areas": [
+        ""
+      ],
+      "scival topics cluster": [
+        "Prosthetics",
+        "Robot",
+        "Skeletal Muscle"
+      ],
+      "scival topics": [
+        "Visually Impaired People",
+        "Assistive Technology",
+        "Object Detection"
+      ],
+      "cluster": 2
+    },
+    {
+      "id": "2-s2.0-33745966449_cluster_1",
+      "user": "WalkerLindsay2006",
+      "description": "Navigation performance with a virtual auditory display: Effects of beacon sound, capture radius, and practice",
+      "year": 2006,
+      "openacces": "green",
+      "citations": 135,
+      "subject areas": [
+        "Applied Psychology",
+        "Behavioral Neuroscience",
+        "Human Factors and Ergonomics",
+        "Neuroscience",
+        "Psychology",
+        "Social Sciences"
+      ],
+      "scival topics cluster": [
+        "Prosthetics",
+        "Robot",
+        "Skeletal Muscle"
+      ],
+      "scival topics": [
+        "Visually Impaired People",
+        "Assistive Technology",
+        "Object Detection"
+      ],
+      "cluster": 2
+    },
+    {
+      "id": "2-s2.0-85016909437_cluster_1",
+      "user": "WalkerKramer2005",
+      "description": "Mappings and Metaphors in Auditory Displays: An Experimental Assessment",
+      "year": 2005,
+      "openacces": "closed",
+      "citations": 70,
+      "subject areas": [
+        "Computer Science",
+        "Experimental and Cognitive Psychology",
+        "General Computer Science",
+        "Mathematics",
+        "Psychology",
+        "Theoretical Computer Science"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 2
+    },
+    {
+      "id": "2-s2.0-20344382520_cluster_1",
+      "user": "HermannHunt2005",
+      "description": "An introduction to interactive sonification",
+      "year": 2005,
+      "openacces": "green",
+      "citations": 94,
+      "subject areas": [
+        "Computer Science",
+        "Computer Science Applications",
+        "Engineering",
+        "Hardware and Architecture",
+        "Media Technology",
+        "Signal Processing",
+        "Software"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 2
+    },
+    {
+      "id": "2-s2.0-78651574684_cluster_1",
+      "user": "WalkerMauney2010",
+      "description": "Universal design of auditory graphs: A comparison of sonification mappings for visually impaired and sighted listeners",
+      "year": 2010,
+      "openacces": "closed",
+      "citations": 68,
+      "subject areas": [
+        "Computer Science",
+        "Computer Science Applications",
+        "Human-Computer Interaction"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 2
+    },
+    {
+      "id": "2-s2.0-33750944370_cluster_1",
+      "user": "SainarayananNagarajan2007",
+      "description": "Fuzzy image processing scheme for autonomous navigation of human blind",
+      "year": 2007,
+      "openacces": "closed",
+      "citations": 96,
+      "subject areas": [
+        "Computer Science",
+        "Software"
+      ],
+      "scival topics cluster": [
+        "Prosthetics",
+        "Robot",
+        "Skeletal Muscle"
+      ],
+      "scival topics": [
+        "Visually Impaired People",
+        "Assistive Technology",
+        "Object Detection"
+      ],
+      "cluster": 2
+    },
+    {
+      "id": "2-s2.0-0029568049_cluster_1",
+      "user": "FlowersHauer1995",
+      "description": "Musical versus visual graphs: Cross-modal equivalence in perception of time series data",
+      "year": 1995,
+      "openacces": "closed",
+      "citations": 44,
+      "subject areas": [
+        "Applied Psychology",
+        "Behavioral Neuroscience",
+        "Human Factors and Ergonomics",
+        "Neuroscience",
+        "Psychology",
+        "Social Sciences"
+      ],
+      "scival topics cluster": [
+        ""
+      ],
+      "scival topics": [
+        ""
+      ],
+      "cluster": 2
+    },
+    {
+      "id": "2-s2.0-0031141950_cluster_1",
+      "user": "Brewster1997",
+      "description": "Using non-speech sound to overcome information overload",
+      "year": 1997,
+      "openacces": "green",
+      "citations": 72,
+      "subject areas": [
+        "Computer Science",
+        "Electrical and Electronic Engineering",
+        "Engineering",
+        "Hardware and Architecture",
+        "Human-Computer Interaction"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 2
+    },
+    {
+      "id": "2-s2.0-85057393013_cluster_1",
+      "user": "NeesWalker2009",
+      "description": "Auditory interfaces and sonification",
+      "year": 2009,
+      "openacces": "unknown",
+      "citations": 31,
+      "subject areas": [
+        ""
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 2
+    },
+    {
+      "id": "2-s2.0-29744431535_cluster_1",
+      "user": "SmithWalker2005",
+      "description": "Effects of auditory context cues and training on performance of a point estimation sonification task",
+      "year": 2005,
+      "openacces": "green",
+      "citations": 22,
+      "subject areas": [
+        "Arts and Humanities",
+        "Arts and Humanities (miscellaneous)",
+        "Developmental and Educational Psychology",
+        "Experimental and Cognitive Psychology",
+        "Psychology"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 2
+    },
+    {
+      "id": "2-s2.0-0036512035_cluster_1",
+      "user": "NeuhoffWayand2002",
+      "description": "Pitch and loudness interact in auditory displays: Can the data get lost in the map?",
+      "year": 2002,
+      "openacces": "closed",
+      "citations": 64,
+      "subject areas": [
+        "Experimental and Cognitive Psychology",
+        "Psychology"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 2
+    },
+    {
+      "id": "2-s2.0-0028835281_cluster_1",
+      "user": "HaasCasali1995",
+      "description": "Perceived urgency of and response time to multi-tone and frequency-modulated warning signals in broadband noise",
+      "year": 1995,
+      "openacces": "closed",
+      "citations": 115,
+      "subject areas": [
+        "Health Professions",
+        "Human Factors and Ergonomics",
+        "Physical Therapy, Sports Therapy and Rehabilitation",
+        "Social Sciences"
+      ],
+      "scival topics cluster": [
+        ""
+      ],
+      "scival topics": [
+        ""
+      ],
+      "cluster": 2
+    },
+    {
+      "id": "2-s2.0-34248524996_cluster_1",
+      "user": "MarstonLoomis2007",
+      "description": "Orientation & mobility: Nonvisual route following with guidance from a simple haptic or auditory display",
+      "year": 2007,
+      "openacces": "closed",
+      "citations": 57,
+      "subject areas": [
+        "Medicine",
+        "Ophthalmology",
+        "Rehabilitation"
+      ],
+      "scival topics cluster": [
+        "Prosthetics",
+        "Robot",
+        "Skeletal Muscle"
+      ],
+      "scival topics": [
+        "Visually Impaired People",
+        "Assistive Technology",
+        "Object Detection"
+      ],
+      "cluster": 2
+    },
+    {
+      "id": "2-s2.0-0004046903_cluster_1",
+      "user": "PollackFicks1954",
+      "description": "Information of Elementary Multidimensional Auditory Displays",
+      "year": 1954,
+      "openacces": "closed",
+      "citations": 93,
+      "subject areas": [
+        "Acoustics and Ultrasonics",
+        "Arts and Humanities",
+        "Arts and Humanities (miscellaneous)",
+        "Physics and Astronomy"
+      ],
+      "scival topics cluster": [
+        ""
+      ],
+      "scival topics": [
+        ""
+      ],
+      "cluster": 2
+    },
+    {
+      "id": "2-s2.0-85016877281_cluster_1",
+      "user": "FlowersBuhman2005",
+      "description": "Data Sonification from the Desktop: Should Sound Be Part of Standard Data Analysis Software",
+      "year": 2005,
+      "openacces": "closed",
+      "citations": 23,
+      "subject areas": [
+        "Computer Science",
+        "Experimental and Cognitive Psychology",
+        "General Computer Science",
+        "Mathematics",
+        "Psychology",
+        "Theoretical Computer Science"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 2
+    },
+    {
+      "id": "2-s2.0-25444448740_cluster_1",
+      "user": "WalkerLindsay2005",
+      "description": "Using virtual environments to prototype auditory navigation displays",
+      "year": 2005,
+      "openacces": "closed",
+      "citations": 17,
+      "subject areas": [
+        "Health Professions",
+        "Medicine",
+        "Physical Therapy, Sports Therapy and Rehabilitation",
+        "Rehabilitation"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 2
+    },
+    {
+      "id": "2-s2.0-84860066607_cluster_1",
+      "user": "EdworthyHellier2004",
+      "description": "Designing trend-monitoring sounds for helicopters: Methodological issues and an application",
+      "year": 2004,
+      "openacces": "closed",
+      "citations": 18,
+      "subject areas": [
+        "Experimental and Cognitive Psychology",
+        "Psychology"
+      ],
+      "scival topics cluster": [
+        "Nuclear Power Plant",
+        "Robot",
+        "Engineering"
+      ],
+      "scival topics": [
+        "Alarm Monitor",
+        "Physiologic Monitoring",
+        "Patient Safety"
+      ],
+      "cluster": 2
+    },
+    {
+      "id": "2-s2.0-0034149797_cluster_1",
+      "user": "WalkerEhrenstein2000",
+      "description": "Pitch and pitch change interact in auditory displays",
+      "year": 2000,
+      "openacces": "closed",
+      "citations": 25,
+      "subject areas": [
+        "Experimental and Cognitive Psychology",
+        "Psychology"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 2
+    },
+    {
+      "id": "2-s2.0-84977657335_cluster_2",
+      "user": "ScholzRohde2016",
+      "description": "Sonification of arm movements in stroke rehabilitation - a novel approach in neurologic music therapy",
+      "year": 2016,
+      "openacces": "gold",
+      "citations": 56,
+      "subject areas": [
+        "Medicine",
+        "Neurology",
+        "Neurology (clinical)",
+        "Neuroscience"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Upper Limb",
+        "Motor Control"
+      ],
+      "scival topics": [
+        "Stroke Rehabilitation",
+        "Apoplexy",
+        "Upper Limb"
+      ],
+      "cluster": 3
+    },
+    {
+      "id": "2-s2.0-85061377945_cluster_2",
+      "user": "SchaffertJanzen2019",
+      "description": "A review on the relationship between sound and movement in sports and rehabilitation",
+      "year": 2019,
+      "openacces": "gold",
+      "citations": 133,
+      "subject areas": [
+        "General Psychology",
+        "Psychology"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 3
+    },
+    {
+      "id": "2-s2.0-84893070216_cluster_2",
+      "user": "DubusBresin2013",
+      "description": "A systematic review of mapping strategies for the sonification of physical quantities",
+      "year": 2013,
+      "openacces": "gold",
+      "citations": 197,
+      "subject areas": [
+        "Multidisciplinary",
+        "Multidisciplinary"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 3
+    },
+    {
+      "id": "2-s2.0-0027170085_cluster_2",
+      "user": "WenzelArruda1993",
+      "description": "Localization using nonindividualized head-related transfer functions",
+      "year": 1993,
+      "openacces": "closed",
+      "citations": 836,
+      "subject areas": [
+        "Acoustics and Ultrasonics",
+        "Arts and Humanities",
+        "Arts and Humanities (miscellaneous)",
+        "Physics and Astronomy"
+      ],
+      "scival topics cluster": [
+        ""
+      ],
+      "scival topics": [
+        ""
+      ],
+      "cluster": 3
+    },
+    {
+      "id": "2-s2.0-85015054154_cluster_2",
+      "user": "NewboldBianchiberthouze2016",
+      "description": "Musically informed sonification for chronic pain rehabilitation: Facilitating progress & avoiding over-doing",
+      "year": 2016,
+      "openacces": "closed",
+      "citations": 40,
+      "subject areas": [
+        "Computer Graphics and Computer-Aided Design",
+        "Computer Science",
+        "Human-Computer Interaction",
+        "Software"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Expression Recognition"
+      ],
+      "scival topics": [
+        "Facial Expression",
+        "Chronic Pain",
+        "Machine Learning"
+      ],
+      "cluster": 3
+    },
+    {
+      "id": "2-s2.0-84973514484_cluster_2",
+      "user": "EffenbergFehse2016",
+      "description": "Movement sonification: Effects on motor learning beyond rhythmic adjustments",
+      "year": 2016,
+      "openacces": "gold",
+      "citations": 88,
+      "subject areas": [
+        "General Neuroscience",
+        "Neuroscience"
+      ],
+      "scival topics cluster": [
+        "Empathy",
+        "Visual Perception",
+        "Functional Magnetic Resonance Imaging"
+      ],
+      "scival topics": [
+        "Magnetic Resonance Imaging",
+        "Autism Spectrum Disorder",
+        "Motion Perception"
+      ],
+      "cluster": 3
+    },
+    {
+      "id": "2-s2.0-20344384538_cluster_2",
+      "user": "Effenberg2005",
+      "description": "Movement sonification: Effects on perception and action",
+      "year": 2005,
+      "openacces": "closed",
+      "citations": 125,
+      "subject areas": [
+        "Computer Science",
+        "Computer Science Applications",
+        "Engineering",
+        "Hardware and Architecture",
+        "Media Technology",
+        "Signal Processing",
+        "Software"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 3
+    },
+    {
+      "id": "2-s2.0-85044860190_cluster_2",
+      "user": "SinghBianchiberthouze2017",
+      "description": "Supporting everyday function in chronic pain using wearable technology",
+      "year": 2017,
+      "openacces": "green",
+      "citations": 51,
+      "subject areas": [
+        "Computer Graphics and Computer-Aided Design",
+        "Computer Science",
+        "Human-Computer Interaction",
+        "Software"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Expression Recognition"
+      ],
+      "scival topics": [
+        "Facial Expression",
+        "Chronic Pain",
+        "Machine Learning"
+      ],
+      "cluster": 3
+    },
+    {
+      "id": "2-s2.0-84988378007_cluster_2",
+      "user": "BevilacquaBoyer2016",
+      "description": "Sensori-motor learning with movement sonification: Perspectives from recent interdisciplinary studies",
+      "year": 2016,
+      "openacces": "gold",
+      "citations": 79,
+      "subject areas": [
+        "General Neuroscience",
+        "Neuroscience"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 3
+    },
+    {
+      "id": "2-s2.0-84954098724_cluster_2",
+      "user": "SinghPiana2016",
+      "description": "Go-with-the-Flow: Tracking, Analysis and Sonification of Movement and Breathing to Build Confidence in Activity Despite Chronic Pain",
+      "year": 2016,
+      "openacces": "hybrid",
+      "citations": 80,
+      "subject areas": [
+        "Applied Psychology",
+        "Computer Science",
+        "Human-Computer Interaction",
+        "Psychology"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Expression Recognition"
+      ],
+      "scival topics": [
+        "Facial Expression",
+        "Chronic Pain",
+        "Machine Learning"
+      ],
+      "cluster": 3
+    },
+    {
+      "id": "2-s2.0-84982921020_cluster_2",
+      "user": "CesariniCalvaresi2016",
+      "description": "MEDIATION: An eMbEddeD System for Auditory Feedback of Hand-water InterAcTION while Swimming",
+      "year": 2016,
+      "openacces": "gold",
+      "citations": 22,
+      "subject areas": [
+        "Engineering",
+        "General Engineering"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 3
+    },
+    {
+      "id": "2-s2.0-84950991167_cluster_2",
+      "user": "TajadurajiménezBasia2015",
+      "description": "As light as your footsteps: Altering walking sounds to change perceived body weight, emotional state and gait",
+      "year": 2015,
+      "openacces": "closed",
+      "citations": 154,
+      "subject areas": [
+        "Computer Graphics and Computer-Aided Design",
+        "Computer Science",
+        "Human-Computer Interaction",
+        "Software"
+      ],
+      "scival topics cluster": [
+        "Visual Perception",
+        "Behavior (Neuroscience)",
+        "Individual Differences"
+      ],
+      "scival topics": [
+        "Illusion",
+        "Body Image",
+        "Visual Perception"
+      ],
+      "cluster": 3
+    },
+    {
+      "id": "2-s2.0-84922900978_cluster_2",
+      "user": "SchaffertMattes2015",
+      "description": "Interactive sonification in rowing: Acoustic feedback for on-water training",
+      "year": 2015,
+      "openacces": "closed",
+      "citations": 34,
+      "subject areas": [
+        "Computer Science",
+        "Computer Science Applications",
+        "Engineering",
+        "Hardware and Architecture",
+        "Media Technology",
+        "Signal Processing",
+        "Software"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 3
+    },
+    {
+      "id": "2-s2.0-85017185837_cluster_2",
+      "user": "DannaVelay2017",
+      "description": "On the auditory-proprioception substitution hypothesis: Movement sonification in two deafferented subjects learning to write new characters",
+      "year": 2017,
+      "openacces": "gold",
+      "citations": 30,
+      "subject areas": [
+        "General Neuroscience",
+        "Neuroscience"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Upper Limb",
+        "Motor Control"
+      ],
+      "scival topics": [
+        "Motor Learning",
+        "Psychomotor Performance",
+        "Visual Perception"
+      ],
+      "cluster": 3
+    },
+    {
+      "id": "2-s2.0-84953736962_cluster_2",
+      "user": "DyerStapleton2015",
+      "description": "Sonification as concurrent augmented feedback for motor skill learning and the importance of mapping design",
+      "year": 2015,
+      "openacces": "green",
+      "citations": 24,
+      "subject areas": [
+        "General Psychology",
+        "Psychology"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 3
+    },
+    {
+      "id": "2-s2.0-84910045825_cluster_2",
+      "user": "ScholzWu2014",
+      "description": "Sonification as a possible stroke rehabilitation strategy",
+      "year": 2014,
+      "openacces": "gold",
+      "citations": 35,
+      "subject areas": [
+        "General Neuroscience",
+        "Neuroscience"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 3
+    },
+    {
+      "id": "2-s2.0-84874935035_cluster_2",
+      "user": "SchmitzMohammadi2013",
+      "description": "Observation of sonified movements engages a basal ganglia frontocortical network",
+      "year": 2013,
+      "openacces": "gold",
+      "citations": 67,
+      "subject areas": [
+        "Cellular and Molecular Neuroscience",
+        "General Neuroscience",
+        "Neuroscience"
+      ],
+      "scival topics cluster": [
+        "Empathy",
+        "Visual Perception",
+        "Functional Magnetic Resonance Imaging"
+      ],
+      "scival topics": [
+        "Magnetic Resonance Imaging",
+        "Autism Spectrum Disorder",
+        "Motion Perception"
+      ],
+      "cluster": 3
+    },
+    {
+      "id": "2-s2.0-84894138585_cluster_2",
+      "user": "VinkenKröger2013",
+      "description": "Auditory coding of human movement kinematics",
+      "year": 2013,
+      "openacces": "closed",
+      "citations": 28,
+      "subject areas": [
+        "Cognitive Neuroscience",
+        "Computer Science",
+        "Computer Vision and Pattern Recognition",
+        "Experimental and Cognitive Psychology",
+        "Medicine",
+        "Neuroscience",
+        "Ophthalmology",
+        "Psychology",
+        "Sensory Systems"
+      ],
+      "scival topics cluster": [
+        "Empathy",
+        "Visual Perception",
+        "Functional Magnetic Resonance Imaging"
+      ],
+      "scival topics": [
+        "Magnetic Resonance Imaging",
+        "Autism Spectrum Disorder",
+        "Motion Perception"
+      ],
+      "cluster": 3
+    },
+    {
+      "id": "2-s2.0-84963856294_cluster_2",
+      "user": "ParseihianGondre2016",
+      "description": "Comparison and Evaluation of Sonification Strategies for Guidance Tasks",
+      "year": 2016,
+      "openacces": "green",
+      "citations": 49,
+      "subject areas": [
+        "Computer Science",
+        "Computer Science Applications",
+        "Electrical and Electronic Engineering",
+        "Engineering",
+        "Media Technology",
+        "Signal Processing"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 3
+    },
+    {
+      "id": "2-s2.0-85046792410_cluster_2",
+      "user": "FergusonBrewster2017",
+      "description": "Evaluation of psychoacoustic sound parameters for sonification",
+      "year": 2017,
+      "openacces": "green",
+      "citations": 16,
+      "subject areas": [
+        ""
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 3
+    },
+    {
+      "id": "2-s2.0-85049655516_cluster_2",
+      "user": "Scaletti2018",
+      "description": "Sonification ≠ music",
+      "year": 2018,
+      "openacces": "closed",
+      "citations": 21,
+      "subject areas": [
+        ""
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 3
+    },
+    {
+      "id": "2-s2.0-85021884138_cluster_2",
+      "user": "Vickers2016",
+      "description": "Sonification and music, music and sonification",
+      "year": 2016,
+      "openacces": "closed",
+      "citations": 27,
+      "subject areas": [
+        ""
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 3
+    },
+    {
+      "id": "2-s2.0-1542360367_cluster_2",
+      "user": "WatsonSanderson2004",
+      "description": "Sonification supports eyes-free respiratory monitoring and task time-sharing",
+      "year": 2004,
+      "openacces": "closed",
+      "citations": 99,
+      "subject areas": [
+        "Applied Psychology",
+        "Behavioral Neuroscience",
+        "Human Factors and Ergonomics",
+        "Neuroscience",
+        "Psychology",
+        "Social Sciences"
+      ],
+      "scival topics cluster": [
+        "Nuclear Power Plant",
+        "Robot",
+        "Engineering"
+      ],
+      "scival topics": [
+        "Alarm Monitor",
+        "Physiologic Monitoring",
+        "Patient Safety"
+      ],
+      "cluster": 3
+    },
+    {
+      "id": "2-s2.0-85021994558_cluster_2",
+      "user": "VickersHogg2017",
+      "description": "Aesthetics of sonification: Taking the subject-position",
+      "year": 2017,
+      "openacces": "green",
+      "citations": 19,
+      "subject areas": [
+        ""
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 3
+    },
+    {
+      "id": "2-s2.0-84865992559_cluster_2",
+      "user": "GrosshauserBläsing2012",
+      "description": "Wearable sensor-based real-time sonification of motion and foot pressure in dance teaching and training",
+      "year": 2012,
+      "openacces": "unknown",
+      "citations": 48,
+      "subject areas": [
+        "Arts and Humanities",
+        "Engineering",
+        "General Engineering",
+        "Music"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 3
+    },
+    {
+      "id": "2-s2.0-78651248615_cluster_2",
+      "user": "VogtPirrò2010",
+      "description": "PhysioSonic - Evaluated movement sonification as auditory feedback in physiotherapy",
+      "year": 2010,
+      "openacces": "closed",
+      "citations": 34,
+      "subject areas": [
+        "Computer Science",
+        "General Computer Science",
+        "Mathematics",
+        "Theoretical Computer Science"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 3
+    },
+    {
+      "id": "2-s2.0-0033498316_cluster_2",
+      "user": "BelzRobinson1999",
+      "description": "A new class of auditory warning signals for complex systems: Auditory icons",
+      "year": 1999,
+      "openacces": "closed",
+      "citations": 121,
+      "subject areas": [
+        "Applied Psychology",
+        "Behavioral Neuroscience",
+        "Human Factors and Ergonomics",
+        "Neuroscience",
+        "Psychology",
+        "Social Sciences"
+      ],
+      "scival topics cluster": [
+        "Nuclear Power Plant",
+        "Robot",
+        "Engineering"
+      ],
+      "scival topics": [
+        "Alarm Monitor",
+        "Physiologic Monitoring",
+        "Patient Safety"
+      ],
+      "cluster": 3
+    },
+    {
+      "id": "2-s2.0-0036988701_cluster_2",
+      "user": "Walker2002",
+      "description": "Magnitude estimation of conceptual data dimensions for use in sonification",
+      "year": 2002,
+      "openacces": "closed",
+      "citations": 90,
+      "subject areas": [
+        "Experimental and Cognitive Psychology",
+        "Psychology"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 3
+    },
+    {
+      "id": "2-s2.0-84970956386_cluster_2",
+      "user": "DyerStapleton2017",
+      "description": "Transposing musical skill: sonification of movement as concurrent augmented feedback enhances learning in a bimanual task",
+      "year": 2017,
+      "openacces": "hybrid",
+      "citations": 23,
+      "subject areas": [
+        "Arts and Humanities",
+        "Arts and Humanities (miscellaneous)",
+        "Developmental and Educational Psychology",
+        "Experimental and Cognitive Psychology",
+        "Psychology"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Upper Limb",
+        "Motor Control"
+      ],
+      "scival topics": [
+        "Hemispheric Dominance",
+        "Psychomotor Performance",
+        "Motor Control"
+      ],
+      "cluster": 3
+    },
+    {
+      "id": "2-s2.0-84979792051_cluster_2",
+      "user": "CamurriVolpe2016",
+      "description": "The dancer in the eye: Towards a multi-layered computational framework of qualities in movement",
+      "year": 2016,
+      "openacces": "green",
+      "citations": 50,
+      "subject areas": [
+        "Computer Networks and Communications",
+        "Computer Science",
+        "Computer Vision and Pattern Recognition",
+        "Human-Computer Interaction",
+        "Software"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Expression Recognition"
+      ],
+      "scival topics": [
+        "Human Computer Interaction",
+        "Facial Expression",
+        "Robot"
+      ],
+      "cluster": 3
+    },
+    {
+      "id": "2-s2.0-84991111310_cluster_2",
+      "user": "CamurriCanepa2016",
+      "description": "A system to support the learning of movement qualities in dance: A case study on dynamic symmetry",
+      "year": 2016,
+      "openacces": "green",
+      "citations": 26,
+      "subject areas": [
+        ""
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Expression Recognition"
+      ],
+      "scival topics": [
+        "Neural Network",
+        "Support Vector Machine",
+        "Hidden Markov Model"
+      ],
+      "cluster": 3
+    },
+    {
+      "id": "2-s2.0-84892616479_cluster_2",
+      "user": "BrockSchmitz2012",
+      "description": "If motion sounds: Movement sonification based on inertial sensor data",
+      "year": 2012,
+      "openacces": "gold",
+      "citations": 12,
+      "subject areas": [
+        "Engineering",
+        "General Engineering"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 3
+    },
+    {
+      "id": "2-s2.0-58349097927_cluster_2",
+      "user": "ScheefBoecker2009",
+      "description": "Multimodal motion processing in area V5/MT: Evidence from an artificial class of audio-visual events",
+      "year": 2009,
+      "openacces": "closed",
+      "citations": 52,
+      "subject areas": [
+        "Biochemistry, Genetics and Molecular Biology",
+        "Developmental Biology",
+        "General Neuroscience",
+        "Medicine",
+        "Molecular Biology",
+        "Neurology (clinical)",
+        "Neuroscience"
+      ],
+      "scival topics cluster": [
+        "Visual Perception",
+        "Behavior (Neuroscience)",
+        "Individual Differences"
+      ],
+      "scival topics": [
+        "Multisensory Integration",
+        "Auditory Perception",
+        "Brain Mapping"
+      ],
+      "cluster": 3
+    },
+    {
+      "id": "2-s2.0-84904458581_cluster_2",
+      "user": "FrançoiseAlaoui2014",
+      "description": "Vocalizing dance movement for interactive sonification of Laban Effort Factors",
+      "year": 2014,
+      "openacces": "green",
+      "citations": 35,
+      "subject areas": [
+        ""
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Expression Recognition"
+      ],
+      "scival topics": [
+        "Human Computer Interaction",
+        "Facial Expression",
+        "Robot"
+      ],
+      "cluster": 3
+    },
+    {
+      "id": "2-s2.0-0040844859_cluster_2",
+      "user": "LoomisGolledge1998",
+      "description": "Navigation system for the blind: Auditory display modes and guidance",
+      "year": 1998,
+      "openacces": "closed",
+      "citations": 283,
+      "subject areas": [
+        "Computer Science",
+        "Computer Vision and Pattern Recognition",
+        "Control and Systems Engineering",
+        "Engineering",
+        "Human-Computer Interaction",
+        "Software"
+      ],
+      "scival topics cluster": [
+        "Prosthetics",
+        "Robot",
+        "Skeletal Muscle"
+      ],
+      "scival topics": [
+        "Visually Impaired People",
+        "Assistive Technology",
+        "Object Detection"
+      ],
+      "cluster": 3
+    },
+    {
+      "id": "2-s2.0-84860222109_cluster_2",
+      "user": "Barrass2012",
+      "description": "The aesthetic turn in sonification towards a social and cultural medium",
+      "year": 2012,
+      "openacces": "closed",
+      "citations": 29,
+      "subject areas": [
+        "Artificial Intelligence",
+        "Arts and Humanities",
+        "Computer Science",
+        "Human-Computer Interaction",
+        "Philosophy"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 3
+    },
+    {
+      "id": "2-s2.0-84911365559_cluster_2",
+      "user": "FiannacaApostolopoulous2014",
+      "description": "Headlock: A wearable navigation aid that helps blind cane users traverse large open spaces",
+      "year": 2014,
+      "openacces": "closed",
+      "citations": 49,
+      "subject areas": [
+        ""
+      ],
+      "scival topics cluster": [
+        "Prosthetics",
+        "Robot",
+        "Skeletal Muscle"
+      ],
+      "scival topics": [
+        "Visually Impaired People",
+        "Assistive Technology",
+        "Object Detection"
+      ],
+      "cluster": 3
+    },
+    {
+      "id": "2-s2.0-84869594581_cluster_2",
+      "user": "JenseniusBjerkestrand2012",
+      "description": "Exploring micromovements with motion capture and sonification",
+      "year": 2012,
+      "openacces": "closed",
+      "citations": 19,
+      "subject areas": [
+        "Computer Networks and Communications",
+        "Computer Science"
+      ],
+      "scival topics cluster": [
+        "Machine Learning",
+        "Artificial Intelligence",
+        "Auditory Perception"
+      ],
+      "scival topics": [
+        "Rhythm",
+        "Auditory Perception",
+        "Electroencephalography"
+      ],
+      "cluster": 3
+    },
+    {
+      "id": "2-s2.0-84892889849_cluster_2",
+      "user": "Supper2014",
+      "description": "Sublime frequencies: The construction of sublime listening experiences in the sonification of scientific data",
+      "year": 2014,
+      "openacces": "hybrid",
+      "citations": 41,
+      "subject areas": [
+        "Arts and Humanities",
+        "General Social Sciences",
+        "History",
+        "History and Philosophy of Science",
+        "Social Sciences"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 3
+    },
+    {
+      "id": "2-s2.0-34447578955_cluster_2",
+      "user": "Walker2007",
+      "description": "Consistency of magnitude estimations with conceptual data dimensions used for sonification",
+      "year": 2007,
+      "openacces": "green",
+      "citations": 43,
+      "subject areas": [
+        "Arts and Humanities",
+        "Arts and Humanities (miscellaneous)",
+        "Developmental and Educational Psychology",
+        "Experimental and Cognitive Psychology",
+        "Psychology"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 3
+    },
+    {
+      "id": "2-s2.0-41149131898_cluster_2",
+      "user": "WilsonWalker2007",
+      "description": "SWAN: System for wearable audio navigation",
+      "year": 2007,
+      "openacces": "green",
+      "citations": 165,
+      "subject areas": [
+        ""
+      ],
+      "scival topics cluster": [
+        "Prosthetics",
+        "Robot",
+        "Skeletal Muscle"
+      ],
+      "scival topics": [
+        "Visually Impaired People",
+        "Assistive Technology",
+        "Object Detection"
+      ],
+      "cluster": 3
+    },
+    {
+      "id": "2-s2.0-33745966449_cluster_2",
+      "user": "WalkerLindsay2006",
+      "description": "Navigation performance with a virtual auditory display: Effects of beacon sound, capture radius, and practice",
+      "year": 2006,
+      "openacces": "green",
+      "citations": 135,
+      "subject areas": [
+        "Applied Psychology",
+        "Behavioral Neuroscience",
+        "Human Factors and Ergonomics",
+        "Neuroscience",
+        "Psychology",
+        "Social Sciences"
+      ],
+      "scival topics cluster": [
+        "Prosthetics",
+        "Robot",
+        "Skeletal Muscle"
+      ],
+      "scival topics": [
+        "Visually Impaired People",
+        "Assistive Technology",
+        "Object Detection"
+      ],
+      "cluster": 3
+    },
+    {
+      "id": "2-s2.0-85016909437_cluster_2",
+      "user": "WalkerKramer2005",
+      "description": "Mappings and Metaphors in Auditory Displays: An Experimental Assessment",
+      "year": 2005,
+      "openacces": "closed",
+      "citations": 70,
+      "subject areas": [
+        "Computer Science",
+        "Experimental and Cognitive Psychology",
+        "General Computer Science",
+        "Mathematics",
+        "Psychology",
+        "Theoretical Computer Science"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 3
+    },
+    {
+      "id": "2-s2.0-20344382520_cluster_2",
+      "user": "HermannHunt2005",
+      "description": "An introduction to interactive sonification",
+      "year": 2005,
+      "openacces": "green",
+      "citations": 94,
+      "subject areas": [
+        "Computer Science",
+        "Computer Science Applications",
+        "Engineering",
+        "Hardware and Architecture",
+        "Media Technology",
+        "Signal Processing",
+        "Software"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 3
+    },
+    {
+      "id": "2-s2.0-78651574684_cluster_2",
+      "user": "WalkerMauney2010",
+      "description": "Universal design of auditory graphs: A comparison of sonification mappings for visually impaired and sighted listeners",
+      "year": 2010,
+      "openacces": "closed",
+      "citations": 68,
+      "subject areas": [
+        "Computer Science",
+        "Computer Science Applications",
+        "Human-Computer Interaction"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 3
+    },
+    {
+      "id": "2-s2.0-33750944370_cluster_2",
+      "user": "SainarayananNagarajan2007",
+      "description": "Fuzzy image processing scheme for autonomous navigation of human blind",
+      "year": 2007,
+      "openacces": "closed",
+      "citations": 96,
+      "subject areas": [
+        "Computer Science",
+        "Software"
+      ],
+      "scival topics cluster": [
+        "Prosthetics",
+        "Robot",
+        "Skeletal Muscle"
+      ],
+      "scival topics": [
+        "Visually Impaired People",
+        "Assistive Technology",
+        "Object Detection"
+      ],
+      "cluster": 3
+    },
+    {
+      "id": "2-s2.0-0029568049_cluster_2",
+      "user": "FlowersHauer1995",
+      "description": "Musical versus visual graphs: Cross-modal equivalence in perception of time series data",
+      "year": 1995,
+      "openacces": "closed",
+      "citations": 44,
+      "subject areas": [
+        "Applied Psychology",
+        "Behavioral Neuroscience",
+        "Human Factors and Ergonomics",
+        "Neuroscience",
+        "Psychology",
+        "Social Sciences"
+      ],
+      "scival topics cluster": [
+        ""
+      ],
+      "scival topics": [
+        ""
+      ],
+      "cluster": 3
+    },
+    {
+      "id": "2-s2.0-0031141950_cluster_2",
+      "user": "Brewster1997",
+      "description": "Using non-speech sound to overcome information overload",
+      "year": 1997,
+      "openacces": "green",
+      "citations": 72,
+      "subject areas": [
+        "Computer Science",
+        "Electrical and Electronic Engineering",
+        "Engineering",
+        "Hardware and Architecture",
+        "Human-Computer Interaction"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 3
+    },
+    {
+      "id": "2-s2.0-85057393013_cluster_2",
+      "user": "NeesWalker2009",
+      "description": "Auditory interfaces and sonification",
+      "year": 2009,
+      "openacces": "unknown",
+      "citations": 31,
+      "subject areas": [
+        ""
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 3
+    },
+    {
+      "id": "2-s2.0-29744431535_cluster_2",
+      "user": "SmithWalker2005",
+      "description": "Effects of auditory context cues and training on performance of a point estimation sonification task",
+      "year": 2005,
+      "openacces": "green",
+      "citations": 22,
+      "subject areas": [
+        "Arts and Humanities",
+        "Arts and Humanities (miscellaneous)",
+        "Developmental and Educational Psychology",
+        "Experimental and Cognitive Psychology",
+        "Psychology"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 3
+    },
+    {
+      "id": "2-s2.0-0036512035_cluster_2",
+      "user": "NeuhoffWayand2002",
+      "description": "Pitch and loudness interact in auditory displays: Can the data get lost in the map?",
+      "year": 2002,
+      "openacces": "closed",
+      "citations": 64,
+      "subject areas": [
+        "Experimental and Cognitive Psychology",
+        "Psychology"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 3
+    },
+    {
+      "id": "2-s2.0-0028835281_cluster_2",
+      "user": "HaasCasali1995",
+      "description": "Perceived urgency of and response time to multi-tone and frequency-modulated warning signals in broadband noise",
+      "year": 1995,
+      "openacces": "closed",
+      "citations": 115,
+      "subject areas": [
+        "Health Professions",
+        "Human Factors and Ergonomics",
+        "Physical Therapy, Sports Therapy and Rehabilitation",
+        "Social Sciences"
+      ],
+      "scival topics cluster": [
+        ""
+      ],
+      "scival topics": [
+        ""
+      ],
+      "cluster": 3
+    },
+    {
+      "id": "2-s2.0-34248524996_cluster_2",
+      "user": "MarstonLoomis2007",
+      "description": "Orientation & mobility: Nonvisual route following with guidance from a simple haptic or auditory display",
+      "year": 2007,
+      "openacces": "closed",
+      "citations": 57,
+      "subject areas": [
+        "Medicine",
+        "Ophthalmology",
+        "Rehabilitation"
+      ],
+      "scival topics cluster": [
+        "Prosthetics",
+        "Robot",
+        "Skeletal Muscle"
+      ],
+      "scival topics": [
+        "Visually Impaired People",
+        "Assistive Technology",
+        "Object Detection"
+      ],
+      "cluster": 3
+    },
+    {
+      "id": "2-s2.0-0004046903_cluster_2",
+      "user": "PollackFicks1954",
+      "description": "Information of Elementary Multidimensional Auditory Displays",
+      "year": 1954,
+      "openacces": "closed",
+      "citations": 93,
+      "subject areas": [
+        "Acoustics and Ultrasonics",
+        "Arts and Humanities",
+        "Arts and Humanities (miscellaneous)",
+        "Physics and Astronomy"
+      ],
+      "scival topics cluster": [
+        ""
+      ],
+      "scival topics": [
+        ""
+      ],
+      "cluster": 3
+    },
+    {
+      "id": "2-s2.0-85016877281_cluster_2",
+      "user": "FlowersBuhman2005",
+      "description": "Data Sonification from the Desktop: Should Sound Be Part of Standard Data Analysis Software",
+      "year": 2005,
+      "openacces": "closed",
+      "citations": 23,
+      "subject areas": [
+        "Computer Science",
+        "Experimental and Cognitive Psychology",
+        "General Computer Science",
+        "Mathematics",
+        "Psychology",
+        "Theoretical Computer Science"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 3
+    },
+    {
+      "id": "2-s2.0-25444448740_cluster_2",
+      "user": "WalkerLindsay2005",
+      "description": "Using virtual environments to prototype auditory navigation displays",
+      "year": 2005,
+      "openacces": "closed",
+      "citations": 17,
+      "subject areas": [
+        "Health Professions",
+        "Medicine",
+        "Physical Therapy, Sports Therapy and Rehabilitation",
+        "Rehabilitation"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 3
+    },
+    {
+      "id": "2-s2.0-84860066607_cluster_2",
+      "user": "EdworthyHellier2004",
+      "description": "Designing trend-monitoring sounds for helicopters: Methodological issues and an application",
+      "year": 2004,
+      "openacces": "closed",
+      "citations": 18,
+      "subject areas": [
+        "Experimental and Cognitive Psychology",
+        "Psychology"
+      ],
+      "scival topics cluster": [
+        "Nuclear Power Plant",
+        "Robot",
+        "Engineering"
+      ],
+      "scival topics": [
+        "Alarm Monitor",
+        "Physiologic Monitoring",
+        "Patient Safety"
+      ],
+      "cluster": 3
+    },
+    {
+      "id": "2-s2.0-0034149797_cluster_2",
+      "user": "WalkerEhrenstein2000",
+      "description": "Pitch and pitch change interact in auditory displays",
+      "year": 2000,
+      "openacces": "closed",
+      "citations": 25,
+      "subject areas": [
+        "Experimental and Cognitive Psychology",
+        "Psychology"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 3
+    },
+    {
+      "id": "2-s2.0-84977657335_cluster_3",
+      "user": "ScholzRohde2016",
+      "description": "Sonification of arm movements in stroke rehabilitation - a novel approach in neurologic music therapy",
+      "year": 2016,
+      "openacces": "gold",
+      "citations": 56,
+      "subject areas": [
+        "Medicine",
+        "Neurology",
+        "Neurology (clinical)",
+        "Neuroscience"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Upper Limb",
+        "Motor Control"
+      ],
+      "scival topics": [
+        "Stroke Rehabilitation",
+        "Apoplexy",
+        "Upper Limb"
+      ],
+      "cluster": 4
+    },
+    {
+      "id": "2-s2.0-85061377945_cluster_3",
+      "user": "SchaffertJanzen2019",
+      "description": "A review on the relationship between sound and movement in sports and rehabilitation",
+      "year": 2019,
+      "openacces": "gold",
+      "citations": 133,
+      "subject areas": [
+        "General Psychology",
+        "Psychology"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 4
+    },
+    {
+      "id": "2-s2.0-84893070216_cluster_3",
+      "user": "DubusBresin2013",
+      "description": "A systematic review of mapping strategies for the sonification of physical quantities",
+      "year": 2013,
+      "openacces": "gold",
+      "citations": 197,
+      "subject areas": [
+        "Multidisciplinary",
+        "Multidisciplinary"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 4
+    },
+    {
+      "id": "2-s2.0-0027170085_cluster_3",
+      "user": "WenzelArruda1993",
+      "description": "Localization using nonindividualized head-related transfer functions",
+      "year": 1993,
+      "openacces": "closed",
+      "citations": 836,
+      "subject areas": [
+        "Acoustics and Ultrasonics",
+        "Arts and Humanities",
+        "Arts and Humanities (miscellaneous)",
+        "Physics and Astronomy"
+      ],
+      "scival topics cluster": [
+        ""
+      ],
+      "scival topics": [
+        ""
+      ],
+      "cluster": 4
+    },
+    {
+      "id": "2-s2.0-85015054154_cluster_3",
+      "user": "NewboldBianchiberthouze2016",
+      "description": "Musically informed sonification for chronic pain rehabilitation: Facilitating progress & avoiding over-doing",
+      "year": 2016,
+      "openacces": "closed",
+      "citations": 40,
+      "subject areas": [
+        "Computer Graphics and Computer-Aided Design",
+        "Computer Science",
+        "Human-Computer Interaction",
+        "Software"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Expression Recognition"
+      ],
+      "scival topics": [
+        "Facial Expression",
+        "Chronic Pain",
+        "Machine Learning"
+      ],
+      "cluster": 4
+    },
+    {
+      "id": "2-s2.0-84973514484_cluster_3",
+      "user": "EffenbergFehse2016",
+      "description": "Movement sonification: Effects on motor learning beyond rhythmic adjustments",
+      "year": 2016,
+      "openacces": "gold",
+      "citations": 88,
+      "subject areas": [
+        "General Neuroscience",
+        "Neuroscience"
+      ],
+      "scival topics cluster": [
+        "Empathy",
+        "Visual Perception",
+        "Functional Magnetic Resonance Imaging"
+      ],
+      "scival topics": [
+        "Magnetic Resonance Imaging",
+        "Autism Spectrum Disorder",
+        "Motion Perception"
+      ],
+      "cluster": 4
+    },
+    {
+      "id": "2-s2.0-20344384538_cluster_3",
+      "user": "Effenberg2005",
+      "description": "Movement sonification: Effects on perception and action",
+      "year": 2005,
+      "openacces": "closed",
+      "citations": 125,
+      "subject areas": [
+        "Computer Science",
+        "Computer Science Applications",
+        "Engineering",
+        "Hardware and Architecture",
+        "Media Technology",
+        "Signal Processing",
+        "Software"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 4
+    },
+    {
+      "id": "2-s2.0-85044860190_cluster_3",
+      "user": "SinghBianchiberthouze2017",
+      "description": "Supporting everyday function in chronic pain using wearable technology",
+      "year": 2017,
+      "openacces": "green",
+      "citations": 51,
+      "subject areas": [
+        "Computer Graphics and Computer-Aided Design",
+        "Computer Science",
+        "Human-Computer Interaction",
+        "Software"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Expression Recognition"
+      ],
+      "scival topics": [
+        "Facial Expression",
+        "Chronic Pain",
+        "Machine Learning"
+      ],
+      "cluster": 4
+    },
+    {
+      "id": "2-s2.0-84988378007_cluster_3",
+      "user": "BevilacquaBoyer2016",
+      "description": "Sensori-motor learning with movement sonification: Perspectives from recent interdisciplinary studies",
+      "year": 2016,
+      "openacces": "gold",
+      "citations": 79,
+      "subject areas": [
+        "General Neuroscience",
+        "Neuroscience"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 4
+    },
+    {
+      "id": "2-s2.0-84954098724_cluster_3",
+      "user": "SinghPiana2016",
+      "description": "Go-with-the-Flow: Tracking, Analysis and Sonification of Movement and Breathing to Build Confidence in Activity Despite Chronic Pain",
+      "year": 2016,
+      "openacces": "hybrid",
+      "citations": 80,
+      "subject areas": [
+        "Applied Psychology",
+        "Computer Science",
+        "Human-Computer Interaction",
+        "Psychology"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Expression Recognition"
+      ],
+      "scival topics": [
+        "Facial Expression",
+        "Chronic Pain",
+        "Machine Learning"
+      ],
+      "cluster": 4
+    },
+    {
+      "id": "2-s2.0-84982921020_cluster_3",
+      "user": "CesariniCalvaresi2016",
+      "description": "MEDIATION: An eMbEddeD System for Auditory Feedback of Hand-water InterAcTION while Swimming",
+      "year": 2016,
+      "openacces": "gold",
+      "citations": 22,
+      "subject areas": [
+        "Engineering",
+        "General Engineering"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 4
+    },
+    {
+      "id": "2-s2.0-84950991167_cluster_3",
+      "user": "TajadurajiménezBasia2015",
+      "description": "As light as your footsteps: Altering walking sounds to change perceived body weight, emotional state and gait",
+      "year": 2015,
+      "openacces": "closed",
+      "citations": 154,
+      "subject areas": [
+        "Computer Graphics and Computer-Aided Design",
+        "Computer Science",
+        "Human-Computer Interaction",
+        "Software"
+      ],
+      "scival topics cluster": [
+        "Visual Perception",
+        "Behavior (Neuroscience)",
+        "Individual Differences"
+      ],
+      "scival topics": [
+        "Illusion",
+        "Body Image",
+        "Visual Perception"
+      ],
+      "cluster": 4
+    },
+    {
+      "id": "2-s2.0-84922900978_cluster_3",
+      "user": "SchaffertMattes2015",
+      "description": "Interactive sonification in rowing: Acoustic feedback for on-water training",
+      "year": 2015,
+      "openacces": "closed",
+      "citations": 34,
+      "subject areas": [
+        "Computer Science",
+        "Computer Science Applications",
+        "Engineering",
+        "Hardware and Architecture",
+        "Media Technology",
+        "Signal Processing",
+        "Software"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 4
+    },
+    {
+      "id": "2-s2.0-85017185837_cluster_3",
+      "user": "DannaVelay2017",
+      "description": "On the auditory-proprioception substitution hypothesis: Movement sonification in two deafferented subjects learning to write new characters",
+      "year": 2017,
+      "openacces": "gold",
+      "citations": 30,
+      "subject areas": [
+        "General Neuroscience",
+        "Neuroscience"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Upper Limb",
+        "Motor Control"
+      ],
+      "scival topics": [
+        "Motor Learning",
+        "Psychomotor Performance",
+        "Visual Perception"
+      ],
+      "cluster": 4
+    },
+    {
+      "id": "2-s2.0-84953736962_cluster_3",
+      "user": "DyerStapleton2015",
+      "description": "Sonification as concurrent augmented feedback for motor skill learning and the importance of mapping design",
+      "year": 2015,
+      "openacces": "green",
+      "citations": 24,
+      "subject areas": [
+        "General Psychology",
+        "Psychology"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 4
+    },
+    {
+      "id": "2-s2.0-84910045825_cluster_3",
+      "user": "ScholzWu2014",
+      "description": "Sonification as a possible stroke rehabilitation strategy",
+      "year": 2014,
+      "openacces": "gold",
+      "citations": 35,
+      "subject areas": [
+        "General Neuroscience",
+        "Neuroscience"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 4
+    },
+    {
+      "id": "2-s2.0-84874935035_cluster_3",
+      "user": "SchmitzMohammadi2013",
+      "description": "Observation of sonified movements engages a basal ganglia frontocortical network",
+      "year": 2013,
+      "openacces": "gold",
+      "citations": 67,
+      "subject areas": [
+        "Cellular and Molecular Neuroscience",
+        "General Neuroscience",
+        "Neuroscience"
+      ],
+      "scival topics cluster": [
+        "Empathy",
+        "Visual Perception",
+        "Functional Magnetic Resonance Imaging"
+      ],
+      "scival topics": [
+        "Magnetic Resonance Imaging",
+        "Autism Spectrum Disorder",
+        "Motion Perception"
+      ],
+      "cluster": 4
+    },
+    {
+      "id": "2-s2.0-84894138585_cluster_3",
+      "user": "VinkenKröger2013",
+      "description": "Auditory coding of human movement kinematics",
+      "year": 2013,
+      "openacces": "closed",
+      "citations": 28,
+      "subject areas": [
+        "Cognitive Neuroscience",
+        "Computer Science",
+        "Computer Vision and Pattern Recognition",
+        "Experimental and Cognitive Psychology",
+        "Medicine",
+        "Neuroscience",
+        "Ophthalmology",
+        "Psychology",
+        "Sensory Systems"
+      ],
+      "scival topics cluster": [
+        "Empathy",
+        "Visual Perception",
+        "Functional Magnetic Resonance Imaging"
+      ],
+      "scival topics": [
+        "Magnetic Resonance Imaging",
+        "Autism Spectrum Disorder",
+        "Motion Perception"
+      ],
+      "cluster": 4
+    },
+    {
+      "id": "2-s2.0-84963856294_cluster_3",
+      "user": "ParseihianGondre2016",
+      "description": "Comparison and Evaluation of Sonification Strategies for Guidance Tasks",
+      "year": 2016,
+      "openacces": "green",
+      "citations": 49,
+      "subject areas": [
+        "Computer Science",
+        "Computer Science Applications",
+        "Electrical and Electronic Engineering",
+        "Engineering",
+        "Media Technology",
+        "Signal Processing"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 4
+    },
+    {
+      "id": "2-s2.0-85046792410_cluster_3",
+      "user": "FergusonBrewster2017",
+      "description": "Evaluation of psychoacoustic sound parameters for sonification",
+      "year": 2017,
+      "openacces": "green",
+      "citations": 16,
+      "subject areas": [
+        ""
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 4
+    },
+    {
+      "id": "2-s2.0-85049655516_cluster_3",
+      "user": "Scaletti2018",
+      "description": "Sonification ≠ music",
+      "year": 2018,
+      "openacces": "closed",
+      "citations": 21,
+      "subject areas": [
+        ""
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 4
+    },
+    {
+      "id": "2-s2.0-85021884138_cluster_3",
+      "user": "Vickers2016",
+      "description": "Sonification and music, music and sonification",
+      "year": 2016,
+      "openacces": "closed",
+      "citations": 27,
+      "subject areas": [
+        ""
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 4
+    },
+    {
+      "id": "2-s2.0-1542360367_cluster_3",
+      "user": "WatsonSanderson2004",
+      "description": "Sonification supports eyes-free respiratory monitoring and task time-sharing",
+      "year": 2004,
+      "openacces": "closed",
+      "citations": 99,
+      "subject areas": [
+        "Applied Psychology",
+        "Behavioral Neuroscience",
+        "Human Factors and Ergonomics",
+        "Neuroscience",
+        "Psychology",
+        "Social Sciences"
+      ],
+      "scival topics cluster": [
+        "Nuclear Power Plant",
+        "Robot",
+        "Engineering"
+      ],
+      "scival topics": [
+        "Alarm Monitor",
+        "Physiologic Monitoring",
+        "Patient Safety"
+      ],
+      "cluster": 4
+    },
+    {
+      "id": "2-s2.0-85021994558_cluster_3",
+      "user": "VickersHogg2017",
+      "description": "Aesthetics of sonification: Taking the subject-position",
+      "year": 2017,
+      "openacces": "green",
+      "citations": 19,
+      "subject areas": [
+        ""
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 4
+    },
+    {
+      "id": "2-s2.0-84865992559_cluster_3",
+      "user": "GrosshauserBläsing2012",
+      "description": "Wearable sensor-based real-time sonification of motion and foot pressure in dance teaching and training",
+      "year": 2012,
+      "openacces": "unknown",
+      "citations": 48,
+      "subject areas": [
+        "Arts and Humanities",
+        "Engineering",
+        "General Engineering",
+        "Music"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 4
+    },
+    {
+      "id": "2-s2.0-78651248615_cluster_3",
+      "user": "VogtPirrò2010",
+      "description": "PhysioSonic - Evaluated movement sonification as auditory feedback in physiotherapy",
+      "year": 2010,
+      "openacces": "closed",
+      "citations": 34,
+      "subject areas": [
+        "Computer Science",
+        "General Computer Science",
+        "Mathematics",
+        "Theoretical Computer Science"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 4
+    },
+    {
+      "id": "2-s2.0-0033498316_cluster_3",
+      "user": "BelzRobinson1999",
+      "description": "A new class of auditory warning signals for complex systems: Auditory icons",
+      "year": 1999,
+      "openacces": "closed",
+      "citations": 121,
+      "subject areas": [
+        "Applied Psychology",
+        "Behavioral Neuroscience",
+        "Human Factors and Ergonomics",
+        "Neuroscience",
+        "Psychology",
+        "Social Sciences"
+      ],
+      "scival topics cluster": [
+        "Nuclear Power Plant",
+        "Robot",
+        "Engineering"
+      ],
+      "scival topics": [
+        "Alarm Monitor",
+        "Physiologic Monitoring",
+        "Patient Safety"
+      ],
+      "cluster": 4
+    },
+    {
+      "id": "2-s2.0-0036988701_cluster_3",
+      "user": "Walker2002",
+      "description": "Magnitude estimation of conceptual data dimensions for use in sonification",
+      "year": 2002,
+      "openacces": "closed",
+      "citations": 90,
+      "subject areas": [
+        "Experimental and Cognitive Psychology",
+        "Psychology"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 4
+    },
+    {
+      "id": "2-s2.0-84970956386_cluster_3",
+      "user": "DyerStapleton2017",
+      "description": "Transposing musical skill: sonification of movement as concurrent augmented feedback enhances learning in a bimanual task",
+      "year": 2017,
+      "openacces": "hybrid",
+      "citations": 23,
+      "subject areas": [
+        "Arts and Humanities",
+        "Arts and Humanities (miscellaneous)",
+        "Developmental and Educational Psychology",
+        "Experimental and Cognitive Psychology",
+        "Psychology"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Upper Limb",
+        "Motor Control"
+      ],
+      "scival topics": [
+        "Hemispheric Dominance",
+        "Psychomotor Performance",
+        "Motor Control"
+      ],
+      "cluster": 4
+    },
+    {
+      "id": "2-s2.0-84979792051_cluster_3",
+      "user": "CamurriVolpe2016",
+      "description": "The dancer in the eye: Towards a multi-layered computational framework of qualities in movement",
+      "year": 2016,
+      "openacces": "green",
+      "citations": 50,
+      "subject areas": [
+        "Computer Networks and Communications",
+        "Computer Science",
+        "Computer Vision and Pattern Recognition",
+        "Human-Computer Interaction",
+        "Software"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Expression Recognition"
+      ],
+      "scival topics": [
+        "Human Computer Interaction",
+        "Facial Expression",
+        "Robot"
+      ],
+      "cluster": 4
+    },
+    {
+      "id": "2-s2.0-84991111310_cluster_3",
+      "user": "CamurriCanepa2016",
+      "description": "A system to support the learning of movement qualities in dance: A case study on dynamic symmetry",
+      "year": 2016,
+      "openacces": "green",
+      "citations": 26,
+      "subject areas": [
+        ""
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Expression Recognition"
+      ],
+      "scival topics": [
+        "Neural Network",
+        "Support Vector Machine",
+        "Hidden Markov Model"
+      ],
+      "cluster": 4
+    },
+    {
+      "id": "2-s2.0-84892616479_cluster_3",
+      "user": "BrockSchmitz2012",
+      "description": "If motion sounds: Movement sonification based on inertial sensor data",
+      "year": 2012,
+      "openacces": "gold",
+      "citations": 12,
+      "subject areas": [
+        "Engineering",
+        "General Engineering"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 4
+    },
+    {
+      "id": "2-s2.0-58349097927_cluster_3",
+      "user": "ScheefBoecker2009",
+      "description": "Multimodal motion processing in area V5/MT: Evidence from an artificial class of audio-visual events",
+      "year": 2009,
+      "openacces": "closed",
+      "citations": 52,
+      "subject areas": [
+        "Biochemistry, Genetics and Molecular Biology",
+        "Developmental Biology",
+        "General Neuroscience",
+        "Medicine",
+        "Molecular Biology",
+        "Neurology (clinical)",
+        "Neuroscience"
+      ],
+      "scival topics cluster": [
+        "Visual Perception",
+        "Behavior (Neuroscience)",
+        "Individual Differences"
+      ],
+      "scival topics": [
+        "Multisensory Integration",
+        "Auditory Perception",
+        "Brain Mapping"
+      ],
+      "cluster": 4
+    },
+    {
+      "id": "2-s2.0-84904458581_cluster_3",
+      "user": "FrançoiseAlaoui2014",
+      "description": "Vocalizing dance movement for interactive sonification of Laban Effort Factors",
+      "year": 2014,
+      "openacces": "green",
+      "citations": 35,
+      "subject areas": [
+        ""
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Expression Recognition"
+      ],
+      "scival topics": [
+        "Human Computer Interaction",
+        "Facial Expression",
+        "Robot"
+      ],
+      "cluster": 4
+    },
+    {
+      "id": "2-s2.0-0040844859_cluster_3",
+      "user": "LoomisGolledge1998",
+      "description": "Navigation system for the blind: Auditory display modes and guidance",
+      "year": 1998,
+      "openacces": "closed",
+      "citations": 283,
+      "subject areas": [
+        "Computer Science",
+        "Computer Vision and Pattern Recognition",
+        "Control and Systems Engineering",
+        "Engineering",
+        "Human-Computer Interaction",
+        "Software"
+      ],
+      "scival topics cluster": [
+        "Prosthetics",
+        "Robot",
+        "Skeletal Muscle"
+      ],
+      "scival topics": [
+        "Visually Impaired People",
+        "Assistive Technology",
+        "Object Detection"
+      ],
+      "cluster": 4
+    },
+    {
+      "id": "2-s2.0-84860222109_cluster_3",
+      "user": "Barrass2012",
+      "description": "The aesthetic turn in sonification towards a social and cultural medium",
+      "year": 2012,
+      "openacces": "closed",
+      "citations": 29,
+      "subject areas": [
+        "Artificial Intelligence",
+        "Arts and Humanities",
+        "Computer Science",
+        "Human-Computer Interaction",
+        "Philosophy"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 4
+    },
+    {
+      "id": "2-s2.0-84911365559_cluster_3",
+      "user": "FiannacaApostolopoulous2014",
+      "description": "Headlock: A wearable navigation aid that helps blind cane users traverse large open spaces",
+      "year": 2014,
+      "openacces": "closed",
+      "citations": 49,
+      "subject areas": [
+        ""
+      ],
+      "scival topics cluster": [
+        "Prosthetics",
+        "Robot",
+        "Skeletal Muscle"
+      ],
+      "scival topics": [
+        "Visually Impaired People",
+        "Assistive Technology",
+        "Object Detection"
+      ],
+      "cluster": 4
+    },
+    {
+      "id": "2-s2.0-84869594581_cluster_3",
+      "user": "JenseniusBjerkestrand2012",
+      "description": "Exploring micromovements with motion capture and sonification",
+      "year": 2012,
+      "openacces": "closed",
+      "citations": 19,
+      "subject areas": [
+        "Computer Networks and Communications",
+        "Computer Science"
+      ],
+      "scival topics cluster": [
+        "Machine Learning",
+        "Artificial Intelligence",
+        "Auditory Perception"
+      ],
+      "scival topics": [
+        "Rhythm",
+        "Auditory Perception",
+        "Electroencephalography"
+      ],
+      "cluster": 4
+    },
+    {
+      "id": "2-s2.0-84892889849_cluster_3",
+      "user": "Supper2014",
+      "description": "Sublime frequencies: The construction of sublime listening experiences in the sonification of scientific data",
+      "year": 2014,
+      "openacces": "hybrid",
+      "citations": 41,
+      "subject areas": [
+        "Arts and Humanities",
+        "General Social Sciences",
+        "History",
+        "History and Philosophy of Science",
+        "Social Sciences"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 4
+    },
+    {
+      "id": "2-s2.0-34447578955_cluster_3",
+      "user": "Walker2007",
+      "description": "Consistency of magnitude estimations with conceptual data dimensions used for sonification",
+      "year": 2007,
+      "openacces": "green",
+      "citations": 43,
+      "subject areas": [
+        "Arts and Humanities",
+        "Arts and Humanities (miscellaneous)",
+        "Developmental and Educational Psychology",
+        "Experimental and Cognitive Psychology",
+        "Psychology"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 4
+    },
+    {
+      "id": "2-s2.0-41149131898_cluster_3",
+      "user": "WilsonWalker2007",
+      "description": "SWAN: System for wearable audio navigation",
+      "year": 2007,
+      "openacces": "green",
+      "citations": 165,
+      "subject areas": [
+        ""
+      ],
+      "scival topics cluster": [
+        "Prosthetics",
+        "Robot",
+        "Skeletal Muscle"
+      ],
+      "scival topics": [
+        "Visually Impaired People",
+        "Assistive Technology",
+        "Object Detection"
+      ],
+      "cluster": 4
+    },
+    {
+      "id": "2-s2.0-33745966449_cluster_3",
+      "user": "WalkerLindsay2006",
+      "description": "Navigation performance with a virtual auditory display: Effects of beacon sound, capture radius, and practice",
+      "year": 2006,
+      "openacces": "green",
+      "citations": 135,
+      "subject areas": [
+        "Applied Psychology",
+        "Behavioral Neuroscience",
+        "Human Factors and Ergonomics",
+        "Neuroscience",
+        "Psychology",
+        "Social Sciences"
+      ],
+      "scival topics cluster": [
+        "Prosthetics",
+        "Robot",
+        "Skeletal Muscle"
+      ],
+      "scival topics": [
+        "Visually Impaired People",
+        "Assistive Technology",
+        "Object Detection"
+      ],
+      "cluster": 4
+    },
+    {
+      "id": "2-s2.0-85016909437_cluster_3",
+      "user": "WalkerKramer2005",
+      "description": "Mappings and Metaphors in Auditory Displays: An Experimental Assessment",
+      "year": 2005,
+      "openacces": "closed",
+      "citations": 70,
+      "subject areas": [
+        "Computer Science",
+        "Experimental and Cognitive Psychology",
+        "General Computer Science",
+        "Mathematics",
+        "Psychology",
+        "Theoretical Computer Science"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 4
+    },
+    {
+      "id": "2-s2.0-20344382520_cluster_3",
+      "user": "HermannHunt2005",
+      "description": "An introduction to interactive sonification",
+      "year": 2005,
+      "openacces": "green",
+      "citations": 94,
+      "subject areas": [
+        "Computer Science",
+        "Computer Science Applications",
+        "Engineering",
+        "Hardware and Architecture",
+        "Media Technology",
+        "Signal Processing",
+        "Software"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 4
+    },
+    {
+      "id": "2-s2.0-78651574684_cluster_3",
+      "user": "WalkerMauney2010",
+      "description": "Universal design of auditory graphs: A comparison of sonification mappings for visually impaired and sighted listeners",
+      "year": 2010,
+      "openacces": "closed",
+      "citations": 68,
+      "subject areas": [
+        "Computer Science",
+        "Computer Science Applications",
+        "Human-Computer Interaction"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 4
+    },
+    {
+      "id": "2-s2.0-33750944370_cluster_3",
+      "user": "SainarayananNagarajan2007",
+      "description": "Fuzzy image processing scheme for autonomous navigation of human blind",
+      "year": 2007,
+      "openacces": "closed",
+      "citations": 96,
+      "subject areas": [
+        "Computer Science",
+        "Software"
+      ],
+      "scival topics cluster": [
+        "Prosthetics",
+        "Robot",
+        "Skeletal Muscle"
+      ],
+      "scival topics": [
+        "Visually Impaired People",
+        "Assistive Technology",
+        "Object Detection"
+      ],
+      "cluster": 4
+    },
+    {
+      "id": "2-s2.0-0029568049_cluster_3",
+      "user": "FlowersHauer1995",
+      "description": "Musical versus visual graphs: Cross-modal equivalence in perception of time series data",
+      "year": 1995,
+      "openacces": "closed",
+      "citations": 44,
+      "subject areas": [
+        "Applied Psychology",
+        "Behavioral Neuroscience",
+        "Human Factors and Ergonomics",
+        "Neuroscience",
+        "Psychology",
+        "Social Sciences"
+      ],
+      "scival topics cluster": [
+        ""
+      ],
+      "scival topics": [
+        ""
+      ],
+      "cluster": 4
+    },
+    {
+      "id": "2-s2.0-0031141950_cluster_3",
+      "user": "Brewster1997",
+      "description": "Using non-speech sound to overcome information overload",
+      "year": 1997,
+      "openacces": "green",
+      "citations": 72,
+      "subject areas": [
+        "Computer Science",
+        "Electrical and Electronic Engineering",
+        "Engineering",
+        "Hardware and Architecture",
+        "Human-Computer Interaction"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 4
+    },
+    {
+      "id": "2-s2.0-85057393013_cluster_3",
+      "user": "NeesWalker2009",
+      "description": "Auditory interfaces and sonification",
+      "year": 2009,
+      "openacces": "unknown",
+      "citations": 31,
+      "subject areas": [
+        ""
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 4
+    },
+    {
+      "id": "2-s2.0-29744431535_cluster_3",
+      "user": "SmithWalker2005",
+      "description": "Effects of auditory context cues and training on performance of a point estimation sonification task",
+      "year": 2005,
+      "openacces": "green",
+      "citations": 22,
+      "subject areas": [
+        "Arts and Humanities",
+        "Arts and Humanities (miscellaneous)",
+        "Developmental and Educational Psychology",
+        "Experimental and Cognitive Psychology",
+        "Psychology"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 4
+    },
+    {
+      "id": "2-s2.0-0036512035_cluster_3",
+      "user": "NeuhoffWayand2002",
+      "description": "Pitch and loudness interact in auditory displays: Can the data get lost in the map?",
+      "year": 2002,
+      "openacces": "closed",
+      "citations": 64,
+      "subject areas": [
+        "Experimental and Cognitive Psychology",
+        "Psychology"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 4
+    },
+    {
+      "id": "2-s2.0-0028835281_cluster_3",
+      "user": "HaasCasali1995",
+      "description": "Perceived urgency of and response time to multi-tone and frequency-modulated warning signals in broadband noise",
+      "year": 1995,
+      "openacces": "closed",
+      "citations": 115,
+      "subject areas": [
+        "Health Professions",
+        "Human Factors and Ergonomics",
+        "Physical Therapy, Sports Therapy and Rehabilitation",
+        "Social Sciences"
+      ],
+      "scival topics cluster": [
+        ""
+      ],
+      "scival topics": [
+        ""
+      ],
+      "cluster": 4
+    },
+    {
+      "id": "2-s2.0-34248524996_cluster_3",
+      "user": "MarstonLoomis2007",
+      "description": "Orientation & mobility: Nonvisual route following with guidance from a simple haptic or auditory display",
+      "year": 2007,
+      "openacces": "closed",
+      "citations": 57,
+      "subject areas": [
+        "Medicine",
+        "Ophthalmology",
+        "Rehabilitation"
+      ],
+      "scival topics cluster": [
+        "Prosthetics",
+        "Robot",
+        "Skeletal Muscle"
+      ],
+      "scival topics": [
+        "Visually Impaired People",
+        "Assistive Technology",
+        "Object Detection"
+      ],
+      "cluster": 4
+    },
+    {
+      "id": "2-s2.0-0004046903_cluster_3",
+      "user": "PollackFicks1954",
+      "description": "Information of Elementary Multidimensional Auditory Displays",
+      "year": 1954,
+      "openacces": "closed",
+      "citations": 93,
+      "subject areas": [
+        "Acoustics and Ultrasonics",
+        "Arts and Humanities",
+        "Arts and Humanities (miscellaneous)",
+        "Physics and Astronomy"
+      ],
+      "scival topics cluster": [
+        ""
+      ],
+      "scival topics": [
+        ""
+      ],
+      "cluster": 4
+    },
+    {
+      "id": "2-s2.0-85016877281_cluster_3",
+      "user": "FlowersBuhman2005",
+      "description": "Data Sonification from the Desktop: Should Sound Be Part of Standard Data Analysis Software",
+      "year": 2005,
+      "openacces": "closed",
+      "citations": 23,
+      "subject areas": [
+        "Computer Science",
+        "Experimental and Cognitive Psychology",
+        "General Computer Science",
+        "Mathematics",
+        "Psychology",
+        "Theoretical Computer Science"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 4
+    },
+    {
+      "id": "2-s2.0-25444448740_cluster_3",
+      "user": "WalkerLindsay2005",
+      "description": "Using virtual environments to prototype auditory navigation displays",
+      "year": 2005,
+      "openacces": "closed",
+      "citations": 17,
+      "subject areas": [
+        "Health Professions",
+        "Medicine",
+        "Physical Therapy, Sports Therapy and Rehabilitation",
+        "Rehabilitation"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 4
+    },
+    {
+      "id": "2-s2.0-84860066607_cluster_3",
+      "user": "EdworthyHellier2004",
+      "description": "Designing trend-monitoring sounds for helicopters: Methodological issues and an application",
+      "year": 2004,
+      "openacces": "closed",
+      "citations": 18,
+      "subject areas": [
+        "Experimental and Cognitive Psychology",
+        "Psychology"
+      ],
+      "scival topics cluster": [
+        "Nuclear Power Plant",
+        "Robot",
+        "Engineering"
+      ],
+      "scival topics": [
+        "Alarm Monitor",
+        "Physiologic Monitoring",
+        "Patient Safety"
+      ],
+      "cluster": 4
+    },
+    {
+      "id": "2-s2.0-0034149797_cluster_3",
+      "user": "WalkerEhrenstein2000",
+      "description": "Pitch and pitch change interact in auditory displays",
+      "year": 2000,
+      "openacces": "closed",
+      "citations": 25,
+      "subject areas": [
+        "Experimental and Cognitive Psychology",
+        "Psychology"
+      ],
+      "scival topics cluster": [
+        "Robot",
+        "Artificial Intelligence",
+        "Software Engineering"
+      ],
+      "scival topics": [
+        "Sonification",
+        "Human Computer Interaction",
+        "Data Visualization"
+      ],
+      "cluster": 4
+    }
+  ],
+  "links": [
+    {
+      "source": "2-s2.0-85061377945_cluster_0",
+      "target": "2-s2.0-84894138585_cluster_0",
+      "weight": 6
+    },
+    {
+      "source": "2-s2.0-85049655516_cluster_0",
+      "target": "2-s2.0-85021884138_cluster_0",
+      "weight": 7
+    },
+    {
+      "source": "2-s2.0-85021994558_cluster_0",
+      "target": "2-s2.0-85021884138_cluster_0",
+      "weight": 11
+    },
+    {
+      "source": "2-s2.0-85044860190_cluster_0",
+      "target": "2-s2.0-84865992559_cluster_0",
+      "weight": 7
+    },
+    {
+      "source": "2-s2.0-85017185837_cluster_0",
+      "target": "2-s2.0-84894138585_cluster_0",
+      "weight": 6
+    },
+    {
+      "source": "2-s2.0-85046792410_cluster_0",
+      "target": "2-s2.0-0036988701_cluster_0",
+      "weight": 8
+    },
+    {
+      "source": "2-s2.0-84970956386_cluster_0",
+      "target": "2-s2.0-84894138585_cluster_0",
+      "weight": 7
+    },
+    {
+      "source": "2-s2.0-84979792051_cluster_0",
+      "target": "2-s2.0-84991111310_cluster_0",
+      "weight": 7
+    },
+    {
+      "source": "2-s2.0-84979792051_cluster_0",
+      "target": "2-s2.0-84893070216_cluster_0",
+      "weight": 6
+    },
+    {
+      "source": "2-s2.0-85015054154_cluster_0",
+      "target": "2-s2.0-84865992559_cluster_0",
+      "weight": 7
+    },
+    {
+      "source": "2-s2.0-84977657335_cluster_0",
+      "target": "2-s2.0-84894138585_cluster_0",
+      "weight": 6
+    },
+    {
+      "source": "2-s2.0-84973514484_cluster_0",
+      "target": "2-s2.0-84894138585_cluster_0",
+      "weight": 16
+    },
+    {
+      "source": "2-s2.0-84988378007_cluster_0",
+      "target": "2-s2.0-84865992559_cluster_0",
+      "weight": 9
+    },
+    {
+      "source": "2-s2.0-84954098724_cluster_0",
+      "target": "2-s2.0-84865992559_cluster_0",
+      "weight": 11
+    },
+    {
+      "source": "2-s2.0-84963856294_cluster_0",
+      "target": "2-s2.0-0040844859_cluster_0",
+      "weight": 7
+    },
+    {
+      "source": "2-s2.0-84982921020_cluster_0",
+      "target": "2-s2.0-84865992559_cluster_0",
+      "weight": 7
+    },
+    {
+      "source": "2-s2.0-85021884138_cluster_0",
+      "target": "2-s2.0-84893070216_cluster_0",
+      "weight": 8
+    },
+    {
+      "source": "2-s2.0-85021884138_cluster_0",
+      "target": "2-s2.0-84860222109_cluster_0",
+      "weight": 7
+    },
+    {
+      "source": "2-s2.0-84950991167_cluster_0",
+      "target": "2-s2.0-84865992559_cluster_0",
+      "weight": 11
+    },
+    {
+      "source": "2-s2.0-84922900978_cluster_0",
+      "target": "2-s2.0-84865992559_cluster_0",
+      "weight": 6
+    },
+    {
+      "source": "2-s2.0-84953736962_cluster_0",
+      "target": "2-s2.0-84894138585_cluster_0",
+      "weight": 6
+    },
+    {
+      "source": "2-s2.0-84911365559_cluster_0",
+      "target": "2-s2.0-0040844859_cluster_0",
+      "weight": 7
+    },
+    {
+      "source": "2-s2.0-84910045825_cluster_0",
+      "target": "2-s2.0-0040844859_cluster_0",
+      "weight": 6
+    },
+    {
+      "source": "2-s2.0-84904458581_cluster_0",
+      "target": "2-s2.0-84865992559_cluster_0",
+      "weight": 9
+    },
+    {
+      "source": "2-s2.0-84892889849_cluster_0",
+      "target": "2-s2.0-84893070216_cluster_0",
+      "weight": 6
+    },
+    {
+      "source": "2-s2.0-84874935035_cluster_0",
+      "target": "2-s2.0-84894138585_cluster_0",
+      "weight": 13
+    },
+    {
+      "source": "2-s2.0-84894138585_cluster_0",
+      "target": "2-s2.0-84893070216_cluster_0",
+      "weight": 10
+    },
+    {
+      "source": "2-s2.0-84894138585_cluster_0",
+      "target": "2-s2.0-84892616479_cluster_0",
+      "weight": 6
+    },
+    {
+      "source": "2-s2.0-84894138585_cluster_0",
+      "target": "2-s2.0-58349097927_cluster_0",
+      "weight": 6
+    },
+    {
+      "source": "2-s2.0-84894138585_cluster_0",
+      "target": "2-s2.0-20344384538_cluster_0",
+      "weight": 15
+    },
+    {
+      "source": "2-s2.0-84893070216_cluster_0",
+      "target": "2-s2.0-84865992559_cluster_0",
+      "weight": 6
+    },
+    {
+      "source": "2-s2.0-84893070216_cluster_0",
+      "target": "2-s2.0-0036988701_cluster_0",
+      "weight": 11
+    },
+    {
+      "source": "2-s2.0-84893070216_cluster_0",
+      "target": "2-s2.0-0040844859_cluster_0",
+      "weight": 6
+    },
+    {
+      "source": "2-s2.0-84865992559_cluster_0",
+      "target": "2-s2.0-84869594581_cluster_0",
+      "weight": 8
+    },
+    {
+      "source": "2-s2.0-84865992559_cluster_0",
+      "target": "2-s2.0-78651248615_cluster_0",
+      "weight": 6
+    },
+    {
+      "source": "2-s2.0-78651574684_cluster_0",
+      "target": "2-s2.0-0036988701_cluster_0",
+      "weight": 11
+    },
+    {
+      "source": "2-s2.0-85057393013_cluster_0",
+      "target": "2-s2.0-0036988701_cluster_0",
+      "weight": 7
+    },
+    {
+      "source": "2-s2.0-34447578955_cluster_0",
+      "target": "2-s2.0-0036988701_cluster_0",
+      "weight": 26
+    },
+    {
+      "source": "2-s2.0-33750944370_cluster_0",
+      "target": "2-s2.0-0040844859_cluster_0",
+      "weight": 6
+    },
+    {
+      "source": "2-s2.0-34248524996_cluster_0",
+      "target": "2-s2.0-0040844859_cluster_0",
+      "weight": 12
+    },
+    {
+      "source": "2-s2.0-41149131898_cluster_0",
+      "target": "2-s2.0-0040844859_cluster_0",
+      "weight": 18
+    },
+    {
+      "source": "2-s2.0-33745966449_cluster_0",
+      "target": "2-s2.0-0036988701_cluster_0",
+      "weight": 8
+    },
+    {
+      "source": "2-s2.0-33745966449_cluster_0",
+      "target": "2-s2.0-0040844859_cluster_0",
+      "weight": 22
+    },
+    {
+      "source": "2-s2.0-85016909437_cluster_0",
+      "target": "2-s2.0-0036988701_cluster_0",
+      "weight": 20
+    },
+    {
+      "source": "2-s2.0-85016877281_cluster_0",
+      "target": "2-s2.0-0036988701_cluster_0",
+      "weight": 8
+    },
+    {
+      "source": "2-s2.0-29744431535_cluster_0",
+      "target": "2-s2.0-0036988701_cluster_0",
+      "weight": 9
+    },
+    {
+      "source": "2-s2.0-25444448740_cluster_0",
+      "target": "2-s2.0-0040844859_cluster_0",
+      "weight": 8
+    },
+    {
+      "source": "2-s2.0-20344382520_cluster_0",
+      "target": "2-s2.0-0036988701_cluster_0",
+      "weight": 7
+    },
+    {
+      "source": "2-s2.0-1542360367_cluster_0",
+      "target": "2-s2.0-0036988701_cluster_0",
+      "weight": 11
+    },
+    {
+      "source": "2-s2.0-84860066607_cluster_0",
+      "target": "2-s2.0-0036988701_cluster_0",
+      "weight": 8
+    },
+    {
+      "source": "2-s2.0-84860066607_cluster_0",
+      "target": "2-s2.0-0033498316_cluster_0",
+      "weight": 8
+    },
+    {
+      "source": "2-s2.0-84860066607_cluster_0",
+      "target": "2-s2.0-0028835281_cluster_0",
+      "weight": 7
+    },
+    {
+      "source": "2-s2.0-0036512035_cluster_0",
+      "target": "2-s2.0-0036988701_cluster_0",
+      "weight": 10
+    },
+    {
+      "source": "2-s2.0-0036988701_cluster_0",
+      "target": "2-s2.0-0034149797_cluster_0",
+      "weight": 8
+    },
+    {
+      "source": "2-s2.0-0036988701_cluster_0",
+      "target": "2-s2.0-0033498316_cluster_0",
+      "weight": 7
+    },
+    {
+      "source": "2-s2.0-0036988701_cluster_0",
+      "target": "2-s2.0-0031141950_cluster_0",
+      "weight": 6
+    },
+    {
+      "source": "2-s2.0-0036988701_cluster_0",
+      "target": "2-s2.0-0028835281_cluster_0",
+      "weight": 9
+    },
+    {
+      "source": "2-s2.0-0036988701_cluster_0",
+      "target": "2-s2.0-0029568049_cluster_0",
+      "weight": 14
+    },
+    {
+      "source": "2-s2.0-0036988701_cluster_0",
+      "target": "2-s2.0-0004046903_cluster_0",
+      "weight": 6
+    },
+    {
+      "source": "2-s2.0-0040844859_cluster_0",
+      "target": "2-s2.0-0027170085_cluster_0",
+      "weight": 14
+    },
+    {
+      "source": "2-s2.0-85061377945_cluster_1",
+      "target": "2-s2.0-84894138585_cluster_1",
+      "weight": 6
+    },
+    {
+      "source": "2-s2.0-85049655516_cluster_1",
+      "target": "2-s2.0-85021884138_cluster_1",
+      "weight": 7
+    },
+    {
+      "source": "2-s2.0-85021994558_cluster_1",
+      "target": "2-s2.0-85021884138_cluster_1",
+      "weight": 11
+    },
+    {
+      "source": "2-s2.0-85044860190_cluster_1",
+      "target": "2-s2.0-84865992559_cluster_1",
+      "weight": 7
+    },
+    {
+      "source": "2-s2.0-85017185837_cluster_1",
+      "target": "2-s2.0-84894138585_cluster_1",
+      "weight": 6
+    },
+    {
+      "source": "2-s2.0-85046792410_cluster_1",
+      "target": "2-s2.0-0036988701_cluster_1",
+      "weight": 8
+    },
+    {
+      "source": "2-s2.0-84970956386_cluster_1",
+      "target": "2-s2.0-84894138585_cluster_1",
+      "weight": 7
+    },
+    {
+      "source": "2-s2.0-84979792051_cluster_1",
+      "target": "2-s2.0-84991111310_cluster_1",
+      "weight": 7
+    },
+    {
+      "source": "2-s2.0-84979792051_cluster_1",
+      "target": "2-s2.0-84893070216_cluster_1",
+      "weight": 6
+    },
+    {
+      "source": "2-s2.0-85015054154_cluster_1",
+      "target": "2-s2.0-84865992559_cluster_1",
+      "weight": 7
+    },
+    {
+      "source": "2-s2.0-84977657335_cluster_1",
+      "target": "2-s2.0-84894138585_cluster_1",
+      "weight": 6
+    },
+    {
+      "source": "2-s2.0-84973514484_cluster_1",
+      "target": "2-s2.0-84894138585_cluster_1",
+      "weight": 16
+    },
+    {
+      "source": "2-s2.0-84988378007_cluster_1",
+      "target": "2-s2.0-84865992559_cluster_1",
+      "weight": 9
+    },
+    {
+      "source": "2-s2.0-84954098724_cluster_1",
+      "target": "2-s2.0-84865992559_cluster_1",
+      "weight": 11
+    },
+    {
+      "source": "2-s2.0-84963856294_cluster_1",
+      "target": "2-s2.0-0040844859_cluster_1",
+      "weight": 7
+    },
+    {
+      "source": "2-s2.0-84982921020_cluster_1",
+      "target": "2-s2.0-84865992559_cluster_1",
+      "weight": 7
+    },
+    {
+      "source": "2-s2.0-85021884138_cluster_1",
+      "target": "2-s2.0-84893070216_cluster_1",
+      "weight": 8
+    },
+    {
+      "source": "2-s2.0-85021884138_cluster_1",
+      "target": "2-s2.0-84860222109_cluster_1",
+      "weight": 7
+    },
+    {
+      "source": "2-s2.0-84950991167_cluster_1",
+      "target": "2-s2.0-84865992559_cluster_1",
+      "weight": 11
+    },
+    {
+      "source": "2-s2.0-84922900978_cluster_1",
+      "target": "2-s2.0-84865992559_cluster_1",
+      "weight": 6
+    },
+    {
+      "source": "2-s2.0-84953736962_cluster_1",
+      "target": "2-s2.0-84894138585_cluster_1",
+      "weight": 6
+    },
+    {
+      "source": "2-s2.0-84911365559_cluster_1",
+      "target": "2-s2.0-0040844859_cluster_1",
+      "weight": 7
+    },
+    {
+      "source": "2-s2.0-84910045825_cluster_1",
+      "target": "2-s2.0-0040844859_cluster_1",
+      "weight": 6
+    },
+    {
+      "source": "2-s2.0-84904458581_cluster_1",
+      "target": "2-s2.0-84865992559_cluster_1",
+      "weight": 9
+    },
+    {
+      "source": "2-s2.0-84892889849_cluster_1",
+      "target": "2-s2.0-84893070216_cluster_1",
+      "weight": 6
+    },
+    {
+      "source": "2-s2.0-84874935035_cluster_1",
+      "target": "2-s2.0-84894138585_cluster_1",
+      "weight": 13
+    },
+    {
+      "source": "2-s2.0-84894138585_cluster_1",
+      "target": "2-s2.0-84893070216_cluster_1",
+      "weight": 10
+    },
+    {
+      "source": "2-s2.0-84894138585_cluster_1",
+      "target": "2-s2.0-84892616479_cluster_1",
+      "weight": 6
+    },
+    {
+      "source": "2-s2.0-84894138585_cluster_1",
+      "target": "2-s2.0-58349097927_cluster_1",
+      "weight": 6
+    },
+    {
+      "source": "2-s2.0-84894138585_cluster_1",
+      "target": "2-s2.0-20344384538_cluster_1",
+      "weight": 15
+    },
+    {
+      "source": "2-s2.0-84893070216_cluster_1",
+      "target": "2-s2.0-84865992559_cluster_1",
+      "weight": 6
+    },
+    {
+      "source": "2-s2.0-84893070216_cluster_1",
+      "target": "2-s2.0-0036988701_cluster_1",
+      "weight": 11
+    },
+    {
+      "source": "2-s2.0-84893070216_cluster_1",
+      "target": "2-s2.0-0040844859_cluster_1",
+      "weight": 6
+    },
+    {
+      "source": "2-s2.0-84865992559_cluster_1",
+      "target": "2-s2.0-84869594581_cluster_1",
+      "weight": 8
+    },
+    {
+      "source": "2-s2.0-84865992559_cluster_1",
+      "target": "2-s2.0-78651248615_cluster_1",
+      "weight": 6
+    },
+    {
+      "source": "2-s2.0-78651574684_cluster_1",
+      "target": "2-s2.0-0036988701_cluster_1",
+      "weight": 11
+    },
+    {
+      "source": "2-s2.0-85057393013_cluster_1",
+      "target": "2-s2.0-0036988701_cluster_1",
+      "weight": 7
+    },
+    {
+      "source": "2-s2.0-34447578955_cluster_1",
+      "target": "2-s2.0-0036988701_cluster_1",
+      "weight": 26
+    },
+    {
+      "source": "2-s2.0-33750944370_cluster_1",
+      "target": "2-s2.0-0040844859_cluster_1",
+      "weight": 6
+    },
+    {
+      "source": "2-s2.0-34248524996_cluster_1",
+      "target": "2-s2.0-0040844859_cluster_1",
+      "weight": 12
+    },
+    {
+      "source": "2-s2.0-41149131898_cluster_1",
+      "target": "2-s2.0-0040844859_cluster_1",
+      "weight": 18
+    },
+    {
+      "source": "2-s2.0-33745966449_cluster_1",
+      "target": "2-s2.0-0036988701_cluster_1",
+      "weight": 8
+    },
+    {
+      "source": "2-s2.0-33745966449_cluster_1",
+      "target": "2-s2.0-0040844859_cluster_1",
+      "weight": 22
+    },
+    {
+      "source": "2-s2.0-85016909437_cluster_1",
+      "target": "2-s2.0-0036988701_cluster_1",
+      "weight": 20
+    },
+    {
+      "source": "2-s2.0-85016877281_cluster_1",
+      "target": "2-s2.0-0036988701_cluster_1",
+      "weight": 8
+    },
+    {
+      "source": "2-s2.0-29744431535_cluster_1",
+      "target": "2-s2.0-0036988701_cluster_1",
+      "weight": 9
+    },
+    {
+      "source": "2-s2.0-25444448740_cluster_1",
+      "target": "2-s2.0-0040844859_cluster_1",
+      "weight": 8
+    },
+    {
+      "source": "2-s2.0-20344382520_cluster_1",
+      "target": "2-s2.0-0036988701_cluster_1",
+      "weight": 7
+    },
+    {
+      "source": "2-s2.0-1542360367_cluster_1",
+      "target": "2-s2.0-0036988701_cluster_1",
+      "weight": 11
+    },
+    {
+      "source": "2-s2.0-84860066607_cluster_1",
+      "target": "2-s2.0-0036988701_cluster_1",
+      "weight": 8
+    },
+    {
+      "source": "2-s2.0-84860066607_cluster_1",
+      "target": "2-s2.0-0033498316_cluster_1",
+      "weight": 8
+    },
+    {
+      "source": "2-s2.0-84860066607_cluster_1",
+      "target": "2-s2.0-0028835281_cluster_1",
+      "weight": 7
+    },
+    {
+      "source": "2-s2.0-0036512035_cluster_1",
+      "target": "2-s2.0-0036988701_cluster_1",
+      "weight": 10
+    },
+    {
+      "source": "2-s2.0-0036988701_cluster_1",
+      "target": "2-s2.0-0034149797_cluster_1",
+      "weight": 8
+    },
+    {
+      "source": "2-s2.0-0036988701_cluster_1",
+      "target": "2-s2.0-0033498316_cluster_1",
+      "weight": 7
+    },
+    {
+      "source": "2-s2.0-0036988701_cluster_1",
+      "target": "2-s2.0-0031141950_cluster_1",
+      "weight": 6
+    },
+    {
+      "source": "2-s2.0-0036988701_cluster_1",
+      "target": "2-s2.0-0028835281_cluster_1",
+      "weight": 9
+    },
+    {
+      "source": "2-s2.0-0036988701_cluster_1",
+      "target": "2-s2.0-0029568049_cluster_1",
+      "weight": 14
+    },
+    {
+      "source": "2-s2.0-0036988701_cluster_1",
+      "target": "2-s2.0-0004046903_cluster_1",
+      "weight": 6
+    },
+    {
+      "source": "2-s2.0-0040844859_cluster_1",
+      "target": "2-s2.0-0027170085_cluster_1",
+      "weight": 14
+    },
+    {
+      "source": "2-s2.0-85061377945_cluster_2",
+      "target": "2-s2.0-84894138585_cluster_2",
+      "weight": 6
+    },
+    {
+      "source": "2-s2.0-85049655516_cluster_2",
+      "target": "2-s2.0-85021884138_cluster_2",
+      "weight": 7
+    },
+    {
+      "source": "2-s2.0-85021994558_cluster_2",
+      "target": "2-s2.0-85021884138_cluster_2",
+      "weight": 11
+    },
+    {
+      "source": "2-s2.0-85044860190_cluster_2",
+      "target": "2-s2.0-84865992559_cluster_2",
+      "weight": 7
+    },
+    {
+      "source": "2-s2.0-85017185837_cluster_2",
+      "target": "2-s2.0-84894138585_cluster_2",
+      "weight": 6
+    },
+    {
+      "source": "2-s2.0-85046792410_cluster_2",
+      "target": "2-s2.0-0036988701_cluster_2",
+      "weight": 8
+    },
+    {
+      "source": "2-s2.0-84970956386_cluster_2",
+      "target": "2-s2.0-84894138585_cluster_2",
+      "weight": 7
+    },
+    {
+      "source": "2-s2.0-84979792051_cluster_2",
+      "target": "2-s2.0-84991111310_cluster_2",
+      "weight": 7
+    },
+    {
+      "source": "2-s2.0-84979792051_cluster_2",
+      "target": "2-s2.0-84893070216_cluster_2",
+      "weight": 6
+    },
+    {
+      "source": "2-s2.0-85015054154_cluster_2",
+      "target": "2-s2.0-84865992559_cluster_2",
+      "weight": 7
+    },
+    {
+      "source": "2-s2.0-84977657335_cluster_2",
+      "target": "2-s2.0-84894138585_cluster_2",
+      "weight": 6
+    },
+    {
+      "source": "2-s2.0-84973514484_cluster_2",
+      "target": "2-s2.0-84894138585_cluster_2",
+      "weight": 16
+    },
+    {
+      "source": "2-s2.0-84988378007_cluster_2",
+      "target": "2-s2.0-84865992559_cluster_2",
+      "weight": 9
+    },
+    {
+      "source": "2-s2.0-84954098724_cluster_2",
+      "target": "2-s2.0-84865992559_cluster_2",
+      "weight": 11
+    },
+    {
+      "source": "2-s2.0-84963856294_cluster_2",
+      "target": "2-s2.0-0040844859_cluster_2",
+      "weight": 7
+    },
+    {
+      "source": "2-s2.0-84982921020_cluster_2",
+      "target": "2-s2.0-84865992559_cluster_2",
+      "weight": 7
+    },
+    {
+      "source": "2-s2.0-85021884138_cluster_2",
+      "target": "2-s2.0-84893070216_cluster_2",
+      "weight": 8
+    },
+    {
+      "source": "2-s2.0-85021884138_cluster_2",
+      "target": "2-s2.0-84860222109_cluster_2",
+      "weight": 7
+    },
+    {
+      "source": "2-s2.0-84950991167_cluster_2",
+      "target": "2-s2.0-84865992559_cluster_2",
+      "weight": 11
+    },
+    {
+      "source": "2-s2.0-84922900978_cluster_2",
+      "target": "2-s2.0-84865992559_cluster_2",
+      "weight": 6
+    },
+    {
+      "source": "2-s2.0-84953736962_cluster_2",
+      "target": "2-s2.0-84894138585_cluster_2",
+      "weight": 6
+    },
+    {
+      "source": "2-s2.0-84911365559_cluster_2",
+      "target": "2-s2.0-0040844859_cluster_2",
+      "weight": 7
+    },
+    {
+      "source": "2-s2.0-84910045825_cluster_2",
+      "target": "2-s2.0-0040844859_cluster_2",
+      "weight": 6
+    },
+    {
+      "source": "2-s2.0-84904458581_cluster_2",
+      "target": "2-s2.0-84865992559_cluster_2",
+      "weight": 9
+    },
+    {
+      "source": "2-s2.0-84892889849_cluster_2",
+      "target": "2-s2.0-84893070216_cluster_2",
+      "weight": 6
+    },
+    {
+      "source": "2-s2.0-84874935035_cluster_2",
+      "target": "2-s2.0-84894138585_cluster_2",
+      "weight": 13
+    },
+    {
+      "source": "2-s2.0-84894138585_cluster_2",
+      "target": "2-s2.0-84893070216_cluster_2",
+      "weight": 10
+    },
+    {
+      "source": "2-s2.0-84894138585_cluster_2",
+      "target": "2-s2.0-84892616479_cluster_2",
+      "weight": 6
+    },
+    {
+      "source": "2-s2.0-84894138585_cluster_2",
+      "target": "2-s2.0-58349097927_cluster_2",
+      "weight": 6
+    },
+    {
+      "source": "2-s2.0-84894138585_cluster_2",
+      "target": "2-s2.0-20344384538_cluster_2",
+      "weight": 15
+    },
+    {
+      "source": "2-s2.0-84893070216_cluster_2",
+      "target": "2-s2.0-84865992559_cluster_2",
+      "weight": 6
+    },
+    {
+      "source": "2-s2.0-84893070216_cluster_2",
+      "target": "2-s2.0-0036988701_cluster_2",
+      "weight": 11
+    },
+    {
+      "source": "2-s2.0-84893070216_cluster_2",
+      "target": "2-s2.0-0040844859_cluster_2",
+      "weight": 6
+    },
+    {
+      "source": "2-s2.0-84865992559_cluster_2",
+      "target": "2-s2.0-84869594581_cluster_2",
+      "weight": 8
+    },
+    {
+      "source": "2-s2.0-84865992559_cluster_2",
+      "target": "2-s2.0-78651248615_cluster_2",
+      "weight": 6
+    },
+    {
+      "source": "2-s2.0-78651574684_cluster_2",
+      "target": "2-s2.0-0036988701_cluster_2",
+      "weight": 11
+    },
+    {
+      "source": "2-s2.0-85057393013_cluster_2",
+      "target": "2-s2.0-0036988701_cluster_2",
+      "weight": 7
+    },
+    {
+      "source": "2-s2.0-34447578955_cluster_2",
+      "target": "2-s2.0-0036988701_cluster_2",
+      "weight": 26
+    },
+    {
+      "source": "2-s2.0-33750944370_cluster_2",
+      "target": "2-s2.0-0040844859_cluster_2",
+      "weight": 6
+    },
+    {
+      "source": "2-s2.0-34248524996_cluster_2",
+      "target": "2-s2.0-0040844859_cluster_2",
+      "weight": 12
+    },
+    {
+      "source": "2-s2.0-41149131898_cluster_2",
+      "target": "2-s2.0-0040844859_cluster_2",
+      "weight": 18
+    },
+    {
+      "source": "2-s2.0-33745966449_cluster_2",
+      "target": "2-s2.0-0036988701_cluster_2",
+      "weight": 8
+    },
+    {
+      "source": "2-s2.0-33745966449_cluster_2",
+      "target": "2-s2.0-0040844859_cluster_2",
+      "weight": 22
+    },
+    {
+      "source": "2-s2.0-85016909437_cluster_2",
+      "target": "2-s2.0-0036988701_cluster_2",
+      "weight": 20
+    },
+    {
+      "source": "2-s2.0-85016877281_cluster_2",
+      "target": "2-s2.0-0036988701_cluster_2",
+      "weight": 8
+    },
+    {
+      "source": "2-s2.0-29744431535_cluster_2",
+      "target": "2-s2.0-0036988701_cluster_2",
+      "weight": 9
+    },
+    {
+      "source": "2-s2.0-25444448740_cluster_2",
+      "target": "2-s2.0-0040844859_cluster_2",
+      "weight": 8
+    },
+    {
+      "source": "2-s2.0-20344382520_cluster_2",
+      "target": "2-s2.0-0036988701_cluster_2",
+      "weight": 7
+    },
+    {
+      "source": "2-s2.0-1542360367_cluster_2",
+      "target": "2-s2.0-0036988701_cluster_2",
+      "weight": 11
+    },
+    {
+      "source": "2-s2.0-84860066607_cluster_2",
+      "target": "2-s2.0-0036988701_cluster_2",
+      "weight": 8
+    },
+    {
+      "source": "2-s2.0-84860066607_cluster_2",
+      "target": "2-s2.0-0033498316_cluster_2",
+      "weight": 8
+    },
+    {
+      "source": "2-s2.0-84860066607_cluster_2",
+      "target": "2-s2.0-0028835281_cluster_2",
+      "weight": 7
+    },
+    {
+      "source": "2-s2.0-0036512035_cluster_2",
+      "target": "2-s2.0-0036988701_cluster_2",
+      "weight": 10
+    },
+    {
+      "source": "2-s2.0-0036988701_cluster_2",
+      "target": "2-s2.0-0034149797_cluster_2",
+      "weight": 8
+    },
+    {
+      "source": "2-s2.0-0036988701_cluster_2",
+      "target": "2-s2.0-0033498316_cluster_2",
+      "weight": 7
+    },
+    {
+      "source": "2-s2.0-0036988701_cluster_2",
+      "target": "2-s2.0-0031141950_cluster_2",
+      "weight": 6
+    },
+    {
+      "source": "2-s2.0-0036988701_cluster_2",
+      "target": "2-s2.0-0028835281_cluster_2",
+      "weight": 9
+    },
+    {
+      "source": "2-s2.0-0036988701_cluster_2",
+      "target": "2-s2.0-0029568049_cluster_2",
+      "weight": 14
+    },
+    {
+      "source": "2-s2.0-0036988701_cluster_2",
+      "target": "2-s2.0-0004046903_cluster_2",
+      "weight": 6
+    },
+    {
+      "source": "2-s2.0-0040844859_cluster_2",
+      "target": "2-s2.0-0027170085_cluster_2",
+      "weight": 14
+    },
+    {
+      "source": "2-s2.0-85061377945_cluster_3",
+      "target": "2-s2.0-84894138585_cluster_3",
+      "weight": 6
+    },
+    {
+      "source": "2-s2.0-85049655516_cluster_3",
+      "target": "2-s2.0-85021884138_cluster_3",
+      "weight": 7
+    },
+    {
+      "source": "2-s2.0-85021994558_cluster_3",
+      "target": "2-s2.0-85021884138_cluster_3",
+      "weight": 11
+    },
+    {
+      "source": "2-s2.0-85044860190_cluster_3",
+      "target": "2-s2.0-84865992559_cluster_3",
+      "weight": 7
+    },
+    {
+      "source": "2-s2.0-85017185837_cluster_3",
+      "target": "2-s2.0-84894138585_cluster_3",
+      "weight": 6
+    },
+    {
+      "source": "2-s2.0-85046792410_cluster_3",
+      "target": "2-s2.0-0036988701_cluster_3",
+      "weight": 8
+    },
+    {
+      "source": "2-s2.0-84970956386_cluster_3",
+      "target": "2-s2.0-84894138585_cluster_3",
+      "weight": 7
+    },
+    {
+      "source": "2-s2.0-84979792051_cluster_3",
+      "target": "2-s2.0-84991111310_cluster_3",
+      "weight": 7
+    },
+    {
+      "source": "2-s2.0-84979792051_cluster_3",
+      "target": "2-s2.0-84893070216_cluster_3",
+      "weight": 6
+    },
+    {
+      "source": "2-s2.0-85015054154_cluster_3",
+      "target": "2-s2.0-84865992559_cluster_3",
+      "weight": 7
+    },
+    {
+      "source": "2-s2.0-84977657335_cluster_3",
+      "target": "2-s2.0-84894138585_cluster_3",
+      "weight": 6
+    },
+    {
+      "source": "2-s2.0-84973514484_cluster_3",
+      "target": "2-s2.0-84894138585_cluster_3",
+      "weight": 16
+    },
+    {
+      "source": "2-s2.0-84988378007_cluster_3",
+      "target": "2-s2.0-84865992559_cluster_3",
+      "weight": 9
+    },
+    {
+      "source": "2-s2.0-84954098724_cluster_3",
+      "target": "2-s2.0-84865992559_cluster_3",
+      "weight": 11
+    },
+    {
+      "source": "2-s2.0-84963856294_cluster_3",
+      "target": "2-s2.0-0040844859_cluster_3",
+      "weight": 7
+    },
+    {
+      "source": "2-s2.0-84982921020_cluster_3",
+      "target": "2-s2.0-84865992559_cluster_3",
+      "weight": 7
+    },
+    {
+      "source": "2-s2.0-85021884138_cluster_3",
+      "target": "2-s2.0-84893070216_cluster_3",
+      "weight": 8
+    },
+    {
+      "source": "2-s2.0-85021884138_cluster_3",
+      "target": "2-s2.0-84860222109_cluster_3",
+      "weight": 7
+    },
+    {
+      "source": "2-s2.0-84950991167_cluster_3",
+      "target": "2-s2.0-84865992559_cluster_3",
+      "weight": 11
+    },
+    {
+      "source": "2-s2.0-84922900978_cluster_3",
+      "target": "2-s2.0-84865992559_cluster_3",
+      "weight": 6
+    },
+    {
+      "source": "2-s2.0-84953736962_cluster_3",
+      "target": "2-s2.0-84894138585_cluster_3",
+      "weight": 6
+    },
+    {
+      "source": "2-s2.0-84911365559_cluster_3",
+      "target": "2-s2.0-0040844859_cluster_3",
+      "weight": 7
+    },
+    {
+      "source": "2-s2.0-84910045825_cluster_3",
+      "target": "2-s2.0-0040844859_cluster_3",
+      "weight": 6
+    },
+    {
+      "source": "2-s2.0-84904458581_cluster_3",
+      "target": "2-s2.0-84865992559_cluster_3",
+      "weight": 9
+    },
+    {
+      "source": "2-s2.0-84892889849_cluster_3",
+      "target": "2-s2.0-84893070216_cluster_3",
+      "weight": 6
+    },
+    {
+      "source": "2-s2.0-84874935035_cluster_3",
+      "target": "2-s2.0-84894138585_cluster_3",
+      "weight": 13
+    },
+    {
+      "source": "2-s2.0-84894138585_cluster_3",
+      "target": "2-s2.0-84893070216_cluster_3",
+      "weight": 10
+    },
+    {
+      "source": "2-s2.0-84894138585_cluster_3",
+      "target": "2-s2.0-84892616479_cluster_3",
+      "weight": 6
+    },
+    {
+      "source": "2-s2.0-84894138585_cluster_3",
+      "target": "2-s2.0-58349097927_cluster_3",
+      "weight": 6
+    },
+    {
+      "source": "2-s2.0-84894138585_cluster_3",
+      "target": "2-s2.0-20344384538_cluster_3",
+      "weight": 15
+    },
+    {
+      "source": "2-s2.0-84893070216_cluster_3",
+      "target": "2-s2.0-84865992559_cluster_3",
+      "weight": 6
+    },
+    {
+      "source": "2-s2.0-84893070216_cluster_3",
+      "target": "2-s2.0-0036988701_cluster_3",
+      "weight": 11
+    },
+    {
+      "source": "2-s2.0-84893070216_cluster_3",
+      "target": "2-s2.0-0040844859_cluster_3",
+      "weight": 6
+    },
+    {
+      "source": "2-s2.0-84865992559_cluster_3",
+      "target": "2-s2.0-84869594581_cluster_3",
+      "weight": 8
+    },
+    {
+      "source": "2-s2.0-84865992559_cluster_3",
+      "target": "2-s2.0-78651248615_cluster_3",
+      "weight": 6
+    },
+    {
+      "source": "2-s2.0-78651574684_cluster_3",
+      "target": "2-s2.0-0036988701_cluster_3",
+      "weight": 11
+    },
+    {
+      "source": "2-s2.0-85057393013_cluster_3",
+      "target": "2-s2.0-0036988701_cluster_3",
+      "weight": 7
+    },
+    {
+      "source": "2-s2.0-34447578955_cluster_3",
+      "target": "2-s2.0-0036988701_cluster_3",
+      "weight": 26
+    },
+    {
+      "source": "2-s2.0-33750944370_cluster_3",
+      "target": "2-s2.0-0040844859_cluster_3",
+      "weight": 6
+    },
+    {
+      "source": "2-s2.0-34248524996_cluster_3",
+      "target": "2-s2.0-0040844859_cluster_3",
+      "weight": 12
+    },
+    {
+      "source": "2-s2.0-41149131898_cluster_3",
+      "target": "2-s2.0-0040844859_cluster_3",
+      "weight": 18
+    },
+    {
+      "source": "2-s2.0-33745966449_cluster_3",
+      "target": "2-s2.0-0036988701_cluster_3",
+      "weight": 8
+    },
+    {
+      "source": "2-s2.0-33745966449_cluster_3",
+      "target": "2-s2.0-0040844859_cluster_3",
+      "weight": 22
+    },
+    {
+      "source": "2-s2.0-85016909437_cluster_3",
+      "target": "2-s2.0-0036988701_cluster_3",
+      "weight": 20
+    },
+    {
+      "source": "2-s2.0-85016877281_cluster_3",
+      "target": "2-s2.0-0036988701_cluster_3",
+      "weight": 8
+    },
+    {
+      "source": "2-s2.0-29744431535_cluster_3",
+      "target": "2-s2.0-0036988701_cluster_3",
+      "weight": 9
+    },
+    {
+      "source": "2-s2.0-25444448740_cluster_3",
+      "target": "2-s2.0-0040844859_cluster_3",
+      "weight": 8
+    },
+    {
+      "source": "2-s2.0-20344382520_cluster_3",
+      "target": "2-s2.0-0036988701_cluster_3",
+      "weight": 7
+    },
+    {
+      "source": "2-s2.0-1542360367_cluster_3",
+      "target": "2-s2.0-0036988701_cluster_3",
+      "weight": 11
+    },
+    {
+      "source": "2-s2.0-84860066607_cluster_3",
+      "target": "2-s2.0-0036988701_cluster_3",
+      "weight": 8
+    },
+    {
+      "source": "2-s2.0-84860066607_cluster_3",
+      "target": "2-s2.0-0033498316_cluster_3",
+      "weight": 8
+    },
+    {
+      "source": "2-s2.0-84860066607_cluster_3",
+      "target": "2-s2.0-0028835281_cluster_3",
+      "weight": 7
+    },
+    {
+      "source": "2-s2.0-0036512035_cluster_3",
+      "target": "2-s2.0-0036988701_cluster_3",
+      "weight": 10
+    },
+    {
+      "source": "2-s2.0-0036988701_cluster_3",
+      "target": "2-s2.0-0034149797_cluster_3",
+      "weight": 8
+    },
+    {
+      "source": "2-s2.0-0036988701_cluster_3",
+      "target": "2-s2.0-0033498316_cluster_3",
+      "weight": 7
+    },
+    {
+      "source": "2-s2.0-0036988701_cluster_3",
+      "target": "2-s2.0-0031141950_cluster_3",
+      "weight": 6
+    },
+    {
+      "source": "2-s2.0-0036988701_cluster_3",
+      "target": "2-s2.0-0028835281_cluster_3",
+      "weight": 9
+    },
+    {
+      "source": "2-s2.0-0036988701_cluster_3",
+      "target": "2-s2.0-0029568049_cluster_3",
+      "weight": 14
+    },
+    {
+      "source": "2-s2.0-0036988701_cluster_3",
+      "target": "2-s2.0-0004046903_cluster_3",
+      "weight": 6
+    },
+    {
+      "source": "2-s2.0-0040844859_cluster_3",
+      "target": "2-s2.0-0027170085_cluster_3",
+      "weight": 14
+    }
+  ]
 }
