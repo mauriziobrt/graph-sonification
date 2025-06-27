@@ -66,4 +66,4 @@ def save_json_to_file(data, file_path):
 if __name__ == "__main__":
     # Your original data (can also be loaded from file)
    original_file = load_json_from_file("public/data/fake_son.json")
-   save_json_to_file(replicate_graph_clusters(original_file, 4), "public/data/fab_son.json")
+   save_json_to_file(replicate_graph_clusters(original_file, 4), "public/data/1-hover.json")

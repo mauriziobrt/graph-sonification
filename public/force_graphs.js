@@ -92,15 +92,15 @@ var obj = {
 }
 
 var filedata = {"1-hover": ["./data/1-hover.json", "./data/1-config.yml"],
-    "2-transition": ["./data/2-transition.json", "./data/2-config.yml"],
-    "3-bubbles": ["./data/3-bubbles.json", "./data/3-config.yml"],
+    "2-bubbles": ["./data/2-bubbles.json", "./data/2-config.yml"],
+    "3-transition": ["./data/3-transition.json", "./data/3-config.yml"],
     "4-bib-coupling": ["./data/4-bib-coupling.json", "./data/4-config.yml"],
     "5-cit-coupling": ["./data/5-co-cit-coupling.json", "./data/5-config.yml"],
     // "7-test-db": ["./data/network_graph.json", "./data/6-config.yml"]
 }
 
 gui.add(obj, "hoverOn");
-gui.add(obj, "file", ["1-hover", "2-transition","3-bubbles","4-bib-coupling", "5-cit-coupling"])
+gui.add(obj, "file", ["1-hover", "2-bubbles","3-transition","4-bib-coupling", "5-cit-coupling"])
 gui.add(obj, "textDisplay");
 gui.add(obj, "textHelp");
 
@@ -213,6 +213,7 @@ function initializeEventListeners() {
                 selectNode(nextNode, true, graph);
                 // console.log(nextNode)
                 document.getElementById("content").innerText = nextNode["description"];
+                document.getElementById("currentCluster").innerText = nextNode["cluster"];
                 // playFaust(220, degree[nextNode.id], "additiveplus", additivePlusNode, audioContext);
                 sendOSCMessage(nextNode, "/wasd", degree[nextNode.id])
                 // console.log(degree)
@@ -248,7 +249,7 @@ function main(fileName) {
     fetchExternalData(fileName || obj.file).then(
         (data) => {
             data = data[0];
-
+            degree = {};
             // Calculate node degrees
             data.links.forEach(link => {
                 // console.log(link.source, link.target, link.weight);
@@ -259,6 +260,14 @@ function main(fileName) {
             const max = data.links.reduce((prev, current) => (prev && prev.weight > current.weight) ? prev : current)
             // console.log(max.weight)
             maxWeight = max.weight;
+
+            // maxDegree = 
+            const maxValue = Math.max(...Object.values(degree));
+            maxDegree = maxValue
+            
+            // const maxCitations = Math.max(...Object.values(data["nodes"]["citations"]))
+            const maxCitations = Math.max(...data.nodes.map(node => node.citations));
+            console.log(maxCitations)
             // Find where the source is the starting point, get an array of that and then find where the target is the end point, there you have the weight
 
             const elem = document.getElementById('graph');
@@ -275,7 +284,7 @@ function main(fileName) {
                     .linkWidth(link => link.weight / 2.0)
                     .linkColor(() => linkStaticColor)
                     .nodeVal(node => degree[node.id] || 1) // Default to 1 if no links
-                    .d3Force('charge', d3.forceManyBody().strength(node => -degree[node.id] * 20)) // Repulsion
+                    .d3Force('charge', d3.forceManyBody().strength(node => -degree[node.id] * repulsionVal)) // Repulsion
                     .d3Force('collision', d3.forceCollide(node => degree[node.id] * 2)) // Prevent overlap
                     .linkDirectionalParticles(2)
                     .graphData(data)
@@ -288,6 +297,7 @@ function main(fileName) {
                             if (hoverOn) {
                                 selectNode(node, false, graph);
                                 document.getElementById("content").innerText = node["description"];
+                                document.getElementById("currentCluster").innerText = node["cluster"];
                                 sendOSCMessage(node, "/control", degree[node.id])
                             }
                             }
@@ -308,6 +318,7 @@ function main(fileName) {
                     document.getElementById("citations").innerText = node["citations"];
                     document.getElementById("year").innerText = node["year"];
                     document.getElementById("co-citations").innerText = degree[node.id];
+                    document.getElementById("currentCluster").innerText = node["cluster"];
                     
                     if (shiftKeyPressed) {
                         shiftSelection(node, graph, degree);
@@ -346,7 +357,7 @@ function main(fileName) {
                 // For example, if you used a color scale based on user property:
                 return colorScale(node.openacces);
             });
-
+            // graph.nodeColor(node => node["color"] ? 'red' : 'blue');
 
             // Function to handle background clicks with Force Graph library
             function setupBackgroundClick(graph) {
@@ -358,12 +369,15 @@ function main(fileName) {
                 highlightedPath = [];
                 clearActiveAnimations();
                 clearTransitionAnimations();
+                // graph.nodeColor(node => node["color"] ? 'red' : 'blue');
+
                 graph.nodeColor(node => {
                     // Use the same coloring scheme you had initially
                     // For example, if you used a color scale based on user property:
                     return colorScale(node.openacces);
                     });
                 // Reset link coloring and width
+
                 graph.linkCurvature(0.2)
                 graph.linkWidth(node => node.weight / 2.0)
                 });
@@ -394,8 +408,8 @@ function updateGraphData(fileName) {
 }
 
 load_yml("./data/5-config.yml")
-main("./data/5-co-cit-coupling.json")
-// main("./data/1-hover.json")
+// main("./data/5-co-cit-coupling.json")
+main("./data/1-hover.json")
 // main("./data/network_graph.json")
 // main("./data/fake_son.json")
 // main("./data/fab_son.json")

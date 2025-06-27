@@ -38,7 +38,7 @@ An interactive interface for the sonification of graphs using OSC (Open Sound Co
    node server.js
    ```
    
-2. **Open the displayed URL** in your web browser (typically `http://localhost:7000`)
+2. **Open the displayed URL** in your web browser (typically `http://localhost:7700`)
 
 3. **Configure SuperCollider:**
    - Open the file `graph_communication.scd` in SuperCollider

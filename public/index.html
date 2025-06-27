@@ -35,7 +35,18 @@
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-
+.clustername {
+  pointer-events: none;
+  position: absolute;
+  bottom:20px;
+  left: 20px;
+  font-size: 16px;
+  line-height: 10%;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.675);
+    z-index: 1;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
 .simple_text {
   position: relative;
@@ -150,6 +161,9 @@ input:checked + .slider:before {
     background click = reset play<br>
     if hover on -> play onhover
   </div> 
+  <div class="clustername" id="currentTextBox" style="z-index: 0;">
+    Current Cluster:  <p class="simple_text" id="currentCluster">none</p>
+  </div>
   <script type="module" src="./audio/create-node.js"></script>
   
   <script type="module" src="force_graphs.js"></script>

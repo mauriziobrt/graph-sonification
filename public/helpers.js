@@ -31,12 +31,12 @@ function connectWebSocket() {
 function sendOSCMessage(node, address, degree) {
     if (ws && ws.readyState === WebSocket.OPEN) {
         const cit = node["citations"];
-        timeCit = mapNumRange(cit, 0,836,5000,10000);
+        // timeCit = mapNumRange(cit, 0,836,5000,10000);
         // console.log("TIME SENT: ", timeCit)
         if (node["cluster"]) {
             const message = {
                 address: address,
-                args: [node["id"], node["openacces"],cit, degree, timeCit, node["year"], node["x"], node["y"], node["cluster"]]
+                args: [node["id"], node["openacces"],cit, degree, currentWeightTime, node["year"], node["x"], node["y"], node["cluster"], maxDegree, maxCit]
             };
             document.getElementById("openaccess").innerText = node["openacces"];
             document.getElementById("citations").innerText = cit;
@@ -47,7 +47,7 @@ function sendOSCMessage(node, address, degree) {
         {
             const message = {
             address: address,
-            args: [node["id"], node["openacces"],cit, degree, timeCit, node["year"], node["x"], node["y"], 1]
+            args: [node["id"], node["openacces"],cit, degree, currentWeightTime, node["year"], node["x"], node["y"], 1, maxDegree, maxCit]
             };
             document.getElementById("openaccess").innerText = node["openacces"];
             document.getElementById("citations").innerText = cit;
@@ -67,7 +67,7 @@ function sendOSCStopMessage(address) {
     if (ws && ws.readyState === WebSocket.OPEN) {
         const message = {
             address: address,
-            args: [0, 0 , 0, 0, 0]  // Send frequency as a number
+            args: [0, 0 , 0, 0, 0, 0 , 0, 0, 1, 100,100]  // Send frequency as a number
         };
         ws.send(JSON.stringify(message));
         console.log('Sent message:', message);

@@ -351,7 +351,8 @@ SynthDef("help-KlankOverlapTexture",
 );
 (
 OSCdef(\bubbleControl, {|msg, time, addr, recvPort|
-	var bell1, bell2, bell3, bell4, bell5, freq, rel;
+	var bell1, bell2, bell3, bell4, bell5, freq, rel, maxlength;
+	maxlength = 20;
 	bell1 = [ 3958.2691669464, 2219.5205450058, 3720.8760738373, 3930.4407596588, 827.31196880341, 3670.5682277679, 550.56445598602, 3677.7821779251, 581.56654834747, 3224.8901605606, 2330.4237604141, 756.98308944702 ];
 	bell2 = [ 223.22008609772, 1996.9875097275, 3631.1988592148, 753.74145507812, 659.04550552368, 953.89244556427, 612.56682872772, 426.58507823944, 1644.7909116745, 875.82595348358, 1946.9505548477, 3229.9587249756 ];
 	bell3 = [ 3901.8504142761, 3278.7544727325, 3938.3745193481, 1065.1204586029, 3879.1404008865, 3816.3529872894, 2989.7552490234, 1730.3744077682, 678.00426483154, 2374.1246700287, 2525.9301900864, 3549.2574453354 ];
@@ -361,19 +362,19 @@ OSCdef(\bubbleControl, {|msg, time, addr, recvPort|
 	switch (msg[9],
 		1, {//1. Nodo grande → Low pitch + Long sound - Nodo piccolo → High pitch + Short Sound
 			freq = ([bell1, bell2, bell3, bell4, bell5].choose)/msg[4].linlin(0,60,0.5,5);
-			rel = (msg[4].linlin(0,60,100,1300)/50);
+			rel = (msg[4].linlin(0,60,0,maxlength)).postln;
 		},
 		2, { //2. Nodo grande → High pitch + Long sound - Nodo piccolo → Low pitch + Short Sound
 			freq = ([bell1, bell2, bell3, bell4, bell5].choose)/msg[4].linlin(0,60,5,0.5);
-			rel = (msg[4].linlin(0,60,1300,100)/50);
+			rel = (msg[4].linlin(0,60,maxlength,0));
 		},
 		3, {//3. Nodo grande → Low pitch + Short sound - Nodo piccolo → Low pitch + Long Sound
 			freq = ([bell1, bell2, bell3, bell4, bell5].choose)/msg[4].linlin(0,60,0.5,5);
-			rel = (msg[4].linlin(0,60,100,1300)/50);
+			rel = (msg[4].linlin(0,60,0,maxlength));
 		},
 		4, {//4. Nodo grande → High pitch + Short sound - Nodo piccolo → Low pitch + Long Sound
 			freq = ([bell1, bell2, bell3, bell4, bell5].choose)/msg[4].linlin(0,60,0.5,5);
-			rel = (msg[4].linlin(0,60,1300,100)/50);
+			rel = (msg[4].linlin(0,60,maxlength,0));
 		},
 	);
 	Synth("help-KlankOverlapTexture", [
@@ -381,10 +382,10 @@ OSCdef(\bubbleControl, {|msg, time, addr, recvPort|
 		\sus, 0,
 		\rel, 4,
 		\pan, 1.0.rand2,
-		\amp, (msg[3].linlin(0,200,-5,-1).dbamp),
+		\amp, (msg[3].linlin(0,200,-10,-5).dbamp),
 		\freqs, freq,
 		\rings, {0.1.rrand(msg[3]/10.0)}.dup(12),
-		\rel, (msg[4].linlin(0,60,100,1300)/50)
+		\rel, rel
         ]);
 }, '/bubbles');
 );
@@ -394,15 +395,19 @@ OSCdef(\bubbleControl, {|msg, time, addr, recvPort|
 // UPDATED TRANSITION
 //================================================================================================================================================
 // 4 blocchi con opposizione timbro/pitch pairwise - ciascuno di circa 20 nodi con diverse connessioni
+)
 (
 l = 0;
 OSCdef(\transitionControl, {|msg, time, addr, recvPort|
-	var cit, coupling, cluster, freq, my_time, nr_resonators;
-	a = Scale.major;
+	var cit, coupling, cluster, freq, my_time, nr_resonators, max_degree, max_cit;
+	msg.postln;
+	a = Scale.minor;
 	cit = msg[3];
 	coupling = msg[4];
 	cluster = msg[9];
-	my_time = msg[5] /1000;
+	max_degree = msg[10].postln;
+	max_cit = msg[11].postln;
+	my_time = msg[5] /1000.postln;
 	if( l == 0,
 		{l = my_time; Ndef(\resControlled).fadeTime_(l/4); "Start".postln},
 		{}
@@ -412,20 +417,20 @@ OSCdef(\transitionControl, {|msg, time, addr, recvPort|
 	(
 		switch (cluster,
 			1, { //1. Big node → Low pitch → Bright - Small node → High pitch → Dark
-				freq = ((cit + 1).linlin(0,850,100, 800));
-				nr_resonators = coupling + 1; //inverti con il valore massimo di cit/co-cit
+				freq = ((coupling + 1).linlin(0,max_degree,100, 800));
+				nr_resonators = cit.linlin(0,max_cit,1, 50) + 1; //inverti con il valore massimo di cit/co-cit
 			},
 			2, { //2. Big node → High pitch → Dark - Small node → Low pitch → Bright
-				freq = ((cit + 1).linlin(0,850,800, 100));
-				nr_resonators = coupling + 1;
+				freq = ((coupling + 1).linlin(0,max_degree,800, 100));
+				nr_resonators = cit.linlin(0,max_cit,1, 50) + 1;
 			},
 			3, { //3. Big node → High pitch → Bright - Small node → High pitch → Dark
-				freq = ((cit + 1).linlin(0,850,100, 800));
-				nr_resonators = coupling + 1;
+				freq = ((coupling + 1).linlin(0,max_degree,100, 800));
+				nr_resonators = (max_cit - cit).linlin(0,max_cit,1, 50) + 1;
 			},
 			4, { //4 Big node → Low pitch → Dark - Small node → Low pitch → Bright
-				freq = ((cit + 1).linlin(0,850,800, 100));
-				nr_resonators = coupling + 1;
+				freq = ((coupling + 1).linlin(0,max_degree,800, 100));
+				nr_resonators = (max_cit - cit).linlin(0,max_cit,1, 50) + 1;
 			},
 		);
 		Ndef(\resControlled, {
@@ -440,5 +445,4 @@ OSCdef(\transitionControl, {|msg, time, addr, recvPort|
 		{Ndef(\resControlled).play; Ndef(\resControlled).fadeTime_(l/2);l = my_time;"Continue".postln}    // false function
 	);
 }, '/additive');
-)
 )

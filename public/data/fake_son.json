@@ -1,6 +1,54 @@
 {
     "nodes": [
         {
+            "id": "2-s2.0-85028987855",
+            "user": "RoodakiNavab2017",
+            "description": "SonifEye: Sonification of Visual Information Using Physical Modeling Sound Synthesis",
+            "year": 2017,
+            "openacces": "closed",
+            "citations": 24,
+            "subject areas": [
+                "Computer Graphics and Computer-Aided Design",
+                "Computer Science",
+                "Computer Vision and Pattern Recognition",
+                "Signal Processing",
+                "Software"
+            ],
+            "scival topics cluster": [
+                "Robot",
+                "Artificial Intelligence",
+                "Software Engineering"
+            ],
+            "scival topics": [
+                "Sonification",
+                "Human Computer Interaction",
+                "Data Visualization"
+            ]
+        },
+        {
+            "id": "2-s2.0-85107772096",
+            "user": "SaweChafe2020",
+            "description": "Using Data Sonification to Overcome Science Literacy, Numeracy, and Visualization Barriers in Science Communication",
+            "year": 2020,
+            "openacces": "gold",
+            "citations": 45,
+            "subject areas": [
+                "Communication",
+                "Social Sciences",
+                "Social Sciences (miscellaneous)"
+            ],
+            "scival topics cluster": [
+                "Robot",
+                "Artificial Intelligence",
+                "Software Engineering"
+            ],
+            "scival topics": [
+                "Sonification",
+                "Human Computer Interaction",
+                "Data Visualization"
+            ]
+        },
+        {
             "id": "2-s2.0-84977657335",
             "user": "ScholzRohde2016",
             "description": "Sonification of arm movements in stroke rehabilitation - a novel approach in neurologic music therapy",
@@ -69,82 +117,6 @@
             ]
         },
         {
-            "id": "2-s2.0-85079349505",
-            "user": "ZhangGe2020",
-            "description": "Modeling of Individual HRTFs Based on Spatial Principal Component Analysis",
-            "year": 2020,
-            "openacces": "green",
-            "citations": 32,
-            "subject areas": [
-                "Acoustics and Ultrasonics",
-                "Computational Mathematics",
-                "Computer Science",
-                "Computer Science (miscellaneous)",
-                "Electrical and Electronic Engineering",
-                "Engineering",
-                "Mathematics",
-                "Physics and Astronomy"
-            ],
-            "scival topics cluster": [
-                "Architectural Acoustics",
-                "Spatial Audio",
-                "Audio Signal Processing"
-            ],
-            "scival topics": [
-                "Transfer Function",
-                "Sound Localization",
-                "Sensation of Hearing"
-            ]
-        },
-        {
-            "id": "2-s2.0-84962916557",
-            "user": "GrijalvaMartini2016",
-            "description": "A manifold learning approach for personalizing HRTFS from anthropometric features",
-            "year": 2016,
-            "openacces": "closed",
-            "citations": 43,
-            "subject areas": [
-                "Acoustics and Ultrasonics",
-                "Computational Mathematics",
-                "Computer Science",
-                "Computer Science (miscellaneous)",
-                "Electrical and Electronic Engineering",
-                "Engineering",
-                "Mathematics",
-                "Physics and Astronomy"
-            ],
-            "scival topics cluster": [
-                "Architectural Acoustics",
-                "Spatial Audio",
-                "Audio Signal Processing"
-            ],
-            "scival topics": [
-                "Transfer Function",
-                "Sound Localization",
-                "Sensation of Hearing"
-            ]
-        },
-        {
-            "id": "2-s2.0-0027170085",
-            "user": "WenzelArruda1993",
-            "description": "Localization using nonindividualized head-related transfer functions",
-            "year": 1993,
-            "openacces": "closed",
-            "citations": 836,
-            "subject areas": [
-                "Acoustics and Ultrasonics",
-                "Arts and Humanities",
-                "Arts and Humanities (miscellaneous)",
-                "Physics and Astronomy"
-            ],
-            "scival topics cluster": [
-                ""
-            ],
-            "scival topics": [
-                ""
-            ]
-        },
-        {
             "id": "2-s2.0-85015054154",
             "user": "NewboldBianchiberthouze2016",
             "description": "Musically informed sonification for chronic pain rehabilitation: Facilitating progress & avoiding over-doing",
@@ -166,6 +138,30 @@
                 "Facial Expression",
                 "Chronic Pain",
                 "Machine Learning"
+            ]
+        },
+        {
+            "id": "2-s2.0-85040451616",
+            "user": "MezzarobbaGrassi2018",
+            "description": "Action observation plus sonification. A novel therapeutic protocol for Parkinson's patient with freezing of gait",
+            "year": 2018,
+            "openacces": "gold",
+            "citations": 46,
+            "subject areas": [
+                "Medicine",
+                "Neurology",
+                "Neurology (clinical)",
+                "Neuroscience"
+            ],
+            "scival topics cluster": [
+                "Gait Analysis",
+                "Quality of Life",
+                "Neurodegenerative Disorder"
+            ],
+            "scival topics": [
+                "Parkinson's Disease",
+                "Neurologic Gait Disorder",
+                "Wearable Sensor"
             ]
         },
         {
@@ -218,75 +214,6 @@
             ]
         },
         {
-            "id": "2-s2.0-85077797740",
-            "user": "LeyfloresBevilacqua2019",
-            "description": "Altering body perception and emotion in physically inactive people through movement sonification",
-            "year": 2019,
-            "openacces": "green",
-            "citations": 18,
-            "subject areas": [
-                ""
-            ],
-            "scival topics cluster": [
-                "Visual Perception",
-                "Behavior (Neuroscience)",
-                "Individual Differences"
-            ],
-            "scival topics": [
-                "Illusion",
-                "Body Image",
-                "Visual Perception"
-            ]
-        },
-        {
-            "id": "2-s2.0-85067599304",
-            "user": "Tajadurajim\u00e9nezNewbold2019",
-            "description": "As light as you aspire to be: Changing body perception with sound to support physical activity",
-            "year": 2019,
-            "openacces": "green",
-            "citations": 28,
-            "subject areas": [
-                "Computer Graphics and Computer-Aided Design",
-                "Computer Science",
-                "Human-Computer Interaction",
-                "Software"
-            ],
-            "scival topics cluster": [
-                "Visual Perception",
-                "Behavior (Neuroscience)",
-                "Individual Differences"
-            ],
-            "scival topics": [
-                "Illusion",
-                "Body Image",
-                "Visual Perception"
-            ]
-        },
-        {
-            "id": "2-s2.0-85044860190",
-            "user": "SinghBianchiberthouze2017",
-            "description": "Supporting everyday function in chronic pain using wearable technology",
-            "year": 2017,
-            "openacces": "green",
-            "citations": 51,
-            "subject areas": [
-                "Computer Graphics and Computer-Aided Design",
-                "Computer Science",
-                "Human-Computer Interaction",
-                "Software"
-            ],
-            "scival topics cluster": [
-                "Robot",
-                "Artificial Intelligence",
-                "Expression Recognition"
-            ],
-            "scival topics": [
-                "Facial Expression",
-                "Chronic Pain",
-                "Machine Learning"
-            ]
-        },
-        {
             "id": "2-s2.0-84988378007",
             "user": "BevilacquaBoyer2016",
             "description": "Sensori-motor learning with movement sonification: Perspectives from recent interdisciplinary studies",
@@ -330,28 +257,6 @@
                 "Facial Expression",
                 "Chronic Pain",
                 "Machine Learning"
-            ]
-        },
-        {
-            "id": "2-s2.0-84982921020",
-            "user": "CesariniCalvaresi2016",
-            "description": "MEDIATION: An eMbEddeD System for Auditory Feedback of Hand-water InterAcTION while Swimming",
-            "year": 2016,
-            "openacces": "gold",
-            "citations": 22,
-            "subject areas": [
-                "Engineering",
-                "General Engineering"
-            ],
-            "scival topics cluster": [
-                "Robot",
-                "Artificial Intelligence",
-                "Software Engineering"
-            ],
-            "scival topics": [
-                "Sonification",
-                "Human Computer Interaction",
-                "Data Visualization"
             ]
         },
         {
@@ -432,6 +337,59 @@
             ]
         },
         {
+            "id": "2-s2.0-84956798528",
+            "user": "MascettiPicinali2016",
+            "description": "Sonification of guidance data during road crossing for people with visual impairments or blindness",
+            "year": 2016,
+            "openacces": "green",
+            "citations": 52,
+            "subject areas": [
+                "Computer Science",
+                "Education",
+                "Engineering",
+                "General Engineering",
+                "Hardware and Architecture",
+                "Human Factors and Ergonomics",
+                "Human-Computer Interaction",
+                "Social Sciences",
+                "Software"
+            ],
+            "scival topics cluster": [
+                "Prosthetics",
+                "Robot",
+                "Skeletal Muscle"
+            ],
+            "scival topics": [
+                "Visually Impaired People",
+                "Assistive Technology",
+                "Object Detection"
+            ]
+        },
+        {
+            "id": "2-s2.0-85050105312",
+            "user": "Ghai2018",
+            "description": "Effects of real-time (sonification) and rhythmic auditory stimuli on recovering arm function post stroke: A systematic review and meta-analysis",
+            "year": 2018,
+            "openacces": "gold",
+            "citations": 30,
+            "subject areas": [
+                "Medicine",
+                "Neurology",
+                "Neurology (clinical)",
+                "Neuroscience"
+            ],
+            "scival topics cluster": [
+                "Robot",
+                "Upper Limb",
+                "Motor Control"
+            ],
+            "scival topics": [
+                "Music Therapy",
+                "Auditory Stimulation",
+                "Quality of Life"
+            ]
+        },
+        {
             "id": "2-s2.0-85043363088",
             "user": "GhaiSchmitz2018",
             "description": "Auditory proprioceptive integration: Effects of real-time kinematic auditory feedback on knee proprioception",
@@ -454,74 +412,29 @@
             ]
         },
         {
-            "id": "2-s2.0-85058102696",
-            "user": "JiangXie2019",
-            "description": "The role of dynamic cue in auditory vertical localisation",
-            "year": 2019,
-            "openacces": "closed",
-            "citations": 29,
+            "id": "2-s2.0-85047489928",
+            "user": "EffenbergSchmitz2018",
+            "description": "Acceleration and deceleration at constant speed: Systematic modulation of motion perception by kinematic sonification",
+            "year": 2018,
+            "openacces": "green",
+            "citations": 20,
             "subject areas": [
-                "Acoustics and Ultrasonics",
-                "Physics and Astronomy"
-            ],
-            "scival topics cluster": [
-                "Architectural Acoustics",
-                "Spatial Audio",
-                "Audio Signal Processing"
-            ],
-            "scival topics": [
-                "Transfer Function",
-                "Sound Localization",
-                "Sensation of Hearing"
-            ]
-        },
-        {
-            "id": "2-s2.0-84922900978",
-            "user": "SchaffertMattes2015",
-            "description": "Interactive sonification in rowing: Acoustic feedback for on-water training",
-            "year": 2015,
-            "openacces": "closed",
-            "citations": 34,
-            "subject areas": [
-                "Computer Science",
-                "Computer Science Applications",
-                "Engineering",
-                "Hardware and Architecture",
-                "Media Technology",
-                "Signal Processing",
-                "Software"
-            ],
-            "scival topics cluster": [
-                "Robot",
-                "Artificial Intelligence",
-                "Software Engineering"
-            ],
-            "scival topics": [
-                "Sonification",
-                "Human Computer Interaction",
-                "Data Visualization"
-            ]
-        },
-        {
-            "id": "2-s2.0-85077609863",
-            "user": "NikmaramScholz2019",
-            "description": "Musical Sonification of Arm Movements in Stroke Rehabilitation Yields Limited Benefits",
-            "year": 2019,
-            "openacces": "gold",
-            "citations": 32,
-            "subject areas": [
+                "Arts and Humanities",
+                "Biochemistry, Genetics and Molecular Biology",
+                "General Biochemistry,Genetics and Molecular Biology",
                 "General Neuroscience",
+                "History and Philosophy of Science",
                 "Neuroscience"
             ],
             "scival topics cluster": [
-                "Robot",
-                "Upper Limb",
-                "Motor Control"
+                "Visual Perception",
+                "Behavior (Neuroscience)",
+                "Individual Differences"
             ],
             "scival topics": [
-                "Stroke Rehabilitation",
-                "Apoplexy",
-                "Upper Limb"
+                "Multisensory Integration",
+                "Auditory Perception",
+                "Brain Mapping"
             ]
         },
         {
@@ -549,12 +462,12 @@
             ]
         },
         {
-            "id": "2-s2.0-85026895061",
-            "user": "DyerStapleton2017",
-            "description": "Advantages of melodic over rhythmic movement sonification in bimanual motor skill learning",
+            "id": "2-s2.0-84995739642",
+            "user": "BoyerBevilacqua2017",
+            "description": "Investigating three types of continuous auditory feedback in visuo-manual tracking",
             "year": 2017,
-            "openacces": "hybrid",
-            "citations": 22,
+            "openacces": "green",
+            "citations": 17,
             "subject areas": [
                 "General Neuroscience",
                 "Neuroscience"
@@ -565,9 +478,31 @@
                 "Motor Control"
             ],
             "scival topics": [
-                "Hemispheric Dominance",
+                "Motor Learning",
                 "Psychomotor Performance",
+                "Visual Perception"
+            ]
+        },
+        {
+            "id": "2-s2.0-85028362798",
+            "user": "DyerStapleton2017",
+            "description": "Mapping sonification for perception and action in motor skill learning",
+            "year": 2017,
+            "openacces": "gold",
+            "citations": 25,
+            "subject areas": [
+                "General Neuroscience",
+                "Neuroscience"
+            ],
+            "scival topics cluster": [
+                "Robot",
+                "Upper Limb",
                 "Motor Control"
+            ],
+            "scival topics": [
+                "Motor Learning",
+                "Adolescents",
+                "Skill Acquisition"
             ]
         },
         {
@@ -590,6 +525,32 @@
                 "Motor Learning",
                 "Psychomotor Performance",
                 "Visual Perception"
+            ]
+        },
+        {
+            "id": "2-s2.0-84941267633",
+            "user": "DannaFontaine2015",
+            "description": "The effect of real-time auditory feedback on learning new characters",
+            "year": 2015,
+            "openacces": "green",
+            "citations": 46,
+            "subject areas": [
+                "Biochemistry, Genetics and Molecular Biology",
+                "Biophysics",
+                "Experimental and Cognitive Psychology",
+                "Medicine",
+                "Orthopedics and Sports Medicine",
+                "Psychology"
+            ],
+            "scival topics cluster": [
+                "Physical Activity",
+                "Adolescent",
+                "Motor Skills"
+            ],
+            "scival topics": [
+                "Occupational Therapy",
+                "Child Development",
+                "Motor Skills"
             ]
         },
         {
@@ -660,18 +621,45 @@
             ]
         },
         {
-            "id": "2-s2.0-80054784505",
-            "user": "StienstraOverbeeke2011",
-            "description": "Embodying complexity through movement sonification: Case study on empowering the speed-skater",
-            "year": 2011,
+            "id": "2-s2.0-84894138585",
+            "user": "VinkenKr\u00f6ger2013",
+            "description": "Auditory coding of human movement kinematics",
+            "year": 2013,
             "openacces": "closed",
-            "citations": 48,
+            "citations": 28,
             "subject areas": [
-                "Computer Networks and Communications",
+                "Cognitive Neuroscience",
                 "Computer Science",
                 "Computer Vision and Pattern Recognition",
+                "Experimental and Cognitive Psychology",
+                "Medicine",
+                "Neuroscience",
+                "Ophthalmology",
+                "Psychology",
+                "Sensory Systems"
+            ],
+            "scival topics cluster": [
+                "Empathy",
+                "Visual Perception",
+                "Functional Magnetic Resonance Imaging"
+            ],
+            "scival topics": [
+                "Magnetic Resonance Imaging",
+                "Autism Spectrum Disorder",
+                "Motion Perception"
+            ]
+        },
+        {
+            "id": "2-s2.0-85057314649",
+            "user": "ZiemerSchultheis2019",
+            "description": "Psychoacoustic auditory display for navigation: an auditory assistance system for spatial orientation tasks",
+            "year": 2019,
+            "openacces": "closed",
+            "citations": 14,
+            "subject areas": [
+                "Computer Science",
                 "Human-Computer Interaction",
-                "Software"
+                "Signal Processing"
             ],
             "scival topics cluster": [
                 "Robot",
@@ -711,51 +699,48 @@
             ]
         },
         {
-            "id": "2-s2.0-0030111182",
-            "user": "BronkhorstVeltman1996",
-            "description": "Application of a three-dimensional auditory display in a flight task",
-            "year": 1996,
-            "openacces": "closed",
-            "citations": 88,
+            "id": "2-s2.0-85046977804",
+            "user": "FergusonBrewster2018",
+            "description": "Investigating perceptual congruence between data and display dimensions in sonification",
+            "year": 2018,
+            "openacces": "green",
+            "citations": 17,
             "subject areas": [
-                "Applied Psychology",
-                "Behavioral Neuroscience",
-                "Human Factors and Ergonomics",
-                "Neuroscience",
-                "Psychology",
-                "Social Sciences"
+                "Computer Graphics and Computer-Aided Design",
+                "Computer Science",
+                "Human-Computer Interaction",
+                "Software"
             ],
             "scival topics cluster": [
-                "Architectural Acoustics",
-                "Spatial Audio",
-                "Audio Signal Processing"
+                "Robot",
+                "Artificial Intelligence",
+                "Software Engineering"
             ],
             "scival topics": [
-                "Transfer Function",
-                "Sound Localization",
-                "Sensation of Hearing"
+                "Sonification",
+                "Human Computer Interaction",
+                "Data Visualization"
             ]
         },
         {
-            "id": "2-s2.0-0027850399",
-            "user": "Begault1993",
-            "description": "Head-up auditory displays for traffic collision avoidance system advisories: A preliminary investigation",
-            "year": 1993,
+            "id": "2-s2.0-85021884138",
+            "user": "Vickers2016",
+            "description": "Sonification and music, music and sonification",
+            "year": 2016,
             "openacces": "closed",
-            "citations": 87,
+            "citations": 27,
             "subject areas": [
-                "Applied Psychology",
-                "Behavioral Neuroscience",
-                "Human Factors and Ergonomics",
-                "Neuroscience",
-                "Psychology",
-                "Social Sciences"
+                ""
             ],
             "scival topics cluster": [
-                ""
+                "Robot",
+                "Artificial Intelligence",
+                "Software Engineering"
             ],
             "scival topics": [
-                ""
+                "Sonification",
+                "Human Computer Interaction",
+                "Data Visualization"
             ]
         },
         {
@@ -829,62 +814,40 @@
             ]
         },
         {
-            "id": "2-s2.0-85015196812",
-            "user": "GrijalvaMartini2017",
-            "description": "Interpolation of Head-Related Transfer Functions Using Manifold Learning",
-            "year": 2017,
+            "id": "2-s2.0-0036988701",
+            "user": "Walker2002",
+            "description": "Magnitude estimation of conceptual data dimensions for use in sonification",
+            "year": 2002,
             "openacces": "closed",
-            "citations": 25,
+            "citations": 90,
             "subject areas": [
-                "Applied Mathematics",
-                "Computer Science",
-                "Electrical and Electronic Engineering",
-                "Engineering",
-                "Mathematics",
-                "Signal Processing"
+                "Experimental and Cognitive Psychology",
+                "Psychology"
             ],
             "scival topics cluster": [
-                "Architectural Acoustics",
-                "Spatial Audio",
-                "Audio Signal Processing"
+                "Robot",
+                "Artificial Intelligence",
+                "Software Engineering"
             ],
             "scival topics": [
-                "Transfer Function",
-                "Sound Localization",
-                "Sensation of Hearing"
+                "Sonification",
+                "Human Computer Interaction",
+                "Data Visualization"
             ]
         },
         {
-            "id": "2-s2.0-85009812516",
-            "user": "MaesBuhmann2016",
-            "description": "3Mo: A model for music-based biofeedback",
+            "id": "2-s2.0-84979792051",
+            "user": "CamurriVolpe2016",
+            "description": "The dancer in the eye: Towards a multi-layered computational framework of qualities in movement",
             "year": 2016,
-            "openacces": "gold",
-            "citations": 28,
-            "subject areas": [
-                "General Neuroscience",
-                "Neuroscience"
-            ],
-            "scival topics cluster": [
-                "Physical Activity",
-                "Health Promotion",
-                "Quality of Life"
-            ],
-            "scival topics": [
-                "Exercise",
-                "Perceived Exertion",
-                "Physical Activity"
-            ]
-        },
-        {
-            "id": "2-s2.0-84904458581",
-            "user": "Fran\u00e7oiseAlaoui2014",
-            "description": "Vocalizing dance movement for interactive sonification of Laban Effort Factors",
-            "year": 2014,
             "openacces": "green",
-            "citations": 35,
+            "citations": 50,
             "subject areas": [
-                ""
+                "Computer Networks and Communications",
+                "Computer Science",
+                "Computer Vision and Pattern Recognition",
+                "Human-Computer Interaction",
+                "Software"
             ],
             "scival topics cluster": [
                 "Robot",
@@ -898,26 +861,30 @@
             ]
         },
         {
-            "id": "2-s2.0-85083347960",
-            "user": "BoyerBabayan2013",
-            "description": "From ear to hand: The role of the auditory-motor loop in pointing to an auditory source",
-            "year": 2013,
-            "openacces": "gold",
-            "citations": 36,
+            "id": "2-s2.0-58349097927",
+            "user": "ScheefBoecker2009",
+            "description": "Multimodal motion processing in area V5/MT: Evidence from an artificial class of audio-visual events",
+            "year": 2009,
+            "openacces": "closed",
+            "citations": 52,
             "subject areas": [
-                "Cellular and Molecular Neuroscience",
-                "Neuroscience",
-                "Neuroscience (miscellaneous)"
+                "Biochemistry, Genetics and Molecular Biology",
+                "Developmental Biology",
+                "General Neuroscience",
+                "Medicine",
+                "Molecular Biology",
+                "Neurology (clinical)",
+                "Neuroscience"
             ],
             "scival topics cluster": [
-                "Architectural Acoustics",
-                "Spatial Audio",
-                "Audio Signal Processing"
+                "Visual Perception",
+                "Behavior (Neuroscience)",
+                "Individual Differences"
             ],
             "scival topics": [
-                "Transfer Function",
-                "Sound Localization",
-                "Sensation of Hearing"
+                "Multisensory Integration",
+                "Auditory Perception",
+                "Brain Mapping"
             ]
         },
         {
@@ -947,232 +914,288 @@
             ]
         },
         {
-            "id": "2-s2.0-84905046737",
-            "user": "FinkRay2015",
-            "description": "Individualization of head related transfer functions using principal component analysis",
-            "year": 2015,
-            "openacces": "closed",
-            "citations": 31,
-            "subject areas": [
-                "Acoustics and Ultrasonics",
-                "Physics and Astronomy"
-            ],
-            "scival topics cluster": [
-                "Architectural Acoustics",
-                "Spatial Audio",
-                "Audio Signal Processing"
-            ],
-            "scival topics": [
-                "Transfer Function",
-                "Sound Localization",
-                "Sensation of Hearing"
-            ]
-        },
-        {
-            "id": "2-s2.0-84905248159",
-            "user": "GrijalvaMartini2014",
-            "description": "Anthropometric-based customization of head-related transfer functions using Isomap in the horizontal plane",
-            "year": 2014,
-            "openacces": "closed",
-            "citations": 23,
+            "id": "2-s2.0-84956778895",
+            "user": "LudovicoPresti2016",
+            "description": "The sonification space: A reference system for sonification tasks",
+            "year": 2016,
+            "openacces": "green",
+            "citations": 15,
             "subject areas": [
                 "Computer Science",
-                "Electrical and Electronic Engineering",
+                "Education",
                 "Engineering",
-                "Signal Processing",
+                "General Engineering",
+                "Hardware and Architecture",
+                "Human Factors and Ergonomics",
+                "Human-Computer Interaction",
+                "Social Sciences",
                 "Software"
             ],
             "scival topics cluster": [
-                "Architectural Acoustics",
-                "Spatial Audio",
-                "Audio Signal Processing"
+                "Robot",
+                "Artificial Intelligence",
+                "Software Engineering"
             ],
             "scival topics": [
-                "Transfer Function",
-                "Sound Localization",
-                "Sensation of Hearing"
+                "Sonification",
+                "Human Computer Interaction",
+                "Data Visualization"
             ]
         },
         {
-            "id": "2-s2.0-3242772950",
-            "user": "ZotkinDuraiswami2004",
-            "description": "Rendering localized spatial audio in a virtual auditory space",
-            "year": 2004,
-            "openacces": "green",
-            "citations": 145,
+            "id": "2-s2.0-84860222109",
+            "user": "Barrass2012",
+            "description": "The aesthetic turn in sonification towards a social and cultural medium",
+            "year": 2012,
+            "openacces": "closed",
+            "citations": 29,
             "subject areas": [
+                "Artificial Intelligence",
+                "Arts and Humanities",
+                "Computer Science",
+                "Human-Computer Interaction",
+                "Philosophy"
+            ],
+            "scival topics cluster": [
+                "Robot",
+                "Artificial Intelligence",
+                "Software Engineering"
+            ],
+            "scival topics": [
+                "Sonification",
+                "Human Computer Interaction",
+                "Data Visualization"
+            ]
+        },
+        {
+            "id": "2-s2.0-70349533039",
+            "user": "VisellFontana2009",
+            "description": "Sound design and perception in walking interactions",
+            "year": 2009,
+            "openacces": "closed",
+            "citations": 70,
+            "subject areas": [
+                "Computer Science",
+                "Education",
+                "Engineering",
+                "General Engineering",
+                "Hardware and Architecture",
+                "Human Factors and Ergonomics",
+                "Human-Computer Interaction",
+                "Social Sciences",
+                "Software"
+            ],
+            "scival topics cluster": [
+                "Cerebellum",
+                "Eye Movement",
+                "Purkinje Cell"
+            ],
+            "scival topics": [
+                "Virtual Reality",
+                "User Interfaces",
+                "Locomotion"
+            ]
+        },
+        {
+            "id": "2-s2.0-84923250080",
+            "user": "DubusBresin2015",
+            "description": "Exploration and evaluation of a system for interactive sonification of elite rowing",
+            "year": 2015,
+            "openacces": "closed",
+            "citations": 12,
+            "subject areas": [
+                "Biomedical Engineering",
+                "Engineering",
+                "Health Professions",
+                "Mathematics",
+                "Mechanical Engineering",
+                "Mechanics of Materials",
+                "Medicine",
+                "Modeling and Simulation",
+                "Orthopedics and Sports Medicine",
+                "Physical Therapy, Sports Therapy and Rehabilitation"
+            ],
+            "scival topics cluster": [
+                "Robot",
+                "Artificial Intelligence",
+                "Software Engineering"
+            ],
+            "scival topics": [
+                "Sonification",
+                "Human Computer Interaction",
+                "Data Visualization"
+            ]
+        },
+        {
+            "id": "2-s2.0-84896364007",
+            "user": "RoddyFurlong2014",
+            "description": "Embodied aesthetics in auditory display",
+            "year": 2014,
+            "openacces": "closed",
+            "citations": 31,
+            "subject areas": [
+                "Arts and Humanities",
                 "Computer Science",
                 "Computer Science Applications",
-                "Electrical and Electronic Engineering",
-                "Engineering",
-                "Media Technology",
-                "Signal Processing"
+                "Music"
             ],
             "scival topics cluster": [
-                "Architectural Acoustics",
-                "Spatial Audio",
-                "Audio Signal Processing"
+                "Robot",
+                "Artificial Intelligence",
+                "Software Engineering"
             ],
             "scival topics": [
-                "Transfer Function",
-                "Sound Localization",
-                "Sensation of Hearing"
+                "Sonification",
+                "Human Computer Interaction",
+                "Data Visualization"
             ]
         },
         {
-            "id": "2-s2.0-84872192507",
-            "user": "SpagnolGeronazzo2013",
-            "description": "On the relation between pinna reflection patterns and head-related transfer function features",
-            "year": 2013,
+            "id": "2-s2.0-84860214823",
+            "user": "Greshamlancaster2012",
+            "description": "Relationships of sonification to music and sound art",
+            "year": 2012,
             "openacces": "closed",
-            "citations": 64,
+            "citations": 20,
             "subject areas": [
-                "Acoustics and Ultrasonics",
-                "Electrical and Electronic Engineering",
-                "Engineering",
-                "Physics and Astronomy"
+                "Artificial Intelligence",
+                "Arts and Humanities",
+                "Computer Science",
+                "Human-Computer Interaction",
+                "Philosophy"
             ],
             "scival topics cluster": [
-                "Architectural Acoustics",
-                "Spatial Audio",
-                "Audio Signal Processing"
+                "Robot",
+                "Artificial Intelligence",
+                "Software Engineering"
             ],
             "scival topics": [
-                "Transfer Function",
-                "Sound Localization",
-                "Sensation of Hearing"
+                "Sonification",
+                "Human Computer Interaction",
+                "Data Visualization"
             ]
         },
         {
-            "id": "2-s2.0-84923282916",
-            "user": "XieZhong2015",
-            "description": "Typical data and cluster analysis on head-related transfer functions from Chinese subjects",
-            "year": 2015,
-            "openacces": "closed",
-            "citations": 18,
+            "id": "2-s2.0-84892889849",
+            "user": "Supper2014",
+            "description": "Sublime frequencies: The construction of sublime listening experiences in the sonification of scientific data",
+            "year": 2014,
+            "openacces": "hybrid",
+            "citations": 41,
             "subject areas": [
-                "Acoustics and Ultrasonics",
-                "Physics and Astronomy"
+                "Arts and Humanities",
+                "General Social Sciences",
+                "History",
+                "History and Philosophy of Science",
+                "Social Sciences"
             ],
             "scival topics cluster": [
-                "Architectural Acoustics",
-                "Spatial Audio",
-                "Audio Signal Processing"
+                "Robot",
+                "Artificial Intelligence",
+                "Software Engineering"
             ],
             "scival topics": [
-                "Transfer Function",
-                "Sound Localization",
-                "Sensation of Hearing"
+                "Sonification",
+                "Human Computer Interaction",
+                "Data Visualization"
             ]
         },
         {
-            "id": "2-s2.0-84937039947",
-            "user": "AndreopoulouBegault2015",
-            "description": "Inter-Laboratory Round Robin HRTF Measurement Comparison",
-            "year": 2015,
+            "id": "2-s2.0-84859072818",
+            "user": "HasegawaIshijima2012",
+            "description": "Realtime sonification of the center of gravity for skiing",
+            "year": 2012,
             "openacces": "closed",
-            "citations": 59,
+            "citations": 45,
+            "subject areas": [
+                "Computer Networks and Communications",
+                "Computer Science",
+                "Computer Vision and Pattern Recognition",
+                "Human-Computer Interaction",
+                "Software"
+            ],
+            "scival topics cluster": [
+                "Robot",
+                "Action Recognition",
+                "Gait Analysis"
+            ],
+            "scival topics": [
+                "Virtual Reality",
+                "Learning Systems",
+                "Motion Capture"
+            ]
+        },
+        {
+            "id": "2-s2.0-84860224794",
+            "user": "GrondHermann2012",
+            "description": "Aesthetic strategies in sonification",
+            "year": 2012,
+            "openacces": "closed",
+            "citations": 27,
+            "subject areas": [
+                "Artificial Intelligence",
+                "Arts and Humanities",
+                "Computer Science",
+                "Human-Computer Interaction",
+                "Philosophy"
+            ],
+            "scival topics cluster": [
+                "Robot",
+                "Artificial Intelligence",
+                "Software Engineering"
+            ],
+            "scival topics": [
+                "Sonification",
+                "Human Computer Interaction",
+                "Data Visualization"
+            ]
+        },
+        {
+            "id": "2-s2.0-84861014654",
+            "user": "VarniDubus2012",
+            "description": "Interactive sonification of synchronisation of motoric behaviour in social active listening to music with mobile devices",
+            "year": 2012,
+            "openacces": "closed",
+            "citations": 22,
             "subject areas": [
                 "Computer Science",
-                "Electrical and Electronic Engineering",
-                "Engineering",
+                "Human-Computer Interaction",
                 "Signal Processing"
             ],
             "scival topics cluster": [
-                "Architectural Acoustics",
-                "Spatial Audio",
-                "Audio Signal Processing"
-            ],
-            "scival topics": [
-                "Transfer Function",
-                "Sound Localization",
-                "Sensation of Hearing"
-            ]
-        },
-        {
-            "id": "2-s2.0-84911365559",
-            "user": "FiannacaApostolopoulous2014",
-            "description": "Headlock: A wearable navigation aid that helps blind cane users traverse large open spaces",
-            "year": 2014,
-            "openacces": "closed",
-            "citations": 49,
-            "subject areas": [
-                ""
-            ],
-            "scival topics cluster": [
-                "Prosthetics",
                 "Robot",
-                "Skeletal Muscle"
+                "Artificial Intelligence",
+                "Software Engineering"
             ],
             "scival topics": [
-                "Visually Impaired People",
-                "Assistive Technology",
-                "Object Detection"
+                "Sonification",
+                "Human Computer Interaction",
+                "Data Visualization"
             ]
         },
         {
-            "id": "2-s2.0-84949117748",
-            "user": "RomighSimpson2014",
-            "description": "Do you hear where i hear?: Isolating the individualized sound localization cues",
-            "year": 2014,
-            "openacces": "gold",
-            "citations": 15,
+            "id": "2-s2.0-34447578955",
+            "user": "Walker2007",
+            "description": "Consistency of magnitude estimations with conceptual data dimensions used for sonification",
+            "year": 2007,
+            "openacces": "green",
+            "citations": 43,
             "subject areas": [
-                "General Neuroscience",
-                "Neuroscience"
+                "Arts and Humanities",
+                "Arts and Humanities (miscellaneous)",
+                "Developmental and Educational Psychology",
+                "Experimental and Cognitive Psychology",
+                "Psychology"
             ],
             "scival topics cluster": [
-                "Architectural Acoustics",
-                "Spatial Audio",
-                "Audio Signal Processing"
+                "Robot",
+                "Artificial Intelligence",
+                "Software Engineering"
             ],
             "scival topics": [
-                "Transfer Function",
-                "Sound Localization",
-                "Sensation of Hearing"
-            ]
-        },
-        {
-            "id": "2-s2.0-84907919813",
-            "user": "ParseihianJouffrais2014",
-            "description": "Reaching nearby sources: Comparison between real and virtual sound and visual targets",
-            "year": 2014,
-            "openacces": "gold",
-            "citations": 33,
-            "subject areas": [
-                "General Neuroscience",
-                "Neuroscience"
-            ],
-            "scival topics cluster": [
-                "Architectural Acoustics",
-                "Spatial Audio",
-                "Audio Signal Processing"
-            ],
-            "scival topics": [
-                "Transfer Function",
-                "Sound Localization",
-                "Sensation of Hearing"
-            ]
-        },
-        {
-            "id": "2-s2.0-84945117975",
-            "user": "MeshramMehra2014",
-            "description": "P-HRTF: Efficient personalized HRTF computation for high-fidelity spatial sound",
-            "year": 2014,
-            "openacces": "closed",
-            "citations": 35,
-            "subject areas": [
-                ""
-            ],
-            "scival topics cluster": [
-                "Architectural Acoustics",
-                "Spatial Audio",
-                "Audio Signal Processing"
-            ],
-            "scival topics": [
-                "Transfer Function",
-                "Sound Localization",
-                "Sensation of Hearing"
+                "Sonification",
+                "Human Computer Interaction",
+                "Data Visualization"
             ]
         },
         {
@@ -1223,346 +1246,19 @@
             ]
         },
         {
-            "id": "2-s2.0-33750944370",
-            "user": "SainarayananNagarajan2007",
-            "description": "Fuzzy image processing scheme for autonomous navigation of human blind",
-            "year": 2007,
-            "openacces": "closed",
-            "citations": 96,
-            "subject areas": [
-                "Computer Science",
-                "Software"
-            ],
-            "scival topics cluster": [
-                "Prosthetics",
-                "Robot",
-                "Skeletal Muscle"
-            ],
-            "scival topics": [
-                "Visually Impaired People",
-                "Assistive Technology",
-                "Object Detection"
-            ]
-        },
-        {
-            "id": "2-s2.0-84871761614",
-            "user": "VazquezalvarezOakley2012",
-            "description": "Auditory display design for exploration in mobile audio-augmented reality",
-            "year": 2012,
-            "openacces": "closed",
-            "citations": 69,
-            "subject areas": [
-                "Computer Science",
-                "Computer Science Applications",
-                "Decision Sciences",
-                "Hardware and Architecture",
-                "Library and Information Sciences",
-                "Management Science and Operations Research",
-                "Social Sciences"
-            ],
-            "scival topics cluster": [
-                "Prosthetics",
-                "Robot",
-                "Skeletal Muscle"
-            ],
-            "scival topics": [
-                "Human Engineering",
-                "Mobile Device",
-                "Augmented Reality"
-            ]
-        },
-        {
-            "id": "2-s2.0-77951210490",
-            "user": "XieZhang2010",
-            "description": "The audibility of spectral detail of head-Related transfer functions at high frequency",
-            "year": 2010,
-            "openacces": "closed",
-            "citations": 33,
-            "subject areas": [
-                "Acoustics and Ultrasonics",
-                "Arts and Humanities",
-                "Music",
-                "Physics and Astronomy"
-            ],
-            "scival topics cluster": [
-                "Architectural Acoustics",
-                "Spatial Audio",
-                "Audio Signal Processing"
-            ],
-            "scival topics": [
-                "Transfer Function",
-                "Sound Localization",
-                "Sensation of Hearing"
-            ]
-        },
-        {
-            "id": "2-s2.0-77954202496",
-            "user": "McintireHavig2010",
-            "description": "Visual search performance with 3-D auditory cues: Effects of motion, target location, and practice",
-            "year": 2010,
-            "openacces": "closed",
-            "citations": 22,
-            "subject areas": [
-                "Applied Psychology",
-                "Behavioral Neuroscience",
-                "Human Factors and Ergonomics",
-                "Neuroscience",
-                "Psychology",
-                "Social Sciences"
-            ],
-            "scival topics cluster": [
-                "Architectural Acoustics",
-                "Spatial Audio",
-                "Audio Signal Processing"
-            ],
-            "scival topics": [
-                "Transfer Function",
-                "Sound Localization",
-                "Sensation of Hearing"
-            ]
-        },
-        {
-            "id": "2-s2.0-41849096491",
-            "user": "ShinPark2008",
-            "description": "Enhanced vertical perception through head-related impulse response customization based on pinna response tuning in the median plane",
-            "year": 2008,
-            "openacces": "closed",
-            "citations": 35,
-            "subject areas": [
-                "Applied Mathematics",
-                "Computer Graphics and Computer-Aided Design",
-                "Computer Science",
-                "Electrical and Electronic Engineering",
-                "Engineering",
-                "Mathematics",
-                "Signal Processing"
-            ],
-            "scival topics cluster": [
-                "Architectural Acoustics",
-                "Spatial Audio",
-                "Audio Signal Processing"
-            ],
-            "scival topics": [
-                "Transfer Function",
-                "Sound Localization",
-                "Sensation of Hearing"
-            ]
-        },
-        {
-            "id": "2-s2.0-33845886957",
-            "user": "KahanaNelson2007",
-            "description": "Boundary element simulations of the transfer function of human heads and baffled pinnae using accurate geometric models",
-            "year": 2007,
-            "openacces": "closed",
-            "citations": 64,
-            "subject areas": [
-                "Acoustics and Ultrasonics",
-                "Condensed Matter Physics",
-                "Engineering",
-                "Mechanical Engineering",
-                "Mechanics of Materials",
-                "Physics and Astronomy"
-            ],
-            "scival topics cluster": [
-                "Architectural Acoustics",
-                "Spatial Audio",
-                "Audio Signal Processing"
-            ],
-            "scival topics": [
-                "Transfer Function",
-                "Sound Localization",
-                "Sensation of Hearing"
-            ]
-        },
-        {
-            "id": "2-s2.0-34247593466",
-            "user": "HondaShibata2007",
-            "description": "Transfer effects on sound localization performances from playing a virtual three-dimensional auditory game",
-            "year": 2007,
-            "openacces": "closed",
-            "citations": 47,
-            "subject areas": [
-                "Acoustics and Ultrasonics",
-                "Physics and Astronomy"
-            ],
-            "scival topics cluster": [
-                "Architectural Acoustics",
-                "Spatial Audio",
-                "Audio Signal Processing"
-            ],
-            "scival topics": [
-                "Transfer Function",
-                "Sound Localization",
-                "Sensation of Hearing"
-            ]
-        },
-        {
-            "id": "2-s2.0-33750914664",
-            "user": "Iwaya2006",
-            "description": "Individualization of head-related transfer functions with tournament-style listening test: Listening with other's ears",
-            "year": 2006,
-            "openacces": "closed",
-            "citations": 59,
-            "subject areas": [
-                "Acoustics and Ultrasonics",
-                "Physics and Astronomy"
-            ],
-            "scival topics cluster": [
-                "Architectural Acoustics",
-                "Spatial Audio",
-                "Audio Signal Processing"
-            ],
-            "scival topics": [
-                "Transfer Function",
-                "Sound Localization",
-                "Sensation of Hearing"
-            ]
-        },
-        {
-            "id": "2-s2.0-33745754794",
-            "user": "ZahorikBangayan2006",
-            "description": "Perceptual recalibration in human sound localization: Learning to remediate front-back reversals",
-            "year": 2006,
-            "openacces": "closed",
-            "citations": 99,
-            "subject areas": [
-                "Acoustics and Ultrasonics",
-                "Arts and Humanities",
-                "Arts and Humanities (miscellaneous)",
-                "Physics and Astronomy"
-            ],
-            "scival topics cluster": [
-                "Architectural Acoustics",
-                "Spatial Audio",
-                "Audio Signal Processing"
-            ],
-            "scival topics": [
-                "Transfer Function",
-                "Sound Localization",
-                "Sensation of Hearing"
-            ]
-        },
-        {
-            "id": "2-s2.0-34248524996",
-            "user": "MarstonLoomis2007",
-            "description": "Orientation & mobility: Nonvisual route following with guidance from a simple haptic or auditory display",
-            "year": 2007,
-            "openacces": "closed",
-            "citations": 57,
-            "subject areas": [
-                "Medicine",
-                "Ophthalmology",
-                "Rehabilitation"
-            ],
-            "scival topics cluster": [
-                "Prosthetics",
-                "Robot",
-                "Skeletal Muscle"
-            ],
-            "scival topics": [
-                "Visually Impaired People",
-                "Assistive Technology",
-                "Object Detection"
-            ]
-        },
-        {
-            "id": "2-s2.0-38349000971",
-            "user": "SongZhizhong2007",
-            "description": "Individualization of head-related transfer function for three-dimensional virtual auditory display: A review",
-            "year": 2007,
-            "openacces": "unknown",
-            "citations": 15,
-            "subject areas": [
-                "Computer Science",
-                "General Computer Science",
-                "Mathematics",
-                "Theoretical Computer Science"
-            ],
-            "scival topics cluster": [
-                "Architectural Acoustics",
-                "Spatial Audio",
-                "Audio Signal Processing"
-            ],
-            "scival topics": [
-                "Transfer Function",
-                "Sound Localization",
-                "Sensation of Hearing"
-            ]
-        },
-        {
-            "id": "2-s2.0-0033932818",
-            "user": "TranLetowski2000",
-            "description": "Evaluation of acoustic beacon characteristics for navigation tasks",
-            "year": 2000,
-            "openacces": "closed",
-            "citations": 51,
-            "subject areas": [
-                "Health Professions",
-                "Human Factors and Ergonomics",
-                "Physical Therapy, Sports Therapy and Rehabilitation",
-                "Social Sciences"
-            ],
-            "scival topics cluster": [
-                "Architectural Acoustics",
-                "Spatial Audio",
-                "Audio Signal Processing"
-            ],
-            "scival topics": [
-                "Transfer Function",
-                "Sound Localization",
-                "Sensation of Hearing"
-            ]
-        },
-        {
-            "id": "2-s2.0-84980326211",
-            "user": "WightmanKistler1993",
-            "description": "Multidimensional scaling analysis of head-related transfer functions",
-            "year": 1993,
-            "openacces": "closed",
-            "citations": 16,
-            "subject areas": [
-                ""
-            ],
-            "scival topics cluster": [
-                ""
-            ],
-            "scival topics": [
-                ""
-            ]
-        },
-        {
-            "id": "2-s2.0-84866515118",
-            "user": "BegaultGodfroy2006",
-            "description": "Design and verification of HeadZap, A semiautomated HRIR measurement system",
-            "year": 2006,
-            "openacces": "unknown",
-            "citations": 15,
-            "subject areas": [
-                ""
-            ],
-            "scival topics cluster": [
-                "Architectural Acoustics",
-                "Spatial Audio",
-                "Audio Signal Processing"
-            ],
-            "scival topics": [
-                "Transfer Function",
-                "Sound Localization",
-                "Sensation of Hearing"
-            ]
-        },
-        {
-            "id": "2-s2.0-25444448740",
-            "user": "WalkerLindsay2005",
-            "description": "Using virtual environments to prototype auditory navigation displays",
+            "id": "2-s2.0-85016909437",
+            "user": "WalkerKramer2005",
+            "description": "Mappings and Metaphors in Auditory Displays: An Experimental Assessment",
             "year": 2005,
             "openacces": "closed",
-            "citations": 17,
+            "citations": 70,
             "subject areas": [
-                "Health Professions",
-                "Medicine",
-                "Physical Therapy, Sports Therapy and Rehabilitation",
-                "Rehabilitation"
+                "Computer Science",
+                "Experimental and Cognitive Psychology",
+                "General Computer Science",
+                "Mathematics",
+                "Psychology",
+                "Theoretical Computer Science"
             ],
             "scival topics cluster": [
                 "Robot",
@@ -1576,528 +1272,194 @@
             ]
         },
         {
-            "id": "2-s2.0-0030326327",
-            "user": "BegaultPittman1996",
-            "description": "Three-Dimensional Audio Versus Head-Down Traffic Alert and Collision Avoidance System Displays",
-            "year": 1996,
-            "openacces": "closed",
-            "citations": 52,
+            "id": "2-s2.0-20344382520",
+            "user": "HermannHunt2005",
+            "description": "An introduction to interactive sonification",
+            "year": 2005,
+            "openacces": "green",
+            "citations": 94,
             "subject areas": [
-                "Aerospace Engineering",
-                "Applied Psychology",
                 "Computer Science",
                 "Computer Science Applications",
-                "Education",
                 "Engineering",
-                "Psychology",
-                "Social Sciences"
-            ],
-            "scival topics cluster": [
-                "Architectural Acoustics",
-                "Spatial Audio",
-                "Audio Signal Processing"
-            ],
-            "scival topics": [
-                "Transfer Function",
-                "Sound Localization",
-                "Sensation of Hearing"
-            ]
-        },
-        {
-            "id": "2-s2.0-0030159416",
-            "user": "HendrixBarfield1996",
-            "description": "The sense of presence within auditory virtual environments",
-            "year": 1996,
-            "openacces": "closed",
-            "citations": 182,
-            "subject areas": [
-                "Computer Science",
-                "Computer Vision and Pattern Recognition",
-                "Control and Systems Engineering",
-                "Engineering",
-                "Human-Computer Interaction",
+                "Hardware and Architecture",
+                "Media Technology",
+                "Signal Processing",
                 "Software"
             ],
             "scival topics cluster": [
-                "Augmented Reality",
-                "Gesture Recognition",
-                "Image Processing"
+                "Robot",
+                "Artificial Intelligence",
+                "Software Engineering"
             ],
             "scival topics": [
-                "Virtual Reality",
+                "Sonification",
                 "Human Computer Interaction",
-                "User Experience"
+                "Data Visualization"
             ]
         },
         {
-            "id": "2-s2.0-84991860256",
-            "user": "WenzelFoster1993",
-            "description": "Perceptual consequences of interpolating head-related transfer functions during spatial synthesis",
-            "year": 1993,
+            "id": "2-s2.0-28844478352",
+            "user": "ChiariDozza2005",
+            "description": "Audio-biofeedback for balance improvement: An accelerometry-based system",
+            "year": 2005,
             "openacces": "closed",
-            "citations": 47,
+            "citations": 145,
             "subject areas": [
-                ""
+                "Biomedical Engineering",
+                "Engineering"
             ],
             "scival topics cluster": [
-                ""
+                "Robot",
+                "Upper Limb",
+                "Motor Control"
             ],
             "scival topics": [
-                ""
+                "Body Equilibrium",
+                "Biofeedback",
+                "Wearable Sensor"
             ]
         },
         {
-            "id": "2-s2.0-0242368184",
-            "user": "Martens2003",
-            "description": "Perceptual evaluation of filters controlling source direction: Customized and generalized HRTFs for binaural synthesis",
-            "year": 2003,
+            "id": "2-s2.0-33749018649",
+            "user": "BalloraPennycook2004",
+            "description": "Heart rate sonification: A new approach to medical diagnosis",
+            "year": 2004,
             "openacces": "closed",
-            "citations": 23,
+            "citations": 46,
             "subject areas": [
-                "Acoustics and Ultrasonics",
-                "Physics and Astronomy"
-            ],
-            "scival topics cluster": [
-                "Architectural Acoustics",
-                "Spatial Audio",
-                "Audio Signal Processing"
-            ],
-            "scival topics": [
-                "Transfer Function",
-                "Sound Localization",
-                "Sensation of Hearing"
-            ]
-        },
-        {
-            "id": "2-s2.0-0036624731",
-            "user": "MacdonaldBalakrishnan2002",
-            "description": "Intelligibility of speech in a virtual 3-D environment",
-            "year": 2002,
-            "openacces": "closed",
-            "citations": 17,
-            "subject areas": [
-                "Applied Psychology",
-                "Behavioral Neuroscience",
-                "Human Factors and Ergonomics",
-                "Neuroscience",
-                "Psychology",
-                "Social Sciences"
-            ],
-            "scival topics cluster": [
-                "Sensation of Hearing",
-                "Speech Perception",
-                "Signal-to-Noise Ratio"
-            ],
-            "scival topics": [
-                "Speech Perception",
-                "Masking",
-                "Sensation of Hearing"
-            ]
-        },
-        {
-            "id": "2-s2.0-0034037674",
-            "user": "DrullmanBronkhorst2000",
-            "description": "Multichannel speech intelligibility and talker recognition using monaural, binaural, and three-dimensional auditory presentation",
-            "year": 2000,
-            "openacces": "closed",
-            "citations": 131,
-            "subject areas": [
-                "Acoustics and Ultrasonics",
                 "Arts and Humanities",
-                "Arts and Humanities (miscellaneous)",
-                "Physics and Astronomy"
-            ],
-            "scival topics cluster": [
-                "Sensation of Hearing",
-                "Speech Perception",
-                "Signal-to-Noise Ratio"
-            ],
-            "scival topics": [
-                "Speech Perception",
-                "Masking",
-                "Sensation of Hearing"
-            ]
-        },
-        {
-            "id": "2-s2.0-32744468268",
-            "user": "ZotkinDuraiswami2002",
-            "description": "Virtual audio system customization using visual matching of ear parameters",
-            "year": 2002,
-            "openacces": "unknown",
-            "citations": 19,
-            "subject areas": [
                 "Computer Science",
-                "Computer Vision and Pattern Recognition"
-            ],
-            "scival topics cluster": [
-                "Architectural Acoustics",
-                "Spatial Audio",
-                "Audio Signal Processing"
-            ],
-            "scival topics": [
-                "Transfer Function",
-                "Sound Localization",
-                "Sensation of Hearing"
-            ]
-        },
-        {
-            "id": "2-s2.0-0029406633",
-            "user": "CrispienEhrenberg1995",
-            "description": "Evaluation of the 'cocktail-party effect' for multiple speech stimuli within a spatial auditory display",
-            "year": 1995,
-            "openacces": "unknown",
-            "citations": 20,
-            "subject areas": [
-                "Arts and Humanities",
+                "Computer Science Applications",
                 "Engineering",
-                "General Engineering",
-                "Music"
+                "Engineering (miscellaneous)",
+                "Music",
+                "Visual Arts and Performing Arts"
             ],
             "scival topics cluster": [
-                ""
+                "Robot",
+                "Artificial Intelligence",
+                "Software Engineering"
             ],
             "scival topics": [
-                ""
+                "Sonification",
+                "Human Computer Interaction",
+                "Data Visualization"
             ]
         },
         {
-            "id": "2-s2.0-0033989374",
-            "user": "LangendijkBronkhorst2000",
-            "description": "Fidelity of three-dimensional-sound reproduction using a virtual auditory display",
-            "year": 2000,
-            "openacces": "closed",
-            "citations": 80,
-            "subject areas": [
-                "Acoustics and Ultrasonics",
-                "Arts and Humanities",
-                "Arts and Humanities (miscellaneous)",
-                "Physics and Astronomy"
-            ],
-            "scival topics cluster": [
-                "Architectural Acoustics",
-                "Spatial Audio",
-                "Audio Signal Processing"
-            ],
-            "scival topics": [
-                "Transfer Function",
-                "Sound Localization",
-                "Sensation of Hearing"
-            ]
-        },
-        {
-            "id": "2-s2.0-0032914505",
-            "user": "RudmannStrybel1999",
-            "description": "Auditory spatial facilitation of visual search performance: Effect of cue precision and distractor density",
+            "id": "2-s2.0-0032657953",
+            "user": "BarrassKramer1999",
+            "description": "Using sonification",
             "year": 1999,
             "openacces": "closed",
-            "citations": 25,
+            "citations": 107,
             "subject areas": [
-                "Applied Psychology",
-                "Behavioral Neuroscience",
-                "Human Factors and Ergonomics",
-                "Neuroscience",
-                "Psychology",
-                "Social Sciences"
-            ],
-            "scival topics cluster": [
-                "Architectural Acoustics",
-                "Spatial Audio",
-                "Audio Signal Processing"
-            ],
-            "scival topics": [
-                "Transfer Function",
-                "Sound Localization",
-                "Sensation of Hearing"
-            ]
-        },
-        {
-            "id": "2-s2.0-0031796123",
-            "user": "NelsonHettinger1998",
-            "description": "Effects of localized auditory information on visual target detection performance using a helmet-mounted display",
-            "year": 1998,
-            "openacces": "closed",
-            "citations": 65,
-            "subject areas": [
-                "Applied Psychology",
-                "Behavioral Neuroscience",
-                "Human Factors and Ergonomics",
-                "Neuroscience",
-                "Psychology",
-                "Social Sciences"
-            ],
-            "scival topics cluster": [
-                "Architectural Acoustics",
-                "Spatial Audio",
-                "Audio Signal Processing"
-            ],
-            "scival topics": [
-                "Transfer Function",
-                "Sound Localization",
-                "Sensation of Hearing"
-            ]
-        },
-        {
-            "id": "2-s2.0-0031171711",
-            "user": "KingOldfield1997",
-            "description": "The impact of signal bandwidth on auditory localization: Implications for the design of three-dimensional audio displays",
-            "year": 1997,
-            "openacces": "closed",
-            "citations": 54,
-            "subject areas": [
-                "Applied Psychology",
-                "Behavioral Neuroscience",
-                "Human Factors and Ergonomics",
-                "Neuroscience",
-                "Psychology",
-                "Social Sciences"
-            ],
-            "scival topics cluster": [
-                "Architectural Acoustics",
-                "Spatial Audio",
-                "Audio Signal Processing"
-            ],
-            "scival topics": [
-                "Transfer Function",
-                "Sound Localization",
-                "Sensation of Hearing"
-            ]
-        },
-        {
-            "id": "2-s2.0-0028220816",
-            "user": "MckinleyErickson1994",
-            "description": "3-Dimensional auditory displays: Development, applications, and performance",
-            "year": 1994,
-            "openacces": "closed",
-            "citations": 38,
-            "subject areas": [
-                "Medicine",
-                "Public Health, Environmental and Occupational Health"
-            ],
-            "scival topics cluster": [
-                ""
-            ],
-            "scival topics": [
-                ""
-            ]
-        },
-        {
-            "id": "2-s2.0-0029550541",
-            "user": "GilkeyAnderson1995",
-            "description": "The accuracy of absolute localization judgments for speech stimuli",
-            "year": 1995,
-            "openacces": "closed",
-            "citations": 18,
-            "subject areas": [
-                "General Neuroscience",
-                "Medicine",
-                "Neurology (clinical)",
-                "Neuroscience",
-                "Otorhinolaryngology",
-                "Sensory Systems"
-            ],
-            "scival topics cluster": [
-                ""
-            ],
-            "scival topics": [
-                ""
-            ]
-        },
-        {
-            "id": "2-s2.0-84900549189",
-            "user": "WenzelWightman1991",
-            "description": "Localization with non-individualized virtual acoustic display cues",
-            "year": 1991,
-            "openacces": "closed",
-            "citations": 40,
-            "subject areas": [
-                "Computer Graphics and Computer-Aided Design",
+                "Computer Networks and Communications",
                 "Computer Science",
-                "Human-Computer Interaction",
+                "Engineering",
+                "Hardware and Architecture",
+                "Information Systems",
+                "Media Technology",
                 "Software"
             ],
             "scival topics cluster": [
-                ""
+                "Robot",
+                "Artificial Intelligence",
+                "Software Engineering"
             ],
             "scival topics": [
-                ""
-            ]
-        },
-        {
-            "id": "2-s2.0-0026180604",
-            "user": "Begault1991",
-            "description": "Preferred sound intensity increase for sensation of half distance.",
-            "year": 1991,
-            "openacces": "closed",
-            "citations": 15,
-            "subject areas": [
-                "Experimental and Cognitive Psychology",
-                "Neuroscience",
-                "Psychology",
-                "Sensory Systems"
-            ],
-            "scival topics cluster": [
-                ""
-            ],
-            "scival topics": [
-                ""
+                "Sonification",
+                "Human Computer Interaction",
+                "Data Visualization"
             ]
         }
     ],
     "links": [
         {
-            "source": "2-s2.0-85079349505",
-            "target": "2-s2.0-0027170085",
+            "source": "2-s2.0-85107772096",
+            "target": "2-s2.0-84893070216",
+            "weight": 12
+        },
+        {
+            "source": "2-s2.0-85061377945",
+            "target": "2-s2.0-84893070216",
+            "weight": 18
+        },
+        {
+            "source": "2-s2.0-85057314649",
+            "target": "2-s2.0-84893070216",
             "weight": 6
         },
         {
-            "source": "2-s2.0-85077797740",
-            "target": "2-s2.0-84988378007",
-            "weight": 7
+            "source": "2-s2.0-85047489928",
+            "target": "2-s2.0-84893070216",
+            "weight": 6
         },
         {
-            "source": "2-s2.0-85058102696",
-            "target": "2-s2.0-0027170085",
-            "weight": 11
+            "source": "2-s2.0-85046977804",
+            "target": "2-s2.0-84893070216",
+            "weight": 8
         },
         {
-            "source": "2-s2.0-85067599304",
-            "target": "2-s2.0-84988378007",
-            "weight": 9
+            "source": "2-s2.0-85050105312",
+            "target": "2-s2.0-84893070216",
+            "weight": 6
         },
         {
-            "source": "2-s2.0-85077609863",
-            "target": "2-s2.0-84988378007",
-            "weight": 7
-        },
-        {
-            "source": "2-s2.0-85061377945",
-            "target": "2-s2.0-84988378007",
-            "weight": 25
-        },
-        {
-            "source": "2-s2.0-85061377945",
-            "target": "2-s2.0-84910045825",
+            "source": "2-s2.0-85040451616",
+            "target": "2-s2.0-84893070216",
             "weight": 7
         },
         {
             "source": "2-s2.0-85047865193",
-            "target": "2-s2.0-84988378007",
+            "target": "2-s2.0-84893070216",
             "weight": 7
         },
         {
             "source": "2-s2.0-85043363088",
-            "target": "2-s2.0-84988378007",
+            "target": "2-s2.0-84893070216",
+            "weight": 8
+        },
+        {
+            "source": "2-s2.0-84995739642",
+            "target": "2-s2.0-84893070216",
             "weight": 6
         },
         {
-            "source": "2-s2.0-85044860190",
-            "target": "2-s2.0-84988378007",
-            "weight": 7
-        },
-        {
-            "source": "2-s2.0-85026895061",
-            "target": "2-s2.0-84988378007",
-            "weight": 6
-        },
-        {
-            "source": "2-s2.0-85017185837",
-            "target": "2-s2.0-84988378007",
+            "source": "2-s2.0-85028362798",
+            "target": "2-s2.0-84893070216",
             "weight": 7
         },
         {
             "source": "2-s2.0-85017185837",
-            "target": "2-s2.0-84910045825",
+            "target": "2-s2.0-84893070216",
+            "weight": 8
+        },
+        {
+            "source": "2-s2.0-85028987855",
+            "target": "2-s2.0-84893070216",
             "weight": 6
         },
         {
-            "source": "2-s2.0-85015196812",
-            "target": "2-s2.0-0027170085",
+            "source": "2-s2.0-84979792051",
+            "target": "2-s2.0-84893070216",
             "weight": 6
         },
         {
             "source": "2-s2.0-85015054154",
-            "target": "2-s2.0-84988378007",
-            "weight": 10
+            "target": "2-s2.0-84893070216",
+            "weight": 6
         },
         {
             "source": "2-s2.0-84977657335",
-            "target": "2-s2.0-84988378007",
-            "weight": 12
-        },
-        {
-            "source": "2-s2.0-84977657335",
-            "target": "2-s2.0-84910045825",
-            "weight": 12
-        },
-        {
-            "source": "2-s2.0-85009812516",
-            "target": "2-s2.0-84988378007",
-            "weight": 7
-        },
-        {
-            "source": "2-s2.0-84973514484",
-            "target": "2-s2.0-84988378007",
-            "weight": 17
-        },
-        {
-            "source": "2-s2.0-84973514484",
-            "target": "2-s2.0-84910045825",
-            "weight": 7
-        },
-        {
-            "source": "2-s2.0-84988378007",
-            "target": "2-s2.0-84954098724",
-            "weight": 12
-        },
-        {
-            "source": "2-s2.0-84988378007",
-            "target": "2-s2.0-84982921020",
-            "weight": 6
-        },
-        {
-            "source": "2-s2.0-84988378007",
-            "target": "2-s2.0-84924626271",
-            "weight": 10
-        },
-        {
-            "source": "2-s2.0-84988378007",
-            "target": "2-s2.0-84950991167",
-            "weight": 12
-        },
-        {
-            "source": "2-s2.0-84988378007",
-            "target": "2-s2.0-84925536399",
-            "weight": 6
-        },
-        {
-            "source": "2-s2.0-84988378007",
-            "target": "2-s2.0-84922900978",
-            "weight": 8
-        },
-        {
-            "source": "2-s2.0-84988378007",
-            "target": "2-s2.0-84922879577",
-            "weight": 8
-        },
-        {
-            "source": "2-s2.0-84988378007",
-            "target": "2-s2.0-84953736962",
-            "weight": 6
-        },
-        {
-            "source": "2-s2.0-84988378007",
-            "target": "2-s2.0-84910045825",
+            "target": "2-s2.0-84893070216",
             "weight": 11
         },
         {
-            "source": "2-s2.0-84988378007",
-            "target": "2-s2.0-84904458581",
-            "weight": 12
-        },
-        {
-            "source": "2-s2.0-84988378007",
-            "target": "2-s2.0-85083347960",
-            "weight": 6
+            "source": "2-s2.0-84973514484",
+            "target": "2-s2.0-84893070216",
+            "weight": 17
         },
         {
             "source": "2-s2.0-84988378007",
@@ -2105,313 +1467,188 @@
             "weight": 16
         },
         {
-            "source": "2-s2.0-84988378007",
-            "target": "2-s2.0-84865992559",
-            "weight": 9
+            "source": "2-s2.0-84954098724",
+            "target": "2-s2.0-84893070216",
+            "weight": 7
         },
         {
-            "source": "2-s2.0-84988378007",
-            "target": "2-s2.0-80054784505",
+            "source": "2-s2.0-84963856294",
+            "target": "2-s2.0-84893070216",
+            "weight": 16
+        },
+        {
+            "source": "2-s2.0-84956778895",
+            "target": "2-s2.0-84893070216",
             "weight": 6
         },
         {
-            "source": "2-s2.0-84988378007",
+            "source": "2-s2.0-84956798528",
+            "target": "2-s2.0-84893070216",
+            "weight": 6
+        },
+        {
+            "source": "2-s2.0-85021884138",
+            "target": "2-s2.0-84893070216",
+            "weight": 8
+        },
+        {
+            "source": "2-s2.0-84924626271",
+            "target": "2-s2.0-84893070216",
+            "weight": 10
+        },
+        {
+            "source": "2-s2.0-84950991167",
+            "target": "2-s2.0-84893070216",
+            "weight": 6
+        },
+        {
+            "source": "2-s2.0-84925536399",
+            "target": "2-s2.0-84893070216",
+            "weight": 8
+        },
+        {
+            "source": "2-s2.0-84941267633",
+            "target": "2-s2.0-84893070216",
+            "weight": 8
+        },
+        {
+            "source": "2-s2.0-84922879577",
+            "target": "2-s2.0-84893070216",
+            "weight": 9
+        },
+        {
+            "source": "2-s2.0-84953736962",
+            "target": "2-s2.0-84893070216",
+            "weight": 7
+        },
+        {
+            "source": "2-s2.0-84923250080",
+            "target": "2-s2.0-84893070216",
+            "weight": 6
+        },
+        {
+            "source": "2-s2.0-84910045825",
+            "target": "2-s2.0-84893070216",
+            "weight": 19
+        },
+        {
+            "source": "2-s2.0-84896364007",
+            "target": "2-s2.0-84893070216",
+            "weight": 10
+        },
+        {
+            "source": "2-s2.0-84892889849",
+            "target": "2-s2.0-84893070216",
+            "weight": 6
+        },
+        {
+            "source": "2-s2.0-84874935035",
+            "target": "2-s2.0-84893070216",
+            "weight": 19
+        },
+        {
+            "source": "2-s2.0-84894138585",
+            "target": "2-s2.0-84893070216",
+            "weight": 10
+        },
+        {
+            "source": "2-s2.0-84893070216",
+            "target": "2-s2.0-84859072818",
+            "weight": 6
+        },
+        {
+            "source": "2-s2.0-84893070216",
+            "target": "2-s2.0-84865992559",
+            "weight": 6
+        },
+        {
+            "source": "2-s2.0-84893070216",
+            "target": "2-s2.0-84860214823",
+            "weight": 7
+        },
+        {
+            "source": "2-s2.0-84893070216",
+            "target": "2-s2.0-84860222109",
+            "weight": 9
+        },
+        {
+            "source": "2-s2.0-84893070216",
+            "target": "2-s2.0-84860224794",
+            "weight": 7
+        },
+        {
+            "source": "2-s2.0-84893070216",
+            "target": "2-s2.0-84861014654",
+            "weight": 11
+        },
+        {
+            "source": "2-s2.0-84893070216",
             "target": "2-s2.0-78651248615",
             "weight": 7
         },
         {
-            "source": "2-s2.0-84988378007",
-            "target": "2-s2.0-20344384538",
-            "weight": 17
-        },
-        {
-            "source": "2-s2.0-84963856294",
-            "target": "2-s2.0-84910045825",
-            "weight": 6
-        },
-        {
-            "source": "2-s2.0-84963856294",
-            "target": "2-s2.0-0040844859",
+            "source": "2-s2.0-84893070216",
+            "target": "2-s2.0-58349097927",
             "weight": 7
         },
         {
-            "source": "2-s2.0-84962916557",
-            "target": "2-s2.0-0027170085",
-            "weight": 16
+            "source": "2-s2.0-84893070216",
+            "target": "2-s2.0-70349533039",
+            "weight": 6
         },
         {
-            "source": "2-s2.0-84924626271",
-            "target": "2-s2.0-84910045825",
+            "source": "2-s2.0-84893070216",
+            "target": "2-s2.0-34447578955",
+            "weight": 7
+        },
+        {
+            "source": "2-s2.0-84893070216",
+            "target": "2-s2.0-41149131898",
             "weight": 9
         },
         {
-            "source": "2-s2.0-84905046737",
-            "target": "2-s2.0-0027170085",
-            "weight": 15
-        },
-        {
-            "source": "2-s2.0-84923282916",
-            "target": "2-s2.0-0027170085",
-            "weight": 11
-        },
-        {
-            "source": "2-s2.0-84937039947",
-            "target": "2-s2.0-0027170085",
-            "weight": 21
-        },
-        {
-            "source": "2-s2.0-84911365559",
-            "target": "2-s2.0-0040844859",
-            "weight": 7
-        },
-        {
-            "source": "2-s2.0-84910045825",
-            "target": "2-s2.0-84874935035",
+            "source": "2-s2.0-84893070216",
+            "target": "2-s2.0-33745966449",
             "weight": 6
         },
         {
-            "source": "2-s2.0-84910045825",
-            "target": "2-s2.0-84893070216",
-            "weight": 19
+            "source": "2-s2.0-84893070216",
+            "target": "2-s2.0-85016909437",
+            "weight": 9
         },
         {
-            "source": "2-s2.0-84910045825",
-            "target": "2-s2.0-20344384538",
-            "weight": 12
-        },
-        {
-            "source": "2-s2.0-84910045825",
-            "target": "2-s2.0-0040844859",
-            "weight": 6
-        },
-        {
-            "source": "2-s2.0-84949117748",
-            "target": "2-s2.0-0027170085",
-            "weight": 7
-        },
-        {
-            "source": "2-s2.0-84907919813",
-            "target": "2-s2.0-0027170085",
-            "weight": 6
-        },
-        {
-            "source": "2-s2.0-84905248159",
-            "target": "2-s2.0-0027170085",
-            "weight": 8
-        },
-        {
-            "source": "2-s2.0-84945117975",
-            "target": "2-s2.0-0027170085",
+            "source": "2-s2.0-84893070216",
+            "target": "2-s2.0-20344382520",
             "weight": 10
         },
         {
-            "source": "2-s2.0-84872192507",
-            "target": "2-s2.0-0027170085",
-            "weight": 32
+            "source": "2-s2.0-84893070216",
+            "target": "2-s2.0-20344384538",
+            "weight": 30
+        },
+        {
+            "source": "2-s2.0-84893070216",
+            "target": "2-s2.0-28844478352",
+            "weight": 6
+        },
+        {
+            "source": "2-s2.0-84893070216",
+            "target": "2-s2.0-33749018649",
+            "weight": 8
+        },
+        {
+            "source": "2-s2.0-84893070216",
+            "target": "2-s2.0-0036988701",
+            "weight": 11
+        },
+        {
+            "source": "2-s2.0-84893070216",
+            "target": "2-s2.0-0032657953",
+            "weight": 12
         },
         {
             "source": "2-s2.0-84893070216",
             "target": "2-s2.0-0040844859",
-            "weight": 6
-        },
-        {
-            "source": "2-s2.0-84871761614",
-            "target": "2-s2.0-0027170085",
-            "weight": 7
-        },
-        {
-            "source": "2-s2.0-77951210490",
-            "target": "2-s2.0-0027170085",
-            "weight": 11
-        },
-        {
-            "source": "2-s2.0-77954202496",
-            "target": "2-s2.0-0027170085",
-            "weight": 6
-        },
-        {
-            "source": "2-s2.0-41849096491",
-            "target": "2-s2.0-0027170085",
-            "weight": 21
-        },
-        {
-            "source": "2-s2.0-34247593466",
-            "target": "2-s2.0-0027170085",
-            "weight": 17
-        },
-        {
-            "source": "2-s2.0-33750944370",
-            "target": "2-s2.0-0040844859",
-            "weight": 6
-        },
-        {
-            "source": "2-s2.0-33845886957",
-            "target": "2-s2.0-0027170085",
-            "weight": 19
-        },
-        {
-            "source": "2-s2.0-34248524996",
-            "target": "2-s2.0-0040844859",
-            "weight": 12
-        },
-        {
-            "source": "2-s2.0-38349000971",
-            "target": "2-s2.0-0027170085",
-            "weight": 6
-        },
-        {
-            "source": "2-s2.0-41149131898",
-            "target": "2-s2.0-0040844859",
-            "weight": 18
-        },
-        {
-            "source": "2-s2.0-41149131898",
-            "target": "2-s2.0-0027170085",
-            "weight": 9
-        },
-        {
-            "source": "2-s2.0-33750914664",
-            "target": "2-s2.0-0027170085",
-            "weight": 27
-        },
-        {
-            "source": "2-s2.0-84866515118",
-            "target": "2-s2.0-0027170085",
-            "weight": 6
-        },
-        {
-            "source": "2-s2.0-33745966449",
-            "target": "2-s2.0-0040844859",
-            "weight": 22
-        },
-        {
-            "source": "2-s2.0-33745966449",
-            "target": "2-s2.0-0027170085",
-            "weight": 12
-        },
-        {
-            "source": "2-s2.0-33745754794",
-            "target": "2-s2.0-0027170085",
-            "weight": 33
-        },
-        {
-            "source": "2-s2.0-25444448740",
-            "target": "2-s2.0-0040844859",
-            "weight": 8
-        },
-        {
-            "source": "2-s2.0-3242772950",
-            "target": "2-s2.0-0027170085",
-            "weight": 45
-        },
-        {
-            "source": "2-s2.0-0242368184",
-            "target": "2-s2.0-0027170085",
-            "weight": 6
-        },
-        {
-            "source": "2-s2.0-0036624731",
-            "target": "2-s2.0-0034037674",
-            "weight": 6
-        },
-        {
-            "source": "2-s2.0-32744468268",
-            "target": "2-s2.0-0027170085",
-            "weight": 9
-        },
-        {
-            "source": "2-s2.0-0033932818",
-            "target": "2-s2.0-0027170085",
-            "weight": 7
-        },
-        {
-            "source": "2-s2.0-0034037674",
-            "target": "2-s2.0-0029406633",
-            "weight": 11
-        },
-        {
-            "source": "2-s2.0-0034037674",
-            "target": "2-s2.0-0027170085",
-            "weight": 18
-        },
-        {
-            "source": "2-s2.0-0033989374",
-            "target": "2-s2.0-0027170085",
-            "weight": 34
-        },
-        {
-            "source": "2-s2.0-0032914505",
-            "target": "2-s2.0-0027170085",
-            "weight": 6
-        },
-        {
-            "source": "2-s2.0-0031796123",
-            "target": "2-s2.0-0027170085",
-            "weight": 10
-        },
-        {
-            "source": "2-s2.0-0040844859",
-            "target": "2-s2.0-0027170085",
-            "weight": 14
-        },
-        {
-            "source": "2-s2.0-0031171711",
-            "target": "2-s2.0-0027170085",
-            "weight": 13
-        },
-        {
-            "source": "2-s2.0-0030111182",
-            "target": "2-s2.0-0027170085",
-            "weight": 21
-        },
-        {
-            "source": "2-s2.0-0030326327",
-            "target": "2-s2.0-0027170085",
-            "weight": 14
-        },
-        {
-            "source": "2-s2.0-0030159416",
-            "target": "2-s2.0-0027170085",
-            "weight": 8
-        },
-        {
-            "source": "2-s2.0-0029406633",
-            "target": "2-s2.0-0027170085",
-            "weight": 7
-        },
-        {
-            "source": "2-s2.0-0029550541",
-            "target": "2-s2.0-0027170085",
-            "weight": 7
-        },
-        {
-            "source": "2-s2.0-0028220816",
-            "target": "2-s2.0-0027170085",
-            "weight": 6
-        },
-        {
-            "source": "2-s2.0-0027850399",
-            "target": "2-s2.0-0027170085",
-            "weight": 21
-        },
-        {
-            "source": "2-s2.0-0027170085",
-            "target": "2-s2.0-84980326211",
-            "weight": 12
-        },
-        {
-            "source": "2-s2.0-0027170085",
-            "target": "2-s2.0-84991860256",
-            "weight": 16
-        },
-        {
-            "source": "2-s2.0-0027170085",
-            "target": "2-s2.0-84900549189",
-            "weight": 15
-        },
-        {
-            "source": "2-s2.0-0027170085",
-            "target": "2-s2.0-0026180604",
             "weight": 6
         }
     ]

@@ -3,7 +3,11 @@ let onWasd = false;
 let onTransition = false;
 let onSpace = true;
 let currentWeight = 0;
+let currentWeightTime = 1000;
 let maxWeight = 100;
+let maxDegree = 100;
+let maxCit = 800;
+let repulsionVal = 20;
 //=================================================================================
 //Graph Behaviour
 //=================================================================================
@@ -322,16 +326,15 @@ function animatePathTraversal(nodePath, linkPath, graph, degree) {
     // Highlight current node in the path
     // It's actually the next node but I have to light up that one
     const currentNodeId = nodePath[currentStep + 1];
-    // console.log("CURRENT NODE",nodePath[currentStep])
 
     const currentNode = nodeMap[currentNodeId];
     document.getElementById("content").innerText = currentNode["description"];
-    
+    document.getElementById("currentCluster").innerText = currentNode["cluster"];
     currentWeight = getWeightBetweenNodesWithDefault(graph.graphData(), nodePath[currentStep], currentNodeId);
-    // console.log("WEIGHT:", getWeightBetweenNodesWithDefault(graph.graphData(), nodePath[currentStep], currentNodeId), "Start:", nodePath[currentStep], "End:", currentNodeId)
-
+    currentWeightTime = mapNumRange(currentWeight, 0, maxWeight, 500, 20000);
+    // console.log("The weight is: ", currentWeight);
     // Send OSC message
-    sendOSCMessage(currentNode, '/additive', degree[currentNode.id], currentWeight);
+    sendOSCMessage(currentNode, '/additive', degree[currentNode.id]);
     
     // Center on current node
     graph.centerAt(currentNode.x, currentNode.y, 300);
@@ -340,45 +343,23 @@ function animatePathTraversal(nodePath, linkPath, graph, degree) {
     updateNodeColors(graph);
     
     // Calculate the delay for the next step based on current node's citations
-    const nextNodeId = nodePath[currentStep + 1];
-    // console.log("GRAPHDATA", graph.graphData())
-    // console.log("TARGET NODE",nextNodeId)
+    // const nextNodeId = nodePath[currentStep + 1];
 
-    // Maps 100-500 to 0-1 with focus on 100-150 range
-    // TODO TOMORROW
-    // const nextDelay = mapValue(nodeMap[nextNodeId]["citations"], {
-    //   inMin: 0,
-    //   inMax: 1000,
-    //   outMin: 5000,
-    //   outMax: 10000,
-    //   focusRangeEnd: 30,
-    //   focusRangeOutput: 0.4
-    // });
-    // const nextDelay = mapNumRange(nodeMap[nextNodeId]["citations"], 0,836,500,5000);
-    const nextDelay = mapNumRange(currentWeight, 0,107,500,5000);
-
-    // const nextDelay = nodeMap[nextNodeId]["citations"];
-    // console.log("Current Node: ", nodeMap[nextNodeId])
-    // console.log("Next Delay:", nextDelay);
+    // const nextDelay = mapNumRange(currentWeight, 0, maxWeight,500,10000);
+    const nextDelay = currentWeightTime;
     // Move to next step with dynamic timeout
     currentStep++;
     
     // Set the next timeout with dynamic delay
     animationTimer = setTimeout(animateStep, nextDelay);
   }
+  
   // First weight  
   const firstWeight = getWeightBetweenNodesWithDefault(graph.graphData(), nodePath[0], nodePath[1]);
+
   // Start the animation with the first node's delay
-  const firstDelay = mapNumRange(firstWeight, 0, 106, 500, 5000);
-  // const firstDelay = mapNumRange(nodeMap[nodePath[0]]["citations"], 0,836,500,10000);
-  // const firstDelay = mapValue(nodeMap[nodePath[0]]["citations"], {
-  //   inMin: 0,
-  //   inMax: 1000,
-  //   outMin: 1000,
-  //   outMax: 10000,
-  //   focusRangeEnd: 30,
-  //   focusRangeOutput: 0.4
-  // });
+  const firstDelay = mapNumRange(firstWeight, 0, maxWeight, 500, 20000);
+
   console.log("First Delay", firstDelay);
   animationTimer = setTimeout(animateStep, firstDelay);
 }

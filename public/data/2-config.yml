@@ -6,5 +6,5 @@ display-text:
 interactions:
   hover: false
   wasd: false
-  transition: true
-  space: false
+  transition: false
+  space: true
