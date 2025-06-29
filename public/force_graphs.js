@@ -408,8 +408,8 @@ function updateGraphData(fileName) {
 }
 
 load_yml("./data/5-config.yml")
-// main("./data/5-co-cit-coupling.json")
-main("./data/1-hover.json")
+main("./data/5-co-cit-coupling.json")
+// main("./data/1-hover.json")
 // main("./data/network_graph.json")
 // main("./data/fake_son.json")
 // main("./data/fab_son.json")

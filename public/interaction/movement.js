@@ -148,6 +148,11 @@ function shiftSelection(node, graph,degree) {
     // console.log("WELA")
   // If an animation is in progress, cancel it
   if (animationInProgress) {
+    selectedNodes = [];
+    selectedNode = null;
+    highlightedPath = [];
+    clearActiveAnimations();
+    clearTransitionAnimations();
     clearTimeout(animationTimer);
     animationInProgress = false;
     highlightedPath = [];
@@ -176,7 +181,6 @@ function shiftSelection(node, graph,degree) {
   }
   } else {
         // console.log("AZZ")
-
     // Regular selection behavior (single node)
     selectNode(node, true, graph);
   }
@@ -207,10 +211,10 @@ function updateNodeColors(graph) {
   graph.nodeColor(n => {
     if (selectedNodes.length > 0) {
       // Multi-selection mode
-      return selectedNodes.includes(n) ? 'red' : 'rgba(141, 185, 185, 0.88)';
+      return selectedNodes.includes(n) ? 'red' : 'gray';
     } else {
       // Single selection mode
-      return n === selectedNode ? 'red' : 'rgba(141, 185, 185, 0.88)';
+      return n === selectedNode ? 'red' : 'gray';
     }
   });
   
