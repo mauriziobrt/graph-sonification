@@ -2,12 +2,18 @@
 // GRAPH SONIFICATION
 //================================================================================================================================================
 
+( // Installs the SafetyNet Quark.
+
+Quarks.fetchDirectory(true); Quarks.install("SafetyNet");
+thisProcess.recompile;
+
+)
+
 //================================================================================================================================================
 // HOVERING
 //================================================================================================================================================
-a = Scale.major;
-
 (
+~upperResonatorLimit = 10000;
 (
 a = Scale.major;
 OSCdef(\hoverControl, {|msg, time, addr, recvPort|
@@ -25,34 +31,34 @@ OSCdef(\hoverControl, {|msg, time, addr, recvPort|
 			nr_resonators = cit.linlin(0, max_cit, 1, 50);
 			volumeCit = cit.linlin(0,max_cit,-5,0).dbamp.postln;
 			switch (cluster,
-				2, {//1. Nodo grande → Low pitch - Nodo piccolo → High pitch - ? Envelope ?
+				2, {//2. Nodo grande → Low pitch - Nodo piccolo → High pitch - ? Envelope ?
 					freq = coupling.linexp(0, max_coupling, 1300, 50);
 					env = Env.new(levels: [0, 1, 0.4, 0], times: [0.1, 0.2, freq/100], curve: [-5, 0, -5]);
 				},
-				1, { //2. Nodo piccolo → Low pitch - Nodo grande → High pitch - ? Envelope ?
+				1, { //1. Nodo piccolo → Low pitch - Nodo grande → High pitch - ? Envelope ?
 					freq = coupling.linlin(0, max_coupling, 50, 1300);
 					env = Env.new(levels: [0, 1, 0.4, 0], times: [0.1, 0.2, freq/100], curve: [-5, 0, -5]);
 				},
 				3, {//3. Nodo grande → Sweep Low-High pitch - Nodo piccolo → Sweep High-Low pitch - ? Envelope ?
 					freq = coupling.linexp(0, max_coupling, 1300, 50);
-					freq = XLine.ar(freq, freq/10, nr_resonators);
+					freq = XLine.ar(freq, freq/10, 0.1);
 					env = Env.new(levels: [0, 1, 0.4, 0], times: [0.1, 0.2, freq/100], curve: [-5, 0, -5]);
 				},
 				4, {//4 Nodo piccolo → Sweep High-Low pitch - Nodo grande → Sweep Low-High pitch - ? Envelope ?
 					freq = coupling.linlin(0, max_coupling, 50, 1300);
-					freq = XLine.ar(freq, freq*10, nr_resonators);
+					freq = XLine.ar(freq, freq*10, 0.1);
 					env = Env.new(levels: [0, 1, 0.4, 0], times: [0.1, 0.2, freq/100], curve: [-5, 0, -5]);
 				},
 			);
 			arraySeries = Array.series(nr_resonators, freq, 2 * freq * a.ratios[2]);
-			arraySeries = `[arraySeries.linlin(arraySeries[0], arraySeries[arraySeries.lastIndex], arraySeries[0], 15000), nil, [1, 1, 1, 1]].postln;
+			arraySeries = `[arraySeries.linlin(arraySeries[0], arraySeries[arraySeries.lastIndex], arraySeries[0], ~upperResonatorLimit), nil, [1, 1, 1, 1]].postln;
 			sig = DynKlank.ar(arraySeries, PinkNoise.ar([0.007, 0.007])) * 0.3;
 
 			sig = sig +
 			(sig * Pulse.ar(Rand(1,20),mul:0.1) * Saw.ar(0.5)) * 0.2 +
 			SinOsc.ar([freq, freq*a.ratios[3]], mul: 0.2)  + FreeVerb.ar(sig, 1,1, mul: 0.5);
 			sig = volumeCit * sig * EnvGen.ar(env, doneAction: Done.freeSelf);
-			Out.ar(out, Pan2.ar(sig * 0.1))// stereo output
+			Out.ar(out, Pan2.ar(sig * 0.2))// stereo output
 		}).play;
 	);
 }, '/control');
@@ -78,11 +84,9 @@ OSCdef(\wasdControl, {|msg, time, addr, recvPort|
 			arraySeries = Array.series(nr_resonators, freq, 2 * freq * a.ratios[2]);
 			arraySeries = `[arraySeries.linlin(arraySeries[0], arraySeries[arraySeries.lastIndex], arraySeries[0], 15000), nil, [1, 1, 1, 1]].postln;
 			sig = DynKlank.ar(arraySeries, PinkNoise.ar([0.007, 0.007])) * 0.3;
-			sig = sig +
-			(sig * Pulse.ar(Rand(1,20),mul:0.1) * Saw.ar(0.5)) * 0.2 +
-			SinOsc.ar([freq, freq*a.ratios[3]], mul: 0.2);
+			sig = sig + (sig * Pulse.ar(Rand(1,20),mul:0.1) * Saw.ar(0.5)) * 0.2 + SinOsc.ar([freq, freq*a.ratios[3]], mul: 0.2);
 			sig = sig * EnvGen.ar(env, doneAction: Done.freeSelf)*0.5;
-			Out.ar(out, Pan2.ar(sig * 0.5))// stereo output
+			Out.ar(out, Pan2.ar(sig * 0.2))// stereo output
 		}).play;
 	);
 }, '/wasd');
@@ -93,19 +97,20 @@ OSCdef(\wasdControl, {|msg, time, addr, recvPort|
 // BUBBLES
 //================================================================================================================================================
 
-
 (
 a = Scale.major;
 (
 SynthDef("help-KlankOverlapTexture",
 	{|out = 0, amp = 1, freqs = #[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], rings = #[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], atk = 5, sus = 8, rel = 5, pan = 0, filterfreq=440|
-		var e = EnvGen.kr(Env.linen(atk, sus, rel, 1, -50), doneAction: Done.freeSelf);
+		var env, sig;
+		env = EnvGen.kr(Env.linen(atk, sus, rel, 1, -50), doneAction: Done.freeSelf);
 		// var i = Decay.ar(Impulse.ar(Rand(0.8, 2.2)), 0.0, ClipNoise.ar(0.01));
-		var z = Klank.ar(
+		sig = Klank.ar(
 			`[freqs, nil, rings],     // specs
-			ClipNoise.ar(0.01) * e                    // input
+			ClipNoise.ar(0.01) * env                    // input
 		);
-		Out.ar(out, Pan2.ar(LPF.ar(z*e*amp, filterfreq), pan));
+		sig = FreeVerb.ar(sig, 0.2, 10, 1, mul: 0.7);
+		Out.ar(out, Pan2.ar(LPF.ar(sig*env*amp, filterfreq), pan));
 }).add;
 );
 (
@@ -158,8 +163,6 @@ OSCdef(\bubbleControl, {|msg, time, addr, recvPort|
 //================================================================================================================================================
 // TRANSITION
 //================================================================================================================================================
-// 4 blocchi con opposizione timbro/pitch pairwise - ciascuno di circa 20 nodi con diverse connessioni
-
 (
 l = 0;
 OSCdef(\transitionControl, {|msg, time, addr, recvPort|
@@ -175,25 +178,24 @@ OSCdef(\transitionControl, {|msg, time, addr, recvPort|
 		{}
 	);
 	"TIME:".postln;
-	(msg[5]).postln;
 	(my_time).postln;
 	(
 		switch (cluster,
-			2, { //1. Big node → Low pitch  - Small node → High pitch | Cit:  Bright → Dark
-				freq = ((coupling + 1).linlin(0,max_coupling,100, 800));
-				nr_resonators = cit.linlin(0,max_cit,1, 50) + 1; //inverti con il valore massimo di cit/co-cit
-			},
-			1, { //2. Big node → High pitch - Small node → Low pitch | Cit: Dark Bright
+			1, { //1. Big node → High pitch - Small node → Low pitch | Cit: Dark > Bright
 				freq = ((coupling + 1).linlin(0,max_coupling,800, 100));
 				nr_resonators = cit.linlin(0,max_cit,1, 50) + 1;
 			},
-			3, { //3. Big node → High pitch - Small node → High pitch | Cit: Bright → Dark
+			2, { //2. Big node → Low pitch  - Small node → High pitch | Cit:  Bright > Dark
+				freq = ((coupling + 1).linlin(0,max_coupling,100, 800));
+				nr_resonators = cit.linlin(0,max_cit,50, 1) + 1; //inverti con il valore massimo di cit/co-cit
+			},
+			3, { //3. Big node → High pitch - Small node → High pitch | Cit: Dark > Bright
 				freq = ((coupling + 1).linlin(0,max_coupling,100, 800));
 				nr_resonators = (max_cit - cit).linlin(0,max_cit,1, 50) + 1;
 			},
-			4, { //4 Big node → Low pitch → Dark - Small node → Low pitch → Bright
+			4, { //4 Big node → Low pitch  - Small node → Low pitch | Cit: Bright > Dark
 				freq = ((coupling + 1).linlin(0,max_coupling,800, 100));
-				nr_resonators = (max_cit - cit).linlin(0,max_cit,1, 50) + 1;
+				nr_resonators = (max_cit - cit).linlin(0,max_cit,50, 1) + 1;
 			},
 		);
 		Ndef(\resControlled, {
@@ -202,7 +204,8 @@ OSCdef(\transitionControl, {|msg, time, addr, recvPort|
 			arraySeries = `[arraySeries.linlin(arraySeries[0], arraySeries[arraySeries.lastIndex], arraySeries[0], 15000), nil, [1, 1, 1, 1]].postln;
 			sig = DynKlank.ar(arraySeries, PinkNoise.ar([0.007, 0.007]));
 			sig = sig * SinOsc.ar([cit.linlin(0 ,max_cit,0.001, 0.02), cit.linlin(0,max_cit,0.001, 0.03)]).abs;
-			sig = sig;
+			sig = sig * 0.2;
+			sig
 		});
 	);
 	if ( msg[1] == 0,
