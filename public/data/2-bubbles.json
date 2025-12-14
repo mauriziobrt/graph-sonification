@@ -130,27 +130,6 @@
       "cluster": 1
     },
     {
-      "id": "2-s2.0-0027170085_cluster_0",
-      "user": "WenzelArruda1993",
-      "description": "Localization using nonindividualized head-related transfer functions",
-      "year": 1993,
-      "openacces": "closed",
-      "citations": 836,
-      "subject areas": [
-        "Acoustics and Ultrasonics",
-        "Arts and Humanities",
-        "Arts and Humanities (miscellaneous)",
-        "Physics and Astronomy"
-      ],
-      "scival topics cluster": [
-        ""
-      ],
-      "scival topics": [
-        ""
-      ],
-      "cluster": 1
-    },
-    {
       "id": "2-s2.0-85015054154_cluster_0",
       "user": "NewboldBianchiberthouze2016",
       "description": "Musically informed sonification for chronic pain rehabilitation: Facilitating progress & avoiding over-doing",
@@ -2151,27 +2130,6 @@
         "Transfer Function",
         "Sound Localization",
         "Sensation of Hearing"
-      ],
-      "cluster": 2
-    },
-    {
-      "id": "2-s2.0-0027170085_cluster_1",
-      "user": "WenzelArruda1993",
-      "description": "Localization using nonindividualized head-related transfer functions",
-      "year": 1993,
-      "openacces": "closed",
-      "citations": 836,
-      "subject areas": [
-        "Acoustics and Ultrasonics",
-        "Arts and Humanities",
-        "Arts and Humanities (miscellaneous)",
-        "Physics and Astronomy"
-      ],
-      "scival topics cluster": [
-        ""
-      ],
-      "scival topics": [
-        ""
       ],
       "cluster": 2
     },
@@ -4180,27 +4138,6 @@
       "cluster": 3
     },
     {
-      "id": "2-s2.0-0027170085_cluster_2",
-      "user": "WenzelArruda1993",
-      "description": "Localization using nonindividualized head-related transfer functions",
-      "year": 1993,
-      "openacces": "closed",
-      "citations": 836,
-      "subject areas": [
-        "Acoustics and Ultrasonics",
-        "Arts and Humanities",
-        "Arts and Humanities (miscellaneous)",
-        "Physics and Astronomy"
-      ],
-      "scival topics cluster": [
-        ""
-      ],
-      "scival topics": [
-        ""
-      ],
-      "cluster": 3
-    },
-    {
       "id": "2-s2.0-85015054154_cluster_2",
       "user": "NewboldBianchiberthouze2016",
       "description": "Musically informed sonification for chronic pain rehabilitation: Facilitating progress & avoiding over-doing",
@@ -6201,27 +6138,6 @@
         "Transfer Function",
         "Sound Localization",
         "Sensation of Hearing"
-      ],
-      "cluster": 4
-    },
-    {
-      "id": "2-s2.0-0027170085_cluster_3",
-      "user": "WenzelArruda1993",
-      "description": "Localization using nonindividualized head-related transfer functions",
-      "year": 1993,
-      "openacces": "closed",
-      "citations": 836,
-      "subject areas": [
-        "Acoustics and Ultrasonics",
-        "Arts and Humanities",
-        "Arts and Humanities (miscellaneous)",
-        "Physics and Astronomy"
-      ],
-      "scival topics cluster": [
-        ""
-      ],
-      "scival topics": [
-        ""
       ],
       "cluster": 4
     },

@@ -1,8 +1,8 @@
 display-text:
   # Co-citations or Bibliographic Coupling
   data-spec: Co-citations
-  display-features: true
-  display-navigation: true
+  display-features: false
+  display-navigation: false
 interactions:
   hover: false
   wasd: true

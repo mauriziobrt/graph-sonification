@@ -13,6 +13,7 @@
   "dependencies": {
     "express": "^4.21.2",
     "osc-js": "^2.4.1",
+    "tinykeys": "^3.0.0",
     "ws": "^8.18.1",
     "yaml": "^2.8.0"
   },

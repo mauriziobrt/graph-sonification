@@ -1,6 +1,6 @@
 const mapNumRange = (num, inMin, inMax, outMin, outMax) =>
     ((num - inMin) * (outMax - outMin)) / (inMax - inMin) + outMin;
-  
+
 //======================================================================
 // Server Part
 //======================================================================
@@ -9,24 +9,59 @@ let ws;
 
 function connectWebSocket() {
     ws = new WebSocket('ws://localhost:7700');
-    
+
     ws.onopen = () => {
         console.log('Connected to WebSocket server');
         // updateStatus('Connected to WebSocket server');
     };
-    
+
+    ws.onmessage = (event) => {
+        try {
+            const message = JSON.parse(event.data);
+            // console.log("Message incoming AAAA")
+            handleIncomingOSC(message);
+        } catch (error) {
+            console.error('Error parsing incoming message:', error);
+        }
+    };
+
     ws.onclose = () => {
         console.log('Disconnected from WebSocket server');
         // updateStatus('Disconnected from WebSocket server - Retrying...', true);
         // Try to reconnect in 5 seconds
         setTimeout(connectWebSocket, 5000);
     };
-    
+
     ws.onerror = (error) => {
         console.error('WebSocket error:', error);
         // updateStatus('WebSocket error occurred', true);
     };
 }
+
+function handleIncomingOSC(message) {
+    if (ws && ws.readyState === WebSocket.OPEN) {
+        // console.log('Received OSC message:', message);
+
+        // Handle messages based on their address
+        if (message.address) {
+            switch (message.address) {
+                case '/move':
+                    // Navigate in direction specified by first argument
+                    const direction = message.args[0];
+                    if (['up', 'down', 'left', 'right'].includes(direction)) {
+                        window.navigateToDirection(direction);
+                        console.log('Navigating:', direction);
+                    }
+                    break;
+                case '/space':
+                    highlightNeighborsGradually(node, graph, degree, data);
+                default:
+                    console.log('Unhandled OSC address:', message.address);
+            }
+        }
+    }
+}
+
 
 function sendOSCMessage(node, address, degree) {
     if (ws && ws.readyState === WebSocket.OPEN) {
@@ -36,19 +71,20 @@ function sendOSCMessage(node, address, degree) {
         if (node["cluster"]) {
             const message = {
                 address: address,
-                args: [node["id"], node["openacces"],cit, degree, currentWeightTime, node["year"], node["x"], node["y"], node["cluster"], maxDegree, maxCit]
+                args: [node["id"], node["openacces"], cit, degree, currentWeightTime, node["year"], node["x"], node["y"], node["cluster"], maxDegree, maxCit]
             };
+            document.getElementById("content").innerText = node["description"];
             document.getElementById("openaccess").innerText = node["openacces"];
             document.getElementById("citations").innerText = cit;
             document.getElementById("co-citations").innerText = degree;
             document.getElementById("year").innerText = node["year"];
             ws.send(JSON.stringify(message));
-        }else
-        {
+        } else {
             const message = {
-            address: address,
-            args: [node["id"], node["openacces"],cit, degree, currentWeightTime, node["year"], node["x"], node["y"], 1, maxDegree, maxCit]
+                address: address,
+                args: [node["id"], node["openacces"], cit, degree, currentWeightTime, node["year"], node["x"], node["y"], 1, maxDegree, maxCit]
             };
+            document.getElementById("content").innerText = node["description"];
             document.getElementById("openaccess").innerText = node["openacces"];
             document.getElementById("citations").innerText = cit;
             document.getElementById("co-citations").innerText = degree;
@@ -67,7 +103,7 @@ function sendOSCStopMessage(address) {
     if (ws && ws.readyState === WebSocket.OPEN) {
         const message = {
             address: address,
-            args: [0, 0 , 0, 0, 0, 0 , 0, 0, 1, 100,100]  // Send frequency as a number
+            args: [0, 0, 0, 0, 0, 0, 0, 0, 1, 100, 100]  // Send frequency as a number
         };
         ws.send(JSON.stringify(message));
         console.log('Sent message:', message);

@@ -13,6 +13,10 @@ app.use(express.static('public'));
 // Create OSC UDP client
 const oscClient = new OSC({
   plugin: new OSC.DatagramPlugin({
+    open: {
+      port: 57121,      // Listen for incoming OSC on this port
+      host: 'localhost'
+    },
     send: {
       port: 57120,      // SuperCollider's default OSC port
       host: 'localhost'
@@ -21,33 +25,59 @@ const oscClient = new OSC({
 });
 
 wss.on('connection', (ws) => {
-    console.log('Client connected');
-    ws.on('message', (message) => {
-      try {
-        const data = JSON.parse(message);
-        
-        // Normalize args to an array
-        const args = Array.isArray(data.args) 
-          ? data.args 
-          : [data.args];
-   
-        // Convert string numbers to actual numbers
-        const processedArgs = args.map(arg => 
-          typeof arg === 'string' && !isNaN(arg) ? Number(arg) : arg
-        );
-        
-        const oscMessage = new OSC.Message(data.address, ...processedArgs);
-        oscClient.send(oscMessage);
-        ws.send(oscMessage);
-        console.log('Sent OSC message:', oscMessage);
-      } catch (error) {
-        console.error('Error processing message:', error);
-        ws.send(JSON.stringify({ 
-          error: 'Failed to process message', 
-          details: error.message 
-        }));
-      }
-    });
+  console.log('Client connected');
+  ws.on('message', (message) => {
+    try {
+      const data = JSON.parse(message);
+
+      // Normalize args to an array
+      const args = Array.isArray(data.args)
+        ? data.args
+        : [data.args];
+
+      // Convert string numbers to actual numbers
+      const processedArgs = args.map(arg =>
+        typeof arg === 'string' && !isNaN(arg) ? Number(arg) : arg
+      );
+
+      const oscMessage = new OSC.Message(data.address, ...processedArgs);
+      oscClient.send(oscMessage);
+      ws.send(oscMessage);
+      console.log('Sent OSC message:', oscMessage);
+    } catch (error) {
+      console.error('Error processing message:', error);
+      ws.send(JSON.stringify({
+        error: 'Failed to process message',
+        details: error.message
+      }));
+    }
+  });
+});
+
+// Handle incoming OSC messages
+oscClient.on('*', (message) => {
+  // console.log('Received OSC message:', message.address, message.args);
+
+  // Forward to all connected WebSocket clients
+  const data = JSON.stringify({
+    address: message.address,
+    args: message.args
+  });
+
+  // Replace the clients.forEach part with:
+  wss.clients.forEach(client => {
+    if (client.readyState === WebSocket.OPEN) {
+      client.send(data);
+    }
+  });
+});
+
+oscClient.on('open', () => {
+  console.log('OSC Client is listening on port 57121');
+});
+
+oscClient.on('error', (error) => {
+  console.error('OSC Error:', error);
 });
 
 const PORT = 7700;
