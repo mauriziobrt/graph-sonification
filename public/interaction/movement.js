@@ -9,51 +9,14 @@ let maxDegree = 100;
 let maxCit = 800;
 let repulsionVal = 20;
 let bubbleAddress = "/bubblesv1"
-//=================================================================================
-//Graph Behaviour
-//=================================================================================
-
+let rhythmScaling = 5000;
 
 //=================================================================================
-//Attraction TODO NOT IN USE
-//=================================================================================
-function attractNeighbors(node, graph) {
-  // Find connected nodes
-  const connectedNodes = new Set(
-    data.links
-      .filter(link => link.source.id === node.id || link.target.id === node.id)
-      .map(link => (link.source.id === node.id ? link.target : link.source))
-  );
-
-  // Apply force to attract neighbors to the clicked node
-  graph
-    .d3Force('attract', d3.forceManyBody()
-      .strength(n => (connectedNodes.has(n) ? 50 : 0)) // Only attract neighbors
-    );
-  graph
-    .d3Force('x', d3.forceX(n => (n.highlighted ? node.x : n.x)).strength(0.2))
-    .d3Force('y', d3.forceY(n => (n.highlighted ? node.y : n.y)).strength(0.2));
-
-  graph
-    .d3Force('x', d3.forceX(n => (connectedNodes.has(n) ? node.x : n.x)).strength(2))
-    .d3Force('y', d3.forceY(n => (connectedNodes.has(n) ? node.y : n.y)).strength(2));
-
-  // graph.restart(); // Restart simulation with new forces
-}
-//=================================================================================
-//Repulsion TODO
-//=================================================================================
-
-//=================================================================================
-
 //User interaction
-
 //=================================================================================
 
 //==================================================
-
 // WASD
-
 //==================================================
 
 function findClosestNodeInDirection(currentNodeId, direction, graph) {
@@ -126,28 +89,17 @@ function findClosestNodeInDirection(currentNodeId, direction, graph) {
       closestDistanceSquared = distanceSquared;
     }
   }
-  // console.log('WASD triggered with current node:', currentNodeId);
-  // console.log('Available nodes:', nodes.map(n => ({ id: n.id, x: n.x, y: n.y })));
-  // console.log('Direction:', direction);
-  // console.log('Current position:', { x: currentX, y: currentY });
-  // console.log('Next node', closest)
-
-  // Allora la posizione è quella del nodo giusto ma ne seleziona un'altro sbagliato,
-  // sembra quasi che faccia più di uno step
-  // console.log('END --------')
   return closest; // Returns the fresh node object from current graph data
 }
 
 //==================================================
-
 // Transition
-
 //==================================================
+
 // Function to handle node selection with shift key
 function shiftSelection(node, graph, degree) {
   if (!onTransition) return null;
   if (shiftKeyPressed) {
-    // console.log("WELA")
     // If an animation is in progress, cancel it
     if (animationInProgress) {
       selectedNodes = [];
@@ -177,12 +129,12 @@ function shiftSelection(node, graph, degree) {
     // Update node colors based on selection
     updateNodeColors(graph);
 
-    // If exactly 2 nodes are selected, trigger your function
+    // If exactly 2 nodes are selected, trigger function
     if (selectedNodes.length === 2) {
+      graph.centerAt(selectedNodes[0].x, selectedNodes[0].y, 300);
       connectSelectedNodes(selectedNodes, graph, degree);
     }
   } else {
-    // console.log("AZZ")
     // Regular selection behavior (single node)
     selectNode(node, true, graph);
   }
@@ -331,55 +283,6 @@ function findShortestPath(startNode, endNode, graph) {
     totalWeight: distances[endNode.id]
   };
 }
-// // Find shortest path between two nodes using BFS
-// function findShortestPath(startNode, endNode, graph) {
-//   // Get the graph data
-//   const nodes = graph.graphData().nodes;
-//   const links = graph.graphData().links;
-//   console.log(links)
-
-//   // Create an adjacency list representation of the graph
-//   const adjacencyList = {};
-//   nodes.forEach(node => {
-//     adjacencyList[node.id] = [];
-//   });
-
-//   links.forEach(link => {
-//     const source = typeof link.source === 'object' ? link.source.id : link.source;
-//     const target = typeof link.target === 'object' ? link.target.id : link.target;
-//     adjacencyList[source].push({node: target, link: link});
-//     adjacencyList[target].push({node: source, link: link}); // For undirected graph
-//   });
-
-//   // BFS implementation
-//   const queue = [{node: startNode.id, path: [], links: []}];
-//   const visited = new Set([startNode.id]);
-
-//   while (queue.length > 0) {
-//     const {node, path, links} = queue.shift();
-
-//     if (node === endNode.id) {
-//       return {
-//         path: [...path, node],
-//         links: links
-//       };
-//     }
-
-//     adjacencyList[node].forEach(neighbor => {
-//       if (!visited.has(neighbor.node)) {
-//         visited.add(neighbor.node);
-//         queue.push({
-//           node: neighbor.node, 
-//           path: [...path, node],
-//           links: [...links, neighbor.link]
-//         });
-//       }
-//     });
-//   }
-
-//   // No path found
-//   return {path: [], links: []};
-// }
 
 // Function that triggers when two nodes are selected
 function connectSelectedNodes(nodes, graph, degree) {
@@ -437,7 +340,7 @@ function animatePathTraversal(nodePath, linkPath, graph, degree) {
 
     const currentNode = nodeMap[currentNodeId];
     document.getElementById("content").innerText = currentNode["description"];
-    document.getElementById("currentCluster").innerText = currentNode["cluster"];
+    // document.getElementById("currentCluster").innerText = currentNode["cluster"];
     currentWeight = getWeightBetweenNodesWithDefault(graph.graphData(), nodePath[currentStep], currentNodeId);
     currentWeightTime = mapNumRange(currentWeight, 0, maxWeight, 500, 20000);
     // console.log("The weight is: ", currentWeight);
@@ -473,9 +376,7 @@ function animatePathTraversal(nodePath, linkPath, graph, degree) {
 }
 
 //==================================================
-
 // Bubbles
-
 //==================================================
 
 // Function to Higlight the Neighbors of a node (Not in use)
@@ -499,13 +400,14 @@ function highlightNeighbors(node, graph) {
 let activeTimeouts = []; // Array to store all active timeouts
 
 // Function to Higlight the Neighbors of a node in time
-function highlightNeighborsGradually(node, graph, degree, data) {
-  if (!onSpace) return null;
+function highlightNeighborsGradually(node, graph, degree, allNodes, allLinks) {
+  // if (!onSpace) return null;
+  // console.log(node, graph, degree, allnodes, alllinks);
   // Find connected nodes
   // console.log(degree[node.id])
   clearActiveAnimations();
 
-  const connectedLinks = data.links
+  const connectedLinks = allLinks
     .filter(link => link.source.id === node.id || link.target.id === node.id);
 
   const connectedNodes = connectedLinks
@@ -513,20 +415,9 @@ function highlightNeighborsGradually(node, graph, degree, data) {
 
   const tmpMaxWeight = Math.max(...connectedLinks.map(link => link.weight));
 
-  // const connectedNodes = data.links
-  //     .filter(link => link.source.id === node.id || link.target.id === node.id)
-  //     .map(link => link.source.id === node.id ? link.target : link.source);
-
-  // // Get minimum weight among connected links
-  // const minWeight = Math.min(...data.links
-  //   .filter(link => link.source.id === node.id || link.target.id === node.id)
-  //   .map(link => link.weight)
-  // );
-  // console.log(minWeight)
-
-  console.log("the max weight is:", tmpMaxWeight)
+  console.log("The max weight is:", tmpMaxWeight)
   // Reset all nodes before applying new highlights
-  data.nodes.forEach(n => n.highlighted = false);
+  allNodes.forEach(n => n.highlighted = false);
   node.highlighted = true; // Highlight the clicked node immediately
   // let previouslyHighlighted = []; // Keep track of past nodes
   // (1- (Math.log((getWeightBetweenNodesWithDefault(graph.graphData(), node.id, neighbor.id))) / Math.log(maxWeight))) * 1000); // 1 second delay per node
@@ -534,17 +425,18 @@ function highlightNeighborsGradually(node, graph, degree, data) {
   // ((index + 1)) + 
   connectedNodes.forEach((neighbor, index) => {
     const timeoutId = setTimeout(() => {
+      // console.log(degree)
       neighbor.highlighted = true; // Highlight the node
       graph.nodeColor(n => n.highlighted ? 'red' : 'gray'); // Update color dynamically
-
+      console.log(neighbor.id, degree[neighbor.id]);
       sendOSCMessage(neighbor, bubbleAddress, degree[neighbor.id], getWeightBetweenNodesWithDefault(graph.graphData(), node.id, neighbor.id));
       //it should be a contextual maxweight, meaning that it's mapped according to the contextual value, so the first is always the closest and the rest slowly decays cause the connection
       // is less strong
-      console.log("WEIGHT:", getWeightBetweenNodesWithDefault(graph.graphData(), node.id, neighbor.id));
-      console.log("Logarithmic Scaling", (1 - (Math.log((getWeightBetweenNodesWithDefault(graph.graphData(), node.id, neighbor.id))) / Math.log(tmpMaxWeight))));
-      console.log("Exponential Scaling:", (Math.pow(1 - ((getWeightBetweenNodesWithDefault(graph.graphData(), node.id, neighbor.id)) / tmpMaxWeight), 5) * 10));
+      // console.log("WEIGHT:", getWeightBetweenNodesWithDefault(graph.graphData(), node.id, neighbor.id));
+      // console.log("Logarithmic Scaling", (1 - (Math.log((getWeightBetweenNodesWithDefault(graph.graphData(), node.id, neighbor.id))) / Math.log(tmpMaxWeight))));
+      // console.log("Exponential Scaling:", (Math.pow(1 - ((getWeightBetweenNodesWithDefault(graph.graphData(), node.id, neighbor.id)) / tmpMaxWeight), 5) * 10));
       // Math.pow(value / 106, 0.3) * 10
-    }, (Math.pow(1 - ((getWeightBetweenNodesWithDefault(graph.graphData(), node.id, neighbor.id)) / tmpMaxWeight), 3.2) * 5000));
+    }, (Math.pow(1 - ((getWeightBetweenNodesWithDefault(graph.graphData(), node.id, neighbor.id)) / tmpMaxWeight), 3.2) * rhythmScaling));
     // scaled_value = (Math.log(10) / Math.log(maxWeight)) * 10;
     // console.log("scaaala", scaled_value)
     // need to pass it through a log function
@@ -553,9 +445,7 @@ function highlightNeighborsGradually(node, graph, degree, data) {
 }
 
 //==================================================
-
 // Utilities
-
 //==================================================
 
 function clearTransitionAnimations() {

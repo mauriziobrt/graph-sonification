@@ -6,6 +6,7 @@ const mapNumRange = (num, inMin, inMax, outMin, outMax) =>
 //======================================================================
 
 let ws;
+let mapping = 1;
 
 function connectWebSocket() {
     ws = new WebSocket('ws://localhost:7700');
@@ -45,6 +46,13 @@ function handleIncomingOSC(message) {
         // Handle messages based on their address
         if (message.address) {
             switch (message.address) {
+                case '/select':
+                    const id = message.args[0]
+                    window.selectNodeById(id);
+                    break;
+                case '/play':
+                    window.playSelectedNode();
+                    break
                 case '/move':
                     // Navigate in direction specified by first argument
                     const direction = message.args[0];
@@ -53,8 +61,30 @@ function handleIncomingOSC(message) {
                         console.log('Navigating:', direction);
                     }
                     break;
+                case '/transition':
+                    const startID = message.args[0]
+                    const endID = message.args[1]
+                    window.transition(startID, endID);
+                    break;
+                case '/setMapping':
+                    mapping = message.args[0];
+                    break
+                case '/setBubble':
+                    const bubbleCase = message.args[0];
+                    const bubbleAddressList = ["/control", "/bubblesv1", "/bubblesv2"]
+                    bubbleAddress = bubbleAddressList[bubbleCase]
+                    break
+                case '/setTimeScaling':
+                    rhythmScaling = message.args[0] * 1000;
+                    break
                 case '/space':
-                    highlightNeighborsGradually(node, graph, degree, data);
+                    window.bubble();
+                    break;
+                case '/clear':
+                    window.clearGraph();
+                    // window.clearTransitionAnimations();
+                    // window.clearActiveAnimations();
+                    break
                 default:
                     console.log('Unhandled OSC address:', message.address);
             }
@@ -68,34 +98,35 @@ function sendOSCMessage(node, address, degree) {
         const cit = node["citations"];
         // timeCit = mapNumRange(cit, 0,836,5000,10000);
         // console.log("TIME SENT: ", timeCit)
-        if (node["cluster"]) {
-            const message = {
-                address: address,
-                args: [node["id"], node["openacces"], cit, degree, currentWeightTime, node["year"], node["x"], node["y"], node["cluster"], maxDegree, maxCit]
-            };
-            document.getElementById("content").innerText = node["description"];
-            document.getElementById("openaccess").innerText = node["openacces"];
-            document.getElementById("citations").innerText = cit;
-            document.getElementById("co-citations").innerText = degree;
-            document.getElementById("year").innerText = node["year"];
-            ws.send(JSON.stringify(message));
-        } else {
-            const message = {
-                address: address,
-                args: [node["id"], node["openacces"], cit, degree, currentWeightTime, node["year"], node["x"], node["y"], 1, maxDegree, maxCit]
-            };
-            document.getElementById("content").innerText = node["description"];
-            document.getElementById("openaccess").innerText = node["openacces"];
-            document.getElementById("citations").innerText = cit;
-            document.getElementById("co-citations").innerText = degree;
-            document.getElementById("year").innerText = node["year"];
-            ws.send(JSON.stringify(message));
-        }
-
+        // if (node["cluster"]) {
+        const message = {
+            address: address,
+            args: [node["id"], node["openacces"], cit, degree, currentWeightTime, node["year"], node["x"], node["y"], mapping, maxDegree, maxCit]
+        };
+        console.log(message)
+        document.getElementById("content").innerText = node["description"];
+        document.getElementById("openaccess").innerText = node["openacces"];
+        document.getElementById("citations").innerText = cit;
+        document.getElementById("co-citations").innerText = degree;
+        document.getElementById("year").innerText = node["year"];
+        ws.send(JSON.stringify(message));
+        // } 
+        // else {
+        //     const message = {
+        //         address: address,
+        //         args: [node["id"], node["openacces"], cit, degree, currentWeightTime, node["year"], node["x"], node["y"], 1, maxDegree, maxCit]
+        //     };
+        //     document.getElementById("content").innerText = node["description"];
+        //     document.getElementById("openaccess").innerText = node["openacces"];
+        //     document.getElementById("citations").innerText = cit;
+        //     document.getElementById("co-citations").innerText = degree;
+        //     document.getElementById("year").innerText = node["year"];
+        //     ws.send(JSON.stringify(message));
+        // }
         // console.log("X: ", node["x"], ". Y: ", node["y"], ". VX: ", node["vx"], ". VY: ", node["vy"])
         // console.log('Sent message:', message);
     } else {
-        // updateStatus('WebSocket not connected', true);
+        updateStatus('WebSocket not connected', true);
     }
 }
 

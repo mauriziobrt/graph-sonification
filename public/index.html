@@ -38,13 +38,22 @@
   .clustername {
     pointer-events: none;
     position: absolute;
-    bottom: 20px;
+    bottom: 50%;
     left: 20px;
-    font-size: 16px;
+    font-size: 40px;
     line-height: 10%;
     text-align: left;
     color: rgba(255, 255, 255, 0.675);
     z-index: 1;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  .big-text {
+    position: relative;
+    display: inline-block;
+    color: white;
+    /* padding: 5px; */
+    font-size: 40px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
 
@@ -156,12 +165,17 @@
 <body style="background-color:#101020; overflow: hidden;">
   <div class="bottomright" onselectstart="return false" id="displayText">
     <!-- <p class="simple_text">Selected node: </p> -->
-    Selected node: <p class="simple_text" id="content" style="text-align: center;">...</p> <br>
-    OpenAccess: <p class="simple_text" id="openaccess">none</p><br>
-    Citations: <p class="simple_text" id="citations">none</p><br>
-    <p id="mySpec">Co-citations:</p>
-    <p class="simple_text" id="co-citations">none</p><br>
-    Publication Year: <p class="simple_text" id="year">none</p><br>
+    
+    <p>Selected node: <span class="simple_text" id="content" style="text-align: center;">...</span></p><br>
+    <p>OpenAccess: <span class="simple_text" id="openaccess">none</span></p><br>
+    <p>Citations: <span class="simple_text" id="citations">none</span></p><br>
+    <p>
+      <span id="mySpec">Co-citations:</span>
+      <span class="simple_text" id="co-citations">none</span>
+    </p><br>
+    <p>
+      Publication Year: <span class="simple_text" id="year">none</span>
+    </p>
     <p class="simple_text" id="miaomiao"></p><br>
   </div>
   <div class="bottomleft" id="textControls">
@@ -173,7 +187,8 @@
     t = listen to selected node
   </div>
   <div class="clustername" id="currentTextBox" style="z-index: 0;">
-    Current Cluster: <p class="simple_text" id="currentCluster">none</p>
+    <!-- Current Cluster: <p class="simple_text" id="currentCluster">none</p> -->
+    Citations: <p class="big-text" id="citations">none</p><br>
   </div>
   <script type="module" src="./audio/create-node.js"></script>
 

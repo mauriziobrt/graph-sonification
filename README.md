@@ -1,6 +1,6 @@
 # Force-Layout Graph Sonification
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15197962.svg)](https://doi.org/10.5281/zenodo.15197962)
+<!-- [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15197962.svg)](https://doi.org/10.5281/zenodo.15197962)-->
 
 ![Graph Interface Screenshot](graph-screen.png)
 
@@ -98,15 +98,10 @@ The interface supports four different interaction methods, each triggering both 
 └── graph-screen.png       # Interface screenshot
 ``` -->
 
-## To-Do
-
-- [ ] Implement cleaner keyboard shortcuts with [tinykeys](https://jamiebuilds.github.io/tinykeys/)
-- [ ] Add loading screen with drag-and-drop file loading capability
-
 ## Contributing
 
 Contributions are welcome! Please feel free to submit issues and pull requests.
-
+<!-- 
 ## License
 
 Please refer to the DOI link for citation and licensing information.
@@ -114,3 +109,4 @@ Please refer to the DOI link for citation and licensing information.
 ## Citation
 
 If you use this tool in your research, please cite using the DOI: [10.5281/zenodo.15197962](https://doi.org/10.5281/zenodo.15197962)
+-->

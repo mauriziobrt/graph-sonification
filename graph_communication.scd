@@ -253,7 +253,7 @@ OSCdef(\bubbleControl, {|msg, time, addr, recvPort|
 		\rings, {0.1.rrand(cit/10.0)}.dup(12),
 		\rel, rel
 	]);
-}, '/bubbles');
+}, '/bubblesv2');
 );
 );
 

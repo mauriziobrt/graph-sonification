@@ -8,6 +8,9 @@ import yaml from 'https://cdn.skypack.dev/yaml';
 
 let graph;
 let degree = {};
+let dataNodes;
+let dataLinks;
+let colorScale;
 // let node;
 
 let dataTextSpec = "Bibliographic Coupling"; //e.g. Co-citations, Bibliographic Coupling
@@ -20,6 +23,15 @@ window.addEventListener('resize', () => {
         graph.width(window.innerWidth).height(window.innerHeight)
     }
 })
+
+// Open Access Colors
+const OPENACCESS = {
+    gold: '#fff260a7',
+    green: '#cdfec5a6',
+    diamond: '#1eeff6a1',
+    closed: '#d4d4d466',
+    hybrid: '#cf6acc7e'
+};
 
 //========================================================
 
@@ -36,8 +48,15 @@ async function load_yml(file) {
     dataText.innerText = dataTextSpec;
     // console.log(yml_cnt["interactions"]["wasd"])
 
-    const tmp_text = document.getElementById("textControls");
+    const info_text = document.getElementById("displayText");
     if (yml_cnt["display-text"]["display-features"]) {
+        info_text.style = "z-index: 1";
+    } else {
+        info_text.style = "z-index: 0";
+    }
+
+    const tmp_text = document.getElementById("textControls");
+    if (yml_cnt["display-text"]["display-navigation"]) {
         tmp_text.style = "z-index: 1";
     } else {
         tmp_text.style = "z-index: 0";
@@ -112,7 +131,7 @@ var filedata = {
 
 gui.add(obj, "hoverOn");
 gui.add(obj, "file", ["1-hover", "2-bubbles", "3-transition", "4-bib-coupling", "5-cit-coupling"])
-gui.add(obj, "labelDisplay");
+// gui.add(obj, "labelDisplay");
 gui.add(obj, "textDisplay");
 gui.add(obj, "textHelp");
 gui.add(obj, "bubbleAddress", ["/control", "/bubblesv1", "/bubblesv2"]);
@@ -277,7 +296,7 @@ function navigateNodes(direction) {
         selectNode(nextNode, true, graph);
         // console.log(nextNode)
         document.getElementById("content").innerText = nextNode["description"];
-        document.getElementById("currentCluster").innerText = nextNode["cluster"];
+        // document.getElementById("currentCluster").innerText = nextNode["cluster"];
         // playFaust(220, degree[nextNode.id], "additiveplus", additivePlusNode, audioContext);
         sendOSCMessage(nextNode, "/control", degree[nextNode.id])
         // console.log(degree)
@@ -297,15 +316,89 @@ window.selectNodeById = function (nodeId) {
         selectNode(node, true, graph);
         document.getElementById("content").innerText = node["description"];
         document.getElementById("currentCluster").innerText = node["cluster"];
-        sendOSCMessage(node, "/control", degree[node.id]);
+        document.getElementById("openaccess").innerText = node["openacces"];
+        document.getElementById("citations").innerText = node["citations"];
+        document.getElementById("year").innerText = node["year"];
+        document.getElementById("co-citations").innerText = degree[node.id];
+        // sendOSCMessage(node, "/control", degree[node.id]);
     }
 };
+
+window.playSelectedNode = function () {
+    if (!selectedNode) return;
+    sendOSCMessage(selectedNode, "/control", degree[selectedNode.id])
+}
+
+function bubbleStart() {
+    if (!graph) return;
+    if (!selectedNode) return;
+    clearActiveAnimations();
+    highlightNeighborsGradually(selectedNode, graph, degree, dataNodes, dataLinks)
+}
+
+function getNodeById(nodeID) {
+    return dataNodes.find(node => node.id === nodeID)
+}
+
+window.bubble = function () {
+    bubbleStart();
+}
+
+window.transition = function (startID, endID) {
+    const nodes = [getNodeById(startID), getNodeById(endID)];
+    shiftKeyPressed = true;
+    // getNodeById(startID).highlighted = true;
+    // getNodeById(endID).highlighted = true;
+    // graph.nodeColor(node => node.highlighted ? 'red' : 'gray');
+    shiftSelection(getNodeById(startID), graph, degree);
+    setTimeout(shiftSelection(getNodeById(endID), graph, degree), 5000);
+    // connectSelectedNodes(nodes, graph, degree)
+}
+
+window.clearGraph = function () {
+    // Reset selections
+    selectedNodes = [];
+    selectedNode = null;
+    highlightedPath = [];
+    clearActiveAnimations();
+    clearTransitionAnimations();
+
+    if (graph) {
+        graph.nodeColor(node => {
+            return colorScale(node.openacces);
+        });
+
+        graph.linkCurvature(0.2)
+        graph.linkWidth(node => node.weight / 2.0)
+    }
+}
+
+// Create a color scale using your custom colors
+function createColorScale(graph) {
+    const nodes = graph.graphData().nodes;
+    const userValues = [...new Set(nodes.map(node => node.openacces))];
+
+    // Map your custom colors to the domain values
+    const colorScale = d3.scaleOrdinal()
+        .domain(userValues)
+        .range(userValues.map(color => OPENACCESS[color] || '#84848466')); // fallback to 'closed' color
+
+    // const colorScale = d3.scaleOrdinal()
+    //                 .domain(userValues)
+    //                 .range(d3.schemePaired); // Use a predefined color scheme
+
+    return colorScale;
+}
 
 function main(fileName) {
     fetchExternalData(fileName || obj.file).then(
         (data) => {
             data = data[0];
             degree = {};
+
+            dataNodes = data.nodes;
+            dataLinks = data.links;
+
             // Calculate node degrees
             data.links.forEach(link => {
                 // console.log(link.source, link.target, link.weight);
@@ -368,13 +461,13 @@ function main(fileName) {
             // UPDATE LATER, it should also work if there's already a selectednode
             function setupNodeSelection(graph) {
                 graph.onNodeClick((node, event) => {
-                    // console.log(node)
+                    console.log(node);
                     document.getElementById("content").innerText = node["description"];
                     document.getElementById("openaccess").innerText = node["openacces"];
                     document.getElementById("citations").innerText = node["citations"];
                     document.getElementById("year").innerText = node["year"];
                     document.getElementById("co-citations").innerText = degree[node.id];
-                    document.getElementById("currentCluster").innerText = node["cluster"];
+                    // document.getElementById("currentCluster").innerText = node["cluster"];
 
                     if (shiftKeyPressed) {
                         shiftSelection(node, graph, degree);
@@ -382,38 +475,16 @@ function main(fileName) {
                     } else {
                         selectNode(node, true, graph);
                         clearActiveAnimations();
-                        if (spaceKeyPressed) { highlightNeighborsGradually(node, graph, degree, data) }
+                        if (spaceKeyPressed) { highlightNeighborsGradually(node, graph, degree, dataNodes, dataLinks) }
                         else { sendOSCMessage(node, "/control", degree[node.id]) };
                     }
                 });
             }
             setupNodeSelection(graph)
 
-            //================================================================================================
-            //COLORS
-            //================================================================================================
+            colorScale = createColorScale(graph);
 
-            // Create a color scale using d3-scale
-            function createColorScale(graph) {
-                // Get all unique user values
-                const nodes = graph.graphData().nodes;
-                const userValues = [...new Set(nodes.map(node => node.openacces))];
-                // Create a color scale with d3
-                // const colorScale = d3.scaleSequential([0, 100], d3.interpolateBlues);
-                const colorScale = d3.scaleOrdinal()
-                    .domain(userValues)
-                    .range(d3.schemePaired); // Use a predefined color scheme
-                return colorScale;
-            }
-
-            const colorScale = createColorScale(graph)
-
-            graph.nodeColor(node => {
-                // Use the same coloring scheme you had initially
-                // For example, if you used a color scale based on user property:
-                return colorScale(node.openacces);
-            });
-            // graph.nodeColor(node => node["color"] ? 'red' : 'blue');
+            graph.nodeColor(node => colorScale(node.openacces));
 
             // Function to handle background clicks with Force Graph library
             function setupBackgroundClick(graph) {
@@ -470,5 +541,4 @@ main("./data/5-co-cit-coupling.json")
 // main("./data/network_graph.json")
 // main("./data/fake_son.json")
 // main("./data/fab_son.json")
-
 

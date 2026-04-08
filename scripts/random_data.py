@@ -223,7 +223,7 @@ def main():
     print(f"- {network['metadata']['total_links']} total links")
     
     # Save to file
-    output_file = "public/data/network_graph.json"
+    output_file = "./public/data/network_graph.json"
     with open(output_file, 'w', encoding='utf-8') as f:
         json.dump(network, f, indent=2, ensure_ascii=False)
     
