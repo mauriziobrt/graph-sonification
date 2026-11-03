@@ -16,8 +16,10 @@ const supersonic = new SuperSonic({
 document.addEventListener("DOMContentLoaded", () => {
     document.querySelector('button').onclick = async () => {
         await supersonic.init();
-        await supersonic.loadSynthDef("hoverControlled");
-        // supersonic.send('/s_new', 'sonic-pi-prophet', -1, 0, 0, 'note', 60);
+        for (const name of ["hoverControlled", "wasdControlled", "bubble", "transition"]) {
+            await supersonic.loadSynthDef(name);
+            console.log(name);
+        }        // supersonic.send('/s_new', 'sonic-pi-prophet', -1, 0, 0, 'note', 60);
     };
 });
 
@@ -229,7 +231,6 @@ function hover({ cit, coupling, cluster, maxDegree, maxCit }) {
     const n = lincurve(cit, 0, maxCit, 1, 50);
     const vol = 10 ** (lin(cit, 0, maxCit, -5, 0) / 20);   // dbamp
     let freq, relTime;
-    console.log("HOVERING")
 
     switch (cluster) {
         case 1:
@@ -254,6 +255,70 @@ function hover({ cit, coupling, cluster, maxDegree, maxCit }) {
     supersonic.send("/s_new", "hoverControlled", -1, 0, 0,
         "freq", freq, "relTime", relTime, "vol", vol,
         ...bank(n, freq, 10000, 50));
+}
+
+function wasd({ cit, coupling, maxCoupling, maxCit }) {
+    const n = lincurve(cit, 0, maxCit, 1, 100);
+    const freq = lincurve(coupling, 0, maxCoupling, 50, 1300);
+    console.log("WASDING")
+    supersonic.send("/s_new", "wasdControlled", -1, 0, 0,
+        "freq", freq, "relTime", freq / 300, ...bank(n, freq, 15000, 100));
+}
+
+const bells = [
+    [3958.2691669464, 2219.5205450058, 3720.8760738373, 3930.4407596588, 827.31196880341, 3670.5682277679, 550.56445598602, 3677.7821779251, 581.56654834747, 3224.8901605606, 2330.4237604141, 756.98308944702],
+    [223.22008609772, 1996.9875097275, 3631.1988592148, 753.74145507812, 659.04550552368, 953.89244556427, 612.56682872772, 426.58507823944, 1644.7909116745, 875.82595348358, 1946.9505548477, 3229.9587249756],
+    [3901.8504142761, 3278.7544727325, 3938.3745193481, 1065.1204586029, 3879.1404008865, 3816.3529872894, 2989.7552490234, 1730.3744077682, 678.00426483154, 2374.1246700287, 2525.9301900864, 3549.2574453354],
+    [2657.4152469635, 912.29071617126, 1286.7574691772, 3869.4250106812, 1136.3956451416, 2689.750957489, 459.87751483917, 2751.2355566025, 3400.4847288132, 1524.5981216431, 2834.7212314606, 2828.8508653641],
+    [1328.7076234818, 456.14535808563, 643.3787345886, 1934.7125053406, 568.1978225708, 1344.8754787445, 229.93875741958, 1375.6177783012, 1700.2423644066, 762.29906082155, 1417.3606157303, 1414.4254326821],
+];
+
+function bubble({ cit, coupling, cluster, maxCoupling, maxCit }) {
+    const maxlength = 20;
+    let div, rel;
+    switch (cluster) {
+        case 1: div = lincurve(coupling, 0, maxCoupling, 0.5, 5); rel = lincurve(coupling, 0, maxCoupling, 0, maxlength); break;
+        case 2: div = lincurve(coupling, 0, maxCoupling, 5, 0.5); rel = lincurve(coupling, 0, maxCoupling, maxlength, 0); break;
+        case 3: div = lincurve(coupling, 0, maxCoupling, 0.5, 5); rel = lincurve(coupling, 0, maxCoupling, 0, maxlength); break;
+        case 4: div = lincurve(coupling, 0, maxCoupling, 0.5, 5); rel = lincurve(coupling, 0, maxCoupling, maxlength, 0); break;
+        default: return;
+    }
+    const bell = bells[Math.floor(Math.random() * bells.length)];
+    const amp = 10 ** (lin(cit, 0, maxCit, -12, -9) / 20);
+    const args = [];
+    for (let i = 0; i < 12; i++) {
+        args.push("f" + i, bell[i] / div);
+        args.push("r" + i, 0.1 + Math.random() * (cit / 10 - 0.1));
+    }
+    supersonic.send("/s_new", "bubble", -1, 0, 0,
+        "atk", 0, "sus", 0, "rel", rel, "pan", Math.random() * 2 - 1, "amp", amp, ...args);
+}
+
+let trLast = 0, trNode = null;
+function transition({ cit, coupling, cluster, maxCoupling, maxCit, time, stop }) {
+    if (stop) {   // old code: msg[1] == 0
+        if (trNode !== null) supersonic.send("/n_set", trNode, "fade", 10, "gate", 0);
+        trNode = null; trLast = 0;
+        return;
+    }
+    const myTime = time / 1000;   // old code: msg[5] / 1000
+    let freq, n;
+    switch (cluster) {
+        case 1: freq = lincurve(coupling + 1, 0, maxCoupling, 800, 100); n = lincurve(cit, 0, maxCit, 1, 50) + 1; break;
+        case 2: freq = lincurve(coupling + 1, 0, maxCoupling, 100, 800); n = lincurve(cit, 0, maxCit, 50, 1) + 1; break;
+        case 3: freq = lincurve(coupling + 1, 0, maxCoupling, 100, 800); n = lincurve(maxCit - cit, 0, maxCit, 1, 50) + 1; break;
+        case 4: freq = lincurve(coupling + 1, 0, maxCoupling, 800, 100); n = lincurve(maxCit - cit, 0, maxCit, 50, 1) + 1; break;
+        default: return;
+    }
+    const fade = trLast === 0 ? myTime / 4 : trLast;
+    trLast = myTime;
+    if (trNode !== null) supersonic.send("/n_set", trNode, "fade", fade, "gate", 0);
+    trNode = supersonic.nextNodeId();
+    supersonic.send("/s_new", "transition", trNode, 0, 0,
+        "fade", fade,
+        "rate1", lincurve(cit, 0, maxCit, 0.001, 0.02),
+        "rate2", lincurve(cit, 0, maxCit, 0.001, 0.03),
+        ...bank(n, freq, 15000, 51));
 }
 
 //========================================================
@@ -376,7 +441,7 @@ function navigateNodes(direction) {
         document.getElementById("content").innerText = nextNode["description"];
         // document.getElementById("currentCluster").innerText = nextNode["cluster"];
         // playFaust(220, degree[nextNode.id], "additiveplus", additivePlusNode, audioContext);
-        // sendOSCMessage(nextNode, "/control", degree[nextNode.id])
+        sendOSCMessage(nextNode, "/control", degree[nextNode.id])
         // console.log(degree)
     } else {
         console.error("No node in scope")
@@ -398,13 +463,13 @@ window.selectNodeById = function (nodeId) {
         document.getElementById("citations").innerText = node["citations"];
         document.getElementById("year").innerText = node["year"];
         document.getElementById("co-citations").innerText = degree[node.id];
-        // sendOSCMessage(node, "/control", degree[node.id]);
+        sendOSCMessage(node, "/control", degree[node.id]);
     }
 };
 
 window.playSelectedNode = function () {
     if (!selectedNode) return;
-    // sendOSCMessage(selectedNode, "/control", degree[selectedNode.id])
+    sendOSCMessage(selectedNode, "/control", degree[selectedNode.id])
 }
 
 function bubbleStart() {
@@ -525,7 +590,7 @@ function main(fileName) {
                                 selectNode(node, false, graph);
                                 document.getElementById("content").innerText = node["description"];
                                 document.getElementById("currentCluster").innerText = node["cluster"];
-                                // sendOSCMessage(node, "/control", degree[node.id])
+                                sendOSCMessage(node, "/control", degree[node.id])
                             }
                         }
                     }
@@ -553,8 +618,8 @@ function main(fileName) {
                     } else {
                         selectNode(node, true, graph);
                         clearActiveAnimations();
-                        if (spaceKeyPressed) { highlightNeighborsGradually(node, graph, degree, dataNodes, dataLinks) }
-                        // else { sendOSCMessage(node, "/control", degree[node.id]) };
+                        if (spaceKeyPressed) { highlightNeighborsGradually(node, graph, degree, dataNodes, dataLinks); console.log("RHYTHM") }
+                        else { sendOSCMessage(node, "/control", degree[node.id]) };
                     }
                 });
             }
@@ -620,3 +685,17 @@ main("./data/5-co-cit-coupling.json")
 // main("./data/fake_son.json")
 // main("./data/fab_son.json")
 
+window.sendOSCMessage = (node, address, deg, weight) => {
+    // console.log("I GOT CALLED")
+    const base = { cit: node.citations, cluster: Number(node.cluster) || 1, maxCit };
+    switch (address) {
+        case "/control": hover({ ...base, coupling: deg, maxDegree }); break;
+        case "/wasd": wasd({ ...base, coupling: deg, maxCoupling: maxDegree }); break;
+        case "/bubblesv1":
+        case "/bubblesv2": bubble({ ...base, coupling: weight ?? deg, maxCoupling: maxDegree }); break;
+        case "/additive": transition({ ...base, coupling: deg, maxCoupling: maxDegree, time: currentWeightTime }); break;
+    }
+};
+window.sendOSCStopMessage = (address) => {
+    if (address === "/additive") transition({ stop: true });
+};
