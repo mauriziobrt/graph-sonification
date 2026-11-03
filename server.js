@@ -8,7 +8,7 @@ const server = http.createServer(app);
 // const wss = new WebSocket.Server({ server });
 
 // Serve static files
-app.use(express.static('public'));
+app.use(express.static('docs'));
 
 // Create OSC UDP client
 const oscClient = new OSC({
