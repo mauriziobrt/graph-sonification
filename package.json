@@ -11,13 +11,22 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.21.2",
+    "express": "^4.22.3",
     "osc-js": "^2.4.1",
     "tinykeys": "^3.0.0",
-    "ws": "^8.18.1",
+    "ws": "^8.22.1",
     "yaml": "^2.8.0"
   },
   "devDependencies": {
     "lil-gui": "^0.20.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mauriziobrt/graph-sonification.git"
+  },
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/mauriziobrt/graph-sonification/issues"
+  },
+  "homepage": "https://github.com/mauriziobrt/graph-sonification#readme"
 }

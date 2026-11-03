@@ -297,7 +297,7 @@ function connectSelectedNodes(nodes, graph, degree) {
   }
 
   console.log("Shortest path:", path);
-  sendOSCMessage(nodes[0], '/additive', degree[nodes[0].id]);
+  // sendOSCMessage(nodes[0], '/additive', degree[nodes[0].id]);
   console.log("Path links:", links);
 
   // Start animation
@@ -345,7 +345,7 @@ function animatePathTraversal(nodePath, linkPath, graph, degree) {
     currentWeightTime = mapNumRange(currentWeight, 0, maxWeight, 500, 20000);
     // console.log("The weight is: ", currentWeight);
     // Send OSC message
-    sendOSCMessage(currentNode, '/additive', degree[currentNode.id]);
+    // sendOSCMessage(currentNode, '/additive', degree[currentNode.id]);
 
     // Center on current node
     graph.centerAt(currentNode.x, currentNode.y, 300);
@@ -429,7 +429,7 @@ function highlightNeighborsGradually(node, graph, degree, allNodes, allLinks) {
       neighbor.highlighted = true; // Highlight the node
       graph.nodeColor(n => n.highlighted ? 'red' : 'gray'); // Update color dynamically
       console.log(neighbor.id, degree[neighbor.id]);
-      sendOSCMessage(neighbor, bubbleAddress, degree[neighbor.id], getWeightBetweenNodesWithDefault(graph.graphData(), node.id, neighbor.id));
+      // sendOSCMessage(neighbor, bubbleAddress, degree[neighbor.id], getWeightBetweenNodesWithDefault(graph.graphData(), node.id, neighbor.id));
       //it should be a contextual maxweight, meaning that it's mapped according to the contextual value, so the first is always the closest and the rest slowly decays cause the connection
       // is less strong
       // console.log("WEIGHT:", getWeightBetweenNodesWithDefault(graph.graphData(), node.id, neighbor.id));

@@ -1,10 +1,43 @@
 import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
 import yaml from 'https://cdn.skypack.dev/yaml';
-
+import { SuperSonic } from 'https://unpkg.com/supersonic-scsynth@latest/dist/supersonic.js';
 //========================================================
 // GLOBAL VARIABLES
 //========================================================
 
+// Launch SuperSonic
+const supersonic = new SuperSonic({
+    baseURL: 'https://unpkg.com/supersonic-scsynth@latest/dist/',
+    coreBaseURL: 'https://unpkg.com/supersonic-scsynth-core@latest/',
+    synthdefBaseURL: 'synthdefs/',
+});
+
+// Browsers start audio only after a click, tap or keypress
+document.addEventListener("DOMContentLoaded", () => {
+    document.querySelector('button').onclick = async () => {
+        await supersonic.init();
+        await supersonic.loadSynthDef("hoverControlled");
+        // supersonic.send('/s_new', 'sonic-pi-prophet', -1, 0, 0, 'note', 60);
+    };
+});
+
+function lincurve(v, iMin, iMax, oMin, oMax, curve = -4) {
+    if (v <= iMin) return oMin;
+    if (v >= iMax) return oMax;
+    const grow = Math.exp(curve), a = (oMax - oMin) / (1 - grow), b = oMin + a;
+    return b - a * Math.pow(grow, (v - iMin) / (iMax - iMin));
+}
+const R2 = 2 ** (4 / 12);           // Scale.major.ratios[2]
+
+function bank(n, freq, upper, N) {
+    n = Math.max(1, Math.floor(n));
+    const step = 2 * freq * R2, last = freq + (n - 1) * step, args = [];
+    for (let i = 0; i < N; i++) {
+        args.push("f" + i, lincurve(freq + i * step, freq, last, freq, upper));
+        args.push("a" + i, i < n ? 1 : 0);
+    }
+    return args;
+}
 
 let graph;
 let degree = {};
@@ -187,6 +220,42 @@ gui.onChange(event => {
     }
 });
 
+//====
+// quick claude generated porting
+//
+const lin = (v, a, b, c, d) => c + (Math.min(Math.max(v, a), b) - a) / (b - a) * (d - c);
+
+function hover({ cit, coupling, cluster, maxDegree, maxCit }) {
+    const n = lincurve(cit, 0, maxCit, 1, 50);
+    const vol = 10 ** (lin(cit, 0, maxCit, -5, 0) / 20);   // dbamp
+    let freq, relTime;
+    console.log("HOVERING")
+
+    switch (cluster) {
+        case 1:
+            freq = lincurve(coupling, 0, maxDegree, 100, 1500);
+            relTime = lincurve(coupling, 0, maxDegree, 100, 1300) / 300;
+            break;
+        case 2:
+            freq = lincurve(coupling, 0, maxDegree, 1500, 100);
+            relTime = lincurve(coupling, 0, maxDegree, 100, 1300) / 300;
+            break;
+        case 3:
+            freq = lincurve(coupling, 0, maxDegree, 1300, 50);
+            relTime = freq / 300;
+            break;
+        case 4:
+            freq = lincurve(coupling, 0, maxDegree, 50, 1300);
+            relTime = freq / 300;
+            break;
+        default: return;
+    }
+    console.log("Freq and reltime", freq, relTime);
+    supersonic.send("/s_new", "hoverControlled", -1, 0, 0,
+        "freq", freq, "relTime", relTime, "vol", vol,
+        ...bank(n, freq, 10000, 50));
+}
+
 //========================================================
 // EVENT LISTENERS
 //========================================================
@@ -196,7 +265,16 @@ function initializeEventListeners() {
     hotkeys('t', function (event, handler) {
         if (!selectedNode) return;
         switch (handler.key) {
-            case 't': sendOSCMessage(selectedNode, "/control", degree[selectedNode.id]);
+            case 't':
+                // hover example, cluster 1 (the other three clusters only change the freq/relTime lines)
+                hover({
+                    cit: selectedNode["citations"]/* citation value of the node */,
+                    coupling: degree[selectedNode.id] /* coupling value */,
+                    cluster: 1/* 1-4 */,
+                    maxDegree: maxDegree/* max coupling in the graph */,
+                    maxCit: maxCit/* max citation in the graph */
+                });                // supersonic.send('/s_new', 'sonic-pi-prophet', -1, 0, 0, 'note', degree[selectedNode.id]);
+                // sendOSCMessage(selectedNode, "/control", degree[selectedNode.id]);
                 break;
         }
     });
@@ -298,7 +376,7 @@ function navigateNodes(direction) {
         document.getElementById("content").innerText = nextNode["description"];
         // document.getElementById("currentCluster").innerText = nextNode["cluster"];
         // playFaust(220, degree[nextNode.id], "additiveplus", additivePlusNode, audioContext);
-        sendOSCMessage(nextNode, "/control", degree[nextNode.id])
+        // sendOSCMessage(nextNode, "/control", degree[nextNode.id])
         // console.log(degree)
     } else {
         console.error("No node in scope")
@@ -326,7 +404,7 @@ window.selectNodeById = function (nodeId) {
 
 window.playSelectedNode = function () {
     if (!selectedNode) return;
-    sendOSCMessage(selectedNode, "/control", degree[selectedNode.id])
+    // sendOSCMessage(selectedNode, "/control", degree[selectedNode.id])
 }
 
 function bubbleStart() {
@@ -447,7 +525,7 @@ function main(fileName) {
                                 selectNode(node, false, graph);
                                 document.getElementById("content").innerText = node["description"];
                                 document.getElementById("currentCluster").innerText = node["cluster"];
-                                sendOSCMessage(node, "/control", degree[node.id])
+                                // sendOSCMessage(node, "/control", degree[node.id])
                             }
                         }
                     }
@@ -476,7 +554,7 @@ function main(fileName) {
                         selectNode(node, true, graph);
                         clearActiveAnimations();
                         if (spaceKeyPressed) { highlightNeighborsGradually(node, graph, degree, dataNodes, dataLinks) }
-                        else { sendOSCMessage(node, "/control", degree[node.id]) };
+                        // else { sendOSCMessage(node, "/control", degree[node.id]) };
                     }
                 });
             }

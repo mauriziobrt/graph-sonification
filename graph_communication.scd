@@ -24,51 +24,6 @@ thisProcess.recompile;
 
 )
 
-(
-var cit, coupling, myfreq, panPos, cluster, max_coupling, max_cit;
-cit = 197;
-coupling = 55;
-cluster = 3;
-max_coupling = 100;
-max_cit = 1000;
-SynthDef(\hoverControlled, {|out, fund= 80|
-	var freq, env, arraySeries, sig, nr_resonators, volumeCit;
-
-	nr_resonators = cit.lincurve(0, max_cit, 1, 50, -4);
-	volumeCit = cit.linlin(0,max_cit,-5,0).dbamp.postln;
-	switch (cluster,
-		2, {//2. Nodo grande → Low pitch - Nodo piccolo → High pitch - ? Envelope ?
-			freq = coupling.lincurve(0, max_coupling, 1300, 50, -4);
-			env = Env.new(levels: [0, 1, 0.4, 0], times: [0.1, 0.2, freq/300], curve: [-5, 0, -5]);
-		},
-		1, { //1. Nodo piccolo → Low pitch - Nodo grande → High pitch - ? Envelope ?
-			freq = coupling.lincurve(0, max_coupling, 50, 1300, -4);
-			env = Env.new(levels: [0, 1, 0.4, 0], times: [0.1, 0.2, freq/300], curve: [-5, 0, -5]);
-		},
-		3, {//3. Nodo grande → Sweep Low-High pitch - Nodo piccolo → Sweep High-Low pitch - ? Envelope ?
-			freq = coupling.lincurve(0, max_coupling, 1300, 50, -4);
-			freq = XLine.ar(freq*3, freq, 0.1);
-			env = Env.new(levels: [0, 1, 0.4, 0], times: [0.1, 0.2, freq/300], curve: [-5, 0, -5]);
-		},
-		4, {//4 Nodo piccolo → Sweep High-Low pitch - Nodo grande → Sweep Low-High pitch - ? Envelope ?
-			freq = coupling.lincurve(0, max_coupling, 50, 1300, -4);
-			freq = XLine.ar(freq, freq*3, 0.1);
-			env = Env.new(levels: [0, 1, 0.4, 0], times: [0.1, 0.2, freq/300], curve: [-5, 0, -5]);
-		},
-	);
-	arraySeries = Array.series(nr_resonators, freq, 2 * freq * a.ratios[2]);
-	arraySeries = `[arraySeries.lincurve(arraySeries[0], arraySeries[arraySeries.lastIndex], arraySeries[0], ~upperResonatorLimit, -4), nil, [1, 1, 1, 1]].postln;
-	sig = DynKlank.ar(arraySeries, PinkNoise.ar([0.007, 0.007])) * 0.3;
-
-	sig = sig +
-	(sig * Pulse.ar(Rand(1,20),mul:0.1) * Saw.ar(0.5)) * 0.2 +
-	SinOsc.ar([freq, freq*a.ratios[3]], mul: 0.2)  + FreeVerb.ar(sig, 1,1, mul: 0.5);
-	sig = volumeCit * sig * EnvGen.ar(env, doneAction: Done.freeSelf);
-	Out.ar(out, Pan2.ar(sig * 0.6))// stereo output
-}).play;
-)
-)
-
 //================================================================================================================================================
 // HOVERING
 //================================================================================================================================================
@@ -319,4 +274,53 @@ OSCdef(\transitionControl, {|msg, time, addr, recvPort|
 	));
 }, '/additive');
 )
+)
+
+
+
+
+(
+~dir = "/Users/maurizioberta/Documents/Development/website/graph-web/graph-sonification/public";   // edit this
+~r = Scale.major.ratios;                        // [2]=1.2599, [3]=1.3348
+~ctl = {|prefix, n, default|
+	Array.fill(n, {|i| NamedControl.kr((prefix ++ i).asSymbol, default)})
+};
+
+SynthDef(\hoverControlled, {|out=0, freq=200, relTime=1, vol=1|
+	var freqs = ~ctl.("f", 50, 100), amps = ~ctl.("a", 50, 0);
+	var env = Env([0,1,0.4,0], [0.1,0.2,relTime], [-5,0,-5]);
+	var sig = DynKlank.ar(`[freqs, amps, 1!50], PinkNoise.ar([0.007,0.007])) * 0.3;
+	sig = sig + (sig * Pulse.ar(Rand(1,20), mul:0.1) * Saw.ar(0.5)) * 0.2 +
+		SinOsc.ar([freq, freq*~r[3]], mul:0.2) + FreeVerb.ar(sig, 1, 1, mul:0.5);
+	sig = vol * sig * EnvGen.ar(env, doneAction: Done.freeSelf);
+	Out.ar(out, Pan2.ar(sig * 0.6));
+}).writeDefFile(~dir);
+
+SynthDef(\wasdControlled, {|out=0, freq=200, relTime=1|
+	var freqs = ~ctl.("f", 100, 100), amps = ~ctl.("a", 100, 0);
+	var env = Env([0,1,0.4,0], [0.1,0.2,relTime], [-5,0,-5]);
+	var sig = DynKlank.ar(`[freqs, amps, 1!100], PinkNoise.ar([0.007,0.007])) * 0.3;
+	sig = sig + (sig * Pulse.ar(Rand(1,20), mul:0.1) * Saw.ar(0.5)) * 0.2 +
+		SinOsc.ar([freq, freq*~r[3]], mul:0.2);
+	sig = sig * EnvGen.ar(env, doneAction: Done.freeSelf) * 0.5;
+	Out.ar(out, Pan2.ar(sig * 0.8));
+}).writeDefFile(~dir);
+
+SynthDef(\bubble, {|out=0, amp=1, atk=5, sus=8, rel=5, pan=0, filterfreq=440|
+	var freqs = ~ctl.("f", 12, 0), rings = ~ctl.("r", 12, 0);
+	var env = EnvGen.kr(Env.linen(atk, sus, rel, 1, -50), doneAction: Done.freeSelf);
+	var sig = Klank.ar(`[freqs, nil, rings], ClipNoise.ar(0.01) * env);
+	sig = FreeVerb.ar(sig, 0.2, 10, 1, mul: 0.7);
+	Out.ar(out, Pan2.ar(LPF.ar(sig*env*amp, filterfreq), pan));
+}).writeDefFile(~dir);
+
+// Ndef crossfade replacement: new synth fades in, old one gets gate=0
+SynthDef(\transition, {|out=0, gate=1, fade=1, rate1=0.01, rate2=0.02|
+	var freqs = ~ctl.("f", 51, 100), amps = ~ctl.("a", 51, 0);
+	var sig = DynKlank.ar(`[freqs, amps, 1!51], PinkNoise.ar([0.007,0.007]));
+	sig = sig * SinOsc.ar([rate1, rate2]).abs;
+	sig = BHiShelf.ar(sig, 1500, 1, -40) * 1.5;
+	sig = sig * EnvGen.kr(Env.asr(fade, 1, fade), gate, doneAction: Done.freeSelf);
+	Out.ar(out, sig);
+}).writeDefFile(~dir);
 )
