@@ -29,6 +29,14 @@ An interactive interface for the sonification of graphs using OSC (Open Sound Co
    npm install --save express osc-js ws
    ```
 
+## Upload to different branch
+
+git add -A
+
+git commit -m "...."
+
+git push -u origin web-demo
+
 ## Usage
 
 ### 1. Running the web-only app
@@ -109,8 +117,7 @@ Contributions are welcome! Please feel free to submit issues and pull requests.
 ## License
 
 Please refer to the DOI link for citation and licensing information.
-
+-->
 ## Citation
 
-If you use this tool in your research, please cite using the DOI: [10.5281/zenodo.15197962](https://doi.org/10.5281/zenodo.15197962)
--->
+Maurizio Berta, Roberto Bresin, and Gaël Dubus. 2026. Can sonification aid the perception of complex visual networked data? A tool for the interactive exploration of bibliometric data. In Proceedings of the 2026 International Conference on Advanced Visual Interfaces (AVI ‘26). Association for Computing Machinery, New York, NY, USA, Article 39, 1–9. https://doi.org/10.1145/3811427.3811439
