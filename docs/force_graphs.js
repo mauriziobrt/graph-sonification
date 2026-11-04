@@ -14,12 +14,22 @@ const supersonic = new SuperSonic({
 
 // Browsers start audio only after a click, tap or keypress
 document.addEventListener("DOMContentLoaded", () => {
-    document.querySelector('button').onclick = async () => {
-        await supersonic.init();
-        for (const name of ["hoverControlled", "wasdControlled", "bubble", "transition"]) {
-            await supersonic.loadSynthDef(name);
-            console.log(name);
-        }        // supersonic.send('/s_new', 'sonic-pi-prophet', -1, 0, 0, 'note', 60);
+    document.getElementById('audio-state-toggle').onclick = async () => {
+        var x = document.getElementById("audio-state-toggle");
+        if (x.innerHTML === "Audio Off") {
+            x.innerHTML = "Audio On";
+            console.log("ON!")
+            await supersonic.init();
+            for (const name of ["hoverControlled", "wasdControlled", "bubble", "transition"]) {
+                await supersonic.loadSynthDef(name);
+                console.log(name);
+            }        // supersonic.send('/s_new', 'sonic-pi-prophet', -1, 0, 0, 'note', 60);
+        } else {
+            x.innerHTML = "Audio Off";
+            console.log("OFF")
+            await supersonic.shutdown();
+        }
+
     };
 });
 
@@ -98,6 +108,14 @@ async function load_yml(file) {
     }
     // return yml_cnt["display-text"]
     // initializeEventListeners();
+}
+
+function displayFeatureSelection(node) {
+    document.getElementById("content").innerText = node["description"];
+    document.getElementById("openaccess").innerText = node["openacces"];
+    document.getElementById("citations").innerText = node["citations"];
+    document.getElementById("year").innerText = node["year"];
+    document.getElementById("co-citations").innerText = degree[node.id];
 }
 
 //=================================================================================
@@ -438,7 +456,8 @@ function navigateNodes(direction) {
         // stopFaust();
         selectNode(nextNode, true, graph);
         // console.log(nextNode)
-        document.getElementById("content").innerText = nextNode["description"];
+        // document.getElementById("content").innerText = nextNode["description"];
+        displayFeatureSelection(nextNode);
         // document.getElementById("currentCluster").innerText = nextNode["cluster"];
         // playFaust(220, degree[nextNode.id], "additiveplus", additivePlusNode, audioContext);
         sendOSCMessage(nextNode, "/control", degree[nextNode.id])
@@ -537,7 +556,6 @@ function main(fileName) {
     fetchExternalData(fileName || obj.file).then(
         (data) => {
             data = data[0];
-            degree = {};
 
             dataNodes = data.nodes;
             dataLinks = data.links;
@@ -588,8 +606,9 @@ function main(fileName) {
                         if (node) {
                             if (hoverOn) {
                                 selectNode(node, false, graph);
-                                document.getElementById("content").innerText = node["description"];
-                                document.getElementById("currentCluster").innerText = node["cluster"];
+                                displayFeatureSelection(node);
+                                // document.getElementById("content").innerText = node["description"];
+                                // document.getElementById("currentCluster").innerText = node["cluster"];
                                 sendOSCMessage(node, "/control", degree[node.id])
                             }
                         }
@@ -604,12 +623,12 @@ function main(fileName) {
             // UPDATE LATER, it should also work if there's already a selectednode
             function setupNodeSelection(graph) {
                 graph.onNodeClick((node, event) => {
-                    console.log(node);
-                    document.getElementById("content").innerText = node["description"];
-                    document.getElementById("openaccess").innerText = node["openacces"];
-                    document.getElementById("citations").innerText = node["citations"];
-                    document.getElementById("year").innerText = node["year"];
-                    document.getElementById("co-citations").innerText = degree[node.id];
+                    displayFeatureSelection(node)
+                    // document.getElementById("content").innerText = node["description"];
+                    // document.getElementById("openaccess").innerText = node["openacces"];
+                    // document.getElementById("citations").innerText = node["citations"];
+                    // document.getElementById("year").innerText = node["year"];
+                    // document.getElementById("co-citations").innerText = degree[node.id];
                     // document.getElementById("currentCluster").innerText = node["cluster"];
 
                     if (shiftKeyPressed) {
@@ -687,7 +706,7 @@ main("./data/5-co-cit-coupling.json")
 
 window.sendOSCMessage = (node, address, deg, weight) => {
     // console.log("I GOT CALLED")
-    const base = { cit: node.citations, cluster: Number(node.cluster) || 1, maxCit };
+    const base = { cit: node.citations, cluster: Number(node.cluster) || 1, maxCit };
     switch (address) {
         case "/control": hover({ ...base, coupling: deg, maxDegree }); break;
         case "/wasd": wasd({ ...base, coupling: deg, maxCoupling: maxDegree }); break;

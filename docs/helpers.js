@@ -173,5 +173,4 @@ let animationInProgress = false;
 let highlightedPath = [];
 let animationTimer = null;
 let linkStaticColor = 'rgba(104, 100, 100, 0.3)';
-
-
+degree = {};

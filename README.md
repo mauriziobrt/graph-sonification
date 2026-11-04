@@ -31,7 +31,11 @@ An interactive interface for the sonification of graphs using OSC (Open Sound Co
 
 ## Usage
 
-### Starting the Application
+### 1. Running the web-only app
+
+npx serve docs
+
+### 2. Running the web-app with local Supercollider
 
 1. **Launch the web server:**
    ```bash

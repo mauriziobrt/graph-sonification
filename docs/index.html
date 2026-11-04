@@ -35,6 +35,19 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
 
+  .topright {
+    position: absolute;
+    /* display: inline-block; */
+    bottom: 20px;
+    left: 20px;
+    font-size: 16px;
+    line-height: 10%;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.675);
+    z-index: 100;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
   .clustername {
     pointer-events: none;
     position: absolute;
@@ -163,20 +176,24 @@
 </head>
 
 <body style="background-color:#101020; overflow: hidden;">
-  <div class="bottomright" onselectstart="return false" id="displayText">
-    <!-- <p class="simple_text">Selected node: </p> -->
+  <div class="topright">
+    <button id="audio-state-toggle" class="simple_text" style="width: 10em; height: 5em;background-color:#101020"">Audio Off</button>
 
-    <p>Selected node: <span class="simple_text" id="content" style="text-align: center;">...</span></p><br>
-    <p>OpenAccess: <span class="simple_text" id="openaccess">none</span></p><br>
-    <p>Citations: <span class="simple_text" id="citations">none</span></p><br>
-    <p>
-      <span id="mySpec">Co-citations:</span>
-      <span class="simple_text" id="co-citations">none</span>
-    </p><br>
-    <p>
-      Publication Year: <span class="simple_text" id="year">none</span>
-    </p>
-    <p class="simple_text" id="miaomiao"></p><br>
+  </div>
+  <div class="bottomright" id="displayText">
+      <!-- <p class=" simple_text">Selected node: </p> -->
+
+      <p>Selected node: <span class="simple_text" id="content" style="text-align: center;">...</span></p><br>
+      <p>OpenAccess: <span class="simple_text" id="openaccess">none</span></p><br>
+      <p>Citations: <span class="simple_text" id="citations">none</span></p><br>
+      <p>
+        <span id="mySpec">Co-citations:</span>
+        <span class="simple_text" id="co-citations">none</span>
+      </p><br>
+      <p>
+        Publication Year: <span class="simple_text" id="year">none</span>
+      </p>
+      <p class="simple_text" id="miaomiao"></p><br>
   </div>
   <div class="bottomleft" id="textControls">
     wasd / arrow keys = navigation from selected node <br>
@@ -191,7 +208,6 @@
     Citations: <p class="big-text" id="citations">none</p><br>
   </div>
   <!-- <script type="module" src="./audio/create-node.js"></script> -->
-  <button>Turn on audio</button>
   <script type="module" src="force_graphs.js"></script>
 
   <div id="graph"></div>

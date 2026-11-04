@@ -14,6 +14,13 @@ let rhythmScaling = 5000;
 //=================================================================================
 //User interaction
 //=================================================================================
+function displayFeatureSelection(node) {
+  document.getElementById("content").innerText = node["description"];
+  document.getElementById("openaccess").innerText = node["openacces"];
+  document.getElementById("citations").innerText = node["citations"];
+  document.getElementById("year").innerText = node["year"];
+  document.getElementById("co-citations").innerText = degree[node.id];
+}
 
 //==================================================
 // WASD
@@ -345,6 +352,7 @@ function animatePathTraversal(nodePath, linkPath, graph, degree) {
     currentWeightTime = mapNumRange(currentWeight, 0, maxWeight, 500, 20000);
     // console.log("The weight is: ", currentWeight);
     // Send OSC message
+    displayFeatureSelection(currentNode)
     sendOSCMessage(currentNode, '/additive', degree[currentNode.id]);
 
     // Center on current node
